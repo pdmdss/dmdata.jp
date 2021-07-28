@@ -3,7 +3,7 @@ title: JSON化データ コンポーネントされた要素
 ---
 
 
-## Earthquake 要素
+## Earthquake component
 地震情報・津波情報における地震の発生位置、規模を記載。
 
 ```json
@@ -23,18 +23,21 @@ title: JSON化データ コンポーネントされた要素
                 "value": "142.9000"
             },
             "height": {
-            "value": "-10000.0000",
-            "unit": "m"
-          },
-          "geodeticSystem": "日本測地系"
+                "type": "高さ",
+                "value": "-10000.0000",
+                "unit": "m"
+            },
+            "geodeticSystem": "日本測地系"
         },
         "depth": {
+            "type": "深さ",
             "value": "10",
             "unit": "km"
         },
         "auxiliary": {
             "text": "牡鹿半島の東南東１３０ｋｍ付近",
             "code": "202",
+            "name": "牡鹿半島",
             "direction": "東南東",
             "distance": {
                 "value": "130",
@@ -43,6 +46,7 @@ title: JSON化データ コンポーネントされた要素
         }
     },
     "magnitude": {
+        "type": "マグニチュード",
         "value": null,
         "unit": "Mj",
         "condition": {
@@ -53,110 +57,61 @@ title: JSON化データ コンポーネントされた要素
 }
 ```
 
-| 要素      | 出現 | 説明                  | 
-| ----------- | ---- | --------------------- |
-| earthquake.originTime  | 不定 | 地震発生時刻          |
-| earthquake.arrivalTime |  | 地震検知時刻          |
-| earthquake.hypocenter  | する | [Hypecenter](#hypecenter-要素) 要素を参照 | 
-| earthquake.magnitude   | する | Magnitude 要素を参照  |     
+| 階層 | フィールド | 出現条件 | 説明 |
+| -- | -- | -- | -- |
+| 1. | originTime | | **String**<br/> 地震発生時刻を分単位で記述する |
+| 2. | arrivalTime |  | **String**<br/> 地震検知時刻を分単位で記述する |
+| 3. | hypocenter | | **Object**<br/> 地震の震源要素  |
+| 4. | magnitude |  | **Object**<br/> 地震の規模 |
+
+### 3. hypocenter
+
+地震の震源要素を記載。
+
+| 階層 | フィールド | 出現条件 | 説明 |
+| -- | -- | -- | -- |
+| 1. | name | | **String**<br/> 震央地名 |
+| 2. | code |  | **String<Integer\>**<br/> 震央地名コード <br/> コードは、気象庁防災情報XMLフォーマット コード表 地震火山関連コード表 による |
+| 3. | coordinate | | **Object**<br/> 震源地の空間座標   |
+| 4. | depth |  | **Object**<br/> 深さ情報 [#3. 4. depth](#3-4-depth)を参照|
+| 5.? | auxiliary |  | **Object**<br/> 震源位置の補足情報 [#3. 5. auxiliary](#3-5-auxiliary)を参照|
+
+#### 3. 4. depth
+
+震源の深さ。
+
+| 階層 | フィールド | 出現条件 | 説明 |
+| -- | -- | -- | -- |
+| 4._1. | type |  | **String**<br/> 深さ情報のタイプ。"深さ"で固定 |
+| 4._2. | unit |  | **String**<br/> 深さ情報の単位。"km"で固定 |
+| 4._3. | value |  | **String<Integer\>\|Null**<br/> 震源の深さ。不明時は **Null** を格納 |
+| 4._4.? | condition | depth.valueが<br/>"0"または"700"または**Null**の時 | **String**<br/> 深さの例外的表現。取りうる値は "ごく浅い"、"７００ｋｍ以上"、 "不明"|
+
+#### 3. 5. Auxiliary
+
+震源位置の補足情報。
+
+| 階層 | フィールド | 出現条件 | 説明 |
+| -- | -- | -- | -- |
+| 5._1. | text |  | **String**<br/> 震源位置の捕捉位置を記載 |
+| 5._2. | code |  | **String<Integer\>**<br/> 震源位置の捕捉位置を表現する代表地域コード <br/> コードは、気象庁防災情報XMLフォーマット コード表 地震火山関連コード表 による |
+| 5._3. | name |  | **String**<br/> 震源位置の捕捉位置を表現する代表地域名 |
+| 5._4. | direction |  | **String**<br/> 代表地域から震源への方角を16方位で表現 |
+| 5._4. | distance.type |  | **String**<br/> の単位。"km"で固定  |
+| 5._4. | distance.unit |  | **String**<br/> 距離情報の単位。"km"で固定
+| 5._4. | distance.value |  | **String<Integer\>**<br/> 代表地域から震源への方角を16方位で表現 |
 
 
-## Hypecenter 要素
-地震情報・津波情報における地震の発生位置を記載。
-
-```json
-{
-    "name": "三陸沖",
-    "code": "288",
-    "coordinate": {
-        "latitude": {
-            "text": "38.0˚N",
-            "value": "38.0000"
-        },
-        "longitude": {
-            "text": "142.9˚E",
-            "value": "142.9000"
-        },
-        "height": {
-            "value": "-10000.0000",
-            "unit": "m"
-        },
-        "geodeticSystem": "日本測地系"
-    },
-    "depth": {
-        "value": "10",
-        "unit": "km"
-    },
-    "auxiliary": {
-        "text": "牡鹿半島の東南東１３０ｋｍ付近",
-        "code": "202",
-        "direction": "東南東",
-        "distance": {
-            "value": "130",
-            "unit": "km"
-        }
-    }
-}
-```
 
 
-| 要素     | 出現               | 説明                  | 
-| ---------- | ------------------ | --------------------- | 
-| hypocenter.name       | する               | 地震発生時刻          | 
-| hypocenter.code       | する               | 地震検知時刻          | 
-| hypocenter.coordinate | する               | [Coordinate](#coordinate-要素) 要素を参照 |    
-| hypocenter.depth      | する | [Hypecenter Depth](#hypecenter-depth-要素) 要素を参照      |       
-| hypocenter.auxiliary  | 情報による             |  [Hypecenter Auxiliary](#hypecenter-auxiliary-要素) 要素を参照  |    
 
-## Hypecenter Auxiliary 要素
-震源の相対的な位置を記載する。
-```json
-{
-    "text": "牡鹿半島の東南東１３０ｋｍ付近",
-    "code": "202",
-    "direction": "東南東",
-    "distance": {
-        "value": "130",
-        "unit": "km"
-    }
-}
-```
 
-| 要素     | 出現               | 説明                  | 
-| ---------- | ------------------ | --------------------- | 
-| auxiliary.text       | はい               | テキスト文。 | 
-| condition.code       | はい               | 起点となる場所のコード。          |
-| condition.direction       | はい            |  方角、16方位で記述する。     |
-| condition.distance.value       | はい            |  起点からの距離を記述する。単位はキロメートル。     |
-| condition.distance.unit       | はい            |  起点からの距離の単位を記述する。単位はキロメートル。     |
 
-## Hypecenter Depth 要素
 
-```json
-{
-    "value": "10",
-    "unit": "km"
-}
-```
-```json
-{
-    "value": "0",
-    "unit": "km",
-    "condition": {
-        "name": "ごく浅い",
-        "code": "d9121"
-    }
-}
-```
 
-| 要素     | 出現               | 説明                  | 
-| ---------- | ------------------ | --------------------- | 
-| depth.value       | はい               | 海抜からの深さを表現する。 | 
-| depth.unit       | はい               | 単位は、キロメートルで固定。          |
-| depth.condition       | `height.value`が`0`、`700`または`null`の場合             |  深さの例外的な表現、[Condition](#condition-要素) 要素を参照。 <br/> `condition.name`は`ごく浅い`、`深さ７００ｋｍ以上`、`不明 `。     |
 
-## Coordinate 要素
-空間座標のピンポイントを表現する。
+## Coordinate component
+空間座標のある一点を表現する。
 
 ```json
 {
