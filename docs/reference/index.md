@@ -24,7 +24,7 @@ HTTP/1.1、HTTP/2に対応しています。
 * [Parameters Earthquake station v1](/reference/api/parameters/earthquake)
 * [WebSocket v1](/reference/api/websocket.v1/websocket)
 
-**2021年10月末ごろで提供を終了する予定です。**
+**2021年10月22日18時に提供を終了します。**
 
 なお、下記のAPIは今後も使用できます。
 * [Telegram Data v1](/reference/api/v1/telegram.data)
