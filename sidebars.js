@@ -8,23 +8,27 @@ module.exports = {
                     'reference/api/v2/index',
                     {
                         'Contract v2': [
-                            'reference/api/v2/contract.list',
+                            'reference/api/v2/contract.list'
                         ],
                         'Socket v2': [
                             'reference/api/v2/socket.list',
                             'reference/api/v2/socket.start',
-                            'reference/api/v2/socket.close',
+                            'reference/api/v2/socket.close'
                         ],
                         'Telegram v2': [
-                            'reference/api/v2/telegram.list',
+                            'reference/api/v2/telegram.list'
                         ],
                         'WebSocket v2': [
                             'reference/api/v2/websocket'
                         ],
                         'Parameter v2': [
                             'reference/api/v2/parameter.earthquake',
-                            'reference/api/v2/parameter.tsunami',
+                            'reference/api/v2/parameter.tsunami'
                         ],
+                        'GD Earthquake v2': [
+                            'reference/api/v2/gd.earthquake.list',
+                            'reference/api/v2/gd.earthquake.event'
+                        ]
                     }
                 ],
                 'API v1': [
@@ -34,7 +38,7 @@ module.exports = {
                         ],
                         'Telegram v1': [
                             'reference/api/telegram.v1/list',
-                            'reference/api/v1/telegram.data',
+                            'reference/api/v1/telegram.data'
                         ],
                         'Parameters v1': [
                             'reference/api/parameters/tsunami',
