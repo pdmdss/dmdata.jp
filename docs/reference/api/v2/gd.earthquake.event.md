@@ -37,88 +37,85 @@ APIは常にJSONを返答します。
   "responseId": "3750ccf70651e928",
   "responseTime": "2021-04-01T00:00:00.000Z",
   "status": "ok",
-  "items": [
-    {
-      "id": 1584,
-      "eventId": "20210808085414",
-      "originTime": "2021-08-08T08:54:00+09:00",
-      "arrivalTime": "2021-08-08T08:54:00+09:00",
-      "hypocenter": {
-        "code": "787",
-        "name": "鹿児島湾",
-        "coordinate": {
-          "latitude": {
-            "text": "31.3˚N",
-            "value": "31.3000"
-          },
-          "longitude": {
-            "text": "130.6˚E",
-            "value": "130.6000"
-          },
-          "height": {
-            "type": "高さ",
-            "unit": "m",
-            "value": "0"
-          },
-          "geodeticSystem": "日本測地系"
+  "event": {
+    "id": 1584,
+    "eventId": "20210808085414",
+    "originTime": "2021-08-08T08:54:00+09:00",
+    "arrivalTime": "2021-08-08T08:54:00+09:00",
+    "hypocenter": {
+      "code": "787",
+      "name": "鹿児島湾",
+      "coordinate": {
+        "latitude": {
+          "text": "31.3˚N",
+          "value": "31.3000"
         },
-        "depth": {
-          "type": "深さ",
-          "unit": "km",
-          "value": "0",
-          "condition": "ごく浅い"
-        }
+        "longitude": {
+          "text": "130.6˚E",
+          "value": "130.6000"
+        },
+        "height": {
+          "type": "高さ",
+          "unit": "m",
+          "value": "0"
+        },
+        "geodeticSystem": "日本測地系"
       },
-      "magnitude": {
-        "type": "マグニチュード",
-        "unit": "Mj",
-        "value": "2.6"
-      },
-      "maxInt": "2",
-      "telegrams": [
-        {
-          "serial": 0,
-          "id": "...",
-          "originalId": "...",
-          "classification": "telegram.earthquake",
+      "depth": {
+        "type": "深さ",
+        "unit": "km",
+        "value": "0",
+        "condition": "ごく浅い"
+      }
+    },
+    "magnitude": {
+      "type": "マグニチュード",
+      "unit": "Mj",
+      "value": "2.6"
+    },
+    "maxInt": "2",
+    "telegrams": [
+      {
+        "serial": 0,
+        "id": "...",
+        "classification": "telegram.earthquake",
+        "head": {
+          "type": "VXSE53",
+          "author": "RJTD",
+          "time": "2021-08-07T23:58:00.000Z",
+          "designation": null,
+          "test": false
+        },
+        "receivedTime": "2021-08-07T23:58:10.311Z",
+        "xmlReport": {
           "head": {
-            "type": "VXSE53",
-            "author": "RJTD",
-            "time": "2021-08-07T23:58:00.000Z",
-            "designation": null,
-            "test": false
+            "title": "震源・震度情報",
+            "serial": "1",
+            "eventId": "20210808085414",
+            "headline": "　８日０８時５４分ころ、地震がありました。",
+            "infoKind": "地震情報",
+            "infoType": "発表",
+            "reportDateTime": "2021-08-08T08:58:00+09:00",
+            "targetDateTime": "2021-08-08T08:58:00+09:00",
+            "infoKindVersion": "1.0_1"
           },
-          "receivedTime": "2021-08-07T23:58:10.311Z",
-          "xmlReport": {
-            "head": {
-              "title": "震源・震度情報",
-              "serial": "1",
-              "eventId": "20210808085414",
-              "headline": "　８日０８時５４分ころ、地震がありました。",
-              "infoKind": "地震情報",
-              "infoType": "発表",
-              "reportDateTime": "2021-08-08T08:58:00+09:00",
-              "targetDateTime": "2021-08-08T08:58:00+09:00",
-              "infoKindVersion": "1.0_1"
-            },
-            "control": {
-              "title": "震源・震度に関する情報",
-              "status": "通常",
-              "dateTime": "2021-08-07T23:58:08Z",
-              "editorialOffice": "気象庁本庁",
-              "publishingOffice": "気象庁"
-            }
-          },
-          "schema": {
-            "type": "earthquake-information",
-            "version": "1.0.0"
-          },
-          "format": "json",
-          "url": "https://data.api.dmdata.jp/v1/..."
-        }
-      ]
-    }
-  ]
+          "control": {
+            "title": "震源・震度に関する情報",
+            "status": "通常",
+            "dateTime": "2021-08-07T23:58:08Z",
+            "editorialOffice": "気象庁本庁",
+            "publishingOffice": "気象庁"
+          }
+        },
+        "schema": {
+          "type": "earthquake-information",
+          "version": "1.0.0"
+        },
+        "format": "json",
+        "url": "https://data.api.dmdata.jp/v1/..."
+      }
+    ]
+  }
 }
 ```
 
