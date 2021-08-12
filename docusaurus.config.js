@@ -4,7 +4,6 @@ module.exports = {
     baseUrl: '/doc/',
     onBrokenLinks: 'throw',
     favicon: 'img/favicon.ico',
-    organizationName: 'Project DM-D.S.S',
     themeConfig: {
         navbar: {
             title: 'Top',
@@ -22,6 +21,12 @@ module.exports = {
                     to: '/telegrams/',
                     label: '配信データ',
                     position: 'left'
+                },
+                {
+                    href: 'https://github.com/pdmdss/doc.dmdata.jp',
+                    label: 'GitHub',
+                    position: 'right'
+
                 }
             ]
         },
