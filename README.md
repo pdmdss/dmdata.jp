@@ -1,33 +1,29 @@
-# Website
+# Project DM-D.S.S (DMDATA.JP)
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+Project DM-D.S.S が提供するサービスのドキュメント及びリファレンスのリポジトリとなります。
 
-### Installation
+ドキュメント生成ツールは [Docusaurus2](https://github.com/facebook/docusaurus) を使用しています。
 
-```
-$ yarn
-```
+## 支援
 
-### Local Development
+誤字の変更や、追加したほうがいいページなどの追記があるときはプルリクエストや、issueなどで報告していただけると非常にありがたいです。
 
-```
-$ yarn start
-```
+## ローカル開発
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
+### インストール
 
 ```
-$ yarn build
+npm install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
+### 実行
 
 ```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+npx run start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+### ビルド
+
+```
+npx run build
+```
