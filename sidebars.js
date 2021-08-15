@@ -50,7 +50,8 @@ module.exports = {
                     }
                 ]
             },
-            'reference/oauth2/v1/index'
+            'reference/oauth2/v1/index',
+            'reference/conversion/json/index'
         ],
         '配信データ': [
             'telegrams/index',
