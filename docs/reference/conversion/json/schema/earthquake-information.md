@@ -35,7 +35,7 @@ VXSE51、VXSE53時に出現し、 震度データがない場合（遠地地震�
 | 2._1. | maxInt | | **String**<br/>最大震度、`1`, `2`, `3`, `4`, `5-`, `5+`, `6-`, `6+`, `7` で記載する |
 | 2._2. | prefectures | | **Array<Object\>**<br/>都道府県内における最大震度 [#2. 2. prefectures](#2-2-prefectures) |
 | 2._3. | region | | **Array<Object\>**<br/>一次細分化地域内における最大震度 [#2. 3. region](#2-3-region) |
-| 2._4.? | cities | VXSE53時のみ | **Array<Object\>**<br/>市区町村における最大震度 [#2. 4. cities](#2-4-cities) |
+| 2._4.? | cities | VXSE53時のみ | **Array<Object\>**<br/>市区町村における最大震度 [#2. 4. city](#2-4-city) |
 | 2._5.? | stations | VXSE53時のみ | **Array<Object\>**<br/>観測点における震度 [#2. 5. stations](#2-5-stations) |
 
 #### 2. 2. prefectures
@@ -56,7 +56,7 @@ VXSE51、VXSE53時に出現し、 震度データがない場合（遠地地震�
 | 2._3._3.? | maxInt | 入電した震度がない場合は出現しない | **String**<br/>その一次細分化地域における最大震度、`1`, `2`, `3`, `4`, `5-`, `5+`, `6-`, `6+`, `7` で記載する | 
 | 2._3._4.? | revise | VXSE53時で、続報で震度変化があれば出現 | **String**<br/>その一次細分化地域における最大震度が続報で変化した場合に記載する。<br/>取りうる値は`上方修正`又は`追加` | 
 
-#### 2. 4. cities
+#### 2. 4. city
 
 VXSE51（震度速報）の時には出現しない。
 

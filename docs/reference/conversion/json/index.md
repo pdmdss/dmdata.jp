@@ -33,6 +33,7 @@ JSONスキーマの型定義については、[API v2 #型表現](/reference/api
 | 地震・津波関連 | [earthquake-hypocenter-update](schema/earthquake-hypocenter-update)  | VXSE61                         | 1.0.0      | 
 | 地震・津波関連 | [earthquake-nankai](schema/earthquake-nankai)                        | VYSE50, VYSE51, VYSE52         | 1.0.0      | 
 | 地震・津波関連 | [tsunami-information](schema/tsunami-information)                    | VTSE41, VTSE51, VTSE52         | 1.0.0      | 
+| 火山関連      | [volcano-information](schema/volcano-information)                    | VFVOii (ii = 50-56), VFSVii (ii = 50-61) | 1.0.0      | 
 
 ### 共通ヘディング
 
@@ -67,7 +68,7 @@ JSONスキーマの型定義については、[API v2 #型表現](/reference/api
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
 | 1. | _originalId | | **String**<br/> 基となったXMLデータの電文ID |
-| 2. | _schema |  | **String**<br/> JSONスキーマ情報 |
+| 2. | _schema |  | **Object**<br/> JSONスキーマ情報 |
 | 2._1. | _schema.type |  | **String**<br/> JSONスキーマ名 |
 | 2._2. | _schema.version |  | **String**<br/> JSONスキーマバージョン |
 | 3. | type | | **String**<br/> 情報名称(Control/Title部) |

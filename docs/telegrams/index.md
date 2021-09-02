@@ -52,14 +52,14 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 
 | 資料名 | XML:/Report/Control/Title | データ種類コード | データ形式 | JSON化 | 備考 |
 |  --- |  --- |  --- |  --- |  --- |  --- |
-| [噴火警報・予報](./vo01710) | 噴火警報・予報 | VFVO50 | XML | | |
-| [火山の状況に関する解説情報](./vo01720) | 火山の状況に関する解説情報 | VFVO51 | XML | | |
-| [噴火に関する火山観測報](./vo01730) | 噴火に関する火山観測報 | VFVO52 | XML | | |
-| [火山現象に関する海上警報・予報](./vo01740) | 火山現象に関する海上警報・予報 | VFSVii (ii = 50-61) | XML | | |
-| [降灰予報（定時）](./vo01810) | 降灰予報（定時） | VFVO53 | XML | | |
-| [降灰予報（速報）](./vo01820) | 降灰予報（速報） | VFVO54 | XML | | |
-| [降灰予報（詳細）](./vo01830) | 降灰予報（詳細） | VFVO55 | XML | | |
-| [噴火速報](./vo01750) | 噴火速報 | VFVO56 | XML | | |
+| [噴火警報・予報](./vo01710) | 噴火警報・予報 | VFVO50 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
+| [火山の状況に関する解説情報](./vo01720) | 火山の状況に関する解説情報 | VFVO51 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
+| [噴火に関する火山観測報](./vo01730) | 噴火に関する火山観測報 | VFVO52 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
+| [火山現象に関する海上警報・予報](./vo01740) | 火山現象に関する海上警報・予報 | VFSVii (ii = 50-61) | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
+| [降灰予報（定時）](./vo01810) | 降灰予報（定時） | VFVO53 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
+| [降灰予報（速報）](./vo01820) | 降灰予報（速報） | VFVO54 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
+| [降灰予報（詳細）](./vo01830) | 降灰予報（詳細） | VFVO55 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
+| [噴火速報](./vo01750) | 噴火速報 | VFVO56 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
 | [火山に関するお知らせ](./vo01020) | 火山に関するお知らせ | VZVO40 | XML | | |
 
 ### 気象警報・注意報関連
