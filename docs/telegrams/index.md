@@ -46,7 +46,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [津波情報](./et01120) | 津波情報a | VTSE51 | XML | [配信中](/reference/conversion/json/schema/tsunami-information) | |
 | [津波情報（沖合の津波観測に関する情報）](./et01121) | 沖合の津波観測に関する情報 | VTSE52 | XML | [配信中](/reference/conversion/json/schema/tsunami-information) | |
 | [国際津波関連情報（国内向け）](./et01130) | | WEPA60 | A/N | | |
-| [地震・津波に関するお知らせ](./et01010) | 地震・津波に関するお知らせ | VZSE40 | XML | | |
+| [地震・津波に関するお知らせ](./et01010) | 地震・津波に関するお知らせ | VZSE40 | XML | [配信中](/reference/conversion/json/schema/earthquake-information) | |
 
 ### 火山関連
 
@@ -60,7 +60,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [降灰予報（速報）](./vo01820) | 降灰予報（速報） | VFVO54 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
 | [降灰予報（詳細）](./vo01830) | 降灰予報（詳細） | VFVO55 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
 | [噴火速報](./vo01750) | 噴火速報 | VFVO56 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
-| [火山に関するお知らせ](./vo01020) | 火山に関するお知らせ | VZVO40 | XML | | |
+| [火山に関するお知らせ](./vo01020) | 火山に関するお知らせ | VZVO40 | XML | [配信中](/reference/conversion/json/schema/volcano-information) | |
 
 ### 気象警報・注意報関連
 

@@ -9,6 +9,7 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 * 震度速報 (VXSE51)
 * 震源に関する情報 (VXSE52)
 * 震源・震度に関する情報 (VXSE53)
+* 地震・津波に関するお知らせ (VZSE40)
 
 ## 本文
 
@@ -18,7 +19,7 @@ body フィールド内の定義となります。
 | -- | -- | -- | -- | 
 | 1.? | earthquake | VXSE52、VXSE53時に出現、<br/>取消時には出現しない | **Object**<br/> [Earthquake component](../component#Earthquake-component) を参照 |
 | 2.? | intensity | VXSE51、VXSE53時に出現、<br/>震度データがない場合や取消時には出現しない | **Object**<br/>震度情報 [#2. intensity](#2-intensity) |
-| 3.? | text | 取消時の理由や、<br/>その他の追記事項がある場合に出現 | **String**<br/>自由形式で文章を記載する  |
+| 3.? | text | VZSE40時・取消時の理由や、<br/>その他の追記事項がある場合に出現 | **String**<br/>自由形式で文章を記載する  |
 | 4.? | comments | 取消時や付加的な情報がない場合は出現しない | **Object**<br/>付加的な情報を文章形式で提供する [#4. comments](#4-comments) |
 
 
