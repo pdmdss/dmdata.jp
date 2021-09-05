@@ -4,7 +4,7 @@ title: Schema earthquake-hypocenter-update v1.0.0
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
 
-## 対称とするXML電文
+## 対象とするXML電文
 
 * 顕著な地震の震源要素更新のお知らせ (VXSE61)
 

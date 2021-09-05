@@ -4,7 +4,7 @@ title: Schema tsunami-information v1.0.0
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
 
-## 対称とするXML電文
+## 対象とするXML電文
 
 * 津波警報・注意報・予報a (VTSE41)
 * 津波情報a (VTSE51)

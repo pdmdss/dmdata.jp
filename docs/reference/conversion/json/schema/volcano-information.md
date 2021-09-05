@@ -4,7 +4,7 @@ title: Schema volcano-information v1.0.0
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
 
-## 対称とするXML電文
+## 対象とするXML電文
 
 * 噴火警報・予報 (VFVO50)
 * 火山の状況に関する解説情報 (VFVO51)

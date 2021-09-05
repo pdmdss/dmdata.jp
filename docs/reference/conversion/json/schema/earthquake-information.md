@@ -4,7 +4,7 @@ title: Schema earthquake-information v1.0.0
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
 
-## 対称とするXML電文
+## 対象とするXML電文
 
 * 震度速報 (VXSE51)
 * 震源に関する情報 (VXSE52)

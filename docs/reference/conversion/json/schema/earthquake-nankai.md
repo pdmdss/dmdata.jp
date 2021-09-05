@@ -4,7 +4,7 @@ title: Schema earthquake-nankai v1.0.0
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
 
-## 対称とするXML電文
+## 対象とするXML電文
 
 * 南海トラフ地震臨時情報 (VYSE50)
 * 南海トラフ地震関連解説情報 (VYSE51)
