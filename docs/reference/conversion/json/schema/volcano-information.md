@@ -43,7 +43,7 @@ body フィールド内の定義となります。
 | -- | -- | -- | -- |
 | 2._1. | code | | **String<Integer\>**<br/> 火山コード <br/> コードは、気象庁防災情報XMLフォーマット コード表 地震火山関連コード表 による |
 | 2._2. | name | | **String**<br/> 火山名 |
-| 2._3. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](.component#coordinate-component)を参照、高さ要素は常にあり  |
+| 2._3. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](../component#coordinate-component)を参照、高さ要素は常にあり  |
 | 2._4.? | areaFromMark | 情報による | **String**<br/> 位置補足情報を記載 |
 | 2._5.? | crater | VFVO52、VFVO53、VFVO54、VFVO55で出現<br/>火山や情報による | **Object**<br/> 火山の火口情報 [#2. 5. crater](#2-5-crater) |
 | 2._6. | kind |  | **Object**<br/>噴火警報・予報等の種別 [#2. 6. kind](#2-6-kind)
@@ -56,7 +56,7 @@ body フィールド内の定義となります。
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
 | 2._5._1. | name | | **String**<br/> 火口名 |
-| 2._5._2. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](.component#coordinate-component)を参照、高さ要素は常にあり  |
+| 2._5._2. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](../component#coordinate-component)を参照、高さ要素は常にあり  |
 
 #### 2. 6. kind
 

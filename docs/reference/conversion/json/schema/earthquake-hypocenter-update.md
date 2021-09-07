@@ -14,7 +14,7 @@ body フィールド内の定義となります。
 
 | 階層 | フィールド | 出現条件 | 説明 | 
 | -- | -- | -- | -- | 
-| 1.? | earthquake | 取消時には出現しない | **Object**<br/> [Earthquake component](.component#Earthquake-component) を参照、空間座標は度分単位で示す |
+| 1.? | earthquake | 取消時には出現しない | **Object**<br/> [Earthquake component](.././component#Earthquake-component) を参照、空間座標は度分単位で示す |
 | 2.? | text | 取消時の理由や、<br/>その他の追記事項がある場合に出現 | **String**<br/>自由形式で文章を記載する  |
 | 3.? | comments | 取消時や付加的な情報がない場合は出現しない | **Object**<br/>付加的な情報を文章形式で提供する [#3. comments](#3-comments) |
 
