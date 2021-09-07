@@ -150,4 +150,8 @@ APIは標準的なエラーを次の通り返答します。
 ### Parameter
 
 * [**Parameter Earthquake**](parameter.earthquake)
-* [**Parameter Tsunami**](parameter.tsunami)
+
+### GD Earthquake
+
+* [**GD Earthquake List**](gd.earthquake.list)
+* [**GD Earthquake Event**](gd.earthquake.event)
