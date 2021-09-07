@@ -130,24 +130,24 @@ APIは標準的なエラーを次の通り返答します。
 
 ### Contract
 
-* [**Contract List**](./contract.list)
+* [**Contract List**](contract.list)
 
 ### Socket
 
-* [**Socket List**](./socket.list)
-* [**Socket Start**](./socket.start)
-* [**Socket Close**](./socket.close)
+* [**Socket List**](socket.list)
+* [**Socket Start**](socket.start)
+* [**Socket Close**](socket.close)
 
 ### Telegram
 
-* [**Telegram List**](./telegram.list)
+* [**Telegram List**](telegram.list)
 * [**Telegram Data**](/reference/api/v1/telegram.data)
 
 ### WebSocket
 
-* [**WebSocket**](./websocket)
+* [**WebSocket**](websocket)
 
 ### Parameter
 
-* [**Parameter Earthquake**](./parameter.earthquake)
-* [**Parameter Tsunami**](./parameter.tsunami)
+* [**Parameter Earthquake**](parameter.earthquake)
+* [**Parameter Tsunami**](parameter.tsunami)
