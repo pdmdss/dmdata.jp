@@ -122,32 +122,51 @@ APIは標準的なエラーを次の通り返答します。
 * **Null** - Null
 * **ISO8601Time** - String型で時刻を表現するISO8601拡張形式とする。タイムゾーンは世界協定時か日本標準時を使用
 * **String<型>** - String型だが、内容は<\>内に指定された型を使用
-    
+
 ### クエリパラメータ、URLパラメータ
+
 クエリパラメータ、URLパラメータはすべてString型ですが、値の表現としてどの型が有効か示すため、String型以外の方もこのリファレンス上では使用します。
+
+## レートリミット
+
+このAPIではレートリミットが設定されており、制限を超えるリクエストがされた場合、APIはHTTPステータスコード `429` を返答します。
+
+制限は、以下の通りです。
+
+|リソース|リクエスト上限|バケット |
+|---|---|---|
+|Telegram Data|20req/s|20|
+|WebSocket|10req/s|10|
+|そのほか|10req/s|20|
+
+この制限はIPごとに適用されます。
 
 ## リソース
 
 ### Contract
 
-* [**Contract List**](./contract.list)
+* [**Contract List**](contract.list)
 
 ### Socket
 
-* [**Socket List**](./socket.list)
-* [**Socket Start**](./socket.start)
-* [**Socket Close**](./socket.close)
+* [**Socket List**](socket.list)
+* [**Socket Start**](socket.start)
+* [**Socket Close**](socket.close)
 
 ### Telegram
 
-* [**Telegram List**](./telegram.list)
+* [**Telegram List**](telegram.list)
 * [**Telegram Data**](/reference/api/v1/telegram.data)
 
 ### WebSocket
 
-* [**WebSocket**](./websocket)
+* [**WebSocket**](websocket)
 
 ### Parameter
 
-* [**Parameter Earthquake**](./parameter.earthquake)
-* [**Parameter Tsunami**](./parameter.tsunami)
+* [**Parameter Earthquake**](parameter.earthquake)
+
+### GD Earthquake
+
+* [**GD Earthquake List**](gd.earthquake.list)
+* [**GD Earthquake Event**](gd.earthquake.event)
