@@ -183,9 +183,9 @@ WebSocket>>>
 |head.test|いつも|**Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す。 <br/> **注意：XML電文以外のテスト配信は常に`false`になります。本文中を参照するようにしてください。**|
 |head.xml|内容による※2|**Boolean** <br/> XML電文かどうかを示す|
 |xmlReport|format=xml時|**Object** <br/> XML電文Control,Head情報|
-|format|いつも|**String\|Null** <br/> bodyプロパティの表現形式を示す。"xml"、"a/n"、"binary"は気象庁が定めたフォーマット、"json"は本サービスが独自に定めたフォーマット|
-|compression|いつも|**String\|Null** <br/> bodyプロパティの圧縮形式を示す。"gzip"または"zip"、非圧縮時はnullを格納する|
-|encoding|いつも|**String\|Null** <br/> bodyプロパティのエンコーディング形式を示す。"base64"または、"utf-8"を格納する|
+|format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。"xml"、"a/n"、"binary"は気象庁が定めたフォーマット、"json"は本サービスが独自に定めたフォーマット|
+|compression|いつも|**String\|Null** <br/> bodyフィールドの圧縮形式を示す。"gzip"または"zip"、非圧縮時はnullを格納する|
+|encoding|いつも|**String\|Null** <br/> bodyフィールドのエンコーディング形式を示す。"base64"または、"utf-8"を格納する|
 |body|いつも|**String** <br/> 本文|
 
 ※1 将来の予約拡張。 <br/>

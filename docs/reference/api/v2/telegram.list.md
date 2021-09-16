@@ -102,7 +102,7 @@ APIは常にJSONを返答します。
 |items[].schema|format=json|**Object** <br/> 加工データのスキーマ情報|
 |items[].schema.type|いつも|**String** <br/> スキーマ名|
 |items[].schema.version|いつも|**String** <br/> スキーマのバージョン|
-|items[].format|いつも|**String\|Null** <br/> bodyプロパティの表現形式を示す。"xml"、"a/n"、"binary"は気象庁が定めたフォーマット、"json"は本サービスが独自に定めたフォーマット|
+|items[].format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。"xml"、"a/n"、"binary"は気象庁が定めたフォーマット、"json"は本サービスが独自に定めたフォーマット|
 |items[].url|いつも|**String** <br/> [電文本文URL](/reference/api/v1/telegram.data)|
 |nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
 |nextPooling|いつも|**String** <br/> PuLL時に使用する。詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
