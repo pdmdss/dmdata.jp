@@ -55,7 +55,7 @@ body フィールド内の定義となります。
 
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
-| 2._5._1. | name | | **String**<br/> 火口名 |
+| 2._5._1. | name | | **String|Null**<br/> 火口名。ない場合は**Null**とする |
 | 2._5._2. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](../component#coordinate-component)を参照、高さ要素は常にあり  |
 
 #### 2. 6. kind
