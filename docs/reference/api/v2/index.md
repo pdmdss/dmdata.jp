@@ -165,6 +165,7 @@ APIは標準的なエラーを次の通り返答します。
 ### Parameter
 
 * [**Parameter Earthquake**](parameter.earthquake)
+* [**Parameter Tsunami**](parameter.tsunami)
 
 ### GD Earthquake
 
