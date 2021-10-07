@@ -73,9 +73,9 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [全般気象情報](we02310) | 全般気象情報 | VPZJ50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
 | [地方気象情報](we02320) | 地方気象情報 | VPCJ50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
 | [府県気象情報](we02330) | 府県気象情報 | VPFJ50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
-| [全般気象情報 （社会的に影響の大きい天候に関する情報）](we02410) | 全般天候情報 | VPZI50 | XML | | |
-| [地方気象情報 （社会的に影響の大きい天候に関する情報）](we02420) | 地方天候情報 | VPCI50 | XML | | |
-| [府県気象情報 （社会的に影響の大きい天候に関する情報）](we02430) | 府県天候情報 | VPFI50 | XML | | |
+| [全般気象情報 （社会的に影響の大きい天候に関する情報）](we02410) | 全般天候情報 | VPZI50 | XML | [配信中](/reference/conversion/json/schema/weather-impact-society) | |
+| [地方気象情報 （社会的に影響の大きい天候に関する情報）](we02420) | 地方天候情報 | VPCI50 | XML | [配信中](/reference/conversion/json/schema/weather-impact-society) | |
+| [府県気象情報 （社会的に影響の大きい天候に関する情報）](we02430) | 府県天候情報 | VPFI50 | XML | [配信中](/reference/conversion/json/schema/weather-impact-society) | |
 | [早期天候情報](we02560) | 早期天候情報 | VPAW51 | XML | | |
 | [竜巻注意情報](we02520) | 竜巻注意情報 | VPHW50 | XML | | |
 | [竜巻注意情報（目撃情報付き）](we02521) | 竜巻注意情報（目撃情報付き） | VPHW51 | XML | | |
