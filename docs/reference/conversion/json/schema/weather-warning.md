@@ -132,7 +132,7 @@ body フィールド内の定義となります。
 
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
-| 6._1. | timeDefines |  | **Array<Object\>**<br/> 全ての予想期間を示すとともに、対応する要素の個々の時刻定義)を記載する [#6. 1. timeDefine](#6-1-timedefine) |
+| 6._1. | timeDefines |  | **Array<Object\>**<br/> 全ての予想期間を示すとともに、対応する要素の個々の時刻定義を記載する [#6. 1. timeDefine](#6-1-timedefine) |
 | 6._2. | items |  | **Array<Object\>**<br/> 予想の時系列等の内容と対象地域を記載する [#6. 2. item](#6-2-item) |
 
 #### 6. 1. timeDefine
