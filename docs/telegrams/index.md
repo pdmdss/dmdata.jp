@@ -70,21 +70,21 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [特別警報/警報/注意報 （新しいステージに対応した防災気象情報）](we02050) | 気象警報・注意報（Ｈ２７） | VPWW54 | XML | [配信中](/reference/conversion/json/schema/weather-warning) | |
 | [特別警報報知](we02020) | 特別警報報知 | VPNO50 | XML | | |
 | [記録的短時間大雨情報](we02030) | 記録的短時間大雨情報 | VPOA50 | XML | | |
-| [全般気象情報](we02310) | 全般気象情報 | VPZJ50 | XML | | |
-| [地方気象情報](we02320) | 地方気象情報 | VPCJ50 | XML | | |
-| [府県気象情報](we02330) | 府県気象情報 | VPFJ50 | XML | | |
+| [全般気象情報](we02310) | 全般気象情報 | VPZJ50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [地方気象情報](we02320) | 地方気象情報 | VPCJ50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [府県気象情報](we02330) | 府県気象情報 | VPFJ50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
 | [全般気象情報 （社会的に影響の大きい天候に関する情報）](we02410) | 全般天候情報 | VPZI50 | XML | | |
 | [地方気象情報 （社会的に影響の大きい天候に関する情報）](we02420) | 地方天候情報 | VPCI50 | XML | | |
 | [府県気象情報 （社会的に影響の大きい天候に関する情報）](we02430) | 府県天候情報 | VPFI50 | XML | | |
 | [早期天候情報](we02560) | 早期天候情報 | VPAW51 | XML | | |
 | [竜巻注意情報](we02520) | 竜巻注意情報 | VPHW50 | XML | | |
 | [竜巻注意情報（目撃情報付き）](we02521) | 竜巻注意情報（目撃情報付き） | VPHW51 | XML | | |
-| [スモッグ気象情報](we02530) | スモッグ気象情報 | VPSG50 | XML | | |
-| [全般スモッグ気象情報](we02540) | 全般スモッグ気象情報 | VPZS50 | XML | | |
-| [台風全般情報（総合情報、上陸等情報）](we02610) | 全般台風情報 | VPTI50 | XML | | |
-| [台風全般情報（位置、発生情報）](we02620) | 全般台風情報（定型） | VPTI51 | XML | | |
-| [発達する熱帯低気圧に関する情報](we02620) | 全般台風情報（定型） | VPTI51 | XML | | |
-| [全般台風情報（位置詳細）](we02630) | 全般台風情報（詳細） | VPTI52 | XML | | |
+| [スモッグ気象情報](we02530) | スモッグ気象情報 | VPSG50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [全般スモッグ気象情報](we02540) | 全般スモッグ気象情報 | VPZS50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [台風全般情報（総合情報、上陸等情報）](we02610) | 全般台風情報 | VPTI50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [台風全般情報（位置、発生情報）](we02620) | 全般台風情報（定型） | VPTI51 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [発達する熱帯低気圧に関する情報](we02620) | 全般台風情報（定型） | VPTI51 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [全般台風情報（位置詳細）](we02630) | 全般台風情報（詳細） | VPTI52 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
 | [台風解析・予報情報電文（５日進路・強度予報）](we02670) | 台風解析・予報情報（５日予報）（Ｈ３０） | VPTWii (ii=60-65) | XML | | |
 | &#x1f6ab; [~~台風解析・予報情報電文（５日進路予報）~~](we02660) | 台風解析・予報情報（５日予報） | VPTWii (ii=50-55) | XML | | 廃止 |
 | &#x1f6ab; [~~台風解析・予報情報電文~~](we02650) | 台風解析・予報情報（３日予報） | VPTWii (ii=40-45) | XML | | 廃止 |
@@ -96,10 +96,10 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [土砂災害警戒情報](we02710) | 土砂災害警戒情報 | VXWW50 | XML | | |
 | [指定河川洪水予報](we02810) | 指定河川洪水予報 | VXKOii (ii=50-89) | XML | | |
 | &#x1f6ab; [~~地方高温注意情報~~](we02550) | 地方高温注意情報 | VPCT50 | XML | | 廃止 |
-| [熱中症警戒アラート](we02551) | 熱中症警戒アラート | VPFT50 | XML | | |
-| [全般潮位情報](we02210) | 全般潮位情報 | VMCJ50 | XML | | |
-| [地方潮位情報](we02220) | 地方潮位情報 | VMCJ51 | XML | | |
-| [府県潮位情報](we02230) | 府県潮位情報 | VMCJ52 | XML | | |
+| [熱中症警戒アラート](we02551) | 熱中症警戒アラート | VPFT50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [全般潮位情報](we02210) | 全般潮位情報 | VMCJ50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [地方潮位情報](we02220) | 地方潮位情報 | VMCJ51 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
+| [府県潮位情報](we02230) | 府県潮位情報 | VMCJ52 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
 
 ### 定時報・その他関連
 
