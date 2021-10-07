@@ -78,7 +78,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [府県気象情報 （社会的に影響の大きい天候に関する情報）](we02430) | 府県天候情報 | VPFI50 | XML | [配信中](/reference/conversion/json/schema/weather-impact-society) | |
 | [早期天候情報](we02560) | 早期天候情報 | VPAW51 | XML | [配信中](/reference/conversion/json/schema/weather-early) | |
 | [竜巻注意情報](we02520) | 竜巻注意情報 | VPHW50 | XML | | |
-| [竜巻注意情報（目撃情報付き）](we02521) | 竜巻注意情報（目撃情報付き） | VPHW51 | XML | | |
+| [竜巻注意情報（目撃情報付き）](we02521) | 竜巻注意情報（目撃情報付き） | VPHW51 | XML | [配信中](/reference/conversion/json/schema/weather-tornado) | |
 | [スモッグ気象情報](we02530) | スモッグ気象情報 | VPSG50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
 | [全般スモッグ気象情報](we02540) | 全般スモッグ気象情報 | VPZS50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
 | [台風全般情報（総合情報、上陸等情報）](we02610) | 全般台風情報 | VPTI50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
