@@ -208,10 +208,10 @@ body フィールド内の定義となります。
 | 6._2._3._4._3._2.? | forecasts | forecastType==`timeline` | **Array<Object\>**<br/> 時系列で表した量的予想、予想する時間に応じて対応する数が出現する |
 | 6._2._3._4._3._2._1. | refId | | **String**<br/> 対応する時刻ID |
 | 6._2._3._4._3._2._2. | unit | | **String**<br/> 量的予想の単位 |
-| 6._2._3._4._3._2._3. | value | | **String<Integer\>\|Null**<br/> 量的予想の値 |
+| 6._2._3._4._3._2._3. | value | | **String<Float\>\|Null**<br/> 量的予想の値 |
 | 6._2._3._4._3._3.? | forecast | forecastType==`whole` | **Object**<br/> 量的予想 |
 | 6._2._3._4._3._3._1. | unit | | **String**<br/> 量的予想の単位 |
-| 6._2._3._4._3._3._1. | value | | **String<Integer\>\|Null**<br/> 量的予想の値 |
+| 6._2._3._4._3._3._2. | value | | **String<Float\>\|Null**<br/> 量的予想の値 |
 
 
 ## 別表
