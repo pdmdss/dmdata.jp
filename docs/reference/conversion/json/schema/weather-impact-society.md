@@ -48,7 +48,7 @@ body フィールド内の定義となります。
 | -- | -- | -- | -- |
 | 3._1. | dateTime |  | **Object**<br/> 天候解析開始日時  |
 | 3._1._1. | value |  | **ISO8601Time**<br/> 日時  |
-| 3._1._1. | validFormat |  | **String**<br/> 日時が有効な範囲をフォーマットとして記載する  |
+| 3._1._2. | validFormat |  | **String**<br/> 日時が有効な範囲をフォーマットとして記載する  |
 |||
 | 3._2. | duration |  | **String**<br/> 基準日時からの期間を、 ISO8601 の Time intervals 形式で表す  |
 
