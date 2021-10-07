@@ -37,7 +37,7 @@ JSONスキーマの型定義については、[API v2 #型表現](/reference/api
 | 気象警報・注意報関連 | [weather-warning](schema/weather-warning)                       | VPWW54                         | 1.0.0      | 
 | 気象警報・注意報関連 | [weather-information](schema/weather-information)               | VPZJ50, VPCJ50, VPFJ50, VPSG50, VPZS50, VPTIii (ii = 50-52),<br/> VPFT50, VMCJii (ii = 50-52) | 1.0.0      | 
 
-### 共通ヘディング
+### Schema head
 
 ```json
 {
