@@ -69,19 +69,9 @@ body フィールド内の定義となります。
 
 ## サンプル
 
-### 気象警報・注意報
-
-* [VPWW54 - 山口県気象警報・注意報 高潮警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jpfa_20150622180000.json)
-* [VPWW54 - 島根県気象警報・注意報 大雨特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jphb_20160212154400.json)
-* [VPWW54 - 富山県気象警報・注意報 大雪特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jpna_20130207210706.json)
-* [VPWW54 - 富山県気象警報・注意報 各種警報を大雨特別警報に切り替える可能性](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jpna_20150709021800.json)
-* [VPWW54 - 神奈川県気象警報・注意報 波浪警報を大雨特別警報に切り替える可能性](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jptf_20160715160844.json)
-* [VPWW54 - 東京都気象警報・注意報 大雨、暴風、波浪、高潮特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jptk_20160212142209.json)
-* [VPWW54 - 東京都気象警報・注意報 大雨、暴風、波浪、高潮特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jptk_20161213204723.json)
-* [VPWW54 - 東京都気象警報・注意報 大雨特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jptk_20170126172047.json)
-
-### 記録的短時間大雨情報
-
-* [VPOA50 - 京都府記録的短時間大雨情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpoa50_jpoa_20111215171634.json)
-* [VPOA50 - 大阪府記録的短時間大雨情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpoa50_jpos_20100602115400.json)
-* [VPOA50 - 石狩・空知・後志地方記録的短時間大雨情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpoa50_jpsp_20190328195331.json)
+* [VPHW51 - 長崎県竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_jpfe_20140212132600.json)
+* [VPHW51 - 京都府竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_jpoa_20140212132200.json)
+* [VPHW51 - 埼玉県竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_jptc_20150717092100.json)
+* [VPHW51 - 埼玉県竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_jptc_20150717092101.json)
+* [VPHW51 - 東京都竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_rjtd_20140212131900.json)
+* [VPHW51 - 東京都竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_rjtd_20140212133600.json)
