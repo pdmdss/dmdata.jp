@@ -217,9 +217,17 @@ body フィールド内の定義となります。
 
 [別表はこちら](https://dmdata.jp/doc/jma/manual/0205-0205.pdf#page=27)
 
-
 ## この電文で取り扱うコード類
 
 コードは、気象庁防災情報XMLフォーマット コード表 AreaInformationCity-AreaForecastLocalM+ に記載があります。
 
 ## サンプル
+
+* [VPWW54 - 山口県気象警報・注意報 高潮警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jpfa_20150622180000.json)
+* [VPWW54 - 島根県気象警報・注意報 大雨特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jphb_20160212154400.json)
+* [VPWW54 - 富山県気象警報・注意報 大雪特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jpna_20130207210706.json)
+* [VPWW54 - 富山県気象警報・注意報 各種警報を大雨特別警報に切り替える可能性](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jpna_20150709021800.json)
+* [VPWW54 - 神奈川県気象警報・注意報 波浪警報を大雨特別警報に切り替える可能性](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jptf_20160715160844.json)
+* [VPWW54 - 東京都気象警報・注意報 大雨、暴風、波浪、高潮特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jptk_20160212142209.json)
+* [VPWW54 - 東京都気象警報・注意報 大雨、暴風、波浪、高潮特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jptk_20161213204723.json)
+* [VPWW54 - 東京都気象警報・注意報 大雨特別警報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vpww54_jptk_20170126172047.json)

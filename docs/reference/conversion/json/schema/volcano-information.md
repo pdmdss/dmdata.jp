@@ -335,6 +335,49 @@ body フィールド内の定義となります。
 * [VFVO50 - 有珠山　噴火警報（噴火警戒レベル３）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpsp_20000328025000.json)
 * [VFVO50 - 有珠山　噴火警報（噴火警戒レベル４）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpsp_20000328115503.json)
 * [VFVO50 - 有珠山　噴火警報（噴火警戒レベル５）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpsp_20000329111005.json)
-* [VFVO50 - 有珠山　噴火警報（噴火警戒レベル５）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpsp_20000329111006.json)
+
 
 * [VFVO50 - 桜島　噴火警報（噴火警戒レベル５）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpfk_20170101120030.json)
+* [VFVO50 - 桜島　噴火警報（噴火警戒レベル３）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpfk_20170102120020.json)
+* [VFVO50 - 桜島　噴火警報（噴火警戒レベル５）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpfk_20170103120010.json)
+* [VFVO50 - 桜島　噴火警報（噴火警戒レベル５）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpfk_20170105120012.json)
+
+
+* [VFVO50 - 霧島山（御鉢）　噴火警報（噴火警戒レベル５）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpfk_20170104120005.json)
+* [VFVO50 - 霧島山（御鉢）　噴火警報（噴火警戒レベル１）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpfk_20170106120006.json)
+
+
+* [VFVO50 - 肘折　火口周辺警報（火口周辺危険）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpsn_20191028110532.json)
+* [VFVO50 - 肘折　火口周辺警報（入山危険）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpsn_20191028134142.json)
+* [VFVO50 - 肘折　噴火警報（居住地域厳重警戒）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_jpsn_20191028140745.json)
+* [VFVO50 - 福徳岡ノ場　噴火予報（活火山であることに留意）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_rjtd_20130227134304.json)
+* [VFVO50 - 福徳岡ノ場　噴火警報（周辺海域）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo50_rjtd_20130227160000.json)
+
+### 火山の状況に関する解説情報
+
+* [VFVO51 - 有珠山　火山の状況に関する解説情報（臨時）　第１号](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo51_jpsp_20000328111009.json)
+* [VFVO51 - 有珠山　火山の状況に関する解説情報　第２号](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo51_jpsp_20000331131008.json)
+* [VFVO51 - 全国の活火山　火山の状況に関する解説情報　第１３号](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo51_rjtd_20151008160013.json)
+
+### 噴火に関する火山観測報
+
+* [VFVO52 - 桜島　噴火に関する火山観測報　第１号](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo52_jpfk_20170102204010.json)
+* [VFVO52 - 霧島山（御鉢）　噴火に関する火山観測報　第１号](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo52_jpfk_20170104090215.json)
+* [VFVO52 - 有珠山　噴火に関する火山観測報　第１号](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo52_jpsp_20000331131200.json)
+* [VFVO52 - 有珠山　噴火に関する火山観測報　第１号](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo52_jpsp_20000331140300.json)
+
+### 降灰予報
+
+* [VFVO53 - 桜島　降灰予報（定時）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo53_rjtd_20210219140000.json)
+* [VFVO54 - 桜島　降灰予報（速報）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo54_rjtd_20210219133500.json)
+* [VFVO55 - 桜島　降灰予報（詳細）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo55_rjtd_20210219135500.json)
+
+### 噴火速報
+
+* [VFVO56 - 御嶽山　噴火速報](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo56_rjtd_20140927120012.json)
+* [VFVO56 - 御嶽山　噴火速報（取消）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo56_rjtd_20140927121012.json)
+
+### 火山減少に関する海上警報・海上予報
+
+* [VFSV50 - 桜島　周辺海域警戒](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfsvii_rjtd_20170103120022.json)
+* [VFSV50 - 桜島　活火山であることに留意（海底火山）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfsvii_rjtd_20170105120025.json)
