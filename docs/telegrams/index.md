@@ -93,7 +93,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [台風に関する情報（定時）](we02680) | | WTJPii (ii=21-26) | A/N | | |
 | [台風に関する情報（臨時）](we02680) | | WTJPii (ii=31-36) | A/N | | |
 | [台風の暴風域に入る確率（Ｒ２）（電文）](we02691) | 台風の暴風域に入る確率 | VPTAii (ii=50-55) | XML | | |
-| [土砂災害警戒情報](we02710) | 土砂災害警戒情報 | VXWW50 | XML | | |
+| [土砂災害警戒情報](we02710) | 土砂災害警戒情報 | VXWW50 | XML | [配信中](/reference/conversion/json/schema/weather-landslide) | |
 | [指定河川洪水予報](we02810) | 指定河川洪水予報 | VXKOii (ii=50-89) | XML | [配信中](/reference/conversion/json/schema/weather-river-flood) | |
 | &#x1f6ab; [~~地方高温注意情報~~](we02550) | 地方高温注意情報 | VPCT50 | XML | | 廃止 |
 | [熱中症警戒アラート](we02551) | 熱中症警戒アラート | VPFT50 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |

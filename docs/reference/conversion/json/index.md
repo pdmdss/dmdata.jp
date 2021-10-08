@@ -40,6 +40,7 @@ JSONスキーマの型定義については、[API v2 #型表現](/reference/api
 | 気象警報・注意報関連 | [weather-early](schema/weather-early)                           | VPAW51                         | 1.0.0      |
 | 気象警報・注意報関連 | [weather-tornado](schema/weather-tornado)                       | VPHW51                         | 1.0.0      |
 | 気象警報・注意報関連 | [weather-typhoon](schema/weather-typhoon)                       | VPTWii (ii = 60-65)            | 1.0.0      |
+| 気象警報・注意報関連 | [weather-landslide](schema/weather-landslide)                   | VXWW50                         | 1.0.0      |
 | 気象警報・注意報関連 | [weather-river-flood](schema/weather-river-flood)               | VXKOii (ii=50-89)              | 1.0.0      |
 
 ### Schema head
