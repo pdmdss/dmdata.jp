@@ -62,6 +62,7 @@ body フィールド内の定義となります。
 | 4._2.? | zones | VPZI50、VPCI50の時出現 | **String<Object\>**<br/> 対象とする地域 |
 | 4._2._1. | code |  | **String<Integer\>**<br/> 地域コード  |
 | 4._2._2. | name|  | **String**<br/> 地域名 |
+|||
 | 4._3.? | prefectures | VPFI50の時出現 | **String<Object\>**<br/> 対象とする地域 |
 | 4._3._1. | code |  | **String<Integer\>**<br/> 地域コード  |
 | 4._3._2. | name|  | **String**<br/> 地域名 |

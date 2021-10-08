@@ -87,6 +87,7 @@ body フィールド内の定義となります。
 | 5._2._1._2. | value | | **String<Integer\>**<br/> 平年よりかなり低いとなる温度の閾値(℃) |
 | 5._2._1._3. | bound | | **String**<br/> `以下` で固定 |
 |||
+|||
 | 5._3. | zones |  | **String<Object\>**<br/> 対象とする地域 |
 | 5._3._1. | code |  | **String<Integer\>**<br/> 地域コード  |
 | 5._3._2. | name |  | **String**<br/> 地域名 |
