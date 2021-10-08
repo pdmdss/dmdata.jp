@@ -85,7 +85,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [台風全般情報（位置、発生情報）](we02620) | 全般台風情報（定型） | VPTI51 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
 | [発達する熱帯低気圧に関する情報](we02620) | 全般台風情報（定型） | VPTI51 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
 | [全般台風情報（位置詳細）](we02630) | 全般台風情報（詳細） | VPTI52 | XML | [配信中](/reference/conversion/json/schema/weather-information) | |
-| [台風解析・予報情報電文（５日進路・強度予報）](we02670) | 台風解析・予報情報（５日予報）（Ｈ３０） | VPTWii (ii=60-65) | XML | | |
+| [台風解析・予報情報電文（５日進路・強度予報）](we02670) | 台風解析・予報情報（５日予報）（Ｈ３０） | VPTWii (ii=60-65) | XML | [配信中](/reference/conversion/json/schema/weather-typhoon) | |
 | &#x1f6ab; [~~台風解析・予報情報電文（５日進路予報）~~](we02660) | 台風解析・予報情報（５日予報） | VPTWii (ii=50-55) | XML | | 廃止 |
 | &#x1f6ab; [~~台風解析・予報情報電文~~](we02650) | 台風解析・予報情報（３日予報） | VPTWii (ii=40-45) | XML | | 廃止 |
 | &#x1f6ab; [台風の暴風域に入る確率](we02690) | | FXJPii (ii=51-56) | A/N | | 2021年07月以降に終了 |
