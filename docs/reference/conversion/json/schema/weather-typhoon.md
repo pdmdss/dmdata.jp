@@ -172,7 +172,7 @@ body フィールド内の定義となります。
 
 ## この電文で取り扱うコード類
 
-コードは、気象庁防災情報XMLフォーマット コード表 AreaInformationCity-AreaForecastLocalM+ に記載があります。
+コードは、[typhoon-name-table_2020.xlsx(Download)](https://dmdata.jp/doc/jma/code/typhoon-name/typhoon-name-table_2020.xlsx)に記載があります。
 
 ## サンプル
 
