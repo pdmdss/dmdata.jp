@@ -150,14 +150,14 @@ title: JSON化データ コンポーネントされた要素
 | 階層 | フィールド     | 出現条件                   | 説明                                                                | 
 | ---- | -------------- | -------------------------- | ------------------------------------------------------------------- | 
 | 1.?   | latitude       | 不明時は出現しない         | **Object**<br/> 緯度を表現                                                          | 
-| 1._1. | latitude.text  |                            | **String**<br/> 緯度をテキスト文で表現する。                              | 
-| 1._2. | latitude.value |                            | **String<Float\>**<br/> 緯度を10進数法、単位度で表現する。                        | 
+| 1._1. | latitude.text  |                            | **String**<br/> 緯度をテキスト文で表現する                              | 
+| 1._2. | latitude.value |                            | **String<Float\>**<br/> 緯度を10進数法、単位度で表現する                        | 
 | 2.?   | longitude       | 不明時は出現しない         | **Object**<br/> 経度を表現                                                          | 
-| 2._1. | longitude.text  |                            | **String**<br/> 経度をテキスト文で表現する。                              | 
-| 2._2. | longitude.value |                            | **String<Float\>**<br/> 経度を10進数法、単位度で表現する。                        | 
+| 2._1. | longitude.text  |                            | **String**<br/> 経度をテキスト文で表現する                              | 
+| 2._2. | longitude.value |                            | **String<Float\>**<br/> 経度を10進数法、単位度で表現する                        | 
 | 3.?   | height         | 不明時・未定義は出現しない | **Object**<br/> 高さを表現 | 
 | 3._1. | height.type  |                            | **String**<br/> "高さ" で固定                              | 
 | 3._2. | height.unit  |                            | **String**<br/> 高さ情報の単位 "m" で固定                              | 
 | 3._3. | height.value |                            | **String<Float\>**<br/> 高さの数値                       | 
 | 4.?   | geodeticSystem | 情報による                 | **String**<br/> "世界測地系" または "日本測地系" が入る                             | 
-| 5.?   | condition      | 緯度経度が不明時のみ       | **String**<br/> "不明" が入る                                                       | 
+| 5.?   | condition      | 情報による                 | **String**<br/> 緯度経度が不明な場合は"不明" が入る、その他電文定義により文字列が出現する                        | 

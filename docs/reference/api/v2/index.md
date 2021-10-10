@@ -101,8 +101,8 @@ APIは標準的なエラーを次の通り返答します。
 
 |ステータスコード|エラーメッセージ|説明|
 |:--:|:-|:--|
-|400|The query parameters are required.|必須なクエリパラメータのプロパティがない|
-|400|The post parameters are required.|必須なポストパラメータ(from post)のプロパティがない|
+|400|The query parameters are required.|必須なクエリパラメータのフィールドがない|
+|400|The post parameters are required.|必須なポストパラメータ(from post)のフィールドがない|
 |400|Unexpected data  of search query \`cursorToken\`.|無効なcursorTokenが指定された|
 |401|Authentication required.|認証情報が指定されていない、または無効な認証情報|
 |403|AInsufficient scope for ... .|認証情報に紐づけされたスコープ外、権限がない|
@@ -165,6 +165,7 @@ APIは標準的なエラーを次の通り返答します。
 ### Parameter
 
 * [**Parameter Earthquake**](parameter.earthquake)
+* [**Parameter Tsunami**](parameter.tsunami)
 
 ### GD Earthquake
 

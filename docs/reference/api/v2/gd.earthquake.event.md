@@ -147,7 +147,7 @@ APIは常にJSONを返答します。
 |event.telegrams[\].schema|いつも|**Object** <br/> 加工データのスキーマ情報|
 |event.telegrams[\].schema.type|いつも|**String** <br/> スキーマ名|
 |event.telegrams[\].schema.version|いつも|**String** <br/> スキーマのバージョン|
-|event.telegrams[\].format|いつも|**String\|Null** <br/> bodyプロパティの表現形式を示す。"xml"、"a/n"、"binary"は気象庁が定めたフォーマット、"json"は本サービスが独自に定めたフォーマット|
+|event.telegrams[\].format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。"xml"、"a/n"、"binary"は気象庁が定めたフォーマット、"json"は本サービスが独自に定めたフォーマット|
 |event.telegrams[\].url|いつも|**String** <br/> [電文本文URL](/reference/api/v1/telegram.data)|
 
 ## status: error

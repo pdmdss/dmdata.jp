@@ -119,7 +119,7 @@ WebSocketは接続を維持するためにpingを送信します。
 |data.time|いつも|**String** <br/> 基点時刻（ISO8601拡張形式）。|
 |data.test|いつも|**Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す。 <br/> **注意：XML電文以外のテスト配信は常に`false`になります。本文中を参照するようにしてください。**|
 |data.xml|いつも|**Boolean** <br/> XML電文かどうかを示す。|
-|data.compression|いつも|**String\|Null** <br/> bodyプロパティのBase64でコードされた状態で圧縮状態を示す。圧縮時は"gzip"または"zip"、非圧縮時はnullを格納する。|
+|data.compression|いつも|**String\|Null** <br/> bodyフィールドのBase64でコードされた状態で圧縮状態を示す。圧縮時は"gzip"または"zip"、非圧縮時はnullを格納する。|
 |data.createTime|いつも|**String** <br/> 気象業務支援センター電文生成時刻（ISO8601拡張形式）。|
 |data.sendNumber|いつも|**Int** <br/> 気象業務支援センター付与通過番号。|
 |url|いつも|**String** <br/> 電文本文があるURL。別途参照。|
