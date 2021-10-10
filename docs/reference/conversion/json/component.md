@@ -109,8 +109,9 @@ title: JSON化データ コンポーネントされた要素
 | 3._6._2. | code |  | **String<Integer\>**<br/> 震源位置の捕捉位置を表現する代表地域コード <br/> コードは、気象庁防災情報XMLフォーマット コード表 地震火山関連コード表 による |
 | 3._6._3. | name |  | **String**<br/> 震源位置の捕捉位置を表現する代表地域名 |
 | 3._6._4. | direction |  | **String**<br/> 代表地域から震源への方角を16方位で表現 |
-| 3._6._4._1. | distance.unit |  | **String**<br/> 距離情報の単位。"km"で固定
-| 3._6._4._2. | distance.value |  | **String<Integer\>**<br/> 代表地域から震源への方角を16方位で表現 |
+| 3._6._5. | distance |  | **Object**<br/> 代表地域と震源の距離情報
+| 3._6._5._1. | distance.unit |  | **String**<br/> 距離情報の単位。`km`で固定
+| 3._6._5._2. | distance.value |  | **String<Integer\>**<br/> 代表地域と震源の距離 |
 
 
 ### 4. magnitude
