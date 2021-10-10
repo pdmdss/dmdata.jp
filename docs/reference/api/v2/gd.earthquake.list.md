@@ -88,14 +88,14 @@ APIは常にJSONを返答します。
 |:--|:-:|:--|
 |responseId|いつも|**String** <br/> API処理ID|
 |responseTime|いつも|**ISO8601Time** <br/> API処理時刻|
-|status|いつも|**String** <br/> 成功時は "ok"、失敗時（エラー）は "error"|
+|status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
 |items|いつも|**Array<Object\>** <br/> アイテムリスト|
 |items[\].id|いつも|**Integer** <br/> ID|
 |items[\].eventId|いつも|**String** <br/> 地震情報のEventID|
 |items[\].originTime|震度速報のみの場合は出現しない|**ISO8601Time** <br/> 地震発生時刻|
 |items[\].arrivalTime|いつも|**ISO8601Time** <br/> 地震検知時刻|
-|items[\].hypocenter|震度速報のみの場合は出現しない|**Object** <br/> 震源要素 [Earthquake component / Hypocenter](https://dmdata.jp/doc/reference/conversion/json/component#3-hypocenter)を参照|
-|items[\].magnitude|震度速報のみの場合は出現しない|**Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](https://dmdata.jp/doc/reference/conversion/json/component#4-magnitude)を参照|
+|items[\].hypocenter|震度速報のみの場合は出現しない|**Object** <br/> 震源要素 [Earthquake component / Hypocenter](/reference/conversion/json/component#3-hypocenter)を参照|
+|items[\].magnitude|震度速報のみの場合は出現しない|**Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/reference/conversion/json/component#4-magnitude)を参照|
 |items[\].maxInt|いつも|**String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする|
 |nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
 |nextPooling|いつも|**String** <br/> PuLL時に使用する。詳しくは[こちら](/reference/api/v2/#カーソルトークン)|

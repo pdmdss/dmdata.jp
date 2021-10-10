@@ -46,7 +46,7 @@ APIは常にJSONを返答します。
 |:--|:-:|:--|
 |responseId|いつも|**String** <br/> API処理ID|
 |responseTime|いつも|**ISO8601Time** <br/> API処理時刻|
-|status|いつも|**String** <br/> 成功時は "ok"、失敗時（エラー）は "error"|
+|status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
 |items|いつも|**Array<Object\>** <br/> アイテムリスト|
 |items[\].id|いつも|**Integer\|Null** <br/> 契約ID|
 |items[\].planId|いつも|**Integer** <br/> プランID|
@@ -56,7 +56,7 @@ APIは常にJSONを返答します。
 |items[\].price.day|いつも|**Integer** <br/> 1日当たりの価格（円）|
 |items[\].price.month|いつも|**Integer** <br/> 月当たり最大の価格（円）|
 |items[\].start|いつも|**ISO8601Time\|Null** <br/> 契約開始日時|
-|items[\].isValid|いつも|**Boolean** <br/> 有効かどうか示す。trueなら有効|
+|items[\].isValid|いつも|**Boolean** <br/> 有効かどうか示す。**true** なら有効|
 |items[\].connectionCounts|いつも|**Integer** <br/> この契約でWebSocketに接続できる数が増える量|
 
 ### status: error
