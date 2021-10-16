@@ -90,16 +90,16 @@ APIは常にJSONを返答します。
 |:--|:-:|:--|
 |responseId|いつも|**String** <br/> API処理ID|
 |responseTime|いつも|**ISO8601Time** <br/> API処理時刻|
-|status|いつも|**String** <br/> 成功時は "ok"、失敗時（エラー）は "error"|
+|status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
 |ticket|いつも|**String** <br/> WebSocketに接続するためのticket|
 |websocket|いつも|**Object** <br/> WebSocketへの接続情報|
 |websocket.id|いつも|**Integer** <br/> WebSocketID|
 |websocket.url|いつも|**String** <br/> WebSocketの接続先URLでticket付き|
-|websocket.protocol|いつも|**Array<String\>** <br/> WebSocketのProtocolで配列の要素は dmdata.v2 一つで固定|
+|websocket.protocol|いつも|**Array<String\>** <br/> WebSocketのProtocolで配列の要素は `dmdata.v2` 一つで固定|
 |websocket.expiration|いつも|**Integer** <br/> キーの有効時間で単位は秒。値は 300 で固定|
 |classifications|いつも|**Array<String\>** <br/> WebSocketで受け取る配信区分|
 |test|いつも|**String** <br/> including の時のみ、XML電文のテストをWebsocketで受け取る|
-|types|いつも|**Array<String\>\|Null** <br/> WebSocketで受け取るデータ種類コードリスト。Null時は受け取る配信区分の全部を受け取る|
+|types|いつも|**Array<String\>\|Null** <br/> WebSocketで受け取るデータ種類コードリスト。**Null** 時は受け取る配信区分の全部を受け取る|
 |formats|いつも|**Array<String\>** <br/> WebSocketで受け取る情報フォーマット|
 |appName|いつも|**String\|Null** <br/> リクエストで指定したアプリ名|
 

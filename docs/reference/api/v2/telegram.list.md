@@ -87,7 +87,7 @@ APIは常にJSONを返答します。
 |:--|:-:|:--|
 |responseId|いつも|**String** <br/> API処理ID|
 |responseTime|いつも|**String** <br/> API処理時刻（ISO8601拡張形式）|
-|status|いつも|**String** <br/> 成功時は "ok"、失敗時（エラー）は "error"|
+|status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
 |items|いつも|**Array<Object\>** <br/> 電文情報リスト|
 |items[].serial|いつも|**Integer** <br/> 電文受信通番|
 |items[].id|いつも|**String** <br/> 配信データを区別するユニーク384bitハッシュ|
@@ -98,13 +98,13 @@ APIは常にJSONを返答します。
 |items[].head.target|内容による※1|**String** <br/> 対象観測地点コード|
 |items[].head.time|いつも|**ISO8601Time** <br/> 基点時刻|
 |items[].head.designation|いつも|**String\|Null** <br/> 指示コード|
-|items[].head.test|いつも|**Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す <br/> **注意：XML電文以外のテスト配信は常に`false`になります。本文中を参照するようにしてください。**|
+|items[].head.test|いつも|**Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す <br/> 注意：XML電文以外のテスト配信は常に **false** になります。本文中を参照するようにしてください。|
 |items[].receivedTime|いつも|**ISO8601Time** <br/> 受信時刻|
 |items[].xmlReport|format=xml、<br/>クリパラメータxmlReport=true時|**Object** <br/> XML電文Control,Head情報|
 |items[].schema|format=json|**Object** <br/> 加工データのスキーマ情報|
 |items[].schema.type|いつも|**String** <br/> スキーマ名|
 |items[].schema.version|いつも|**String** <br/> スキーマのバージョン|
-|items[].format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。"xml"、"a/n"、"binary"は気象庁が定めたフォーマット、"json"は本サービスが独自に定めたフォーマット|
+|items[].format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、 `json` は本サービスが独自に定めたフォーマット|
 |items[].url|いつも|**String** <br/> [電文本文URL](/reference/api/v1/telegram.data)|
 |nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
 |nextPooling|いつも|**String** <br/> PuLL時に使用する。詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
