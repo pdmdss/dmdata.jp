@@ -16,18 +16,5 @@ HTTP/1.1、HTTP/2に対応しています。
 ## API v2
 現在運用中です。詳細は[こちら](/reference/api/v2/)
 
-## API v1
-**&#x1f6ab;下記のAPIは非推奨です。**
-* [Socket Start v1](/reference/api/socket.v1/start)
-* [Telegram List v1](/reference/api/telegram.v1/list)
-* [Parameters Tsunami station v1](/reference/api/parameters/tsunami)
-* [Parameters Earthquake station v1](/reference/api/parameters/earthquake)
-* [WebSocket v1](/reference/api/websocket.v1/websocket)
-
-**2021年10月22日18時に提供を終了します。**
-
-なお、下記のAPIは今後も使用できます。
-* [Telegram Data v1](/reference/api/v1/telegram.data)
-
 ## OAuth2.0
 DMDATA.JPでは、OAuth2.0に対応しています。詳細は[こちら](/reference/oauth2/v1/)
