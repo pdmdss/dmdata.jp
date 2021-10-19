@@ -17,13 +17,13 @@ XMLデータをJSON化する際、変換する時間が最大1秒程度（基と
 
 ## APIの取り扱い
 
-[Telegram List v2](/reference/api/v2/telegram.list) と [WebSocket v2](/reference/api/v2/websocket)でJSON化データを取得することができます。
+[Telegram List v2](/reference/api/v2/telegram.list.md) と [WebSocket v2](/reference/api/v2/websocket.md)でJSON化データを取得することができます。
 
 JSON化データを取得する方法はAPIのリファレンスを参照してください。
 
 ## JSON スキーマ
 
-JSONスキーマの型定義については、[API v2 #型表現](/reference/api/v2/#型表現)を参照ください。
+JSONスキーマの型定義については、[API v2 #型表現](/reference/api/v2#型表現)を参照ください。
 
 | 配信区分       | スキーマ名                   | 対象とする<br/>データ種類コード | バージョン | 
 | -------------- | ---------------------------- | ------------------------------ | ---------- | 

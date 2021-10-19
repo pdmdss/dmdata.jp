@@ -6,7 +6,7 @@ title: トップ
 
 ## API
 DMDATA.JP 上で提供している一般的に使えるAPIは
-[API Reference](/reference/)
+[API Reference](/reference)
 に掲載していますのでご利用ください。
 
 ## 気象庁配信の二次利用及び配布

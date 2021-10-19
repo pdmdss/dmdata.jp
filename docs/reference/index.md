@@ -14,7 +14,7 @@ WebSocketの場合、同時接続の上限がかかりますが気象業務支�
 HTTP/1.1、HTTP/2に対応しています。
 
 ## API v2
-現在運用中です。詳細は[こちら](/reference/api/v2/)
+現在運用中です。詳細は[こちら](/reference/api/v2)
 
 ## API v1
 **&#x1f6ab;下記のAPIは非推奨です。**
@@ -27,7 +27,7 @@ HTTP/1.1、HTTP/2に対応しています。
 **2021年10月22日18時に提供を終了します。**
 
 なお、下記のAPIは今後も使用できます。
-* [Telegram Data v1](/reference/api/v1/telegram.data)
+* [Telegram Data v1](/reference/api/v1/telegram.data.md)
 
 ## OAuth2.0
-DMDATA.JPでは、OAuth2.0に対応しています。詳細は[こちら](/reference/oauth2/v1/)
+DMDATA.JPでは、OAuth2.0に対応しています。詳細は[こちら](/reference/oauth2/v1)

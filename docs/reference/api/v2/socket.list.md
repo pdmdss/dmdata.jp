@@ -6,14 +6,14 @@ title: Socket List v2
 
 `GET https://api.dmdata.jp/v2/socket`
 
-[**Socket Start v2**](/reference/api/v2/socket.start) で発行したWebSocketに関するリストを取得する。
+[**Socket Start v2**](/reference/api/v2/socket.start.md) で発行したWebSocketに関するリストを取得する。
 
 ### クエリパラメータ
 |パラメータ名|必須|デフォルト|説明|
 |:--|:-:|:-:|:--|
 |id|いいえ||**Integer** <br/> WebSocket IDを指定、指定された場合他のクエリパラメータは無視される|
 |status|いいえ||**String** <br/> WebSocketの状態。デォルトではすべて表示。<br/>接続待機・期限切れ: waiting、接続中: open、接続終了: closed|
-|cursorToken|いいえ||**String** <br/> 次のリソースを取得する。レスポンス内のnextTokenの値を指定する<br/>詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
+|cursorToken|いいえ||**String** <br/> 次のリソースを取得する。レスポンス内のnextTokenの値を指定する<br/>詳しくは[こちら](/reference/api/v2#カーソルトークン)|
 |limit|いいえ|20|**Integer** <br/> アイテムの数。最大100まで|
 
 ### APIに必要な権限
@@ -78,7 +78,7 @@ APIは常にJSONを返答します。
 |items[\].ipAddress|いつも|**String\|Null** <br/> 接続IPアドレス|
 |items[\].server|いつも|**String\|Null** <br/> 接続先のWebSocketサーバー名|
 |items[\].status|いつも|**String** <br/> 接続待機・期限切れ: waiting、接続中: open、接続終了: closed。|
-|nextToken|状況|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
+|nextToken|状況|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/reference/api/v2#カーソルトークン)|
 
 ### status: error
 APIは各種エラーを次の通り返答します。

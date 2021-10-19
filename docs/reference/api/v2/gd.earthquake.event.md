@@ -129,8 +129,8 @@ APIは常にJSONを返答します。
 |event.eventId|いつも|**String** <br/> 地震情報のEventID|
 |event.originTime|震度速報のみの場合は出現しない|**ISO8601Time** <br/> 地震発生時刻|
 |event.arrivalTime|いつも|**ISO8601Time** <br/> 地震検知時刻|
-|event.hypocenter|震度速報のみの場合は出現しない|**Object** <br/> 震源要素 [Earthquake component / Hypocenter](/reference/conversion/json/component#3-hypocenter)を参照|
-|event.magnitude|震度速報のみの場合は出現しない|**Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/reference/conversion/json/component#4-magnitude)を参照|
+|event.hypocenter|震度速報のみの場合は出現しない|**Object** <br/> 震源要素 [Earthquake component / Hypocenter](/reference/conversion/json/component.md#3-hypocenter)を参照|
+|event.magnitude|震度速報のみの場合は出現しない|**Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/reference/conversion/json/component.md#4-magnitude)を参照|
 |event.maxInt|いつも|**String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする|
 |event.telegrams|いつも|**Array<Object\>** <br/> 地震情報の電文リスト|
 |event.telegrams[\].serial|いつも|**Integer** <br/> 電文受信通番|
@@ -148,7 +148,7 @@ APIは常にJSONを返答します。
 |event.telegrams[\].schema.type|いつも|**String** <br/> スキーマ名|
 |event.telegrams[\].schema.version|いつも|**String** <br/> スキーマのバージョン|
 |event.telegrams[\].format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、`json` は本サービスが独自に定めたフォーマット|
-|event.telegrams[\].url|いつも|**String** <br/> [電文本文URL](/reference/api/v1/telegram.data)|
+|event.telegrams[\].url|いつも|**String** <br/> [電文本文URL](/reference/api/v1/telegram.data.md)|
 
 ## status: error
 APIは各種エラーを次の通り返答します。
