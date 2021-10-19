@@ -6,15 +6,15 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* 噴火警報・予報 (VFVO50)
-* 火山の状況に関する解説情報 (VFVO51)
-* 噴火に関する火山観測報 (VFVO52)
-* 降灰予報（定時） (VFVO53)
-* 降灰予報（速報） (VFVO54)
-* 降灰予報（詳細） (VFVO55)
-* 噴火速報 (VFVO56)
-* 火山現象に関する海上警報・予報 (VFSVii (ii = 50-61))
-* 火山に関するお知らせ (VZVO40)
+* [噴火警報・予報 (VFVO50)](/telegrams/vo01710.md)
+* [火山の状況に関する解説情報 (VFVO51)](/telegrams/vo01720.md)
+* [噴火に関する火山観測報 (VFVO52)](/telegrams/vo01730.md)
+* [降灰予報（定時） (VFVO53)](/telegrams/vo01810.md)
+* [降灰予報（速報） (VFVO54)](/telegrams/vo01820.md)
+* [降灰予報（詳細） (VFVO55)](/telegrams/vo01830.md)
+* [噴火速報 (VFVO56)](/telegrams/vo01750.md)
+* [火山現象に関する海上警報・予報 (VFSVii (ii = 50-61))](/telegrams/vo01740.md)
+* [火山に関するお知らせ (VZVO40)](/telegrams/vo01020.md)
 
 ## 共通ヘッダ
 
