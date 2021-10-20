@@ -156,7 +156,7 @@ APIは標準的なエラーを次の通り返答します。
 ### Telegram
 
 * [**Telegram List**](telegram.list)
-* [**Telegram Data**](/reference/api/v1/telegram.data)
+* [**Telegram Data**](/reference/api/v1/telegram.data.md)
 
 ### WebSocket
 

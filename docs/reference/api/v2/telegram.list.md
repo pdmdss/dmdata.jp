@@ -11,10 +11,10 @@ title: Telegram List v2
 ### クエリパラメータ
 |パラメータ名|必須|デフォルト|説明|
 |:--|:-:|:-:|:--|
-|type|いいえ||**String** <br/> [データ種類コード](/telegrams/#配信データのリスト)を指定。1つのみの場合は前方一致で検索する<br/>カンマで区切り、複数のデータ種類コード指定できる。その場合は完全一致の必要があり最大5つまで|
+|type|いいえ||**String** <br/> [データ種類コード](/telegrams#配信データのリスト)を指定。1つのみの場合は前方一致で検索する<br/>カンマで区切り、複数のデータ種類コード指定できる。その場合は完全一致の必要があり最大5つまで|
 |xmlReport|いいえ|false|**Boolean** <br/> XML電文に出現する、/Report/Control及び/Report/Head情報を表示するか指定する|
 |test|いいえ|no|**String** <br/> 訓練、試験等のテスト等電文を表示するか指定する<br/>including: テスト等電文を含む、only: テスト等電文のみ<br/> **注意：XML電文以外のテスト配信は常に`false`判定になります。本文中を参照するようにしてください**|
-|cursorToken|いいえ||**String** <br/> 次のリソースを取得する。レスポンス内のnextTokenまたはnextPoolingの値を指定する<br/>詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
+|cursorToken|いいえ||**String** <br/> 次のリソースを取得する。レスポンス内のnextTokenまたはnextPoolingの値を指定する<br/>詳しくは[こちら](/reference/api/v2#カーソルトークン)|
 |formatMode|いいえ|raw|**String** <br/> データフォーマットの指定。<br/>生電文: raw、JSON化データ: json|
 |limit|いいえ|20|**Integer** <br/> 返す電文数を指定する。最大は100|
 
@@ -103,9 +103,9 @@ APIは常にJSONを返答します。
 |items[].schema.type|いつも|**String** <br/> スキーマ名|
 |items[].schema.version|いつも|**String** <br/> スキーマのバージョン|
 |items[].format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、 `json` は本サービスが独自に定めたフォーマット|
-|items[].url|いつも|**String** <br/> [電文本文URL](/reference/api/v1/telegram.data)|
-|nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
-|nextPooling|いつも|**String** <br/> PuLL時に使用する。詳しくは[こちら](/reference/api/v2/#カーソルトークン)|
+|items[].url|いつも|**String** <br/> [電文本文URL](/reference/api/v1/telegram.data.md)|
+|nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/reference/api/v2#カーソルトークン)|
+|nextPooling|いつも|**String** <br/> PuLL時に使用する。詳しくは[こちら](/reference/api/v2#カーソルトークン)|
 |nextPoolingInterval|いつも|**Integer** <br/> PuLL時、次にリクエストするまでの待機すべき最小時間（ミリ秒）|
 
 ### status: error

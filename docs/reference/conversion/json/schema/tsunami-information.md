@@ -6,13 +6,13 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* 津波警報・注意報・予報a (VTSE41)
-* 津波情報a (VTSE51)
-* 沖合の津波観測に関する情報 (VTSE52)
+* [津波警報・注意報・予報a (VTSE41)](/telegrams/et01110.md)
+* [津波情報a (VTSE51)](/telegrams/et01120.md)
+* [沖合の津波観測に関する情報 (VTSE52)](/telegrams/et01121.md)
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](../#schema-head)
+共通ヘッダは[こちら](/reference/conversion/json#schema-head)
 
 ## 本文
 
@@ -21,7 +21,7 @@ body フィールド内の定義となります。
 | 階層 | フィールド | 出現条件 | 説明 | 
 | -- | -- | -- | -- |
 | 1.? | tsunami | 取消時には出現しない | **Object**<br/> 津波情報 [#1. tsunami](#1-tsunami) |
-| 2.? | earthquakes | 取消時には出現しない | **Array<Object\>**<br/> [Earthquake component](../component#Earthquake-component) を配列に0個以上格納する |
+| 2.? | earthquakes | 取消時には出現しない | **Array<Object\>**<br/> [Earthquake component](/reference/conversion/json/component.md#Earthquake-component) を配列に0個以上格納する |
 | 3.? | text | 取消時の理由や、<br/>その他の追記事項がある場合に出現 | **String**<br/>自由形式で文章を記載する  |
 | 4.? | comments | 取消時や付加的な情報がない場合は出現しない | **Object**<br/>付加的な情報を文章形式で提供する [#4. comments](#4-comments) |
 

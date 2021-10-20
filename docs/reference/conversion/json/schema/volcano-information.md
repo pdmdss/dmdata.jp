@@ -6,19 +6,19 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* 噴火警報・予報 (VFVO50)
-* 火山の状況に関する解説情報 (VFVO51)
-* 噴火に関する火山観測報 (VFVO52)
-* 降灰予報（定時） (VFVO53)
-* 降灰予報（速報） (VFVO54)
-* 降灰予報（詳細） (VFVO55)
-* 噴火速報 (VFVO56)
-* 火山現象に関する海上警報・予報 (VFSVii (ii = 50-61))
-* 火山に関するお知らせ (VZVO40)
+* [噴火警報・予報 (VFVO50)](/telegrams/vo01710.md)
+* [火山の状況に関する解説情報 (VFVO51)](/telegrams/vo01720.md)
+* [噴火に関する火山観測報 (VFVO52)](/telegrams/vo01730.md)
+* [降灰予報（定時） (VFVO53)](/telegrams/vo01810.md)
+* [降灰予報（速報） (VFVO54)](/telegrams/vo01820.md)
+* [降灰予報（詳細） (VFVO55)](/telegrams/vo01830.md)
+* [噴火速報 (VFVO56)](/telegrams/vo01750.md)
+* [火山現象に関する海上警報・予報 (VFSVii (ii = 50-61))](/telegrams/vo01740.md)
+* [火山に関するお知らせ (VZVO40)](/telegrams/vo01020.md)
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](../#schema-head)
+共通ヘッダは[こちら](/reference/conversion/json#schema-head)
 
 ## 本文
 
@@ -47,7 +47,7 @@ body フィールド内の定義となります。
 | -- | -- | -- | -- |
 | 2._1. | code | | **String<Integer\>**<br/> 火山コード <br/> コードは、気象庁防災情報XMLフォーマット コード表 地震火山関連コード表 による |
 | 2._2. | name | | **String**<br/> 火山名 |
-| 2._3. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](../component#coordinate-component)を参照、高さ要素は常にあり  |
+| 2._3. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](/reference/conversion/json/component.md#coordinate-component)を参照、高さ要素は常にあり  |
 | 2._4.? | areaFromMark | 情報による | **String**<br/> 位置補足情報を記載 |
 | 2._5.? | crater | VFVO52、VFVO53、VFVO54、VFVO55で出現<br/>火山や情報による | **Object**<br/> 火山の火口情報 [#2. 5. crater](#2-5-crater) |
 | 2._6. | kind |  | **Object**<br/>噴火警報・予報等の種別 [#2. 6. kind](#2-6-kind)
@@ -60,7 +60,7 @@ body フィールド内の定義となります。
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
 | 2._5._1. | name | | **String|Null**<br/> 火口名。ない場合は**Null**とする |
-| 2._5._2. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](../component#coordinate-component)を参照、高さ要素は常にあり  |
+| 2._5._2. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](/reference/conversion/json/component.md#coordinate-component)を参照、高さ要素は常にあり  |
 
 #### 2. 6. kind
 

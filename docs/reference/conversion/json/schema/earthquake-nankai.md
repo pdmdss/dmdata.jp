@@ -6,13 +6,13 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* 南海トラフ地震臨時情報 (VYSE50)
-* 南海トラフ地震関連解説情報 (VYSE51)
-* 南海トラフ地震関連解説情報 (VYSE51)
+* [南海トラフ地震臨時情報 (VYSE50)](/telegrams/et01410.md)
+* [南海トラフ地震関連解説情報 (VYSE51)](/telegrams/et01420.md)
+* [南海トラフ地震関連解説情報 (VYSE51)](/telegrams/et01421.md)
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](../#schema-head)
+共通ヘッダは[こちら](/reference/conversion/json#schema-head)
 
 ## 本文
 
