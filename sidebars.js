@@ -16,7 +16,8 @@ module.exports = {
                             'reference/api/v2/socket.close'
                         ],
                         'Telegram v2': [
-                            'reference/api/v2/telegram.list'
+                            'reference/api/v2/telegram.list',
+                            'reference/api/v1/telegram.data'
                         ],
                         'WebSocket v2': [
                             'reference/api/v2/websocket'
@@ -28,24 +29,6 @@ module.exports = {
                         'GD Earthquake v2': [
                             'reference/api/v2/gd.earthquake.list',
                             'reference/api/v2/gd.earthquake.event'
-                        ]
-                    }
-                ],
-                'API v1': [
-                    {
-                        'Socket v1': [
-                            'reference/api/socket.v1/start'
-                        ],
-                        'Telegram v1': [
-                            'reference/api/telegram.v1/list',
-                            'reference/api/v1/telegram.data'
-                        ],
-                        'Parameters v1': [
-                            'reference/api/parameters/tsunami',
-                            'reference/api/parameters/earthquake'
-                        ],
-                        'WebSocket v1': [
-                            'reference/api/websocket.v1/websocket'
                         ]
                     }
                 ]
