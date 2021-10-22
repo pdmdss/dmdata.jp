@@ -20,6 +20,13 @@ URLにクエリパラメータとして渡します。
 
 `https://api.dmdata.jp/v2/telegram?key=APIキー`
 
+または、リクエストヘッダーにAuthorizationを使用します。
+
+`Authorization: Basic BasicBase64`
+
+BasicBase64には、UserにAPIキーを、Passwordは無しとして使用します。
+
+BasicはUserとPasswordをコロンで結合しBase64でエンコードしたもです。
 
 ### アクセストークンの指定の仕方
 リクエストヘッダーにAuthorizationを使用します。
