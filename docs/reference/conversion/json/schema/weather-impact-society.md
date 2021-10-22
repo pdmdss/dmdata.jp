@@ -12,7 +12,7 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](/reference/conversion/json#schema-head)
+共通ヘッダは[こちら](/reference/conversion/json/index.md#schema-head)
 
 ## 本文
 
