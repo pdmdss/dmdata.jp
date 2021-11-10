@@ -19,11 +19,11 @@ npm install
 ### 実行
 
 ```
-npx run start
+npm run start
 ```
 
 ### ビルド
 
 ```
-npx run build
+npm run build
 ```
