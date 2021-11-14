@@ -16,6 +16,6 @@ DMDATA.JP 上で提供している一般的に使えるAPIは
 震度観測地点、津波観測地点等のパラメータ配布については[こちら](/parameter.md)をご参照ください。
 
 ## サービス構成
-2021/04/01現在、dmdata.jpは以下のようなサービス構成で運営しています。
+2021/11/14現在、dmdata.jpは以下のようなサービス構成で運営しています。
 
-![Network](/img/network.png)
+![Network](/img/network.svg)
