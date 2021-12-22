@@ -51,6 +51,7 @@ module.exports = {
                     'telegrams/et01340',
                     'telegrams/et01350',
                     'telegrams/et01360',
+                    'telegrams/et01370',
                     'telegrams/et01410',
                     'telegrams/et01420',
                     'telegrams/et01421'
