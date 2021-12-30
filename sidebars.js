@@ -1,6 +1,6 @@
 module.exports = {
     docs: {
-        'Manual': ['index', 'parameter', 'sample/javascript', 'eew'],
+        'Manual': ['index', 'parameter', 'sample/javascript', 'eew', 'testing'],
         'Reference': [
             'reference/index',
             {
