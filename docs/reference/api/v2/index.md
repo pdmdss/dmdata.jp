@@ -16,10 +16,20 @@ APIキー、及びOAuth2にそれぞれ紐づけられた権限が不足して�
 APIキーの権限等の変更は最大5分間反映されません。
 
 ### APIキーの指定の仕方
-URLにクエリパラメータとして渡します。
+
+#### リクエストヘッダー
+リクエストヘッダーにAuthorizationを使用します。
+
+`Authorization: Basic BasicBase64`
+
+BasicBase64には、UserにAPIキーを、Passwordは無しとして使用します。
+
+BasicはUserとPasswordをコロンで結合しBase64でエンコードしたもです。
+
+#### クエリパラメータ
+または、URLにクエリパラメータとして渡します。**※非推奨**
 
 `https://api.dmdata.jp/v2/telegram?key=APIキー`
-
 
 ### アクセストークンの指定の仕方
 リクエストヘッダーにAuthorizationを使用します。
@@ -156,7 +166,7 @@ APIは標準的なエラーを次の通り返答します。
 ### Telegram
 
 * [**Telegram List**](telegram.list)
-* [**Telegram Data**](/reference/api/v1/telegram.data)
+* [**Telegram Data**](/reference/api/v1/telegram.data.md)
 
 ### WebSocket
 

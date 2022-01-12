@@ -68,4 +68,4 @@ title: サンプル JavaScript
 定時関連区分: telegram.scheduled <br/>
 
 
-APIの詳細は、[API リファレンス](/reference/api/v2/)を参照してください。
+APIの詳細は、[API リファレンス](/reference/api/v2)を参照してください。
