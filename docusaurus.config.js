@@ -48,6 +48,10 @@ module.exports = {
                 }
             ],
             copyright: `Copyright © ${new Date().getFullYear()} dmdata.jp`
+        },
+        tableOfContents: {
+            minHeadingLevel: 2,
+            maxHeadingLevel: 6
         }
     },
     presets: [
