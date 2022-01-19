@@ -27,6 +27,7 @@ JSONスキーマの型定義については、[API v2 #型表現](/reference/api
 
 | 配信区分       | スキーマ名                  | 対象とするデータ種類コード                                                                                  | バージョン      |
 | -- | -- | -- | -- |
+| 緊急地震（予報・警報） | [eew-information](schema/eew-information)                    | VXSEii (ii = 42-45)                                                                                 | 1.0.0      |
 | 地震・津波関連 | [earthquake-information](schema/earthquake-information)             | VXSE51, VXSE52, VXSE53, VXSE62, VZSE40                                                              | 1.1.0      | 
 | 地震・津波関連 | [earthquake-explanation](schema/earthquake-explanation)             | VXSE56                                                                                              | 1.0.0      | 
 | 地震・津波関連 | [earthquake-counts](schema/earthquake-counts)                       | VXSE60                                                                                              | 1.0.0      | 
