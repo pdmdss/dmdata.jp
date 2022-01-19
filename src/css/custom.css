@@ -30,3 +30,10 @@ table td{
     padding: 0 var(--ifm-pre-padding);
     background-color: rgb(72, 77, 91);
 }
+
+.json-schema-group {
+    margin: 5px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+}
