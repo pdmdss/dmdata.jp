@@ -39,6 +39,14 @@ module.exports = {
         '配信データ': [
             'telegrams/index',
             {
+                '緊急地震（予報） 区分': [
+                    'telegrams/ew09010',
+                    'telegrams/ew09030',
+                    'telegrams/ew09040',
+                ],
+                '緊急地震（警報） 区分': [
+                    'telegrams/ew09020',
+                ],
                 '地震津波 区分': [
                     'telegrams/et01010',
                     'telegrams/et01110',
