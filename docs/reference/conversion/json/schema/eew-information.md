@@ -75,8 +75,8 @@ PLUM 法でトリガー条件を最初に満足した観測点直下の深さ 10
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
 | 5._1.? | originTime | 発生時刻がない場合は出現しない | **String**<br/> 地震発生時刻を秒単位で、ISO8601の日本時間で記載する<br/> 仮定震源要素時や、100gal検知報などの場合には出現しない |
-| 5._2. | arrivalTime |  | **String**<br/> 地震検知時刻を分単位で、ISO8601の日本時間で記載する |
-| 5._3.? | arrivalTime |  | **String**<br/> 地震検知時刻を分単位で、ISO8601の日本時間で記載する |
+| 5._2. | arrivalTime |  | **String**<br/> 地震検知時刻を秒単位で、ISO8601の日本時間で記載する |
+| 5._3.? | condition | 仮定震源要素時 | **String**<br/>  仮定震源要素の時出現し、`仮定震源要素` が入る |
 | 5._4. | hypocenter | | **Object**<br/> 地震の震源要素 [#5. 4. hypocenter](#5-4-hypocenter)を参照 |
 | 5._5. | magnitude |  | **Object**<br/> 地震の規模 [#5. 5. magnitude](#5-5-magnitude)を参照 |
 
