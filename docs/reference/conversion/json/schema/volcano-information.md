@@ -31,7 +31,7 @@ body フィールド内の定義となります。
 | 3.? | targets |取消時には出現しない<br/> VFVO51でのみ出現 | **Array<Object\>**<br/> 火山名や座標、火口などを配列で記載する [#2. target](#2-target)  |
 | 4.? | cities | 取消時には出現しない<br/>VFVO50、VFVO53、VFVO54、VFVO55、VFVO56で出現 | **Array<Object\>**<br/> 対象市町村における状況や、噴火警報・予報などの情報を記載する [#4. city](#4-city)  |
 | 5.? | oceanZones | 取消時には出現しない<br/>VFSVii (ii = 50-61)で出現 | **Array<Object\>**<br/> 対象海上予報区での火山警報・予報情報を記載する [#5. oceanZones](#5-ocean-zones) |
-| 6.? | disasterPrevention | 取消時には出現しない<br/>VFVO50で出現 | **Array<Object\>**<br/> 対象市町村での避難行動を記載する [#6. disasterPrevention](#6-disaster-prevention) |
+| 6.? | disasterPreventions | 取消時には出現しない<br/>VFVO50で出現 | **Array<Object\>**<br/> 対象市町村での避難行動を記載する [#6. disasterPrevention](#6-disaster-prevention) |
 | 7.? | eruption | 取消時には出現しない<br/>VFVO52、VFVO54、VFVO55、VFVO56で出現 | **Object**<br/> 噴火の情報 [#7. eruption](#7-eruption) |
 | 8.? | comments | 取消時には出現しない<br/>VFVO52、VZVO40以外で出現、情報による | **Object**<br/> 火山関連情報等の内容 [#8. comments](#8-comments) |
 | 9.? | ash | 取消時には出現しない<br/>VFVO53、VFVO54、VFVO55で出現 | **Object**<br/> 降灰情報 [#9. ash](#9-ash) |
