@@ -19,7 +19,7 @@ body フィールド内の定義となります。
 | 階層 | フィールド | 出現条件 | 説明 | 
 | -- | -- | -- | -- | 
 | 1.? | earthquakeCounts | 取消時には出現しない | **Array<Object\>**<br/> 地震の回数 [#1. earthquake count](#1-earthquake-count) |
-| 2.? | nextAdvisory | 取消時には出現しない | **String**<br/> 続報を発表する予定がある場合に、次回発表予定時刻などを記載する |
+| 2.? | nextAdvisory | 本情報で終わる場合や、<br/>取消時には出現しない | **String**<br/> 続報を発表する予定がある場合に、次回発表予定時刻などを記載する |
 | 3.? | text | 取消時の理由や、<br/>その他の追記事項がある場合に出現 | **String**<br/>自由形式で文章を記載する  |
 | 4.? | comments | 取消時には出現しない | **Object**<br/>付加的な情報を文章形式で提供する [#4. comments](#4-comments) |
 
