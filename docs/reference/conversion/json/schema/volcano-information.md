@@ -59,7 +59,7 @@ body フィールド内の定義となります。
 
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
-| 2._5._1. | name | | **String|Null**<br/> 火口名。ない場合は**Null**とする |
+| 2._5._1. | name | | **String\|Null**<br/> 火口名。ない場合は**Null**とする |
 | 2._5._2. | coordinate | | **Object**<br/> 火山の空間座標  [Coordinate component](/reference/conversion/json/component.md#coordinate-component)を参照、高さ要素は常にあり  |
 
 #### 2. 6. kind
@@ -377,7 +377,7 @@ body フィールド内の定義となります。
 * [VFVO56 - 御嶽山　噴火速報](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo56_rjtd_20140927120012.json)
 * [VFVO56 - 御嶽山　噴火速報（取消）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfvo56_rjtd_20140927121012.json)
 
-### 火山減少に関する海上警報・海上予報
+### 火山現象に関する海上警報・海上予報
 
 * [VFSV50 - 桜島　周辺海域警戒](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfsvii_rjtd_20170103120022.json)
 * [VFSV50 - 桜島　活火山であることに留意（海底火山）](https://sample.dmdata.jp/conversion/json/schema/volcano-information/vfsvii_rjtd_20170105120025.json)
