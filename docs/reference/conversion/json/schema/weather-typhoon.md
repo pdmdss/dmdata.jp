@@ -75,7 +75,7 @@ body フィールド内の定義となります。
 | 2._5._1. | location |  | **String\|Null**<br/> 台風の存在域 |
 | 2._5._2.? | coordinate | 実況・推定で出現する | **Object**<br/> 台風の存在空間座標  [#Coordinate component](/reference/conversion/json/component.md#coordinate-component)を参照<br/> Coordinate 内の condition は中心位置精度を記載する、`正確`、`ほぼ正確`、`不正確`または記述無し |
 | 2._5._3.? | probabilityCircle | 予報で出現する | **Object**<br/> 台風の予報円について記載する |
-| 2._5._3._1. | basePint |  | **String\|Null**<br/> 予報円の中心座標  [#Coordinate component](/reference/conversion/json/component.md#coordinate-component)を参照 |
+| 2._5._3._1. | basePoint |  | **String\|Null**<br/> 予報円の中心座標  [#Coordinate component](/reference/conversion/json/component.md#coordinate-component)を参照 |
 | 2._5._3._2. | axes |  | **Array<Object\>**<br/> 予報円の半径を記載する、要素は常に1つで固定 |
 | 2._5._3._2._1. | direction |  | **Object**<br/> 予報円半径のずれを方角で示す |
 | 2._5._3._2._1._1. | type |  | **String**<br/> 方角の種別、`方向`で固定 |
