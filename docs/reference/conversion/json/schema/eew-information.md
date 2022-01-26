@@ -1,5 +1,5 @@
 ---
-title: Schema eew-information v1.1.0
+title: Schema eew-information v1.0.0
 ---
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
