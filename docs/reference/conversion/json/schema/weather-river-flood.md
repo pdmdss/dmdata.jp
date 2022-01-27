@@ -25,8 +25,8 @@ body フィールド内の定義となります。
 | 3. | mainTexts |  | **Array<Object\>**<br/> 主文について記載する [3. mainText](#3-maintext) |
 | 4.? | supposition | 情報による | **Object**<br/> 浸水想定地区または氾濫発生情報について記載する [4. supposition](#4-supposition) |
 | 5. | rainfall |  | **Object**<br/> 雨量情報について記載する [5. rainfall](#5-rainfall) |
-| 6. | waterInfo |  | **Object**<br/> 水位・流量及びレベルの観測と予測について記載する [6. waterInfo](#6-waterinfo) |
-| 7. | floodedWaters |  | **Array<Object\>**<br/> 氾濫水について記載する [7. floodedWater](#7-floodedwater) |
+| 6. | waterLevel |  | **Object**<br/> 水位・流量及びレベルの観測と予測について記載する [6. waterLevel](#6-waterlevel) |
+| 7.? | floodedWaters | 情報による | **Array<Object\>**<br/> 氾濫水の予報について記載する [7. floodedWater](#7-floodedwater) |
 | 8. | offices |  | **Array<Object\>**<br/> 共同発表した官署について記載する [8. office](#8-office) |
 | 9. | reference |  | **Array<Object\>**<br/>水位観測所の受け持ち区間と基準の諸要素について記載する [9. reference](#9-reference) |
 
@@ -39,6 +39,7 @@ body フィールド内の定義となります。
 | -- | -- | -- | -- |
 | 2._1. | code |  | **String<Integer\>**<br/> 指定河川コード  |
 | 2._2. | name |  | **String**<br/> 指定河川名 |
+| 2._3. | kind |  | **Object**<br/> 指定河川洪水予報の種別 |
 | 2._3._1. | code |  | **String<Integer\>**<br/> 指定河川洪水予報の種別コード |
 | 2._3._2. | name |  | **String**<br/> 指定河川洪水予報の種別名 |
 | 2._3._3. | condition | | **String**<br/> 洪水予報の種類 |
@@ -122,7 +123,7 @@ body フィールド内の定義となります。
 | 4._3._2._2._2. | unit | | **String**<br/> 量的予想・観測情報の単位 |
 | 4._3._2._2._3. | value | | **String<Float\>\|Null**<br/> 量的予想・観測情報の値 |
 
-### 6. waterInfo
+### 6. waterLevel
 
 水位・流量及びレベルの観測と予測について記載します。
 
@@ -149,7 +150,7 @@ body フィールド内の定義となります。
 
 ### 7. floodedWater
 
-氾濫水について記載します。
+氾濫水の予報について記載します。
 
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
@@ -163,7 +164,7 @@ body フィールド内の定義となります。
 | 7._5._2._1. | value |  | **ISO8601Time**<br/> 日時  |
 | 7._5._2._2. | dubious |  | **String**<br/> 日時のあいまいさを示すため、`頃`を固定値として記載する  |
 |||
-| 7._5._3. | attainmentTime |  | **Object**<br/> 氾濫水最深時刻  |
+| 7._5._3. | attainmentDeepestTime |  | **Object**<br/> 氾濫水最深時刻  |
 | 7._5._3._1. | value |  | **ISO8601Time**<br/> 日時  |
 | 7._5._3._2. | dubious |  | **String**<br/> 日時のあいまいさを示すため、`頃`を固定値として記載する  |
 |||
