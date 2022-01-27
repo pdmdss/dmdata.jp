@@ -6,7 +6,7 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* [竜巻注意情報（目撃情報あり） (VPHW51)](/telegrams/we02521.md)
+* [竜巻注意情報（目撃情報付き） (VPHW51)](/telegrams/we02521.md)
 
 ## 共通ヘッダ
 
@@ -69,9 +69,9 @@ body フィールド内の定義となります。
 
 ## サンプル
 
-* [VPHW51 - 長崎県竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_jpfe_20140212132600.json)
-* [VPHW51 - 京都府竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_jpoa_20140212132200.json)
-* [VPHW51 - 埼玉県竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_jptc_20150717092100.json)
-* [VPHW51 - 埼玉県竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_jptc_20150717092101.json)
-* [VPHW51 - 東京都竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_rjtd_20140212131900.json)
-* [VPHW51 - 東京都竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-warning/vphw51_rjtd_20140212133600.json)
+* [VPHW51 - 長崎県竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-tornado/vphw51_jpfe_20140212132600.json)
+* [VPHW51 - 京都府竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-tornado/vphw51_jpoa_20140212132200.json)
+* [VPHW51 - 埼玉県竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-tornado/vphw51_jptc_20150717092100.json)
+* [VPHW51 - 埼玉県竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-tornado/vphw51_jptc_20150717092101.json)
+* [VPHW51 - 東京都竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-tornado/vphw51_rjtd_20140212131900.json)
+* [VPHW51 - 東京都竜巻注意情報](https://sample.dmdata.jp/conversion/json/schema/weather-tornado/vphw51_rjtd_20140212133600.json)
