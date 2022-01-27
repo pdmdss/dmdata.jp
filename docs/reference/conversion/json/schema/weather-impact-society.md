@@ -20,12 +20,13 @@ body フィールド内の定義となります。
 
 | 階層 | フィールド | 出現条件 | 説明 | 
 | -- | -- | -- | -- |
-| 1. | notice |  | **String\|Null**<br/> お知らせを記載する  |
+| 1. | notice? | 情報による | **String**<br/> お知らせを記載する  |
 | 2. | target |  | **String**<br/> 電文が対象とする地域を記載する [2. target](#2-target) |
 | 3. | targetTime |  | **Object**<br/> この電文が対象とする天候解析開始日時とその期間を記載する [3. targetTime](#3-targettime) |
 | 4. | mainTexts |  | **Array<Object\>**<br/> この電文が対象とする天候解析開始日時とその期間を記載する [4. mainText](#4-maintext) |
 | 5.? | season | 梅雨の時期に関する<br/>情報のみ出現 | **Object**<br/> 梅雨の入り/明けの日時・地域について記載する [5. season](#5-season) |
 | 6.? | statistics | 観測情報がない場合<br/>は出現しない | **Array<Object\>**<br/> アメダスや気象官署・特別地域気象観測所で観測した値などを記載する [6. statistics](#6-statistics) |
+| 7.? | comment | 情報による | **String**<br/> 末文を記載する |
 
 ### 2. target
 
@@ -50,7 +51,7 @@ body フィールド内の定義となります。
 | 3._1._1. | value |  | **ISO8601Time**<br/> 日時  |
 | 3._1._2. | validFormat |  | **String**<br/> 日時が有効な範囲をフォーマットとして記載する  |
 |||
-| 3._2. | duration |  | **String**<br/> 基準日時からの期間を、 ISO8601 の Time intervals 形式で表す  |
+| 3._2.? | duration | 情報による | **String**<br/> 基準日時からの期間を、 ISO8601 の Time intervals 形式で表す  |
 
 ### 4. mainText
 
@@ -81,7 +82,7 @@ body フィールド内の定義となります。
 | 5._2._2. | name |  | **String**<br/> 地域名 |
 | 5._2._3. | type |  | **String**<br/> 情報の種類を記載する<br/>取りうる値は、`梅雨入り`、`梅雨明け` |
 | 5._2._4. | eventData |  | **Object**<br/> 今年の梅雨入り／明けの日付、平年の梅雨入り／明けの日付、昨年の梅雨入り／明けの日付 、備考を記載する |
-| 5._2._5._1.? | date | 状況による | **Object**<br/> 今年の梅雨入り／明けの日付を記載する<br/>今年は梅雨入り／梅雨明けの情報を発表しない旨の情報の場合には、出現しない |
+| 5._2._5._1.? | date | 情報による | **Object**<br/> 今年の梅雨入り／明けの日付を記載する<br/>今年は梅雨入り／梅雨明けの情報を発表しない旨の情報の場合には、出現しない |
 | 5._2._5._1._1. | value |  | **String**<br/> 日時を記載する<br/> 例: `--07-19` |
 | 5._2._5._1._2. | dubious |  | **String**<br/> 日時のあいまいさを示すため、`頃`を固定値として記載する |
 ||||
@@ -89,11 +90,11 @@ body フィールド内の定義となります。
 | 5._2._5._2._1. | value |  | **String**<br/> 日時を記載する<br/> 例: `--07-19` |
 | 5._2._5._2._2. | dubious |  | **String**<br/> 日時のあいまいさを示すため、`頃`を固定値として記載する |
 |||
-| 5._2._5._3.? | lastYear | 状況による | **Object**<br/> 昨年の梅雨入り／明けの日付を記載する<br/>昨年は梅雨入り／梅雨明けの情報を発表しない旨の情報の場合には、出現しない |
+| 5._2._5._3.? | lastYear | 情報による | **Object**<br/> 昨年の梅雨入り／明けの日付を記載する<br/>昨年は梅雨入り／梅雨明けの情報を発表しない旨の情報の場合には、出現しない |
 | 5._2._5._3._1. | value |  | **String**<br/> 日時を記載する<br/> 例: `--07-19` |
 | 5._2._5._3._2. | dubious |  | **String**<br/> 日時のあいまいさを示すため、`頃`を固定値として記載する |
 |||
-| 5._2._5._4.? | remark | 状況による | **String**<br/> 備考を記載する |
+| 5._2._5._4.? | remark | 情報による | **String**<br/> 備考を記載する |
 
 ### 6. statistics
 
@@ -107,11 +108,12 @@ body フィールド内の定義となります。
 | 6._2. | period |  | **Object**<br/> 統計データの範囲を記載する |
 | 6._2._1. | dateTime |  | **Object**<br/> 統計データの開始基準日を記載する |
 | 6._2._1._1. | value |  | **ISO8601Time**<br/> 統計データの開始基準日 |
+| 6._2._1._2.? | validFormat | 情報による | **String**<br/> 日時が有効な範囲をフォーマットとして記載する  |
 |||
 | 6._2._2. | duration |  | **String**<br/> 統計データの開始基準日からの期間を、 ISO8601 の Time intervals 形式で表す  |
 | 6._2._3. | name |  | **String**<br/> 統計データの開始基準日から終了日の情報をテキストで記載する  |
 |||
-| 6._3. | text |  | **String**<br/> 統計データの期間と種類をテキストで記載する  |
+| 6._3.? | text |  | **String**<br/> 統計データの期間と種類をテキストで記載する  |
 | 6._4. | stations |  | **Array<Object\>**<br/> 観測点毎の統計データを記載する  |
 | 6._4._1. | code |  | **String<Integer\>**<br/> 観測点コード  |
 | 6._4._2. | name |  | **String**<br/> 観測点名 |
@@ -120,7 +122,7 @@ body フィールド内の定義となります。
 | 6._4._4._1. | type |  | **String**<br/> 統計データの種類を示す |
 | 6._4._4._2. | unit |  | **String**<br/> 統計データの単位を示す |
 | 6._4._4._3. | value |  | **String<Float\>\|Null**<br/> 統計データの値を示す |
-| 6._4._4._4.? | condition | 状況による | **String**<br/> 統計に係わる観測値の状態を記載する<br/>取りうる値は、`準正常`、`資料不足`、`値なし`、又はそれ以外の文字列とする|
+| 6._4._4._4.? | condition | 情報による | **String**<br/> 統計に係わる観測値の状態を記載する<br/>取りうる値は、`準正常`、`資料不足`、`値なし`、又はそれ以外の文字列とする|
 
 
 ## この電文で取り扱うコード類
@@ -130,7 +132,7 @@ body フィールド内の定義となります。
 ## サンプル
 
 * [VPZI50 - 北・東・西日本の長期間の高温と少雨に関する全般気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpzi50_rjtd_20120824150004.json)
-* [VPCI50 - 梅雨の時期に関する東北地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_jpsn_20080805110000.json)`
-* [VPCI50 - 梅雨の時期に関する東北地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_jpsn_20090810105821.json)`
+* [VPCI50 - 梅雨の時期に関する東北地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_jpsn_20080805110000.json)
+* [VPCI50 - 梅雨の時期に関する東北地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_jpsn_20090810105821.json)
 * [VPCI50 - 梅雨の時期に関する関東甲信地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_rjtd_20080719110000.json)
 * [VPFI50 - 日照不足に関する岩手県気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpfi50_jpdc_20660903141000.json)
