@@ -206,8 +206,8 @@ body フィールド内の定義となります。
 
 ## サンプル
 
-* [VPZI50 - 北・東・西日本の長期間の高温と少雨に関する全般気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpzi50_rjtd_20120824150004.json)
-* [VPCI50 - 梅雨の時期に関する東北地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_jpsn_20080805110000.json)`
-* [VPCI50 - 梅雨の時期に関する東北地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_jpsn_20090810105821.json)`
-* [VPCI50 - 梅雨の時期に関する関東甲信地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_rjtd_20080719110000.json)
-* [VPFI50 - 日照不足に関する岩手県気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpfi50_jpdc_20660903141000.json)
+* [VXKOii - 警戒レベル２（氾濫注意情報）](https://sample.dmdata.jp/conversion/json/schema/weather-river-flood/vxkoii_%23%23%23%23_20190509204043.json)
+* [VXKOii - 警戒レベル４（氾濫危険情報）](https://sample.dmdata.jp/conversion/json/schema/weather-river-flood/vxkoii_%23%23%23%23_20190527090000.json)
+* [VXKOii - 警戒レベル４（氾濫危険情報）](https://sample.dmdata.jp/conversion/json/schema/weather-river-flood/vxkoii_%23%23%23%23_20190527090001.json)
+* [VXKOii - 警戒レベル５（氾濫水の予報）](https://sample.dmdata.jp/conversion/json/schema/weather-river-flood/vxkoii_%23%23%23%23_20190527180000.json)
+* [VXKOii - 六角川氾濫警戒情報](https://sample.dmdata.jp/conversion/json/schema/weather-river-flood/vxkoii_jpfc_20210813152131.json)
