@@ -24,11 +24,11 @@ body フィールド内の定義となります。
 | 2. | target |  | **String**<br/> 電文が対象とする指定河川と情報種別を記載する [2. target](#2-target) |
 | 3.? | mainTexts | 簡略版では出現しない | **Array<Object\>**<br/> 主文について記載する [3. mainText](#3-maintext) |
 | 4.? | supposition | 情報による<br/> 簡略版では出現しない | **Object**<br/> 浸水想定地区または氾濫発生情報について記載する [4. supposition](#4-supposition) |
-| 5.? | rainfall | 簡略版では出現しない | **Object**<br/> 雨量情報について記載する [5. rainfall](#5-rainfall) |
-| 6.? | waterLevel | 簡略版では出現しない | **Object**<br/> 水位・流量及びレベルの観測と予測について記載する [6. waterLevel](#6-waterlevel) |
+| 5.? | rainfall | 情報による<br/> 簡略版では出現しない | **Object**<br/> 雨量情報について記載する [5. rainfall](#5-rainfall) |
+| 6.? | waterLevel | 情報による<br/> 簡略版では出現しない | **Object**<br/> 水位・流量及びレベルの観測と予測について記載する [6. waterLevel](#6-waterlevel) |
 | 7.? | floodedWaters | 情報による<br/> 簡略版では出現しない | **Array<Object\>**<br/> 氾濫水の予報について記載する [7. floodedWater](#7-floodedwater) |
 | 8.? | offices | 簡略版では出現しない | **Array<Object\>**<br/> 共同発表した官署について記載する [8. office](#8-office) |
-| 9.? | reference | 簡略版では出現しない | **Array<Object\>**<br/>水位観測所の受け持ち区間と基準の諸要素について記載する [9. reference](#9-reference) |
+| 9.? | reference | 情報による<br/> 簡略版では出現しない | **Array<Object\>**<br/>水位観測所の受け持ち区間と基準の諸要素について記載する [9. reference](#9-reference) |
 
 
 ### 2. target
