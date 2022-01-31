@@ -4,8 +4,6 @@ title: Schema earthquake-information v1.1.0
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
 
-v1.1.0 のスキーマはVXSE62の運用開始後、対象とするXML電文すべてが対象（VXSE62以外では本文は変更なし）となります。
-
 ## 対象とするXML電文
 
 * [震度速報 (VXSE51)](/telegrams/et01310.md)
