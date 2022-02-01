@@ -17,11 +17,25 @@
     --ifm-code-font-size: 95%;
 
     /* Table */
-    --ifm-table-cell-padding: 4px
+    --ifm-table-cell-padding: 4px;
+
+    /* Original definition */
+    --group-background: #f6f6f6;
 }
 
-table td{
+html[data-theme='dark'] {
+    /* Original definition */
+    --group-background: #262626;
+}
+
+table td {
     font-size: 14px;
+}
+
+.navbar__logo img {
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
 }
 
 .docusaurus-highlight-code-line {
@@ -35,5 +49,5 @@ table td{
     margin: 5px;
     padding: 7px;
     border-radius: 5px;
-    background-color: #f6f6f6;
+    background-color: var(--group-background);
 }
