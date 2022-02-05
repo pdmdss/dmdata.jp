@@ -107,12 +107,12 @@ body フィールド内の定義となります。
 
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
-| 4._1. | dateTime |  | **ISO8601**<br/> 予報・観測の基点時刻 |
+| 4._1. | dateTime |  | **ISO8601Time**<br/> 予報・観測の基点時刻 |
 | 4._2. | text |  | **String**<br/> 雨量の予報・観測文を記載 |
 | 4._3. | timeSeries |  | **Array<Object\>**<br/> 雨量の時系列情報、時系列の定義の数だけ出現する |
 | 4._3._1. | timeDefines |  | **Array<Object\>**<br/> 全ての予想期間を示すとともに、対応する要素の個々の時刻定義を記載する |
 | 4._3._1._1. | timeId |  | **String<Integer\>**<br/> 時刻ID |
-| 4._3._1._2. | dateTime |  | **ISO8601**<br/> 予想する基準日時 |
+| 4._3._1._2. | dateTime |  | **ISO8601Time**<br/> 予想する基準日時 |
 | 4._3._1._3. | duration |  | **String**<br/> 基準日時からの予想時間の幅を、 ISO8601 の Time intervals 形式で表す |
 | 4._3._1._4. | name |  | **String**<br/> 時刻定義の内容 |
 |||
@@ -132,7 +132,7 @@ body フィールド内の定義となります。
 | 6._1. | timeSeries |  | **Array<Object\>**<br/> 水位・流量及びレベルの時系列情報、時系列の定義の数だけ出現する |
 | 6._1._1. | timeDefines |  | **Array<Object\>**<br/> 全ての予想期間を示すとともに、対応する要素の個々の時刻定義を記載する |
 | 6._1._1._1. | timeId |  | **String<Integer\>**<br/> 時刻ID |
-| 6._1._1._2. | dateTime |  | **ISO8601**<br/> 予想する基準日時 |
+| 6._1._1._2. | dateTime |  | **ISO8601Time**<br/> 予想する基準日時 |
 | 6._1._1._3. | duration |  | **String**<br/> 基準日時からの予想時間の幅を、 ISO8601 の Time intervals 形式で表す |
 | 6._1._1._4. | name |  | **String**<br/> 時刻定義の内容 |
 |||
@@ -156,7 +156,7 @@ body フィールド内の定義となります。
 | -- | -- | -- | -- |
 | 7._1. | code |  | **String<Integer\>**<br/> 河川コード  |
 | 7._2. | name |  | **String**<br/> 河川名 |
-| 7._3. | dateTime |  | **ISO8601**<br/> 予報の基点時刻 |
+| 7._3. | dateTime |  | **ISO8601Time**<br/> 予報の基点時刻 |
 | 7._4. | text |  | **String**<br/> 氾濫水の予報に対する説明文を記載 |
 | 7._5. | assumptions |  | **Array<Object\>**<br/> 浸水区域、氾濫水到達時刻、氾濫水最深時刻、想定最大浸水深について記載します |
 | 7._5._1. | district |  | **String**<br/> 浸水区域  |

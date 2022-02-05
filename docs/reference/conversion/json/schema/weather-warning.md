@@ -148,7 +148,7 @@ body フィールド内の定義となります。
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
 | 6._1._1. | timeId |  | **String<Integer\>**<br/> 時刻ID |
-| 6._1._2. | dateTime |  | **ISO8601**<br/> 予想する基準日時 |
+| 6._1._2. | dateTime |  | **ISO8601Time**<br/> 予想する基準日時 |
 | 6._1._3. | duration |  | **String**<br/> 基準日時からの予想時間の幅を、 ISO8601 の Time intervals 形式で表す |
 | 6._1._4. | name |  | **String**<br/> 時刻定義の内容 |
 
