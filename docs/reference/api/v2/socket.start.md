@@ -11,7 +11,7 @@ title: Socket Start v2
 ### リクエストボディ(JSON)
 |パラメータ名|必須|デフォルト|説明|
 |:--|:-:|:-:|:--|
-|classifications|はい||**Array<String\>** <br/> WebSocketで取得する配信区分を指定。<br/> 地震・津波関連区分:　telegram.earthquake<br/> 火山関連区分: telegram.volcano<br/> 気象警報・注意報関連区分: telegram.weather<br/> 定時関連区分: telegram.scheduled|
+|classifications|はい||**Array<String\>** <br/> WebSocketで取得する配信区分を指定。<br/> 緊急地震（予報）区分:　eew.forecast<br/> 緊急地震（警報）関連区分:　eew.warning<br/> 地震・津波関連区分:　telegram.earthquake<br/> 火山関連区分: telegram.volcano<br/> 気象警報・注意報関連区分: telegram.weather<br/> 定時関連区分: telegram.scheduled|
 |types|いいえ||**Array<String\>** <br/> 取得したい[データ種類コード](/telegrams#配信データのリスト)を指定。最大30個まで指定可能|
 |test|いいえ|no|**String** <br/> テスト電文を受け取るか指定。受け取る場合は including にする。<br/>**注意：XML電文以外のテスト配信は no 時も配信されます。本文中を参照するようにしてください。**|
 |appName|いいえ||**String** <br/> アプリケーション名を指定。最大24バイトまで|
