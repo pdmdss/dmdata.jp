@@ -29,6 +29,10 @@ module.exports = {
                         'GD Earthquake v2': [
                             'reference/api/v2/gd.earthquake.list',
                             'reference/api/v2/gd.earthquake.event'
+                        ],
+                        'GD Eew v2': [
+                            'reference/api/v2/gd.eew.list',
+                            'reference/api/v2/gd.eew.event'
                         ]
                     }
                 ]
