@@ -2,6 +2,9 @@
 title: 支払方法について
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+
 DMDATA.JP では、月ごとに利用いただいた情報区分及びオプションについて、ユーザーの皆様にお支払いいただいています。
 
 **2022年03月14日の利用規約改定より、支払方法（後払い式から、前払式へ切り替え）の変更を予定しています。**
@@ -65,16 +68,16 @@ DMDATA.JP では、月ごとに利用いただいた情報区分及びオプシ�
 
 ### コンビニエンスストア（チャージのみ）
 
-<img alt="Daily yamazaki" src="img/settlement/conveniencestore/daily-yamazaki.svg" width="80" style={{margin: '2px'}}/>
-<img alt="FamilyMart" src="img/settlement/conveniencestore/family-mart.svg" width="80" style={{margin: '2px'}}/>
-<img alt="Lawson" src="img/settlement/conveniencestore/lawson.svg" width="80" style={{margin: '2px'}}/>
-<img alt="MINI STOP" src="img/settlement/conveniencestore/ministop.svg" width="80" style={{margin: '2px'}}/>
-<img alt="Seico mart" width="80" src="img/settlement/conveniencestore/seicomart.svg" style={{margin: '2px'}}/>
+<img alt="Daily yamazaki" src={useBaseUrl('img/settlement/conveniencestore/daily-yamazaki.svg')} width="80" style={{margin: '2px'}}/>
+<img alt="FamilyMart" src={useBaseUrl('img/settlement/conveniencestore/family-mart.svg')} width="80" style={{margin: '2px'}}/>
+<img alt="Lawson" src={useBaseUrl('img/settlement/conveniencestore/lawson.svg')} width="80" style={{margin: '2px'}}/>
+<img alt="MINI STOP" src={useBaseUrl('img/settlement/conveniencestore/ministop.svg')} width="80" style={{margin: '2px'}}/>
+<img alt="Seico mart" width="80" src={useBaseUrl('img/settlement/conveniencestore/seicomart.svg')} style={{margin: '2px'}}/>
 
 
 ### その他（チャージのみ）
 
-<img alt="Paypal" src="img/settlement/paypal.png" width="110"/>
+<img alt="Paypal" src={useBaseUrl('img/settlement/paypal.png')} width="110"/>
 
 
 銀行振込
