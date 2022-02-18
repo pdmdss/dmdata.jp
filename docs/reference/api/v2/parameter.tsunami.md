@@ -31,15 +31,15 @@ APIは常にJSONを返答します。
 |status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
 |changeTime|いつも|**ISO8601Time** <br/> 気象庁によるパラメータ変更時刻|
 |version|いつも|**String** <br/> データのバージョン|
-|items|いつも|**Array[ Object ]** <br/> 観測点データ|
+|items|いつも|**Array<Object\>** <br/> 観測点データ|
 |items[].area|いつも|**String\|Null** <br/> 津波予報区名|
-|items[].prefectures|いつも|**String** <br/> 所在する都道府県|
+|items[].prefecture|いつも|**String** <br/> 所在する都道府県|
 |items[].code|いつも|**String** <br/> 観測点コード（XML）|
 |items[].name|いつも|**String** <br/> 観測点名|
 |items[].kana|いつも|**String** <br/> 観測点名（カナ）|
 |items[].owner|いつも|**String** <br/> 所属する機関|
-|items[].latitude|いつも|**Float ** <br/> 所在する緯度|
-|items[].longitude|いつも|**Float ** <br/> 所在する経度|
+|items[].latitude|いつも|**String<Float\>** <br/> 所在する緯度|
+|items[].longitude|いつも|**String<Float\>** <br/> 所在する経度|
 
 ### status: error
 APIは各種エラーを次の通り返答します。
