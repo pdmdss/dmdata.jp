@@ -31,7 +31,7 @@ APIは常にJSONを返答します。
 |status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
 |changeTime|いつも|**ISO8601Time** <br/> 気象庁によるパラメータ変更時刻|
 |version|いつも|**String** <br/> データのバージョン|
-|items|いつも|**Array[ Object ]** <br/> 観測点データ|
+|items|いつも|**Array<Object\>** <br/> 観測点データ|
 |items[].region|いつも|**Object** <br/> 一次細分化地域|
 |items[].region.code|いつも|**String** <br/> 一次細分化地域コード|
 |items[].region.name|いつも|**String** <br/> 一次細分化地域名|
