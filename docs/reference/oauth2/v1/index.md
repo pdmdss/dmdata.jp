@@ -480,8 +480,9 @@ Form パラメータ
 |パラメータ名|説明| 
 |:--|:--| 
 |active|**Boolean** <br/> trueでトークンが有効であることを示します。| 
-|scope|**String** <br/> アクセストークンに付与されたスコープ。|
-|client_id|**String** <br/> OAuth クライアント毎に割り当てられた、`CId.`で始まるID。| |aud|**String** <br/> クライアントのアプリケーション名。| 
+|scope|**String** <br/> アクセストークンに付与されたスコープ。| 
+|client_id|**String** <br/> OAuth クライアント毎に割り当てられた、`CId.`で始まるID。| 
+|aud|**String** <br/> クライアントのアプリケーション名。| 
 |sub|**String** <br/> トークンのユニーク値。| 
 |username|**String** <br/> 認可したユーザーのメールアドレス。| 
 |iss|**String** <br/> 発行者URL。| 
