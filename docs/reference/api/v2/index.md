@@ -5,7 +5,7 @@ title: API v2
 
 ## APIの呼び出し
 
-WebSocketAPI以外の全てのAPIは、認証情報（APIキー又は、[OAuth2](/reference/oauth2/v1)のアクセストークン）を指定する必要があります。
+WebSocketAPI以外の全てのAPIは、承認情報（APIキー又は、[OAuth2](/reference/oauth2/v1)のアクセストークン）を指定する必要があります。
 決済情報の取得や、アカウント情報、契約情報の更新等にはOAuth2のアクセストークンが必要です。
 
 APIキーは[コントロールパネル](https://manager.dmdata.jp/control/credentials)から、発行ができます。
@@ -63,7 +63,7 @@ APIはリソースを明確に指定する方法として、URLにIDなどを指
 
 ### 例
 電文リストの続きを取得したい場合
-※認証情報は省略
+※承認情報は省略
 
 **1回目 リクエスト** <br/>
 `https://api.dmdata.jp/v2/telegram?type=VXSE53`
@@ -114,8 +114,8 @@ APIは標準的なエラーを次の通り返答します。
 |400|The query parameters are required.|必須なクエリパラメータのフィールドがない|
 |400|The post parameters are required.|必須なポストパラメータ(from post)のフィールドがない|
 |400|Unexpected data  of search query \`cursorToken\`.|無効なcursorTokenが指定された|
-|401|Authentication required.|認証情報が指定されていない、または無効な認証情報|
-|403|AInsufficient scope for ... .|認証情報に紐づけされたスコープ外、権限がない|
+|401|Authorization required.|承認情報が指定されていない、または無効な認証情報|
+|403|Insufficient scope for ... .|承認情報に紐づけされたスコープ外、権限がない|
 |403|Requests are not allowed.|許可されていない場所(IP,Domain)でのAPI呼び出し|
 
 ---
