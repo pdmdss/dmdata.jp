@@ -7,7 +7,7 @@ title: OAuth2 v1
 
 DMDATA.JPでは、認可にOAuth2.0を使用します。 認可コードフロー/リフレッシュトークンフロー、インプリシットフロー、クライアント・クレデンシャルズフローをサポートしています。
 
-RFC6749、RFC7009、RFC7636、RFC7662にて定義されている仕様に沿って認可サーバーは実装(一部コアな実装を除く)されています。
+RFC6749、RFC7009、RFC7636にて定義されている仕様に沿って認可サーバーは実装(一部コアな実装を除く)されています。
 
 ** アカウント連携などの認証 (OpenID Connect) はサポートしていません。 **
 
@@ -431,96 +431,6 @@ Form パラメータ
 |invalid_client|リクエストされた`client_id`が見つかりません。| 
 |unauthorized_client|クライアントは指定された方法で取得することが許可されていません、。|
 |unsupported_grant_type|認可サーバーは、リクエストされた`grant_type`をサポートしていません。| 
-|server_error|内部エラーにより処理できません。|
-
-## トークンの確認
-
-リフレッシュトークンやアクセストークンの有効状態や、スコープを参照できます。
-
-### 確認の要求
-
-```http request
-POST /account/oauth2/v1/introspect
-Host: manager.dmdata.jp
-Content-Type: application/x-www-form-urlencoded
-
-client_id=CId.CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-&client_secret=CSt.SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-&tokne=ATn.TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
-```
-
-Form パラメータ
-
-|パラメータ名|必須|説明| 
-|:--|:-:|:--| 
-|client_id|はい|**String** <br/> OAuth クライアント毎に割り当てられた、`CId.`で始まるID| 
-|client_secret|オプション|**String** <br/> OAuth クライアント毎に割り当てられた、`CSt.`で始まるシークレットキー。<br/>[クライアントの種類](#クライアントの種類)が「機密」の場合は必須です。| 
-|token|はい|**String** <br/> `ATn.`で始まるアクセストークンか、`ARh.`で始まるリフレッシュトークン。|
-
-#### 成功した応答
-
-トークンが有効無効にかかわらず、HTTPステータスコード 200 を返答します。
-
-##### トークンが有効な時
-
-```json
-{
-  "active": true,
-  "scope": "telegram.list telegram.get.earthquake telegram.data",
-  "client_id": "CId.CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
-  "aud": "OAuth Client Test",
-  "sub": "AAAAAAAAAAAAAAAAAAAA",
-  "username": "support@dmdata.jp",
-  "iss": "https://manager.dmdata.jp",
-  "iat": 1500000000,
-  "exp": 1500060000
-}
-```
-
-|パラメータ名|説明| 
-|:--|:--| 
-|active|**Boolean** <br/> trueでトークンが有効であることを示します。| 
-|scope|**String** <br/> アクセストークンに付与されたスコープ。| 
-|client_id|**String** <br/> OAuth クライアント毎に割り当てられた、`CId.`で始まるID。| 
-|aud|**String** <br/> クライアントのアプリケーション名。| 
-|sub|**String** <br/> トークンのユニーク値。| 
-|username|**String** <br/> 認可したユーザーのメールアドレス。| 
-|iss|**String** <br/> 発行者URL。| 
-|iat|**Integer** <br/> トークン発行UNIX時間。| 
-|exp|**Integer** <br/> トークン失効UNIX時間。|
-
-##### トークンが無効な時
-
-```json
-{
-  "active": false
-}
-```
-
-|パラメータ名|説明| 
-|:--|:--| 
-|active|**Boolean** <br/> falseでトークンが無効（失効、有効期限切れ）であることを示します。|
-
-#### エラー
-
-```json
-{
-  "error": "invalid_request",
-  "error_description": "The client_id is missing."
-}
-```
-
-|パラメータ名|説明| 
-|:--|:--| 
-|error|**String** <br/> エラーの際に使用するエラーコード。| 
-|error_description|**String** <br/> エラーの際、どのような問題が発生しているか、具体的に記述したメッセージ。|
-
-返答するエラーコードは以下の通りです。
-
-|エラーコード|説明| 
-|:--|:--| 
-|invalid_request|リクエストされたパラメーターが足りないか、パラメータの値が正しくありません。|
-|invalid_client|リクエストされた`client_id`が見つかりません。| 
 |server_error|内部エラーにより処理できません。|
 
 ## トークンの失効
