@@ -52,6 +52,12 @@ JSONスキーマの型定義については、[API v2 #型表現](/reference/api
 
 スキーマバージョンは、予告なく変更する場合があります。
 
+### プログラム型定義と JSON Schema について
+
+TypeScriptによる型定義が、 [@dmdata/telegram-json-types](https://github.com/pdmdss/telegram-json-types) にて公開しています。
+
+また、NPMに公開しているパッケージに、型定義を JSON Schema に変換したファイルが同封されています。
+
 ### Schema head
 
 ```json
