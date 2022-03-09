@@ -30,6 +30,7 @@ APIは常にJSONを返答します。
 ### status: ok
 成功時に次のような内容を返答します。
 
+※電文要素は省略
 ```json
 {
   "responseId": "3750ccf70651e928",
@@ -43,7 +44,9 @@ APIは常にJSONを返答します。
       "dateTime": "2016-08-01T17:09:19+09:00",
       "isLastInfo": true,
       "isCanceled": true,
-      "text": "先ほどの、緊急地震速報（予報）を取り消します。"
+      "text": "先ほどの、緊急地震速報（予報）を取り消します。",
+      "telegrams": [
+      ]
     },
     {
       "id": 2,
@@ -100,7 +103,9 @@ APIは常にJSONを返答します。
           "unit": "Mj",
           "value": "9.2"
         }
-      }
+      },
+      "telegrams": [
+      ]
     },
     {
       "id": 1,
@@ -163,7 +168,9 @@ APIは常にJSONを返答します。
           "to": "over"
         }
       },
-      "text": "１日１７時０９分０４秒頃千葉県富津市付近　　　　　最大震度５弱程度以上と推定"
+      "text": "１日１７時０９分０４秒頃千葉県富津市付近　　　　　最大震度５弱程度以上と推定",
+      "telegrams": [
+      ]
     }
   ]
 }
@@ -185,7 +192,23 @@ APIは常にJSONを返答します。
 |items[\].earthquake|取消時は出現しない|**Object** <br/> 予測震源要素 [Earthquake component](/reference/conversion/json/schema/eew-information.md#7-earthquake)を参照|
 |items[\].intensity|取消時・震度未計算時は出現しない|**Object** <br/> 予測震度要素 [Intensity component](/reference/conversion/json/schema/eew-information.md#8-intensity)を参照|
 |items[\].text|場合による|**String** <br/> フリーテキストで表現したい場合に出現し、これを記述する|
-
+|items[\].telegrams|いつも|**Array<Object\>** <br/> 緊急地震速報の電文リスト、配列中の要素は1個で固定|
+|items[\].telegrams[\].serial|いつも|**Integer** <br/> 電文受信通番|
+|items[\].telegrams[\].id|いつも|**String** <br/> 配信データを区別するユニーク384bitハッシュ|
+|items[\].telegrams[\].classification|いつも|**String** <br/> 配信区分により変化。取りうる値は eew.forecast|
+|items[\].telegrams[\].head|いつも|**Object** <br/> ヘッダ情報|
+|items[\].telegrams[\].head.type|いつも|**String** <br/> データ種類コード|
+|items[\].telegrams[\].head.author|いつも|**String** <br/> 発表英字官署名|
+|items[\].telegrams[\].head.time|いつも|**ISO8601Time** <br/> 基点時刻|
+|items[\].telegrams[\].head.designation|いつも|**String\|Null** <br/> 指示コード|
+|items[\].telegrams[\].head.test|いつも|**Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す <br/> このAPIでは常に**false**|
+|items[\].telegrams[\].receivedTime|いつも|**ISO8601Time** <br/> 受信時刻|
+|items[\].telegrams[\].xmlReport|いつも|**Object** <br/> XML電文Control,Head情報|
+|items[\].telegrams[\].schema|いつも|**Object** <br/> 加工データのスキーマ情報|
+|items[\].telegrams[\].schema.type|いつも|**String** <br/> スキーマ名|
+|items[\].telegrams[\].schema.version|いつも|**String** <br/> スキーマのバージョン|
+|items[\].telegrams[\].format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、`json` は本サービスが独自に定めたフォーマット|
+|items[\].telegrams[\].url|いつも|**String** <br/> [電文本文URL](/reference/api/v1/telegram.data.md)|
 ### status: error
 APIは各種エラーを次の通り返答します。
 
