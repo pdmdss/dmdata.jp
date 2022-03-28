@@ -45,7 +45,7 @@ VXSE51、VXSE53、VXSE62時に出現し、 震度データがない場合（遠�
 | 2._3.? | lpgmCategory | VXSE62時のみ | **String**<br/>長周期地震動に関する観測情報の種類、`1`, `2`, `3`, `4` で記載する [#2-3-lpgmCategory](#2-3-lpgmcategory) |
 | 2._4. | prefectures | | **Array<Object\>**<br/>都道府県内における最大震度 [#2. 4. prefectures](#2-4-prefectures) |
 | 2._5. | region | | **Array<Object\>**<br/>一次細分化地域内における最大震度 [#2. 5. region](#2-5-region) |
-| 2._6.? | cities | VXSE62時のみ出現 | **Array<Object\>**<br/>市区町村における最大震度 [#2. 6. city](#2-6-city) |
+| 2._6.? | cities | VXSE53時のみ出現 | **Array<Object\>**<br/>市区町村における最大震度 [#2. 6. city](#2-6-city) |
 | 2._7.? | stations | VXSE53、VXSE62時のみ出現 | **Array<Object\>**<br/>観測点における震度 [#2. 7. stations](#2-7-stations) |
 
 ##### 2. 3. lpgmCategory
