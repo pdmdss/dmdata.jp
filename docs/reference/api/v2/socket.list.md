@@ -12,7 +12,7 @@ title: Socket List v2
 |パラメータ名|必須|デフォルト|説明|
 |:--|:-:|:-:|:--|
 |id|いいえ||**Integer** <br/> WebSocket IDを指定、指定された場合他のクエリパラメータは無視される|
-|status|いいえ||**String** <br/> WebSocketの状態。デォルトではすべて表示。<br/>接続待機・期限切れ: waiting、接続中: open、接続終了: closed|
+|status|いいえ||**String** <br/> WebSocketの状態。デフォルトではすべて表示。<br/>接続待機・期限切れ: waiting、接続中: open、接続終了: closed|
 |cursorToken|いいえ||**String** <br/> 次のリソースを取得する。レスポンス内のnextTokenの値を指定する<br/>詳しくは[こちら](/reference/api/v2#カーソルトークン)|
 |limit|いいえ|20|**Integer** <br/> アイテムの数。最大100まで|
 
