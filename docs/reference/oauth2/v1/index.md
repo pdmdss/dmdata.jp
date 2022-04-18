@@ -37,10 +37,6 @@ OAuthではクライアントの種類が2つ定められており、「機密�
 
 `https://manager.dmdata.jp/account/oauth2/v1/token`
 
-#### トークン確認用エンドポイント
-
-`https://manager.dmdata.jp/account/oauth2/v1/introspect`
-
 #### 失効エンドポイント
 
 `https://manager.dmdata.jp/account/oauth2/v1/revoke`
