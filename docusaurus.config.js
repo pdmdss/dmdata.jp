@@ -43,6 +43,23 @@ module.exports = {
                         {
                             label: 'コントロールパネル',
                             href: 'https://manager.dmdata.jp/control/'
+                        },
+                        {
+                            label: 'Service status',
+                            href: 'https://dmdata.statuspage.io/'
+                        }
+                    ]
+                },
+                {
+                    title: 'Social',
+                    items: [
+                        {
+                            label: 'Twitter (@pdmdata)',
+                            href: 'https://twitter.com/pdmdata'
+                        },
+                        {
+                            label: 'Discord',
+                            href: 'https://discord.gg/uP6gfgzKnA'
                         }
                     ]
                 }
