@@ -22,6 +22,9 @@ title: Telegram Data v1
 * telegram.get.weather (取得情報によっては必要)
 * telegram.get.scheduled (取得情報によっては必要)
 
+### 注意
+WebSocketで受け取った通知をもとにこのAPIを参照することはお控えください。WebSocketデータを参照くださいますようお願いします。
+
 ### その他
 電文は2020年11月19日12時からすべて保存されています。
 
