@@ -6,10 +6,10 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* [緊急地震速報（警報） (VXSE43)](/telegrams/ew09020.md)
-* [緊急地震速報（予報） (VXSE44)](/telegrams/ew09030.md)
-* [緊急地震速報（地震動予報） (VXSE45)](/telegrams/ew09040.md)
-* [緊急地震速報テスト (VXSE42)](/telegrams/et01310.md)
+* [緊急地震速報（警報） (VXSE43)](/docs/telegrams/ew09020.md)
+* [緊急地震速報（予報） (VXSE44)](/docs/telegrams/ew09030.md)
+* [緊急地震速報（地震動予報） (VXSE45)](/docs/telegrams/ew09040.md)
+* [緊急地震速報テスト (VXSE42)](/docs/telegrams/et01310.md)
 
 ## 出現するコード参照
 
@@ -27,7 +27,7 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](/reference/conversion/json/index.md#schema-head)
+共通ヘッダは[こちら](/docs/reference/conversion/json/index.md#schema-head)
 
 ## 本文
 
@@ -90,7 +90,7 @@ PLUM 法でトリガー条件を最初に満足した観測点直下の深さ 10
 | -- | -- | -- | -- |
 | 7._4._2. | code |  | **String<Integer\>**<br/> 震央地名コード<br/> コードは、コード表41 による |
 | 7._4._1. | name | | **String**<br/> 震央地名 |
-| 7._4._3. | coordinate | | **Object**<br/> 震源地の空間座標  [#Coordinate component](/reference/conversion/json/component.md#coordinate-component)を参照 |
+| 7._4._3. | coordinate | | **Object**<br/> 震源地の空間座標  [#Coordinate component](/docs/reference/conversion/json/component.md#coordinate-component)を参照 |
 | 7._4._4. | depth |  | **Object**<br/> 深さ情報 [#7. 4. 4. depth](#7-4-4-depth)を参照 |
 | 7._4._5. | reduce |  | **Object**<br/> 短縮用震央地名 [#7. 4. 5. reduce](#7-4-5-reduce)を参照 |
 | 7._4._6.? | landOrSea | 情報による | **String**<br/> 震源の場所が陸域か海域かを判別する、取りうる値は `内陸`、`海域`<br/> 仮定震源要素時や、100gal検知報などの場合には出現しない |

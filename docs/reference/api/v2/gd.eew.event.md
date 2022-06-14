@@ -189,8 +189,8 @@ APIは常にJSONを返答します。
 |items[\].isLastInfo|いつも|**Boolean** <br/> この情報で最終であるかどうかを示し、最終報の場合は **true** とする|
 |items[\].isCanceled|いつも|**Boolean** <br/> この情報で緊急地震速報を取り消されたかどうかを示し、取消された場合は **true** とする|
 |items[\].isWarning|取消時には出現しない|**Boolean** <br/> この情報発表時、緊急地震速報の警報を発表されたかどうかを示し、警報発表済みの場合は **true** とする|
-|items[\].earthquake|取消時は出現しない|**Object** <br/> 予測震源要素 [Earthquake component](/reference/conversion/json/schema/eew-information.md#7-earthquake)を参照|
-|items[\].intensity|取消時・震度未計算時は出現しない|**Object** <br/> 予測震度要素 [Intensity component](/reference/conversion/json/schema/eew-information.md#8-intensity)を参照|
+|items[\].earthquake|取消時は出現しない|**Object** <br/> 予測震源要素 [Earthquake component](/docs/reference/conversion/json/schema/eew-information.md#7-earthquake)を参照|
+|items[\].intensity|取消時・震度未計算時は出現しない|**Object** <br/> 予測震度要素 [Intensity component](/docs/reference/conversion/json/schema/eew-information.md#8-intensity)を参照|
 |items[\].text|場合による|**String** <br/> フリーテキストで表現したい場合に出現し、これを記述する|
 |items[\].telegrams|いつも|**Array<Object\>** <br/> 緊急地震速報の電文リスト、配列中の要素は1個で固定|
 |items[\].telegrams[\].serial|いつも|**Integer** <br/> 電文受信通番|
@@ -208,7 +208,7 @@ APIは常にJSONを返答します。
 |items[\].telegrams[\].schema.type|いつも|**String** <br/> スキーマ名|
 |items[\].telegrams[\].schema.version|いつも|**String** <br/> スキーマのバージョン|
 |items[\].telegrams[\].format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、`json` は本サービスが独自に定めたフォーマット|
-|items[\].telegrams[\].url|いつも|**String** <br/> [電文本文URL](/reference/api/v1/telegram.data.md)|
+|items[\].telegrams[\].url|いつも|**String** <br/> [電文本文URL](/docs/reference/api/v1/telegram.data.md)|
 ### status: error
 APIは各種エラーを次の通り返答します。
 

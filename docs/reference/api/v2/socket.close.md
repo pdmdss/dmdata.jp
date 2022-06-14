@@ -6,7 +6,7 @@ title: Socket Close v2
 
 `DELETE https://api.dmdata.jp/v2/socket/:id`
 
-[**WebSocket v2**](/reference/api/v2/websocket.md) に接続中のWebSocketを終了します。
+[**WebSocket v2**](/docs/reference/api/v2/websocket.md) に接続中のWebSocketを終了します。
 
 ### URLパラメータ
 |パラメータ名|デフォルト|説明|

@@ -94,11 +94,11 @@ APIは常にJSONを返答します。
 |items[\].eventId|いつも|**String** <br/> 地震情報のEventID|
 |items[\].originTime|震度速報のみの場合は出現しない|**ISO8601Time** <br/> 地震発生時刻|
 |items[\].arrivalTime|いつも|**ISO8601Time** <br/> 地震検知時刻|
-|items[\].hypocenter|震度速報のみの場合は出現しない|**Object** <br/> 震源要素 [Earthquake component / Hypocenter](/reference/conversion/json/component.md#3-hypocenter)を参照|
-|items[\].magnitude|震度速報のみの場合は出現しない|**Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/reference/conversion/json/component.md#4-magnitude)を参照|
+|items[\].hypocenter|震度速報のみの場合は出現しない|**Object** <br/> 震源要素 [Earthquake component / Hypocenter](/docs/reference/conversion/json/component.md#3-hypocenter)を参照|
+|items[\].magnitude|震度速報のみの場合は出現しない|**Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/docs/reference/conversion/json/component.md#4-magnitude)を参照|
 |items[\].maxInt|いつも|**String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする|
-|nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/reference/api/v2#カーソルトークン)|
-|nextPooling|いつも|**String** <br/> PuLL時に使用する。詳しくは[こちら](/reference/api/v2#カーソルトークン)|
+|nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/docs/reference/api/v2#カーソルトークン)|
+|nextPooling|いつも|**String** <br/> PuLL時に使用する。詳しくは[こちら](/docs/reference/api/v2#カーソルトークン)|
 |nextPoolingInterval|いつも|**Integer** <br/> PuLL時、次にリクエストするまでの待機すべき最小時間（ミリ秒）|
 
 ### status: error

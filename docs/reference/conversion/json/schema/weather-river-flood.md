@@ -6,11 +6,11 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* [指定河川洪水予報 (VXKOii (ii=50-89))](/telegrams/we02810.md)
+* [指定河川洪水予報 (VXKOii (ii=50-89))](/docs/telegrams/we02810.md)
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](/reference/conversion/json/index.md#schema-head)
+共通ヘッダは[こちら](/docs/reference/conversion/json/index.md#schema-head)
 
 ## 本文
 

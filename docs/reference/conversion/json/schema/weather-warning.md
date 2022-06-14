@@ -6,12 +6,12 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* [特別警報・警報・注意報（新たなステージに対応した防災気象情報） (VPWW54)](/telegrams/we02010.md)
-* [記録的短時間大雨情報 (VPOA50)](/telegrams/we02030.md)
+* [特別警報・警報・注意報（新たなステージに対応した防災気象情報） (VPWW54)](/docs/telegrams/we02010.md)
+* [記録的短時間大雨情報 (VPOA50)](/docs/telegrams/we02030.md)
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](/reference/conversion/json/index.md#schema-head)
+共通ヘッダは[こちら](/docs/reference/conversion/json/index.md#schema-head)
 
 ## 本文
 

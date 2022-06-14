@@ -6,11 +6,11 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* [早期天候情報 (VPAW51)](/telegrams/we02560.md)
+* [早期天候情報 (VPAW51)](/docs/telegrams/we02560.md)
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](/reference/conversion/json/index.md#schema-head)
+共通ヘッダは[こちら](/docs/reference/conversion/json/index.md#schema-head)
 
 ## 本文
 

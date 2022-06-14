@@ -14,7 +14,7 @@ WebSocketを通じて気象庁の発表する電文をリアルタイムに配�
 ### クエリパラメータ
 |パラメータ名|必須|デフォルト|説明|
 |:--|:-:|:-:|:--|
-|ticket|はい||**String** <br/> [**Socket Start v2**](/reference/api/v2/socket.start.md)により取得したWebSocket接続するためのチケットを指定する|
+|ticket|はい||**String** <br/> [**Socket Start v2**](/docs/reference/api/v2/socket.start.md)により取得したWebSocket接続するためのチケットを指定する|
 
 ### その他
 XML電文については圧縮して送信します。WebSocketは実装により圧縮/非圧縮で通信します。
@@ -29,7 +29,7 @@ ticketは使い捨てですので一度使用した場合、エラーでもそ�
 
 正常にClose処理がなされないWebSocket切断が発生するとサーバー側で切断が検知できなくなり、PingTimeoutが発生し切断処理が実行されるまで、接続数を消費します。
 
-そのため、同時接続数に余裕がなくすぐに再接続を行いたい場合は、[**Socket Close v2**](/reference/api/v2/socket.close.md)を実行するよう実装する必要があります。
+そのため、同時接続数に余裕がなくすぐに再接続を行いたい場合は、[**Socket Close v2**](/docs/reference/api/v2/socket.close.md)を実行するよう実装する必要があります。
 
 ---
 

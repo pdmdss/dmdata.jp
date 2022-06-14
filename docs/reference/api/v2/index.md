@@ -5,7 +5,7 @@ title: API v2
 
 ## APIの呼び出し
 
-WebSocketAPI以外の全てのAPIは、承認情報（APIキー又は、[OAuth2](/reference/oauth2/v1)のアクセストークン）を指定する必要があります。
+WebSocketAPI以外の全てのAPIは、承認情報（APIキー又は、[OAuth2](/docs/reference/oauth2/v1)のアクセストークン）を指定する必要があります。
 決済情報の取得や、アカウント情報、契約情報の更新等にはOAuth2のアクセストークンが必要です。
 
 APIキーは[コントロールパネル](https://manager.dmdata.jp/control/credentials)から、発行ができます。
@@ -168,7 +168,7 @@ APIは標準的なエラーを次の通り返答します。
 ### Telegram
 
 * [**Telegram List**](telegram.list)
-* [**Telegram Data**](/reference/api/v1/telegram.data.md)
+* [**Telegram Data**](/docs/reference/api/v1/telegram.data.md)
 
 ### WebSocket
 

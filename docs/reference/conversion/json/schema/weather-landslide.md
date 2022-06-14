@@ -6,11 +6,11 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* [土砂災害警戒情報 (VXWW50)](/telegrams/we02710.md)
+* [土砂災害警戒情報 (VXWW50)](/docs/telegrams/we02710.md)
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](/reference/conversion/json/index.md#schema-head)
+共通ヘッダは[こちら](/docs/reference/conversion/json/index.md#schema-head)
 
 ## 本文
 

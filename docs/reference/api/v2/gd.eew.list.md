@@ -118,10 +118,10 @@ APIは常にJSONを返答します。
 |items[\].isLastInfo|いつも|**Boolean** <br/> このEventIDに対してこの内容が最終であるかどうかを示し、このAPIでは常に **true** とする|
 |items[\].isCanceled|いつも|**Boolean** <br/> このEventIDに対して緊急地震速報を取り消されたかどうかを示し、取消された場合は **true** とする|
 |items[\].isWarning|取消時には出現しない|**Boolean** <br/> このEventIDに対して、緊急地震速報の警報を発表されたかどうかを示し、警報発表済みの場合は **true** とする|
-|items[\].earthquake|取消時は出現しない|**Object** <br/> 予測震源要素 [Earthquake component](/reference/conversion/json/schema/eew-information.md#7-earthquake)を参照|
-|items[\].intensity|取消時・震度未計算時は出現しない|**Object** <br/> 予測震度要素 [Intensity component](/reference/conversion/json/schema/eew-information.md#8-intensity)を参照|
+|items[\].earthquake|取消時は出現しない|**Object** <br/> 予測震源要素 [Earthquake component](/docs/reference/conversion/json/schema/eew-information.md#7-earthquake)を参照|
+|items[\].intensity|取消時・震度未計算時は出現しない|**Object** <br/> 予測震度要素 [Intensity component](/docs/reference/conversion/json/schema/eew-information.md#8-intensity)を参照|
 |items[\].text|場合による|**String** <br/> フリーテキストで表現したい場合に出現し、これを記述する|
-|nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/reference/api/v2#カーソルトークン)|
+|nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/docs/reference/api/v2#カーソルトークン)|
 
 ### status: error
 APIは各種エラーを次の通り返答します。

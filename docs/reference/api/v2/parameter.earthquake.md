@@ -16,7 +16,7 @@ title: Parameter Earthquake station v2
 ### その他
 データはパラメータ変更前とパラメータ変更後のデータ両方を含みます。
 
-データの利用の際は、[こちら](/parameter.md)も参照ください。
+データの利用の際は、[こちら](/docs/parameter.md)も参照ください。
 
 ---
 

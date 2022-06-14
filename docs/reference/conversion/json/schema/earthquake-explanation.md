@@ -6,11 +6,11 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* [地震の活動状況等に関する情報 (VXSE56)](/telegrams/et01340.md)
+* [地震の活動状況等に関する情報 (VXSE56)](/docs/telegrams/et01340.md)
 
 ## 共通ヘッダ
 
-共通ヘッダは[こちら](/reference/conversion/json/index.md#schema-head)
+共通ヘッダは[こちら](/docs/reference/conversion/json/index.md#schema-head)
 
 ## 本文
 

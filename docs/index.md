@@ -6,7 +6,7 @@ title: トップ
 ## API
 
 DMDATA.JP 上で提供している一般的に使えるAPIは
-[API Reference](/reference/index.md)
+[API Reference](/docs/reference/index.md)
 に掲載していますのでご利用ください。
 
 ## 気象庁配信の二次利用及び配布
@@ -15,7 +15,7 @@ DMDATA.JP 上で提供している一般的に使えるAPIは
 
 ## パラメータの配布
 
-震度観測地点、津波観測地点等のパラメータ配布については[こちら](/parameter.md)をご参照ください。
+震度観測地点、津波観測地点等のパラメータ配布については[こちら](/docs/parameter.md)をご参照ください。
 
 ## サービス構成
 
