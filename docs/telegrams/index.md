@@ -24,7 +24,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 
 ## データ形式
 
-- XML : 気象庁防災情報 XML フォーマットによるもの
+- XML : [気象庁防災情報 XML フォーマット](https://xml.kishou.go.jp)によるもの
 - A/N : 英文字・数字・記号・カタカナで構成される 1 バイト文字で作成された電文、形式は資料ごとに異なります。
 - Binary : 世界気象機関が定める 2 進数形式通報式 FM94 BUFR または FM92 GRIB の仕様に沿った情報。
 - JSON化 : Project DM-D.S.Sが独自に定めた[JSONスキーマ](/reference/conversion/json/index.md)。
