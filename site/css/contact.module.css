@@ -28,6 +28,7 @@
     top: 50%;
     left: 50%;
     margin-top: -100px;
+    color: #000000;
 }
 
 .submit-ok {
@@ -65,15 +66,11 @@ table.form-table th {
     font-weight: normal;
     width: 100px;
     padding: 3px 5px;
-    border: 1px solid #b3b3b3;
-    background-color: #dedbdb;
 }
 
 table.form-table td {
     padding: 3px 5px;
     text-align: left;
-    border: 1px solid #b3b3b3;
-    background-color: #ffffff;
 }
 
 table.form-table .long {
