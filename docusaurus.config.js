@@ -62,10 +62,6 @@ const themeConfig = {
                 title: 'ServicePanel',
                 items: [
                     {
-                        label: 'サービストップページ',
-                        href: 'https://dmdata.jp'
-                    },
-                    {
                         label: 'コントロールパネル',
                         href: 'https://manager.dmdata.jp/control/'
                     },
