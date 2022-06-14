@@ -33,7 +33,7 @@ body > p {
     margin: 10px 0;
 }
 
-.sample-image {
+[data-theme='light'] .sample-image {
     background-color: #737373;
 }
 
@@ -66,7 +66,6 @@ body > p {
 .description p {
     font-size: 15px;
     padding: 2px;
-    color: #313131;
 }
 
 .description-bold {
@@ -98,6 +97,10 @@ body > p {
     text-align: center;
     border: 1px solid #e6e6e6;
     background: #f7f7f7;
+}
+
+[data-theme='dark'] .plan-item {
+    background: #3b3b3b;
 }
 
 .plan-item-title {
