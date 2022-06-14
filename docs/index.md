@@ -1,6 +1,5 @@
 ---
-id: index
-slug: /
+slug: /manual
 title: トップ
 ---
 

@@ -1,0 +1,231 @@
+body p,
+body span,
+body ul,
+body li {
+    font-size: 14px;
+    margin: 0;
+}
+
+body > p {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.title {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    border-bottom: 2px solid #515151;
+}
+
+.title-site {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-site h1:first-child {
+    margin: 0;
+    font-size: 19px;
+}
+
+.sample {
+    position: relative;
+    margin: 10px 0;
+}
+
+.sample-image {
+    background-color: #737373;
+}
+
+.sample-image img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.sample-attention {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    max-width: 75%;
+}
+
+.sample-attention p {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    color: #ffffff;
+}
+
+.description {
+    margin: 25px;
+    text-align: center;
+}
+
+.description p {
+    font-size: 15px;
+    padding: 2px;
+    color: #313131;
+}
+
+.description-bold {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.plan {
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+}
+
+.plan h2 {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+.plan-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.plan-item {
+    flex: auto;
+    min-width: 165px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    background: #f7f7f7;
+}
+
+.plan-item-title {
+    font-size: 16px;
+    color: #ffffff;
+    background: #313131;
+}
+
+.plan-item-title-sub {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.plan-item-amount {
+    font-weight: bold;
+    padding: 10px 2px;
+}
+
+.plan-item-amount p {
+    font-size: 16px;
+}
+
+.plan-item-description p {
+    font-size: 13px;
+    padding: 0 2px;
+    text-align: left;
+}
+
+.plan-attention {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.plan-attention-space {
+    flex: 1 1 auto;
+}
+
+.plan-notice {
+    font-size: 12px;
+}
+
+.plan-tax {
+    font-size: 12px;
+    text-align: right;
+}
+
+.settlement {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.settlement h3 {
+    margin: 5px;
+}
+
+.settlement-logos img {
+    height: 50px;
+    padding: 5px 0;
+}
+
+.donate {
+    width: fit-content;
+    margin: 10px auto;
+    padding: 5px 20px;
+
+    border: 1px solid #1e3785;
+    border-radius: 5px;
+}
+
+.donate h3 {
+    margin: 0;
+}
+
+.donate-link {
+    text-align: center;
+}
+
+.donate-link img {
+    height: 50px;
+}
+
+.account-links,
+.doc-button {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.account-links-signup {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    background: #3f51b5;
+}
+
+.doc-button a,
+.account-links-login {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex > div {
+    flex: 1;
+    margin: 5px;
+}
+
+div.twitter {
+    overflow-y: scroll;
+    flex: none;
+    width: 300px;
+    height: 500px;
+}
+
+@media (min-width: 870px) {
+    .plan-item {
+        width: 33%;
+    }
+}

@@ -1,0 +1,96 @@
+.contact {
+    max-width: 750px;
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+
+.contact h1 {
+    font-size: 24px;
+}
+
+.form {
+    position: relative;
+}
+
+.process-status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffffad;
+}
+
+.process-status p {
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+}
+
+.submit-ok {
+    margin: 30px;
+}
+
+.contact .error {
+    font-size: 13px;
+    display: grid;
+    color: #ff3333;
+}
+
+.contact .main-error {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.contact .button {
+    font-size: 14px;
+    clear: right;
+    margin: 10px;
+    text-align: right;
+}
+
+table.form-table {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    border-collapse: collapse;
+    display: table;
+}
+
+table.form-table th {
+    font-size: 14px;
+    font-weight: normal;
+    width: 100px;
+    padding: 3px 5px;
+    border: 1px solid #b3b3b3;
+    background-color: #dedbdb;
+}
+
+table.form-table td {
+    padding: 3px 5px;
+    text-align: left;
+    border: 1px solid #b3b3b3;
+    background-color: #ffffff;
+}
+
+table.form-table .long {
+    width: 95%;
+}
+
+table.form-table textarea {
+    width: 95%;
+    height: 350px;
+}
+
+.form-submit {
+    margin: 0 10px;
+}
+
+input,
+textarea,
+label {
+    cursor: pointer;
+}

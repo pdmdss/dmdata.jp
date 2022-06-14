@@ -1,0 +1,250 @@
+---
+title: DMDATA.JP Service
+hide_title: true
+hide_table_of_contents: true
+---
+import styles from './css/index.module.css';
+
+<div className={styles.title}>
+    <div className={styles['title-site']}>
+        <h1>防災情報をいち早く、そして使いやすく （API）</h1>
+        <p>Project DM(Disaster Mitigation)-Data Send Service</p>
+    </div>
+</div>
+<div className={styles.sample}>
+    <div className={styles['sample-image']}>
+        <img src="/img/quake_sample.png" alt="開発例画像"/>
+        <div className={styles['sample-attention']}>
+            <p>サンプル画像（開発例）</p>
+            <p>https://apps.dmdata.ne.jp/etcm/</p>
+        </div>
+    </div>
+    <p>デフォルト機能として、リアルタイム地震情報ビューアとリアルタイム電文ビューア（XML表示機能付き）を用意しています。</p>
+</div>
+<div className={styles.description}>
+    <p>このサービスはもっと「手軽に生の情報を素早く得たい」、という運営者の思いによって2020年04月に正式誕生しました。</p>
+    <p>皆様のご利用により長期的な運用を目指しています。</p>
+    <br/>
+    <p>
+        <strong>WebSocket</strong>を通じて、 気象庁（気象業務支援センター）の配信する"<strong>地震情報</strong>"や"<strong>津波情報</strong>"、
+        <br/>
+        "<strong>気象警報</strong>"等を気象庁防災情報XMLで提供されている形式で配信する API を提供しています。
+    </p>
+    <p>WebSocketを利用することで速報性のある震度速報や津波警報、特別警報を即座に配信できます。</p>
+    <p>このサービスを通して得た情報（気象庁発表の電文に限る）は無償・商用問わず二次利用が可能です。</p>
+    <p>気象業務支援センター（気象庁構内）の東京・大阪から常時配信を受けており、地理冗長の常時二系統運用を行っています。</p>
+</div>
+<div className={styles.plan}>
+    <h2>配信情報一覧、利用金額（個人）</h2>
+    <div className={styles['plan-items']}>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
+                緊急地震（予報）
+                <span className={styles['plan-item-title-sub']}>区分</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>※準備中</p>
+                <p>1650円/月(最大額)</p>
+                <p>(75円/日(日割り))</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>緊急地震速報（予報）</p>
+                <p>緊急地震速報配信テスト</p>
+                <br/>
+                <p>WebSocket同時接続数 +1 追加</p>
+                <br/>
+                <p>
+                    <a href="/docs/eew">緊急地震速報(予報)の利用について</a>
+                </p>
+            </div>
+        </div>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
+                緊急地震（警報）
+                <span className={styles['plan-item-title-sub']}>区分</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>※準備中</p>
+                <p>440円/月(最大額)</p>
+                <p>(20円/日(日割り))</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>緊急地震速報（警報）</p>
+                <br/>
+                <p>WebSocket同時接続数 +1 追加</p>
+            </div>
+        </div>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
+                地震・津波関連
+                <span className={styles['plan-item-title-sub']}>区分</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>550円/月(最大額)</p>
+                <p>(25円/日(日割り))</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>震度速報</p>
+                <p>震源に関する情報</p>
+                <p>震源・震度に関する情報</p>
+                <p>地震の活動状況等に関する情報</p>
+                <p>南海トラフ関連情報</p>
+                <p>地震回数に関する情報</p>
+                <p>顕著な地震の震源要素更新のお知らせ</p>
+                <p>津波警報・注意報・予報</p>
+                <p>津波情報</p>
+                <p>国際津波関連情報</p>
+                <p>地震・津波に関するお知らせ</p>
+                <br/>
+                <p>WebSocket同時接続数 +1 追加</p>
+            </div>
+        </div>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
+                火山関連
+                <span className={styles['plan-item-title-sub']}>区分</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>550円/月(最大額)</p>
+                <p>(25円/日(日割り))</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>噴火警報・噴火予報</p>
+                <p>火山の状況に関する解説情報</p>
+                <p>噴火に関する火山観測報</p>
+                <p>噴火現象に関する海上警報・予報</p>
+                <p>降灰予報</p>
+                <p>噴火速報</p>
+                <p>火山に関するお知らせ</p>
+                <br/>
+                <p>WebSocket同時接続数 +1 追加</p>
+            </div>
+        </div>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
+                気象警報・注意報関連
+                <span className={styles['plan-item-title-sub']}>区分</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>1100円/月(最大額)</p>
+                <p>(50円/日(日割り))</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>気象警報・注意報</p>
+                <p>特別警報報知</p>
+                <p>記録的短時間大雨情報</p>
+                <p>気象情報</p>
+                <p>早期天候情報</p>
+                <p>竜巻注意情報</p>
+                <p>スモッグ気象情報</p>
+                <p>全般台風情報</p>
+                <p>台風解析・予報情報</p>
+                <p>台風の暴風域に入る確率</p>
+                <p>土砂災害警戒情報</p>
+                <p>指定河川洪水予報</p>
+                <p>高温注意情報</p>
+                <p>潮位情報</p>
+                <br/>
+                <p>WebSocket同時接続数 +1 追加</p>
+            </div>
+        </div>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
+                定時報・その他関連
+                <span className={styles['plan-item-title-sub']}>区分</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>440円/月(最大額)</p>
+                <p>(20円/日(日割り))</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>大雨危険度通知</p>
+                <p>海上警報</p>
+                <br/>
+                <p>WebSocket同時接続数 +1 追加</p>
+            </div>
+        </div>
+    </div>
+    <p>法人・団体向けは別途お問い合わせください。</p>
+</div>
+<div className={styles['plan-attention']}>
+    <p className={styles['plan-notice']}>
+        上記は情報の改廃により変更となる場合があります
+        <br/>
+        終了予定のある一部電文については配信しません
+        <br/>
+        配信電文の詳細は
+        <a href="/docs/telegrams/">こちら</a>
+    </p>
+    <div className={styles['plan-attention-space']}></div>
+    <p className={styles['plan-tax']}>全ての金額は税込み価格です。</p>
+</div>
+<div className={styles['account-links']}>
+    <a href="https://manager.dmdata.jp/account/signup" className={styles['account-links-signup']}>アカウント作成</a>
+    <a href="https://manager.dmdata.jp/account/signin" className={styles['account-links-login']}>ログイン</a>
+</div>
+<div className={styles.settlement}>
+    <h3>決済にはクレジットカードが便利です</h3>
+    <div className={styles['settlement-logos']}>
+        <img src="/img/settlement/creditcard/visa.png" alt="Visa"/>
+        <img src="/img/settlement/creditcard/mastercard.png" alt="MasterCard"/>
+        <img src="/img/settlement/creditcard/jcb.png" alt="JCB"/>
+        <img src="/img/settlement/creditcard/discover.png" alt="Discover"/>
+        <img src="/img/settlement/creditcard/american-express.png" alt="AmericanExpress"/>
+    </div>
+    <br/>
+    <h3>事前チャージによるコンビニ、銀行振り込み、PayPalも利用できます</h3>
+    <div className={styles['settlement-logos']}>
+        <img src="/img/settlement/conveniencestore/daily-yamazaki.svg" alt="デイリーヤマザキ"/>
+            <img src="/img/settlement/conveniencestore/family-mart.svg" alt="ファミリーマート"/>
+            <img src="/img/settlement/conveniencestore/lawson.svg" alt="ローソン"/>
+            <img src="/img/settlement/conveniencestore/ministop.svg" alt="ミニストップ"/>
+            <img src="/img/settlement/conveniencestore/seicomart.svg" alt="セイコーマート"/>
+            <br/>
+            <img src="/img/settlement/paypal.png" alt="PayPal"/>
+    </div>
+</div>
+<div className={styles.donate}>
+    <h3>寄付</h3>
+    Project DM-D.S.Sでは、PayPal.meで寄付を受け付けています。
+    <div className={styles['donate-link']}>
+        <a href="https://paypal.me/dmdata" target="_blank">
+            <img src="/img/settlement/paypal.png" alt="PayPal"/>
+            <br/>
+            PayPal.me（クレジット・銀行等対応）
+        </a>
+    </div>
+</div>
+<div className={styles.flex}>
+    <div className={styles.twitter}>
+        <h3>公式Twitter</h3>
+        <a className="twitter-timeline" href="https://twitter.com/pdmdata?ref_src=twsrc%5Etfw"></a>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+    </div>
+    <div>
+        <p>支払方法については、
+            <a href="https://dmdata.jp/docs/payment">こちら</a>
+            を参照してください
+        </p>
+        <p>カード決済代理店にはPAY.JPを利用しており、当サービスではカード情報をトークン化しカード番号等は保存しません。</p>
+        <p>コンビニ決済、銀行振込にはKomojuを利用しています。。</p>
+        <p>無料お試し期間は設定していません。</p>
+        <p>返金・キャンセル等はサービスの特性上受け付けていません。利用を停止したい場合は、コントロールパネルから解約を行ってください。</p>
+        <br/>
+        <br/>
+        <p>WebSocketには1契約区分ごとに、同時接続数を1追加します（すべて契約いただくと4つまで同時接続可、それぞれすべての区分を取得可能）。</p>
+        <br/>
+        <p>気象庁が配信する形式（気象庁防災情報XMLフォーマット、BUFR、GRIB2など）はパブリックドメイン（公共物・著作放棄物）です。</p>
+        <br/>
+        <p>この事業は、個人が運営しています。</p>
+    </div>
+</div>
+<p className={styles['doc-button']}>
+    <a href="/docs/reference">APIリファレンス</a>
+</p>

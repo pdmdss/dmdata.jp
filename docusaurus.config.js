@@ -6,24 +6,28 @@
 /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 const themeConfig = {
     navbar: {
-        title: 'Top',
         logo: {
             alt: 'logo',
             src: 'img/logo.png'
         },
         items: [
             {
-                to: '/reference/',
+                to: 'docs/manual',
+                label: 'Docs',
+                position: 'left'
+            },
+            {
+                to: 'docs/reference/',
                 label: 'API Reference',
                 position: 'left'
             },
             {
-                to: '/telegrams/',
+                to: 'docs/telegrams/',
                 label: '配信データ',
                 position: 'left'
             },
             {
-                href: 'https://github.com/pdmdss/doc.dmdata.jp',
+                href: 'https://github.com/pdmdss/dmdata.jp',
                 label: 'GitHub',
                 position: 'right'
 
@@ -35,6 +39,27 @@ const themeConfig = {
         links: [
             {
                 title: 'Site',
+                items: [
+                    {
+                        label: '利用規約',
+                        href: '/terms'
+                    },
+                    {
+                        label: 'プライバシーポリシー',
+                        href: '/policy'
+                    },
+                    {
+                        label: '法的表記',
+                        href: '/legal'
+                    },
+                    {
+                        label: 'お問い合わせ',
+                        href: '/contact'
+                    }
+                ]
+            },
+            {
+                title: 'ServicePanel',
                 items: [
                     {
                         label: 'サービストップページ',
@@ -75,9 +100,9 @@ const themeConfig = {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'DMDATA.JP Document',
+    title: 'DMDATA.JP',
     url: 'https://dmdata.jp',
-    baseUrl: '/doc/',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     favicon: 'img/favicon.ico',
     themeConfig,
@@ -86,8 +111,10 @@ const config = {
             '@docusaurus/preset-classic',
             {
                 docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
-                    routeBasePath: '/'
+                    sidebarPath: require.resolve('./sidebars.js')
+                },
+                pages: {
+                    path: 'site',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css')
