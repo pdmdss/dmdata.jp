@@ -55,7 +55,7 @@ export default class Contact extends React.Component {
 
     const grc = await gReCaptcha();
 
-    await fetch('/contact', {
+    await fetch('/contact-post', {
       method: 'post',
       body: JSON.stringify({ ...this.values, grc }),
       headers: {
@@ -76,7 +76,7 @@ export default class Contact extends React.Component {
           <p>このページを利用するか、「support#dmdata.jp」(#を@に変更してください)宛にメールを送信してください。</p>
           <p>すべての項目が必須項目です。</p>
           <div className={styles.form}>
-            <form action="/contact" method="post" id="forms" autoComplete="off">
+            <form action="/contact-post" method="post" id="forms" autoComplete="off">
               <table className={styles['form-table']}>
                 <tbody>
                   <tr>
