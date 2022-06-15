@@ -100,7 +100,7 @@ const config = {
     url: 'https://dmdata.jp',
     baseUrl: '/',
     onBrokenLinks: 'throw',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/icon.png',
     themeConfig,
     presets: [
         [
