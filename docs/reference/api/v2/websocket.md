@@ -16,6 +16,21 @@ WebSocketを通じて気象庁の発表する電文をリアルタイムに配�
 |:--|:-:|:-:|:--|
 |ticket|はい||**String** <br/> [**Socket Start v2**](/docs/reference/api/v2/socket.start.md)により取得したWebSocket接続するためのチケットを指定する|
 
+### エンドポイント情報
+
+複数のサーバーを含エンドポイントは死活監視しており、正常なサーバーにランダムに振り分けします。
+（※60秒の DNS TTL が存在するため、即座の切り替えを保証するものではありません。）
+
+地理・冗長化を目的として、Socket Start の URL情報 を使用せず下記の エンドポイントを使用することができます。 
+
+* **ws.api.dmdata.jp - Tokyo and Osaka** <br/> 東京・大阪のレイテンシ分配エンドポイント
+  * **ws-tokyo.api.dmdata.jp - Tokyo Region** <br/> 東京エンドポイント
+    * ws001.api.dmdata.jp - AWS apne1-az4
+    * ws002.api.dmdata.jp - AWS apne1-az1
+  * **ws-osaka.api.dmdata.jp - Osaka Region** <br/> 大阪エンドポイント
+    * ws003.api.dmdata.jp - AWS apne3-az3
+    * ws004.api.dmdata.jp - AWS apne3-az1
+
 ### その他
 XML電文については圧縮して送信します。WebSocketは実装により圧縮/非圧縮で通信します。
 
