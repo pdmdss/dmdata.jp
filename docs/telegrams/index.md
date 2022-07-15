@@ -56,7 +56,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [地震情報（地震回数に関する情報）](et01350)        | 地震回数に関する情報                | VXSE60   | XML   | [配信中](/docs/reference/conversion/json/schema/earthquake-counts.md)            |                |
 | [地震情報（顕著な地震の震源要素更新のお知らせ）](et01360) | 顕著な地震の震源要素更新のお知らせ         | VXSE61   | XML   | [配信中](/docs/reference/conversion/json/schema/earthquake-hypocenter-update.md) |                |
 | [長周期地震動に関する観測情報](et01370)          | 長周期地震動に関する観測情報            | VXSE62   | XML   | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       | 2022年度後半から配信開始 |
-| [推計震度分布図作図用データ](et01380)           |                           | IXAC41   | BUFR  | 2022年度後半から配信開始                                                                |                |
+| [推計震度分布図作図用データ](et01380)           |                           | IXAC41   | BUFR  |                                                                               | 2022年度後半から配信開始 |
 | [南海トラフ地震臨時情報](et01410)             | 南海トラフ地震臨時情報               | VYSE50   | XML   | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |                |
 | [南海トラフ地震関連解説情報（定例外）](et01420)      | 南海トラフ地震関連解説情報             | VYSE51   | XML   | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |                |
 | [南海トラフ地震関連解説情報（定例）](et01421)       | 南海トラフ地震関連解説情報             | VYSE52   | XML   | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |                |
