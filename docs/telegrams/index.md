@@ -30,7 +30,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 - JSON : Project DM-D.S.Sが独自に定めた[JSONスキーマ](/docs/reference/conversion/json/index.md)。
 
 
-:::info
+:::info 情報
 データ形式は、APIの `format` で表記します（すべて小文字）。
 :::
 
