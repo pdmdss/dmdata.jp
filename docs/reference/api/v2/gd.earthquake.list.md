@@ -41,6 +41,7 @@ APIは常にJSONを返答します。
   "items": [
     {
       "id": 1584,
+      "type": "normal",
       "eventId": "20210808085414",
       "originTime": "2021-08-08T08:54:00+09:00",
       "arrivalTime": "2021-08-08T08:54:00+09:00",
@@ -91,6 +92,7 @@ APIは常にJSONを返答します。
 |status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
 |items|いつも|**Array<Object\>** <br/> アイテムリスト|
 |items[\].id|いつも|**Integer** <br/> ID|
+|items[\].type|いつも|**String** <br/> 国内地震情報か、遠地地震情報かを区別する <br/> `normal` は 国内地震情報（震源・震度に関する情報など）、`distant` は 遠地地震情報|
 |items[\].eventId|いつも|**String** <br/> 地震情報のEventID|
 |items[\].originTime|震度速報のみの場合は出現しない|**ISO8601Time** <br/> 地震発生時刻|
 |items[\].arrivalTime|いつも|**ISO8601Time** <br/> 地震検知時刻|
