@@ -57,10 +57,10 @@ APIは常にJSONを返答します。
     "responseId": "83c36173ceaf9e44",
     "responseTime": "2021-04-01T00:00:00.000Z",
     "status": "ok",
-    "ticket": "Tit....",
+    "ticket": "Tik....",
     "websocket": {
         "id": 0,
-        "url": "wss://ws003.api.dmdata.jp/v2/websocket?ticket=Tit....",
+        "url": "wss://ws003.api.dmdata.jp/v2/websocket?ticket=Tik....",
         "protocol": [
             "dmdata.v2"
         ],
