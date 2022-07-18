@@ -368,6 +368,7 @@ VXSE43、VXSE45時のみで震源の深さが150km未満の時出します。
 * [VXSE45 - 緊急地震速報（地震動予報）](https://sample.dmdata.jp/conversion/json/schema/eew-information/vxse45_rjtd_20110311144810.json)
 * [VXSE45 - 緊急地震速報（地震動予報）](https://sample.dmdata.jp/conversion/json/schema/eew-information/vxse45_rjtd_20110311144811.json)
 
+
 * [2018/08/01 17:09 の例](https://sample.dmdata.jp/eew/20170701a/json/)
 * [2016/04/16 01:25 の例（電文中の時刻等は仮想）](https://sample.dmdata.jp/eew/20171213a/json/)
 * [2011/03/11 14:46 の例（電文中の時刻等は仮想）](https://sample.dmdata.jp/eew/20171213b/json/)
