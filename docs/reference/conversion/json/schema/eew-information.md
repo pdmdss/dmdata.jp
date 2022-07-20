@@ -9,7 +9,7 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 * [緊急地震速報（警報） (VXSE43)](/docs/telegrams/ew09020.md)
 * [緊急地震速報（予報） (VXSE44)](/docs/telegrams/ew09030.md)
 * [緊急地震速報（地震動予報） (VXSE45)](/docs/telegrams/ew09040.md)
-* [緊急地震速報テスト (VXSE42)](/docs/telegrams/et01310.md)
+* [緊急地震速報テスト (VXSE42)](/docs/telegrams/ew09010.md)
 
 ## 出現するコード参照
 
