@@ -91,7 +91,7 @@ TypeScriptによる型定義が、 [@dmdata/telegram-json-types](https://github.
 
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
-| 1. | _originalId | | **String**<br/> 基となったXMLデータの電文ID |
+| 1. | _originalId | | **String**<br/> JSON化電文を区別するユニーク384bitハッシュ |
 | 2. | _schema |  | **Object**<br/> JSONスキーマ情報（内部利用） |
 | 2._1. | _schema.type |  | **String**<br/> JSONスキーマ名 |
 | 2._2. | _schema.version |  | **String**<br/> JSONスキーマバージョン |

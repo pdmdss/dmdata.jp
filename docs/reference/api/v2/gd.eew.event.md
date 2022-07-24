@@ -194,7 +194,8 @@ APIは常にJSONを返答します。
 |items[\].text|場合による|**String** <br/> フリーテキストで表現したい場合に出現し、これを記述する|
 |items[\].telegrams|いつも|**Array<Object\>** <br/> 緊急地震速報の電文リスト、配列中の要素は1個で固定|
 |items[\].telegrams[\].serial|いつも|**Integer** <br/> 電文受信通番|
-|items[\].telegrams[\].id|いつも|**String** <br/> 配信データを区別するユニーク384bitハッシュ|
+|items[\].telegrams[\].id|いつも|**String** <br/> JSON化電文を区別するユニーク384bitハッシュ|
+|items[\].telegrams[\].originalId|いつも|**String** <br/> JSON化電文の基となったXML電文を区別するユニーク384bitハッシュ|
 |items[\].telegrams[\].classification|いつも|**String** <br/> 配信区分により変化。取りうる値は eew.forecast|
 |items[\].telegrams[\].head|いつも|**Object** <br/> ヘッダ情報|
 |items[\].telegrams[\].head.type|いつも|**String** <br/> データ種類コード|

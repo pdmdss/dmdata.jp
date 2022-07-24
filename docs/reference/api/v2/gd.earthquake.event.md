@@ -79,6 +79,7 @@ APIは常にJSONを返答します。
       {
         "serial": 0,
         "id": "...",
+        "originalId": "...",
         "classification": "telegram.earthquake",
         "head": {
           "type": "VXSE53",
@@ -136,7 +137,8 @@ APIは常にJSONを返答します。
 |event.maxInt|いつも|**String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする|
 |event.telegrams|いつも|**Array<Object\>** <br/> 地震情報の電文リスト|
 |event.telegrams[\].serial|いつも|**Integer** <br/> 電文受信通番|
-|event.telegrams[\].id|いつも|**String** <br/> 配信データを区別するユニーク384bitハッシュ|
+|event.telegrams[\].id|いつも|**String** <br/> JSON化電文を区別するユニーク384bitハッシュ|
+|event.telegrams[\].originalId|いつも|**String** <br/> JSON化電文の基となったXML電文を区別するユニーク384bitハッシュ|
 |event.telegrams[\].classification|いつも|**String** <br/> 配信区分により変化。取りうる値は telegram.earthquake|
 |event.telegrams[\].head|いつも|**Object** <br/> ヘッダ情報|
 |event.telegrams[\].head.type|いつも|**String** <br/> データ種類コード|
