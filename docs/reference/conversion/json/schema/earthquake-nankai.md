@@ -8,7 +8,7 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 * [南海トラフ地震臨時情報 (VYSE50)](/docs/telegrams/et01410.md)
 * [南海トラフ地震関連解説情報 (VYSE51)](/docs/telegrams/et01420.md)
-* [南海トラフ地震関連解説情報 (VYSE51)](/docs/telegrams/et01421.md)
+* [南海トラフ地震関連解説情報 (VYSE52)](/docs/telegrams/et01421.md)
 
 ## 共通ヘッダ
 
