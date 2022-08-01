@@ -13,7 +13,7 @@ DMDATA.JPでは気象庁の発表する、緊急地震速報の配信を行っ�
 * eew.forecast (緊急地震（予報）区分)
   * [VXSE42 緊急地震速報（テスト）](/docs/telegrams/ew09010)
   * [VXSE44 緊急地震速報（予報）](/docs/telegrams/ew09030)
-  * [VXSE45 緊急地震速報（地震動予報）](/docs/telegrams/ew09040)（新形式） ※気象庁より提供され次第配信
+  * [VXSE45 緊急地震速報（地震動予報）](/docs/telegrams/ew09040)（新形式） ※2023年02月01日より配信
 * eew.warning (緊急地震（警報）区分)
   * [VXSE43 緊急地震速報（警報）](/docs/telegrams/ew09020)
 
