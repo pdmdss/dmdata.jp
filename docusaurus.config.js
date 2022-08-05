@@ -110,11 +110,20 @@ const config = {
                     sidebarPath: require.resolve('./sidebars.js')
                 },
                 pages: {
-                    path: 'site',
+                    path: 'site'
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css')
                 }
+            }
+        ]
+    ],
+    plugins: [
+        [
+            '@docusaurus/plugin-google-analytics',
+            {
+                trackingID: 'UA-96207930-6',
+                anonymizeIP: true
             }
         ]
     ]
