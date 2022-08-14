@@ -135,6 +135,8 @@ APIは常にJSONを返答します。
 |event.hypocenter|震度速報のみの場合は出現しない|**Object** <br/> 震源要素 [Earthquake component / Hypocenter](/docs/reference/conversion/json/component.md#3-hypocenter)を参照|
 |event.magnitude|震度速報のみの場合は出現しない|**Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/docs/reference/conversion/json/component.md#4-magnitude)を参照|
 |event.maxInt|いつも|**String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする|
+|event.maxLgInt|場合による|**String** <br/> 観測した最大の長周期地震動階級|
+|event.lgCategory|場合による|**String** <br/> 長周期地震動に関する観測情報の種類|
 |event.telegrams|いつも|**Array<Object\>** <br/> 地震情報の電文リスト|
 |event.telegrams[\].serial|いつも|**Integer** <br/> 電文受信通番|
 |event.telegrams[\].id|いつも|**String** <br/> JSON化電文を区別するユニーク384bitハッシュ|
