@@ -91,7 +91,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 |----------------------------------------------|---------------------------|-------------------|-------|-------------------------------------------------------------------------|--------------------|
 | &#x1f6ab; [特別警報/警報/注意報](we02010)             | 気象特別警報・警報・注意報             | VPWW53            | XML   |                                                                         | VPWW54の経過移行措置として配信 |
 | [特別警報/警報/注意報 （新しいステージに対応した防災気象情報）](we02050)  | 気象警報・注意報（Ｈ２７）             | VPWW54            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)        |                    |
-| [特別警報報知](we02020)                            | 特別警報報知                    | VPNO50            | XML   |                                                                         |                    |
+| [気象特別警報報知](we02020)                          | 気象特別警報報知                  | VPNO50            | XML   |                                                                         |                    |
 | [記録的短時間大雨情報](we02030)                        | 記録的短時間大雨情報                | VPOA50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)        |                    |
 | [全般気象情報](we02310)                            | 全般気象情報                    | VPZJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
 | [地方気象情報](we02320)                            | 地方気象情報                    | VPCJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
