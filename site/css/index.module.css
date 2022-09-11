@@ -162,27 +162,6 @@ body > p {
     padding: 5px 0;
 }
 
-.donate {
-    width: fit-content;
-    margin: 10px auto;
-    padding: 5px 20px;
-
-    border: 1px solid #1e3785;
-    border-radius: 5px;
-}
-
-.donate h3 {
-    margin: 0;
-}
-
-.donate-link {
-    text-align: center;
-}
-
-.donate-link img {
-    height: 50px;
-}
-
 .account-links,
 .doc-button {
     margin: 10px;
