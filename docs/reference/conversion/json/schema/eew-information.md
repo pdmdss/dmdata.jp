@@ -233,7 +233,7 @@ VXSE43、VXSE44、VXSE45時に出現しますが、予測震度を計算して�
 | 8._1._1. | from | | **String**<br/>最大予測震度の下限、`0`, `1`, `2`, `3`, `4`, `5-`, `5+`, `6-`, `6+`, `7`, `不明` で記載する |
 | 8._1._2. | to | | **String**<br/>最大予測震度の上限、`0`, `1`, `2`, `3`, `4`, `5-`, `5+`, `6-`, `6+`, `7`, `over`, `不明` で記載する |
 ||||
-| 8._2.? | forecastMaxLpgmInt | VXSE43、VXSE45時のみ ※<br/>震源の深さが150未満の時出現| **Object**<br/>最大予測長周期地震動階級を記載する |
+| 8._2.? | forecastMaxLgInt | VXSE43、VXSE45時のみ ※<br/>震源の深さが150未満の時出現| **Object**<br/>最大予測長周期地震動階級を記載する |
 | 8._2._1. | from | | **String**<br/>最大予測長周期地震動階級の下限、`0`, `1`, `2`, `3`, `4`, `不明` で記載する |
 | 8._2._2. | to | | **String**<br/>最大予測長周期地震動階級の上限、`0`, `1`, `2`, `3`, `4`, `over`, `不明` で記載する |
 ||||
@@ -252,7 +252,7 @@ VXSE43、VXSE44、VXSE45時に出現しますが、予測震度を計算して�
 | 階層 | フィールド | 出現条件 | 説明 |
 | -- | -- | -- | -- |
 | 8._3._1. | maxIntChange | | **String<Integer\>**<br/>最大予測震度変化 [#8. 3. 1. maxIntChange](#8-3-1-maxintchange) |
-| 8._3._2.? | maxLpgmIntChange | VXSE43、VXSE45時のみ ※ | **String<Integer\>**<br/>最大予測長周期地震動階級変化 [#8. 3. 2. maxLpgmIntChange](#8-3-2-maxlpgmintchange) |
+| 8._3._2.? | maxLgIntChange | VXSE43、VXSE45時のみ ※ | **String<Integer\>**<br/>最大予測長周期地震動階級変化 [#8. 3. 2. maxLgIntChange](#8-3-2-maxlgintchange) |
 | 8._3._3. | maxIntChangeReason | | **String<Integer\>**<br/>最大予測値変化の理由 [#8. 3. 3. maxIntChangeReason](#8-3-3-maxintchangereason) |
 
 ※ VXSE43の場合、VXSE45の配信開始まで本フィールドは出現しない。
@@ -267,7 +267,7 @@ VXSE43、VXSE44、VXSE45時に出現しますが、予測震度を計算して�
 * 1 : 最大予測震度が 1.0 以上大きくなった
 * 2 : 最大予測震度が 1.0 以上小さくなった
 
-##### 8. 3. 2. maxLpgmIntChange
+##### 8. 3. 2. maxLgIntChange
 
 最大予測長周期地震動階級変化を記載します。`0` から `2` までの整数値を使用します。
 
@@ -301,7 +301,7 @@ VXSE43、VXSE44、VXSE45時に出現しますが、予測震度を計算して�
 | 8._4._3. | isPlum | | **Boolean**<br/>この細分化地域でPLUM法による震度予測であるか示す、PLUM法時は **true** とする |
 | 8._4._4. | isWarning | | **Boolean**<br/>この細分化地域で警報発表しているかどうかを示す、警報時は **true** とする |
 | 8._4._5. | forecastMaxInt | | **Object**<br/>最大予測震度を記載する [#8. 4. 5. forecastMaxInt](#8-4-5-forecastmaxint) |
-| 8._4._6.? | forecastMaxLpgmInt | VXSE43、VXSE45時のみ ※<br/>震源の深さが150km未満の時出現 | **Object**<br/>最大予測長周期地震動階級を記載する [#8. 4. 6. forecastMaxLpgmInt](#8-4-6-forecastmaxlpgmint) |
+| 8._4._6.? | forecastMaxLgInt | VXSE43、VXSE45時のみ ※<br/>震源の深さが150km未満の時出現 | **Object**<br/>最大予測長周期地震動階級を記載する [#8. 4. 6. forecastMaxLgInt](#8-4-6-forecastmaxlgint) |
 | 8._4._7. | kind | | **Object**<br/>緊急地震速報の種別 [#8. 4. 7. kind](#8-4-7-kind) |
 | 8._4._8.? | condition | 下といずれか出現する | **String**<br/>この細分化地域で主要動到達に関する状況等を示す<br/>主要動の到達予測時刻を過ぎており、既に主要動が到達していると推測される時には出現する<br/> `既に主要動到達と推測`で固定  |
 | 8._4._9.? | arrivalTime | 上といずれか出現する | **ISO8601Time**<br/>この細分化地域で主要動の到達予測時刻を示す<br/>主要動の到達予測時刻以前であり、主要動が未到達と推測される時には、本要素が出現する<br/>該当区域について PLUM法で予測している時には、「PLUM法でその震度（階級震度）を初めて予測した時刻」を示す |
@@ -320,7 +320,7 @@ VXSE43、VXSE44、VXSE45時に出現しますが、予測震度を計算して�
 | 8._4._5._2. | to | | **String**<br/>最大予測震度の上限、`0`, `1`, `2`, `3`, `4`, `5-`, `5+`, `6-`, `6+`, `7`, `over`, `不明` で記載する |
 
 
-#### 8. 4. 6. forecastMaxLpgmInt
+#### 8. 4. 6. forecastMaxLgInt
 
 最大予測長周期地震動階級を記載します。
 VXSE43、VXSE45時のみで震源の深さが150km未満の時出します。
