@@ -118,6 +118,15 @@ const config = {
             }
         ]
     ],
+    i18n: {
+        defaultLocale: 'ja',
+        locales: ['ja'],
+        localeConfigs:{
+            ja: {
+                htmlLang: 'ja-JP'
+            }
+        }
+    },
     plugins: [
         [
             '@docusaurus/plugin-google-analytics',
