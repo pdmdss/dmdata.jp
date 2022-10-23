@@ -97,7 +97,7 @@ TypeScriptによる型定義が、 [@dmdata/telegram-json-types](https://github.
 | 2._2. | _schema.version |  | **String**<br/> JSONスキーマバージョン |
 | 3. | type | | **String**<br/> 情報名称(Control/Title部) |
 | 4. | title | | **String**<br/> 情報の標題(Head/Title部) |
-| 5. | status | | **String**<br/> 情報の運用状態、取りうる値は`通常`、`訓練`、`試験`<br/> `通常`以外の情報につては内部利用にとどめること |
+| 5. | status | | **String**<br/> 情報の運用状態、取りうる値は`通常`、`訓練`、`試験`<br/> `通常`以外の情報については内部利用にとどめること |
 | 6. | infoType | | **String**<br/> 情報の発表状態、取りうる値は`発表`、`訂正`、`遅延`、`取消` |
 | 7. | editorialOffice | | **String**<br/> 情報の編集官署名 |
 | 8. | publishingOffice | | **Array<String\>**<br/> 情報の発表官署名又は組織名、複数入る場合がある |
