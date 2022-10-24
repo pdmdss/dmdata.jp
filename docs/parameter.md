@@ -10,8 +10,8 @@ title: 各種パラメータについて
 
 API JSON にて提供します。
 
-* [**Parameter Earthquake**](/docs/reference/api/v2/parameter.earthquake)
-* [**Parameter Tsunami**](/docs/reference/api/v2/parameter.tsunami)
+* [**Parameter Earthquake**](/docs/reference/api/v2/parameter.earthquake.md)
+* [**Parameter Tsunami**](/docs/reference/api/v2/parameter.tsunami.md)
 
 
 ## 二次配布の禁止
