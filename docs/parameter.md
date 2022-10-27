@@ -10,8 +10,8 @@ title: 各種パラメータについて
 
 API JSON にて提供します。
 
-* [**Parameter Earthquake**](/docs/reference/api/v2/parameter.earthquake)
-* [**Parameter Tsunami**](/docs/reference/api/v2/parameter.tsunami)
+* [**Parameter Earthquake**](/docs/reference/api/v2/parameter.earthquake.md)
+* [**Parameter Tsunami**](/docs/reference/api/v2/parameter.tsunami.md)
 
 
 ## 二次配布の禁止
@@ -22,8 +22,10 @@ API JSON にて提供します。
 
 ## 更新履歴
 
+* **2022/10/24** - 2022年11月24日12時適用・2022年07月21日12時適用分の震度観測点パラメータに更新
+* **2022/06/21** - 2022年07月21日12時適用・2022年02月24日12時適用分の震度観測点パラメータに更新
 * **2022/01/24** - 2022年02月24日12時適用・2021年10月28日12時適用分の震度観測点パラメータに更新
-* **2022/01/24** - 2020年03月12日12時適用・2022年02月24日12時適用分の津波観測点パラメータに更新
+* **2022/01/24** - 2022年02月24日12時適用・2020年03月12日12時適用分の津波観測点パラメータに更新
 
 
 * **2021/09/28** - 2021年10月28日12時適用・2021年07月01日12時適用分の震度観測点パラメータに更新
