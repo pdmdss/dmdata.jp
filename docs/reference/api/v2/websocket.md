@@ -198,7 +198,7 @@ WebSocket>>>
 |type|いつも|**String** <br/> データを示す `data` で固定|
 |version|いつも|**String** <br/> バージョンを示す、作成処理の変更で予告なく変更となる場合がある|
 |id|いつも|**String** <br/> 配信データを区別するユニーク384bitハッシュ|
-|classification|いつも|**String** <br/> 配信区分により変化。取りうる値は `telegram.earthquake`, `telegram.volcano`, `telegram.weather`, `telegram.scheduled`|
+|classification|いつも|**String** <br/> 配信区分により変化。取りうる値は `eew.forecast`, `eew.warning`, `telegram.earthquake`, `telegram.volcano`, `telegram.weather`, `telegram.scheduled`|
 |passing|いつも|**Array<Object\>** <br/> 通過情報|
 |passing\[].name|いつも|**String** <br/> 通過場所の名前|
 |passing\[].time|いつも|**ISO8601Time** <br/> 通過した時間|
