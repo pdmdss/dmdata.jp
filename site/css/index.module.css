@@ -209,5 +209,6 @@ div.twitter {
 @media (min-width: 870px) {
     .plan-item {
         width: 33%;
+        max-width: 33%;
     }
 }

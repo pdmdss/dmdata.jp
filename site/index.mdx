@@ -3,6 +3,7 @@ title: DMDATA.JP Service
 hide_title: true
 hide_table_of_contents: true
 ---
+
 import styles from './css/index.module.css';
 
 <div className={styles.title}>
@@ -25,12 +26,13 @@ import styles from './css/index.module.css';
     <p>このサービスはもっと「手軽に生の情報を素早く得たい」、という運営者の思いによって2020年04月に正式誕生しました。</p>
     <br/>
     <p>
-        <strong>WebSocket</strong>を通じて、 気象庁（気象業務支援センター）の配信する"<strong>地震情報</strong>"や"<strong>津波情報</strong>"、
+        <strong>WebSocket</strong>を通じて、
+        気象庁（気象業務支援センター）の配信する"<strong>地震情報</strong>"や"<strong>津波情報</strong>"、
         <br/>
         "<strong>気象警報</strong>"等を気象庁防災情報XMLで提供されている形式で配信する API を提供しています。
     </p>
     <p>WebSocketを利用することで速報性のある緊急地震速報や、震度速報、津波警報、特別警報などを即座に配信できます。</p>
-    <p>このサービスを通して得た情報（気象庁発表の電文に限る）は無償・商用問わず二次利用が可能です。</p>
+    <p>このサービスを通して得た情報（気象庁発表の電文に限る）は無償・商用問わず二次利用が可能です（一部を除く。）。</p>
     <p>気象業務支援センター（気象庁構内）の東京・大阪から常時リアルタイム配信を受けており、地理冗長の常時二系統運用を行っています。</p>
 </div>
 <div className={styles.plan}>
@@ -71,6 +73,22 @@ import styles from './css/index.module.css';
                 <p>緊急地震速報（警報）</p>
                 <br/>
                 <p>WebSocket同時接続数 +1 追加</p>
+            </div>
+        </div>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
+                緊急地震（リアルタイム震度）
+                <span className={styles['plan-item-title-sub']}>区分</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>お問い合わせ</p>
+                <p>&nbsp;</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>リアルタイム震度</p>
+                <br/>
+                <p>法人利用の場合のみ提供可能</p>
             </div>
         </div>
         <div className={styles['plan-item']}>
@@ -201,12 +219,12 @@ import styles from './css/index.module.css';
     <h3>事前チャージによるコンビニ、銀行振り込み、PayPalも利用できます</h3>
     <div className={styles['settlement-logos']}>
         <img src="/img/settlement/conveniencestore/daily-yamazaki.svg" alt="デイリーヤマザキ"/>
-            <img src="/img/settlement/conveniencestore/family-mart.svg" alt="ファミリーマート"/>
-            <img src="/img/settlement/conveniencestore/lawson.svg" alt="ローソン"/>
-            <img src="/img/settlement/conveniencestore/ministop.svg" alt="ミニストップ"/>
-            <img src="/img/settlement/conveniencestore/seicomart.svg" alt="セイコーマート"/>
-            <br/>
-            <img src="/img/settlement/paypal.png" alt="PayPal"/>
+        <img src="/img/settlement/conveniencestore/family-mart.svg" alt="ファミリーマート"/>
+        <img src="/img/settlement/conveniencestore/lawson.svg" alt="ローソン"/>
+        <img src="/img/settlement/conveniencestore/ministop.svg" alt="ミニストップ"/>
+        <img src="/img/settlement/conveniencestore/seicomart.svg" alt="セイコーマート"/>
+        <br/>
+        <img src="/img/settlement/paypal.png" alt="PayPal"/>
     </div>
 </div>
 <div className={styles.flex}>
