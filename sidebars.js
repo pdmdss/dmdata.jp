@@ -125,6 +125,13 @@ const sidebar = {
                 },
                 {
                     type: 'category',
+                    label: '緊急地震（リアルタイム震度） 区分',
+                    items: [
+                        'telegrams/ew09080'
+                    ]
+                },
+                {
+                    type: 'category',
                     label: '地震津波 区分',
                     items: [
                         'telegrams/et01010',
