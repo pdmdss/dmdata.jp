@@ -32,4 +32,4 @@ DMDATA.JPでは、OAuth2.0に対応しています。詳細は[こちら](/docs/
 
 ## メンテナンス・障害情報
 
-[こちら(statuspage.io)](https://dmdata.statuspage.io)
+[https://status.dmdata.jp](https://status.dmdata.jp)

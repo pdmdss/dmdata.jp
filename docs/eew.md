@@ -186,7 +186,7 @@ DMDATA.JPと利用者間の通信はHTTPS化（TLSv1.2以降のみ）されて�
 
 **サーバーや端末の故障時等保守対応**
 
-DMDATA.JPの配信サービスの障害時には、メールでお知らせするほか[statuspage.io](https://dmdata.statuspage.io/)でも提供を行います。
+DMDATA.JPの配信サービスの障害時には、メールでお知らせするほか[status.dmdata.jp](https://status.dmdata.jp/)でも提供を行います。
 
 障害発生時には24時間対応致します。
 

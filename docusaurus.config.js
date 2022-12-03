@@ -67,7 +67,7 @@ const themeConfig = {
                     },
                     {
                         label: 'Service status',
-                        href: 'https://dmdata.statuspage.io/'
+                        href: 'https://status.dmdata.jp/'
                     }
                 ]
             },
