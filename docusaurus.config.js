@@ -8,7 +8,7 @@ const themeConfig = {
     navbar: {
         logo: {
             alt: 'logo',
-            src: 'img/logo.png'
+            src: 'img/logo.svg'
         },
         items: [
             {
