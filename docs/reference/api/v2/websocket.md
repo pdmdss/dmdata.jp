@@ -226,7 +226,9 @@ WebSocket>>>
 |-:-|-----|
 | 遅延報 | RRA, RRB, RRC, ... RRX |
 | 訂正報 | CCA, CCB, CCC, ... CCX |
+| 修正報 | AAA, AAB, AAC, ... AAX |
 
+RRY, RRZ, CCY, CCZ, AAY, AAZ は、システム障害時等でのみ使用。
 
 #### 電文の検証
 電文の検証は body をencodingでデコードしたのち、SHA384でハッシュ化したものを id と比較検証し、一致すれば正常です。
