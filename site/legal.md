@@ -24,7 +24,7 @@ hide_title: true
   当サービスを利用するために発生する、インターネット接続料金・通信料はお客様の負担となります。
 
 * **支払い方法** <br/>
-  コンビニ、銀行振込、PayPal、クレジットカード(Visa, Mastercard, JCB, Amex, Diners)
+  コンビニ、銀行振込、クレジットカード(Visa, Mastercard, JCB, Amex, Diners)
 
   クレジットカードの場合、決済名は「Project DM Data Send Service」、「ディーエムデータ」または「プロジエクト ゲンサイジヨウホウソウシンサービス」となります。
   ※すべて大文字の場合や半角となったり、文字数が切れている場合があります。
