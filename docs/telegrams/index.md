@@ -45,7 +45,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | 資料名                      | XML:/Report/Control/Title | データ種類コード | データ形式 | JSON化                                                       | 備考 |
 |--------------------------|---------------------------|----------|-------|-------------------------------------------------------------|--|
 | [緊急地震速報（予報）](ew09030)    | 緊急地震速報（予報）                | VXSE44   | XML   | [配信中](/docs/reference/conversion/json/schema/eew-information.md) | ※2024年03月頃を目途に終了  |
-| [緊急地震速報（地震動予報）](ew09040) | 緊急地震速報（地震動予報）             | VXSE45   | XML   | [準備中](/docs/reference/conversion/json/schema/eew-information.md) | ※2023年02月01日より配信 |
+| [緊急地震速報（地震動予報）](ew09040) | 緊急地震速報（地震動予報）             | VXSE45   | XML   | [配信中](/docs/reference/conversion/json/schema/eew-information.md) |  |
 | [緊急地震速報テスト](ew09010)     | 緊急地震速報テスト                 | VXSE42   | XML   | [配信中](/docs/reference/conversion/json/schema/eew-information.md) |  |
 
 ### 緊急地震（警報）
