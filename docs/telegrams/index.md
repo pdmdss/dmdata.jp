@@ -93,6 +93,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [降灰予報（速報）](vo01820)        | 降灰予報（速報）                  | VFVO54              | XML   | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |     |
 | [降灰予報（詳細）](vo01830)        | 降灰予報（詳細）                  | VFVO55              | XML   | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |     |
 | [噴火速報](vo01750)            | 噴火速報                      | VFVO56              | XML   | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |     |
+| [推定噴煙流向報](vo01760)         | 推定噴煙流向報                   | VFVO60              | XML   |                                                                      |     |
 | [火山に関するお知らせ](vo01020)      | 火山に関するお知らせ                | VZVO40              | XML   | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |     |
 
 ### 気象警報・注意報関連
