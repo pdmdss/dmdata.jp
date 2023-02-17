@@ -162,6 +162,7 @@ const sidebar = {
                         'telegrams/vo01730',
                         'telegrams/vo01740',
                         'telegrams/vo01750',
+                        'telegrams/vo01760',
                         'telegrams/vo01810',
                         'telegrams/vo01820',
                         'telegrams/vo01830'
