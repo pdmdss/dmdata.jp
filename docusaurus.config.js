@@ -126,16 +126,7 @@ const config = {
                 htmlLang: 'ja-JP'
             }
         }
-    },
-    plugins: [
-        [
-            '@docusaurus/plugin-google-analytics',
-            {
-                trackingID: 'UA-96207930-6',
-                anonymizeIP: true
-            }
-        ]
-    ]
+    }
 };
 
 module.exports = config;
