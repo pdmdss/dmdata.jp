@@ -69,6 +69,10 @@ DMDATA.JP では、月ごとに利用いただいた情報区分及びオプシ�
 ![DISCOVER](/img/settlement/creditcard/discover.png)
 ![AMERICAN EXPRESS](/img/settlement/creditcard/american-express.png)
 
+**本人確認のための3Dセキュアが実施できないカードはご利用いただけません。**
+
+3Dセキュアが利用できるカードか不明な場合はカード発行会社にお問い合わせください。
+
 ### コンビニエンスストア（チャージのみ）
 
 <img alt="Daily yamazaki" src={useBaseUrl('img/settlement/conveniencestore/daily-yamazaki.svg')} width="80" style={{margin: '2px'}}/>
