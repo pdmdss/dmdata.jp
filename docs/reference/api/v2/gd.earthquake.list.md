@@ -9,12 +9,12 @@ title: GD Earthquake List
 地震情報のリスト。
 
 ### クエリパラメータ
-|パラメータ名|必須|デフォルト|説明|
-|:--|:-:|:-:|:--|
-|hypocenter|いいえ||**String** <br/> 検索する震央地名コードの3桁の数字|
-|maxInt|いいえ||**String** <br/> 検索する最大震度の下限|
-|date|いいえ||**String** <br/> 検索する地震波検知時刻の日付、時刻は無効|
-|limit|いいえ|20|**Integer** <br/> 返す情報数を指定する。最大は100|
+| パラメータ名     | 必須  | デフォルト | 説明                                    |
+|:-----------|:---:|:-----:|:--------------------------------------|
+| hypocenter | いいえ |       | **String** <br/> 検索する震央地名コードの3桁の数字    |
+| maxInt     | いいえ |       | **String** <br/> 検索する最大震度の下限          |
+| date       | いいえ |       | **String** <br/> 検索する地震波検知時刻の日付、時刻は無効 |
+| limit      | いいえ |  20   | **Integer** <br/> 返す情報数を指定する。最大は100   |
 
 ### APIに必要な権限
 * gd.earthquake
@@ -85,25 +85,25 @@ APIは常にJSONを返答します。
 }
 ```
 
-|フィールド|出現|説明|
-|:--|:-:|:--|
-|responseId|いつも|**String** <br/> API処理ID|
-|responseTime|いつも|**ISO8601Time** <br/> API処理時刻|
-|status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
-|items|いつも|**Array<Object\>** <br/> アイテムリスト|
-|items[\].id|いつも|**Integer** <br/> ID|
-|items[\].type|いつも|**String** <br/> 国内地震情報か、遠地地震情報かを区別する <br/> `normal` は 国内地震情報（震源・震度に関する情報など）、`distant` は 遠地地震情報|
-|items[\].eventId|いつも|**String** <br/> 地震情報のEventID|
-|items[\].originTime|震度速報のみの場合は出現しない|**ISO8601Time** <br/> 地震発生時刻|
-|items[\].arrivalTime|いつも|**ISO8601Time** <br/> 地震検知時刻|
-|items[\].hypocenter|震度速報のみの場合は出現しない|**Object** <br/> 震源要素 [Earthquake component / Hypocenter](/docs/reference/conversion/json/component.md#3-hypocenter)を参照|
-|items[\].magnitude|震度速報のみの場合は出現しない|**Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/docs/reference/conversion/json/component.md#4-magnitude)を参照|
-|items[\].maxInt|いつも|**String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする|
-|items[\].maxLgInt|場合による|**String** <br/> 観測した最大の長周期地震動階級|
-|items[\].lgCategory|場合による|**String** <br/> 長周期地震動に関する観測情報の種類|
-|nextToken|場合による|**String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/docs/reference/api/v2#カーソルトークン)|
-|nextPooling|いつも|**String** <br/> PuLL時に使用する。詳しくは[こちら](/docs/reference/api/v2#カーソルトークン)|
-|nextPoolingInterval|いつも|**Integer** <br/> PuLL時、次にリクエストするまでの待機すべき最小時間（ミリ秒）|
+| フィールド                |       出現        | 説明                                                                                                                         |
+|:---------------------|:---------------:|:---------------------------------------------------------------------------------------------------------------------------|
+| responseId           |       いつも       | **String** <br/> API処理ID                                                                                                   |
+| responseTime         |       いつも       | **ISO8601Time** <br/> API処理時刻                                                                                              |
+| status               |       いつも       | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                                                               |
+| items                |       いつも       | **Array<Object\>** <br/> アイテムリスト                                                                                           |
+| items[\].id          |       いつも       | **Integer** <br/> ID                                                                                                       |
+| items[\].type        |       いつも       | **String** <br/> 国内地震情報か、遠地地震情報かを区別する <br/> `normal` は 国内地震情報（震源・震度に関する情報など）、`distant` は 遠地地震情報                            |
+| items[\].eventId     |       いつも       | **String** <br/> 地震情報のEventID                                                                                              |
+| items[\].originTime  | 震度速報のみの場合は出現しない | **ISO8601Time** <br/> 地震発生時刻                                                                                               |
+| items[\].arrivalTime |       いつも       | **ISO8601Time** <br/> 地震検知時刻                                                                                               |
+| items[\].hypocenter  | 震度速報のみの場合は出現しない | **Object** <br/> 震源要素 [Earthquake component / Hypocenter](/docs/reference/conversion/json/component.md#3-hypocenter)を参照    |
+| items[\].magnitude   | 震度速報のみの場合は出現しない | **Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/docs/reference/conversion/json/component.md#4-magnitude)を参照 |
+| items[\].maxInt      |       いつも       | **String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする                                                                        |
+| items[\].maxLgInt    |      場合による      | **String** <br/> 観測した最大の長周期地震動階級                                                                                           |
+| items[\].lgCategory  |      場合による      | **String** <br/> 長周期地震動に関する観測情報の種類                                                                                         |
+| nextToken            |      場合による      | **String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/docs/reference/api/v2#カーソルトークン)                                                 |
+| nextPooling          |       いつも       | **String** <br/> PuLL時に使用する。詳しくは[こちら](/docs/reference/api/v2#カーソルトークン)                                                     |
+| nextPoolingInterval  |       いつも       | **Integer** <br/> PuLL時、次にリクエストするまでの待機すべき最小時間（ミリ秒）                                                                         |
 
 ### status: error
 APIは各種エラーを次の通り返答します。
@@ -120,10 +120,10 @@ APIは各種エラーを次の通り返答します。
 }
 ```
 
-|フィールド|出現|説明|
-|:--|:-:|:--|
-|error|いつも|**Object** <br/> エラー情報。|
-|error.message|いつも|**String** <br/> エラーメッセージ、標準エラーおよび別表参照。|
-|error.code|いつも|**Integer** <br/> HTTPステータスコード。|
+| フィールド         | 出現  | 説明                                      |
+|:--------------|:---:|:----------------------------------------|
+| error         | いつも | **Object** <br/> エラー情報。                 |
+| error.message | いつも | **String** <br/> エラーメッセージ、標準エラーおよび別表参照。 |
+| error.code    | いつも | **Integer** <br/> HTTPステータスコード。         |
 
 標準エラーを出力します。

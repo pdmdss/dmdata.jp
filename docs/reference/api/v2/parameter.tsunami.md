@@ -24,22 +24,22 @@ title: Parameter Tsunami station v2
 APIは常にJSONを返答します。
 
 ### status: ok
-|フィールド|出現|説明|
-|:--|:-:|:--|
-|responseId|いつも|**String** <br/> API処理ID|
-|responseTime|いつも|**ISO8601Time** <br/> API処理時刻|
-|status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
-|changeTime|いつも|**ISO8601Time** <br/> 気象庁によるパラメータ変更時刻|
-|version|いつも|**String** <br/> データのバージョン|
-|items|いつも|**Array<Object\>** <br/> 観測点データ|
-|items[].area|いつも|**String\|Null** <br/> 津波予報区名|
-|items[].prefecture|いつも|**String** <br/> 所在する都道府県|
-|items[].code|いつも|**String** <br/> 観測点コード（XML）|
-|items[].name|いつも|**String** <br/> 観測点名|
-|items[].kana|いつも|**String** <br/> 観測点名（カナ）|
-|items[].owner|いつも|**String** <br/> 所属する機関|
-|items[].latitude|いつも|**String<Float\>** <br/> 所在する緯度|
-|items[].longitude|いつも|**String<Float\>** <br/> 所在する経度|
+| フィールド              | 出現  | 説明                                           |
+|:-------------------|:---:|:---------------------------------------------|
+| responseId         | いつも | **String** <br/> API処理ID                     |
+| responseTime       | いつも | **ISO8601Time** <br/> API処理時刻                |
+| status             | いつも | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error` |
+| changeTime         | いつも | **ISO8601Time** <br/> 気象庁によるパラメータ変更時刻        |
+| version            | いつも | **String** <br/> データのバージョン                   |
+| items              | いつも | **Array<Object\>** <br/> 観測点データ              |
+| items[].area       | いつも | **String\|Null** <br/> 津波予報区名                |
+| items[].prefecture | いつも | **String** <br/> 所在する都道府県                    |
+| items[].code       | いつも | **String** <br/> 観測点コード（XML）                 |
+| items[].name       | いつも | **String** <br/> 観測点名                        |
+| items[].kana       | いつも | **String** <br/> 観測点名（カナ）                    |
+| items[].owner      | いつも | **String** <br/> 所属する機関                      |
+| items[].latitude   | いつも | **String<Float\>** <br/> 所在する緯度              |
+| items[].longitude  | いつも | **String<Float\>** <br/> 所在する経度              |
 
 ### status: error
 APIは各種エラーを次の通り返答します。
@@ -55,10 +55,10 @@ APIは各種エラーを次の通り返答します。
 }
 ```
 
-|フィールド|出現|説明|
-|:--|:-:|:--|
-|error|いつも|**Object** <br/> エラー情報。|
-|error.message|いつも|**String** <br/> エラーメッセージ、標準エラーおよび別表参照。|
-|error.code|いつも|**Integer** <br/> HTTPステータスコード。|
+| フィールド         | 出現  | 説明                                      |
+|:--------------|:---:|:----------------------------------------|
+| error         | いつも | **Object** <br/> エラー情報。                 |
+| error.message | いつも | **String** <br/> エラーメッセージ、標準エラーおよび別表参照。 |
+| error.code    | いつも | **Integer** <br/> HTTPステータスコード。         |
 
 標準エラーを出力します。

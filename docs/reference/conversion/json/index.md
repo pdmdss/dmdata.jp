@@ -89,26 +89,26 @@ TypeScriptによる型定義が、 [@dmdata/telegram-json-types](https://github.
 ```
 
 
-| 階層 | フィールド | 出現条件 | 説明 |
-| -- | -- | -- | -- |
-| 1. | _originalId | | **String**<br/> JSON化電文を区別するユニーク384bitハッシュ |
-| 2. | _schema |  | **Object**<br/> JSONスキーマ情報（内部利用） |
-| 2._1. | _schema.type |  | **String**<br/> JSONスキーマ名 |
-| 2._2. | _schema.version |  | **String**<br/> JSONスキーマバージョン |
-| 3. | type | | **String**<br/> 情報名称(Control/Title部) |
-| 4. | title | | **String**<br/> 情報の標題(Head/Title部) |
-| 5. | status | | **String**<br/> 情報の運用状態、取りうる値は`通常`、`訓練`、`試験`<br/> `通常`以外の情報については内部利用にとどめること |
-| 6. | infoType | | **String**<br/> 情報の発表状態、取りうる値は`発表`、`訂正`、`遅延`、`取消` |
-| 7. | editorialOffice | | **String**<br/> 情報の編集官署名 |
-| 8. | publishingOffice | | **Array<String\>**<br/> 情報の発表官署名又は組織名、複数入る場合がある |
-| 9. | pressDateTime | | **ISO8601Time**<br/> 情報作成時刻 |
-| 10. | reportDateTime | | **ISO8601Time**<br/> 情報の発表時刻 |
-| 11. | targetDateTime |  | **ISO8601Time\|Null**<br/> 情報の基となった時刻、無い場合は**Null**とする |
-| 12.? | targetDateTimeDubious | 情報による | **String**<br/> 情報の基となった時刻のあいまいさ |
-| 13.? | targetDuration | 情報による | **String**<br/> 情報の予報期間 |
-| 14.? | validDateTime | 情報による | **ISO8601Time**<br/> 情報の失効時刻 |
-| 15. | eventId |  | **String\|Null**<br/> 現象ごとに割り振られたイベントID、無い場合は**Null**とする |
-| 16. | serialNo |  | **String\|Null**<br/> 現象ごとに割り振られたイベントIDの発表番号、無い場合は**Null**とする |
-| 17. | infoKind |  | **String**<br/> XMLデータのスキーマ名 |
-| 18. | infoKindVersion |  | **String**<br/> XMLデータのスキーマバージョン |
-| 19. | headline |  | **String\|Null**<br/> 情報の見出し、無い場合は**Null**とする |
+| 階層    | フィールド                 | 出現条件  | 説明                                                                          |
+|-------|-----------------------|-------|-----------------------------------------------------------------------------|
+| 1.    | _originalId           |       | **String**<br/> JSON化電文を区別するユニーク384bitハッシュ                                  |
+| 2.    | _schema               |       | **Object**<br/> JSONスキーマ情報（内部利用）                                            |
+| 2._1. | _schema.type          |       | **String**<br/> JSONスキーマ名                                                   |
+| 2._2. | _schema.version       |       | **String**<br/> JSONスキーマバージョン                                               |
+| 3.    | type                  |       | **String**<br/> 情報名称(Control/Title部)                                        |
+| 4.    | title                 |       | **String**<br/> 情報の標題(Head/Title部)                                          |
+| 5.    | status                |       | **String**<br/> 情報の運用状態、取りうる値は`通常`、`訓練`、`試験`<br/> `通常`以外の情報については内部利用にとどめること |
+| 6.    | infoType              |       | **String**<br/> 情報の発表状態、取りうる値は`発表`、`訂正`、`遅延`、`取消`                           |
+| 7.    | editorialOffice       |       | **String**<br/> 情報の編集官署名                                                    |
+| 8.    | publishingOffice      |       | **Array<String\>**<br/> 情報の発表官署名又は組織名、複数入る場合がある                             |
+| 9.    | pressDateTime         |       | **ISO8601Time**<br/> 情報作成時刻                                                 |
+| 10.   | reportDateTime        |       | **ISO8601Time**<br/> 情報の発表時刻                                                |
+| 11.   | targetDateTime        |       | **ISO8601Time\|Null**<br/> 情報の基となった時刻、無い場合は**Null**とする                      |
+| 12.?  | targetDateTimeDubious | 情報による | **String**<br/> 情報の基となった時刻のあいまいさ                                            |
+| 13.?  | targetDuration        | 情報による | **String**<br/> 情報の予報期間                                                     |
+| 14.?  | validDateTime         | 情報による | **ISO8601Time**<br/> 情報の失効時刻                                                |
+| 15.   | eventId               |       | **String\|Null**<br/> 現象ごとに割り振られたイベントID、無い場合は**Null**とする                    |
+| 16.   | serialNo              |       | **String\|Null**<br/> 現象ごとに割り振られたイベントIDの発表番号、無い場合は**Null**とする               |
+| 17.   | infoKind              |       | **String**<br/> XMLデータのスキーマ名                                                |
+| 18.   | infoKindVersion       |       | **String**<br/> XMLデータのスキーマバージョン                                            |
+| 19.   | headline              |       | **String\|Null**<br/> 情報の見出し、無い場合は**Null**とする                               |

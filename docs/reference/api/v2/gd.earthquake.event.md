@@ -9,9 +9,9 @@ title: GD Earthquake Event
 地震情報のリスト。
 
 ### URLパラメータ
-|パラメータ名|デフォルト|説明|
-|:--|:-:|:-|
-|:eventId||**string** <br/> 地震情報のEventIDを指定|
+| パラメータ名   | デフォルト | 説明                               |
+|:---------|:-----:|:---------------------------------|
+| :eventId |       | **string** <br/> 地震情報のEventIDを指定 |
 
 ### APIに必要な権限
 * gd.earthquake
@@ -121,40 +121,40 @@ APIは常にJSONを返答します。
 }
 ```
 
-|フィールド|出現|説明|
-|:--|:-:|:--|
-|responseId|いつも|**String** <br/> API処理ID|
-|responseTime|いつも|**ISO8601Time** <br/> API処理時刻|
-|status|いつも|**String** <br/> 成功時は `ok`、失敗時（エラー）は `error`|
-|event|いつも|**Object** <br/> 地震情報の要素と電文情報|
-|event.id|いつも|**Integer** <br/> ID|
-|event.type|いつも|**String** <br/> 国内地震情報か、遠地地震情報かを区別する <br/> `normal` は 国内地震情報（震源・震度に関する情報など）、`distant` は 遠地地震情報|
-|event.eventId|いつも|**String** <br/> 地震情報のEventID|
-|event.originTime|震度速報のみの場合は出現しない|**ISO8601Time** <br/> 地震発生時刻|
-|event.arrivalTime|いつも|**ISO8601Time** <br/> 地震検知時刻|
-|event.hypocenter|震度速報のみの場合は出現しない|**Object** <br/> 震源要素 [Earthquake component / Hypocenter](/docs/reference/conversion/json/component.md#3-hypocenter)を参照|
-|event.magnitude|震度速報のみの場合は出現しない|**Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/docs/reference/conversion/json/component.md#4-magnitude)を参照|
-|event.maxInt|いつも|**String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする|
-|event.maxLgInt|場合による|**String** <br/> 観測した最大の長周期地震動階級|
-|event.lgCategory|場合による|**String** <br/> 長周期地震動に関する観測情報の種類|
-|event.telegrams|いつも|**Array<Object\>** <br/> 地震情報の電文リスト|
-|event.telegrams[\].serial|いつも|**Integer** <br/> 電文受信通番|
-|event.telegrams[\].id|いつも|**String** <br/> JSON化電文を区別するユニーク384bitハッシュ|
-|event.telegrams[\].originalId|いつも|**String** <br/> JSON化電文の基となったXML電文を区別するユニーク384bitハッシュ|
-|event.telegrams[\].classification|いつも|**String** <br/> 配信区分により変化。取りうる値は telegram.earthquake|
-|event.telegrams[\].head|いつも|**Object** <br/> ヘッダ情報|
-|event.telegrams[\].head.type|いつも|**String** <br/> データ種類コード|
-|event.telegrams[\].head.author|いつも|**String** <br/> 発表英字官署名|
-|event.telegrams[\].head.time|いつも|**ISO8601Time** <br/> 基点時刻|
-|event.telegrams[\].head.designation|いつも|**String\|Null** <br/> 指示コード|
-|event.telegrams[\].head.test|いつも|**Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す <br/> このAPIでは常に**false**|
-|event.telegrams[\].receivedTime|いつも|**ISO8601Time** <br/> 受信時刻|
-|event.telegrams[\].xmlReport|いつも|**Object** <br/> XML電文Control,Head情報|
-|event.telegrams[\].schema|いつも|**Object** <br/> 加工データのスキーマ情報|
-|event.telegrams[\].schema.type|いつも|**String** <br/> スキーマ名|
-|event.telegrams[\].schema.version|いつも|**String** <br/> スキーマのバージョン|
-|event.telegrams[\].format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、`json` は本サービスが独自に定めたフォーマット|
-|event.telegrams[\].url|いつも|**String** <br/> [電文本文URL](/docs/reference/api/v1/telegram.data.md)|
+| フィールド                               |       出現        | 説明                                                                                                                         |
+|:------------------------------------|:---------------:|:---------------------------------------------------------------------------------------------------------------------------|
+| responseId                          |       いつも       | **String** <br/> API処理ID                                                                                                   |
+| responseTime                        |       いつも       | **ISO8601Time** <br/> API処理時刻                                                                                              |
+| status                              |       いつも       | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                                                               |
+| event                               |       いつも       | **Object** <br/> 地震情報の要素と電文情報                                                                                              |
+| event.id                            |       いつも       | **Integer** <br/> ID                                                                                                       |
+| event.type                          |       いつも       | **String** <br/> 国内地震情報か、遠地地震情報かを区別する <br/> `normal` は 国内地震情報（震源・震度に関する情報など）、`distant` は 遠地地震情報                            |
+| event.eventId                       |       いつも       | **String** <br/> 地震情報のEventID                                                                                              |
+| event.originTime                    | 震度速報のみの場合は出現しない | **ISO8601Time** <br/> 地震発生時刻                                                                                               |
+| event.arrivalTime                   |       いつも       | **ISO8601Time** <br/> 地震検知時刻                                                                                               |
+| event.hypocenter                    | 震度速報のみの場合は出現しない | **Object** <br/> 震源要素 [Earthquake component / Hypocenter](/docs/reference/conversion/json/component.md#3-hypocenter)を参照    |
+| event.magnitude                     | 震度速報のみの場合は出現しない | **Object** <br/> マグニチュード要素 [Earthquake component / Magnitude](/docs/reference/conversion/json/component.md#4-magnitude)を参照 |
+| event.maxInt                        |       いつも       | **String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする                                                                        |
+| event.maxLgInt                      |      場合による      | **String** <br/> 観測した最大の長周期地震動階級                                                                                           |
+| event.lgCategory                    |      場合による      | **String** <br/> 長周期地震動に関する観測情報の種類                                                                                         |
+| event.telegrams                     |       いつも       | **Array<Object\>** <br/> 地震情報の電文リスト                                                                                        |
+| event.telegrams[\].serial           |       いつも       | **Integer** <br/> 電文受信通番                                                                                                   |
+| event.telegrams[\].id               |       いつも       | **String** <br/> JSON化電文を区別するユニーク384bitハッシュ                                                                                |
+| event.telegrams[\].originalId       |       いつも       | **String** <br/> JSON化電文の基となったXML電文を区別するユニーク384bitハッシュ                                                                     |
+| event.telegrams[\].classification   |       いつも       | **String** <br/> 配信区分により変化。取りうる値は telegram.earthquake                                                                      |
+| event.telegrams[\].head             |       いつも       | **Object** <br/> ヘッダ情報                                                                                                     |
+| event.telegrams[\].head.type        |       いつも       | **String** <br/> データ種類コード                                                                                                  |
+| event.telegrams[\].head.author      |       いつも       | **String** <br/> 発表英字官署名                                                                                                   |
+| event.telegrams[\].head.time        |       いつも       | **ISO8601Time** <br/> 基点時刻                                                                                                 |
+| event.telegrams[\].head.designation |       いつも       | **String\|Null** <br/> 指示コード                                                                                               |
+| event.telegrams[\].head.test        |       いつも       | **Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す <br/> このAPIでは常に**false**                                                            |
+| event.telegrams[\].receivedTime     |       いつも       | **ISO8601Time** <br/> 受信時刻                                                                                                 |
+| event.telegrams[\].xmlReport        |       いつも       | **Object** <br/> XML電文Control,Head情報                                                                                       |
+| event.telegrams[\].schema           |       いつも       | **Object** <br/> 加工データのスキーマ情報                                                                                              |
+| event.telegrams[\].schema.type      |       いつも       | **String** <br/> スキーマ名                                                                                                     |
+| event.telegrams[\].schema.version   |       いつも       | **String** <br/> スキーマのバージョン                                                                                                |
+| event.telegrams[\].format           |       いつも       | **String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、`json` は本サービスが独自に定めたフォーマット                    |
+| event.telegrams[\].url              |       いつも       | **String** <br/> [電文本文URL](/docs/reference/api/v1/telegram.data.md)                                                        |
 
 ## status: error
 APIは各種エラーを次の通り返答します。
@@ -171,10 +171,10 @@ APIは各種エラーを次の通り返答します。
 }
 ```
 
-|フィールド|出現|説明|
-|:--|:-:|:--|
-|error|いつも|**Object** <br/> エラー情報。|
-|error.message|いつも|**String** <br/> エラーメッセージ、標準エラーおよび別表参照。|
-|error.code|いつも|**Integer** <br/> HTTPステータスコード。|
+| フィールド         | 出現  | 説明                                      |
+|:--------------|:---:|:----------------------------------------|
+| error         | いつも | **Object** <br/> エラー情報。                 |
+| error.message | いつも | **String** <br/> エラーメッセージ、標準エラーおよび別表参照。 |
+| error.code    | いつも | **Integer** <br/> HTTPステータスコード。         |
 
 標準エラーを出力します。
