@@ -193,28 +193,28 @@ WebSocket>>>
 }
 ```
 
-|フィールド|出現|説明|
-|:--|:-:|:--|
-|type|いつも|**String** <br/> データを示す `data` で固定|
-|version|いつも|**String** <br/> バージョンを示す、作成処理の変更で予告なく変更となる場合がある|
-|id|いつも|**String** <br/> 配信データを区別するユニーク384bitハッシュ|
-|classification|いつも|**String** <br/> 配信区分により変化。取りうる値は `eew.forecast`, `eew.warning`, `telegram.earthquake`, `telegram.volcano`, `telegram.weather`, `telegram.scheduled`|
-|passing|いつも|**Array<Object\>** <br/> 通過情報|
-|passing\[].name|いつも|**String** <br/> 通過場所の名前|
-|passing\[].time|いつも|**ISO8601Time** <br/> 通過した時間|
-|head|いつも|**Object** <br/> ヘッダ情報|
-|head.type|いつも|**String** <br/> データ種類コード|
-|head.author|いつも|**String** <br/> 発表英字官署名|
-|head.target|内容による※1|**String** <br/> 対象観測地点コード|
-|head.time|いつも|**String** <br/> 基点時刻（ISO8601拡張形式）|
-|head.designation|いつも|**String\|Null** <br/> 指定コード<br/>WMO全球通信システム(GTS)で定義されている符号で、遅延報・訂正報に付加する。通常は **Null** とする ※4|
-|head.test|いつも|**Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す。 <br/> 注意：XML電文以外のテスト配信は常に **false** になります。本文中を参照するようにしてください。|
-|head.xml|内容による※2|**Boolean** <br/> XML電文かどうかを示す|
-|xmlReport|format=xml時|**Object** <br/> XML電文Control,Head情報|
-|format|いつも|**String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、`json` は本サービスが独自に定めたフォーマット|
-|compression|いつも|**String\|Null** <br/> bodyフィールドの圧縮形式を示す。`gzip`または`zip`、非圧縮時はnullを格納する|
-|encoding|いつも|**String\|Null** <br/> bodyフィールドのエンコーディング形式を示す。`base64`または、`utf-8`を格納する|
-|body|いつも|**String** <br/> 本文|
+| フィールド            |     出現      | 説明                                                                                                                                                                    |
+|:-----------------|:-----------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| type             |     いつも     | **String** <br/> データを示す `data` で固定                                                                                                                                    |
+| version          |     いつも     | **String** <br/> バージョンを示す、作成処理の変更で予告なく変更となる場合がある                                                                                                                      |
+| id               |     いつも     | **String** <br/> 配信データを区別するユニーク384bitハッシュ                                                                                                                             |
+| classification   |     いつも     | **String** <br/> 配信区分により変化。取りうる値は `eew.forecast`, `eew.warning`, `eew.intensity`, `telegram.earthquake`, `telegram.volcano`, `telegram.weather`, `telegram.scheduled` |
+| passing          |     いつも     | **Array<Object\>** <br/> 通過情報                                                                                                                                         |
+| passing\[].name  |     いつも     | **String** <br/> 通過場所の名前                                                                                                                                              |
+| passing\[].time  |     いつも     | **ISO8601Time** <br/> 通過した時間                                                                                                                                          |
+| head             |     いつも     | **Object** <br/> ヘッダ情報                                                                                                                                                |
+| head.type        |     いつも     | **String** <br/> データ種類コード                                                                                                                                             |
+| head.author      |     いつも     | **String** <br/> 発表英字官署名                                                                                                                                              |
+| head.target      |   内容による※1   | **String** <br/> 対象観測地点コード                                                                                                                                            |
+| head.time        |     いつも     | **String** <br/> 基点時刻（ISO8601拡張形式）                                                                                                                                    |
+| head.designation |     いつも     | **String\|Null** <br/> 指定コード<br/>WMO全球通信システム(GTS)で定義されている符号で、遅延報・訂正報に付加する。通常は **Null** とする ※4                                                                         |
+| head.test        |     いつも     | **Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す。 <br/> 注意：XML電文以外のテスト配信は常に **false** になります。本文中を参照するようにしてください。                                                                  |
+| head.xml         |   内容による※2   | **Boolean** <br/> XML電文かどうかを示す                                                                                                                                        |
+| xmlReport        | format=xml時 | **Object** <br/> XML電文Control,Head情報                                                                                                                                  |
+| format           |     いつも     | **String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、`json` は本サービスが独自に定めたフォーマット                                                               |
+| compression      |     いつも     | **String\|Null** <br/> bodyフィールドの圧縮形式を示す。`gzip`または`zip`、非圧縮時はnullを格納する                                                                                                |
+| encoding         |     いつも     | **String\|Null** <br/> bodyフィールドのエンコーディング形式を示す。`base64`または、`utf-8`を格納する                                                                                               |
+| body             |     いつも     | **String** <br/> 本文                                                                                                                                                   |
 
 ※1 将来の予約拡張。 <br/>
 ※2 形式は format を参照すること。 <br/>
