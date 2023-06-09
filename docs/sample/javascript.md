@@ -11,9 +11,9 @@ title: サンプル JavaScript
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-             <title>DMDATA.JP - Sample</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>DMDATA.JP - Sample</title>
 
 <script src="https://rawgithub.com/imaya/zlib.js/develop/bin/gunzip.min.js"></script>
 <script>
@@ -62,6 +62,9 @@ title: サンプル JavaScript
 
 他の区分を取得したい場合は、変数`getClassifications`を編集してください。
 
+緊急地震（予報）区分:　eew.forecast <br/>
+緊急地震（警報）区分:　eew.warning <br/>
+リアルタイム震度区分:　eew.intensity <br/>
 地震・津波関連区分:　telegram.earthquake <br/>
 火山関連区分: telegram.volcano <br/>
 気象警報・注意報関連区分: telegram.weather <br/>
