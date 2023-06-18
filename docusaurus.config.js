@@ -90,6 +90,13 @@ const themeConfig = {
     tableOfContents: {
         minHeadingLevel: 2,
         maxHeadingLevel: 6
+    },
+    announcementBar: {
+        id: 'information-cookie',
+        content: 'Cookie等の外部送信については、<a href="/policy">プライバシーポリシー</a>をご覧ください。',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
     }
 };
 
