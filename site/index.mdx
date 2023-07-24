@@ -4,6 +4,8 @@ hide_title: true
 hide_table_of_contents: true
 ---
 
+
+
 import styles from './css/index.module.css';
 
 <div className={styles.title}>
@@ -215,31 +217,21 @@ import styles from './css/index.module.css';
         <img src="/img/settlement/paypal.png" alt="PayPal"/>
     </div>
 </div>
-<div className={styles.flex}>
-    <div className={styles.twitter}>
-        <h3>公式Twitter</h3>
-        <a className="twitter-timeline" href="https://twitter.com/pdmdata?ref_src=twsrc%5Etfw"></a>
-        <script async src="https://platform.twitter.com/widgets.js"></script>
-    </div>
-    <div>
-        <p>支払方法については、
-            <a href="https://dmdata.jp/docs/payment">こちら</a>
-            を参照してください
-        </p>
-        <p>カード決済代理店にはPAY.JPを利用しており、当サービスではカード情報をトークン化しカード番号等は保存しません。</p>
-        <p>3Dセキュアが実施できないカードはご利用いただけません。</p>
-        <br/>
-        <p>コンビニ決済、銀行振込にはKomojuを利用しています。</p>
-        <p>無料お試し期間は設定していません。</p>
-        <p>返金・キャンセル等はサービスの特性上受け付けていません。利用を停止したい場合は、コントロールパネルから解約を行ってください。</p>
-        <br/>
-        <br/>
-        <p>WebSocketには1契約区分ごとに、同時接続数を1追加します。</p>
-        <br/>
-        <p>気象庁が配信する形式（気象庁防災情報XMLフォーマット、BUFR、GRIB2など）はパブリックドメイン（公共物・著作放棄物）です。</p>
-        <br/>
-        <p>この事業は、個人が運営しています。</p>
-    </div>
+<div>
+    <p>支払方法については、<a href="https://dmdata.jp/docs/payment">こちらを参照してください。</a></p>
+    <p>カード決済代理店にはPAY.JPを利用しており、当サービスではカード情報をトークン化しカード番号等は保存しません。</p>
+    <p>3Dセキュアが実施できないカードはご利用いただけません。</p>
+    <br/>
+    <p>コンビニ決済、銀行振込にはKomojuを利用しています。</p>
+    <p>無料お試し期間は設定していません。</p>
+    <p>返金・キャンセル等はサービスの特性上受け付けていません。利用を停止したい場合は、コントロールパネルから解約を行ってください。</p>
+    <br/>
+    <br/>
+    <p>WebSocketには1契約区分ごとに、同時接続数を1追加します。</p>
+    <br/>
+    <p>気象庁が配信する形式（気象庁防災情報XMLフォーマット、BUFR、GRIB2など）はパブリックドメイン（公共物・著作放棄物）です。</p>
+    <br/>
+    <p>この事業は、個人が運営しています。</p>
 </div>
 <p className={styles['doc-button']}>
     <a href="/docs/reference">APIリファレンス</a>
