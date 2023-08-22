@@ -124,6 +124,7 @@ export default class Contact extends React.Component {
                 に同意して
                 <input type="button" value="送信" className={styles['form-submit']} onClick={() => this.submit()}/>
               </div>
+              <p>お問い合わせの対応は、平日9時から18時になります。</p>
             </form>
             {this.state.isLoading &&
                 <div className={styles['process-status']}>
