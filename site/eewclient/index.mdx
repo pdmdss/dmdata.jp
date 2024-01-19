@@ -1,0 +1,133 @@
+---
+title: EEW Client by DMDATA.JP
+hide_title: true
+hide_table_of_contents: true
+---
+
+
+
+import styles from '../css/index.module.css';
+
+<div className={styles.title}>
+    <div className={styles['title-site']}>
+        <h1>EEW Client by DMDATA.JP</h1>
+        <p>緊急地震速報の予想ソフト</p>
+    </div>
+</div>
+<div className={styles.sample}>
+    <div className={styles['sample-image']}>
+        <img src="/img/eewclient/image1.png" alt=""/>
+        <img src="/img/eewclient/image2.png" alt=""/>
+    </div>
+    <p>サンプル画像 ‐ 令和6年能登半島地震に発表されたEEWをもとに作成</p>
+    <p>画像は、開発中のもので変更となる場合があります。</p>
+</div>
+
+<div className={styles.description}>
+    <p>気象庁から発表される緊急地震速報をもとに、ユーザーが設定した地点の予想震度、主要動到達までの時間、長周期地震動階級を表示。</p>
+    <p>小さな地震から表示したい場合や、大きな地震でのみ表示したいなど設定ができます。</p>
+    <p>PLUM法にも対応し、2022年03月16日の福島県沖のM7.4により発表された緊急地震速報（震源が推定されなかった）にも対応できます。</p>
+</div>
+
+<div className={styles.plan}>
+    <h2>ソフトウエアの利用料金</h2>
+    <div className={styles['plan-items']}>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
+                EEW Client by DMDATA.JP
+                <span className={styles['plan-item-title-sub']}>専用</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>550円/月</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>日割りはありません。</p>
+                <p>このソフトウエアのみを使用する場合はこちらが最安です。</p>
+                <p>デフォルトでは、複数同時に起動して利用することはできませんが、オプションのWebSocket+2、WebSocket+5 を契約いただくと、追加で同時に接続できます。</p>
+                <p>&nbsp;</p>
+                <p>ソフトウエアのリンクから契約ができます。</p>
+            </div>
+        </div>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
+                緊急地震（予報）
+                <span className={styles['plan-item-title-sub']}>区分</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>1650円/月(最大額)</p>
+                <p>(75円/日(日割り))</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>すでにAPIを利用していたり、他のソフトウエアで利用している場合は、DMDATA EEW Client 専用を追加で契約しなくても、WebSocket同時接続数に空きがあれば利用できます。</p>
+                <p>デフォルトでは、複数同時に起動して利用することはできませんが、オプションのWebSocket+2、WebSocket+5 を契約いただくと、追加で同時に接続できます。</p>
+            </div>
+        </div>
+    </div>
+    <p>WebSocketを常時接続するため安定した通信回線（固定回線・5Mbps以上）をご用意ください。</p>
+    <p>JQuake専用プランを契約中の方は、そのままでは利用できず、追加の契約が必要です。</p>
+</div>
+
+<div className={styles['account-links']}>
+    <a href="https://manager.dmdata.jp/account/signup" className={styles['account-links-signup']}>アカウント作成</a>
+    <a href="https://manager.dmdata.jp/account/signin" className={styles['account-links-login']}>ログイン</a>
+</div>
+
+<hr/>
+
+<div>
+    <h2>注意事項・利用規約</h2>
+    <ul>
+        <li>このソフトウエアに表示された、緊急地震速報や予想の内容は避難行動等を促すものですが、人的・物的損害等を完全に防ぐものではありません。また、発生した人的・物的損害等について何ら保証するものではなく、損害は利用者が負担するものとします。</li>
+        <li>このソフトウエアに表示する震度、長周期地震動階級・絶対応答スペクトル、主要動到達予想は、予報業務許可（地震動）第237号の許可をもとに行ったものであり、気象庁発表のものとは異なります（最大震度、とつく震度については気象庁発表のものを用いています）。</li>
+        <li>震源由来震度（従来法）、長周期地震動階級・絶対応答スペクトルは、深さ150km以下のものについて予想を行っています。150kmより深い地震については予想を行いません（表示条件に一致する場合は、震源の場所とP/S波の円だけが表示されます）。</li>
+        <li>1点観測点に基づく緊急地震速報、100gal越え緊急地震速報、1点によるPLUM法のみの緊急地震速報は、デフォルトでは表示しません。利用者が性質を理解したうえで設定を変更し、利用することができます。</li>
+        <li>波面伝播非減衰震度（PLUM法）については気象庁からの情報を基に、深さに関係なく予想を行います。</li>
+        <li>長周期地震動階級・絶対応答スペクトルの予想に用いる周期帯は、気象庁で行う緊急地震速報の予想で用いる周期帯と同じである、1.6秒～7.8秒の0.2秒刻みで計算を行っています。</li>
+        <li>長周期地震動階級・絶対応答スペクトルの予想の結果には誤差が含まれる可能性があり、また構造物の振動の予想とは異なります。</li>
+        <li>ソフトウエアのソースコードを解析・変造・再配布したり、内部で利用されているAPIを無断で利用することはおやめください。</li>
+    </ul>
+</div>
+
+<hr/>
+
+<div>
+    <p>
+        <a href="/eewclient/guidline">「緊急地震速報を適切に利用するために必要な受信端末の機能および配信能力に関するガイドライン」の「端末利用者が施す措置の一覧表」はこちら</a>
+    </p>
+</div>
+
+<hr/>
+
+<div className={styles.download}>
+    <h2>ダウンロード</h2>
+    <p>version. 1.0.0-rc.0</p>
+    <hr/>
+    <p>※このソフトウエアは、開発中につき不具合や仕様の変更等が発生する場合があります。</p>
+    <div>
+        <a href="https://cdn.dmdata.ne.jp/eewclient/release/dmdata-eewclient-v1.0.0-rc.0.exe">
+            <div>
+                <span>Windows 10/11 64bit<br/>インストローラー版</span>
+            </div>
+        </a>
+        <a href="https://cdn.dmdata.ne.jp/eewclient/release/dmdata-eewclient-v1.0.0-rc.0.zip">
+            <div>
+                <span>Windows 10/11 64bit<br/>Zip版</span>
+            </div>
+        </a>
+    </div>
+    <p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDjAJISSw3b2YdM5d90xyYRP2uwTO-lDAJINSXoVCSWzLnSg/viewform?usp=sf_link">
+            <span>不具合・要望フォームはこちら</span>
+        </a>
+    </p>
+    <hr/>
+    <h3>更新履歴</h3>
+    <ul>
+        <li>
+            <h4>2024/01/19</h4>
+            <p>RC版（リリース候補）を公開。03月01日に正式公開を予定しています。</p>
+        </li>
+    </ul>
+</div>

@@ -33,15 +33,29 @@ body > p {
     margin: 10px 0;
 }
 
-[data-theme='light'] .sample-image {
-    background-color: #737373;
+.sample-image {
+    position: relative;
+    width: max-content;
+    max-width: 100%;
+    margin: auto;
 }
 
 .sample-image img {
-    display: block;
     max-width: 100%;
     margin: 0 auto;
     padding: 5px 0;
+    z-index: 1;
+}
+
+.sample-image img:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: sample-image-animation 20s infinite;
+    opacity: 0;
+    z-index: 2;
 }
 
 .sample-attention {
@@ -71,6 +85,34 @@ body > p {
 .description-bold {
     font-size: 15px;
     font-weight: bold;
+}
+
+.download {
+    padding: 10px 20px;
+    margin: 5px auto;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.download h2,
+.download h3,
+.download h4 {
+    margin: 0;
+}
+
+.download > div {
+    display: flex;
+
+}
+
+.download > div div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+
 }
 
 .plan {
@@ -209,6 +251,26 @@ div.twitter {
 @media (min-width: 870px) {
     .plan-item {
         width: 33%;
-        max-width: 33%;
+    }
+}
+
+@keyframes sample-image-animation {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    26% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    76% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
     }
 }

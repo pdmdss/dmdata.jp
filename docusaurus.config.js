@@ -27,6 +27,11 @@ const themeConfig = {
                 position: 'left'
             },
             {
+                to: 'eewclient',
+                label: 'EEW Client',
+                position: 'left'
+            },
+            {
                 href: 'https://github.com/pdmdss/dmdata.jp',
                 label: 'GitHub',
                 position: 'right'
@@ -85,7 +90,7 @@ const themeConfig = {
                 ]
             }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} dmdata.jp`
+        copyright: `Copyright © ${new Date().getFullYear()} dmdata.jp<br/>予報業務許可（地震動）第237号`,
     },
     tableOfContents: {
         minHeadingLevel: 2,
