@@ -64,7 +64,7 @@ title: サンプル JavaScript
 
 緊急地震（予報）区分:　eew.forecast <br/>
 緊急地震（警報）区分:　eew.warning <br/>
-リアルタイム震度区分:　eew.intensity <br/>
+リアルタイム震度区分:　eew.realtime <br/>
 地震・津波関連区分:　telegram.earthquake <br/>
 火山関連区分: telegram.volcano <br/>
 気象警報・注意報関連区分: telegram.weather <br/>
