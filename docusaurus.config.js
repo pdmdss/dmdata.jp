@@ -138,7 +138,8 @@ const config = {
                 htmlLang: 'ja-JP'
             }
         }
-    }
+    },
+    onBrokenAnchors: 'ignore'
 };
 
 module.exports = config;

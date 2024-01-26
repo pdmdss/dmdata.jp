@@ -35,7 +35,6 @@
     "@docusaurus/tsconfig": "3.1.0",
     "@docusaurus/types": "3.1.0",
     "@types/react": "^18.2.48",
-    "@types/react-router-dom": "^5.3.3",
     "@types/react-helmet": "^6.1.11",
     "@types/grecaptcha": "^3.0.7",
     "typescript": "^5.3.3"
