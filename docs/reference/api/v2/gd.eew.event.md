@@ -181,7 +181,7 @@ APIは常にJSONを返答します。
 | responseId                             |       いつも        | **String** <br/> API処理ID                                                                                                  |
 | responseTime                           |       いつも        | **ISO8601Time** <br/> API処理時刻                                                                                             |
 | status                                 |       いつも        | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                                                              |
-| items                                  |       いつも        | **Array<Object\>** <br/> アイテムリスト                                                                                          |
+| items                                  |       いつも        | **Array&lt;Object&gt;** <br/> アイテムリスト                                                                                     |
 | items[\].id                            |       いつも        | **Integer** <br/> 受信ID                                                                                                    |
 | items[\].eventId                       |       いつも        | **String** <br/> 緊急地震速報のEventID                                                                                           |
 | items[\].serial                        |       いつも        | **Integer** <br/> EventIDに対するこの情報の情報番号                                                                                    |
@@ -192,7 +192,7 @@ APIは常にJSONを返答します。
 | items[\].earthquake                    |    取消時は出現しない     | **Object** <br/> 予測震源要素 [Earthquake component](/docs/reference/conversion/json/schema/eew-information.md#7-earthquake)を参照 |
 | items[\].intensity                     | 取消時・震度未計算時は出現しない | **Object** <br/> 予測震度要素 [Intensity component](/docs/reference/conversion/json/schema/eew-information.md#8-intensity)を参照   |
 | items[\].text                          |      場合による       | **String** <br/> フリーテキストで表現したい場合に出現し、これを記述する                                                                              |
-| items[\].telegrams                     |       いつも        | **Array<Object\>** <br/> 緊急地震速報の電文リスト、配列中の要素は1個で固定                                                                        |
+| items[\].telegrams                     |       いつも        | **Array&lt;Object&gt;** <br/> 緊急地震速報の電文リスト、配列中の要素は1個で固定                                                                   |
 | items[\].telegrams[\].serial           |       いつも        | **Integer** <br/> 電文受信通番                                                                                                  |
 | items[\].telegrams[\].id               |       いつも        | **String** <br/> JSON化電文を区別するユニーク384bitハッシュ                                                                               |
 | items[\].telegrams[\].originalId       |       いつも        | **String** <br/> JSON化電文の基となったXML電文を区別するユニーク384bitハッシュ                                                                    |

@@ -90,7 +90,7 @@ APIは常にJSONを返答します。
 | responseId           |       いつも       | **String** <br/> API処理ID                                                                                                   |
 | responseTime         |       いつも       | **ISO8601Time** <br/> API処理時刻                                                                                              |
 | status               |       いつも       | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                                                               |
-| items                |       いつも       | **Array<Object\>** <br/> アイテムリスト                                                                                           |
+| items                |       いつも       | **Array&lt;Object&gt;** <br/> アイテムリスト                                                                                      |
 | items[\].id          |       いつも       | **Integer** <br/> ID                                                                                                       |
 | items[\].type        |       いつも       | **String** <br/> 国内地震情報か、遠地地震情報かを区別する <br/> `normal` は 国内地震情報（震源・震度に関する情報など）、`distant` は 遠地地震情報                            |
 | items[\].eventId     |       いつも       | **String** <br/> 地震情報のEventID                                                                                              |

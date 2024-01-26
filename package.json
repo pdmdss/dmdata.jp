@@ -11,11 +11,11 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.4.3",
-    "@docusaurus/preset-classic": "^2.4.3",
-    "clsx": "^1.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "@docusaurus/core": "^3.1.0",
+    "@docusaurus/preset-classic": "^3.1.0",
+    "clsx": "^2.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },
   "browserslist": {
@@ -31,12 +31,13 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.4.3",
-    "@tsconfig/docusaurus": "^1.0.5",
-    "@types/react": "^17.0.53",
-    "@types/react-helmet": "^6.1.6",
+    "@docusaurus/module-type-aliases": "3.1.0",
+    "@docusaurus/tsconfig": "3.1.0",
+    "@docusaurus/types": "3.1.0",
+    "@types/react": "^18.2.48",
     "@types/react-router-dom": "^5.3.3",
-    "@types/grecaptcha": "^3.0.5",
-    "typescript": "^5.2.2"
+    "@types/react-helmet": "^6.1.11",
+    "@types/grecaptcha": "^3.0.7",
+    "typescript": "^5.3.3"
   }
 }

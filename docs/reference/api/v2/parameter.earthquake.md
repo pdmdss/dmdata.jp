@@ -31,7 +31,7 @@ APIは常にJSONを返答します。
 | status              | いつも | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                                                      |
 | changeTime          | いつも | **ISO8601Time** <br/> 気象庁によるパラメータ変更時刻                                                                             |
 | version             | いつも | **String** <br/> データのバージョン                                                                                        |
-| items               | いつも | **Array<Object\>** <br/> 観測点データ                                                                                   |
+| items               | いつも | **Array&lt;Object&gt;** <br/> 観測点データ                                                                              |
 | items[].region      | いつも | **Object** <br/> 一次細分化地域                                                                                          |
 | items[].region.code | いつも | **String** <br/> 一次細分化地域コード                                                                                       |
 | items[].region.name | いつも | **String** <br/> 一次細分化地域名                                                                                         |
@@ -46,8 +46,8 @@ APIは常にJSONを返答します。
 | items[].kana        | いつも | **String** <br/> 観測点名（カナ）                                                                                         |
 | items[].status      | いつも | **String** <br/> データの運用状態。 <br/>現: 運用中 <br/>変更: 名称、住所、位置情報の修正 <br/>新規: パラメータ変更時刻より運用開始 <br/>廃止: パラメータ変更時刻をもって運用終了 |
 | items[].owner       | いつも | **String** <br/> 所属する機関                                                                                           |
-| items[].latitude    | いつも | **String<Float\>** <br/> 所在する緯度                                                                                   |
-| items[].longitude   | いつも | **String<Float\>** <br/> 所在する経度                                                                                   |
+| items[].latitude    | いつも | **String&lt;Float&gt;** <br/> 所在する緯度                                                                              |
+| items[].longitude   | いつも | **String&lt;Float&gt;** <br/> 所在する経度                                                                              |
 
 ### status: error
 APIは各種エラーを次の通り返答します。

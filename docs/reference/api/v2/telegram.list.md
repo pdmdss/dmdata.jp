@@ -89,7 +89,7 @@ APIは常にJSONを返答します。
 | responseId               |                  いつも                   | **String** <br/> API処理ID                                                                                      |
 | responseTime             |                  いつも                   | **String** <br/> API処理時刻（ISO8601拡張形式）                                                                         |
 | status                   |                  いつも                   | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                                                  |
-| items                    |                  いつも                   | **Array<Object\>** <br/> 電文情報リスト                                                                              |
+| items                    |                  いつも                   | **Array&lt;Object&gt;** <br/> 電文情報リスト                                                                         |
 | items[].serial           |                  いつも                   | **Integer** <br/> 電文受信通番                                                                                      |
 | items[].id               |                  いつも                   | **String** <br/> 配信データを区別するユニーク384bitハッシュ                                                                     |
 | items[].classification   |                  いつも                   | **String** <br/> 配信区分により変化。取りうる値は telegram.earthquake, telegram.volcano, telegram.weather, telegram.scheduled |

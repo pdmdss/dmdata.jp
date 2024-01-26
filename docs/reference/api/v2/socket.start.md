@@ -9,13 +9,13 @@ title: Socket Start v2
 [**WebSocket v2**](/docs/reference/api/v2/websocket.md) に接続する場合、このAPIを利用してアクセスするURLを取得します。
 
 ### リクエストボディ(JSON)
-| パラメータ名          | 必須  | デフォルト | 説明                                                                                                                                                                                                                                                 |
-|:----------------|:---:|:-----:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| classifications | はい  |       | **Array<String\>** <br/> WebSocketで取得する配信区分を指定。<br/> 緊急地震（予報）区分:　eew.forecast<br/> 緊急地震（警報）関連区分:　eew.warning<br/> 地震・津波関連区分:　telegram.earthquake<br/> 火山関連区分: telegram.volcano<br/> 気象警報・注意報関連区分: telegram.weather<br/> 定時関連区分: telegram.scheduled |
-| types           | いいえ |       | **Array<String\>** <br/> 取得したい[データ種類コード](/docs/telegrams#配信データのリスト)を指定。最大30個まで指定可能                                                                                                                                                                 |
-| test            | いいえ |  no   | **String** <br/> テスト電文を受け取るか指定。受け取る場合は including にする。<br/>**注意：XML電文以外のテスト配信は no 時も配信されます。本文中を参照するようにしてください。**                                                                                                                                     |
-| appName         | いいえ |       | **String** <br/> アプリケーション名を指定。最大24バイトまで                                                                                                                                                                                                            |
-| formatMode      | いいえ |  raw  | **String** <br/> データフォーマットの指定。生電文: raw、JSON化データ: json                                                                                                                                                                                              |
+| パラメータ名          | 必須  | デフォルト | 説明                                                                                                                                                                                                                                                      |
+|:----------------|:---:|:-----:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| classifications | はい  |       | **Array&lt;String&gt;** <br/> WebSocketで取得する配信区分を指定。<br/> 緊急地震（予報）区分:　eew.forecast<br/> 緊急地震（警報）関連区分:　eew.warning<br/> 地震・津波関連区分:　telegram.earthquake<br/> 火山関連区分: telegram.volcano<br/> 気象警報・注意報関連区分: telegram.weather<br/> 定時関連区分: telegram.scheduled |
+| types           | いいえ |       | **Array&lt;String&gt;** <br/> 取得したい[データ種類コード](/docs/telegrams#配信データのリスト)を指定。最大30個まで指定可能                                                                                                                                                                 |
+| test            | いいえ |  no   | **String** <br/> テスト電文を受け取るか指定。受け取る場合は including にする。<br/>**注意：XML電文以外のテスト配信は no 時も配信されます。本文中を参照するようにしてください。**                                                                                                                                          |
+| appName         | いいえ |       | **String** <br/> アプリケーション名を指定。最大24バイトまで                                                                                                                                                                                                                 |
+| formatMode      | いいえ |  raw  | **String** <br/> データフォーマットの指定。生電文: raw、JSON化データ: json                                                                                                                                                                                                   |
 
 例：
 ```json
@@ -87,22 +87,22 @@ APIは常にJSONを返答します。
 }
 ```
 
-| フィールド                | 出現  | 説明                                                                                   |
-|:---------------------|:---:|:-------------------------------------------------------------------------------------|
-| responseId           | いつも | **String** <br/> API処理ID                                                             |
-| responseTime         | いつも | **ISO8601Time** <br/> API処理時刻                                                        |
-| status               | いつも | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                         |
-| ticket               | いつも | **String** <br/> WebSocketに接続するためのticket                                             |
-| websocket            | いつも | **Object** <br/> WebSocketへの接続情報                                                     |
-| websocket.id         | いつも | **Integer** <br/> WebSocketID                                                        |
-| websocket.url        | いつも | **String** <br/> WebSocketの接続先URLでticket付き                                           |
-| websocket.protocol   | いつも | **Array<String\>** <br/> WebSocketのProtocolで配列の要素は `dmdata.v2` 一つで固定                 |
-| websocket.expiration | いつも | **Integer** <br/> キーの有効時間で単位は秒。値は 300 で固定                                            |
-| classifications      | いつも | **Array<String\>** <br/> WebSocketで受け取る配信区分                                          |
-| test                 | いつも | **String** <br/> including の時のみ、XML電文のテストをWebsocketで受け取る                             |
-| types                | いつも | **Array<String\>\|Null** <br/> WebSocketで受け取るデータ種類コードリスト。**Null** 時は受け取る配信区分の全部を受け取る |
-| formats              | いつも | **Array<String\>** <br/> WebSocketで受け取る情報フォーマット                                      |
-| appName              | いつも | **String\|Null** <br/> リクエストで指定したアプリ名                                                |
+| フィールド                | 出現  | 説明                                                                                        |
+|:---------------------|:---:|:------------------------------------------------------------------------------------------|
+| responseId           | いつも | **String** <br/> API処理ID                                                                  |
+| responseTime         | いつも | **ISO8601Time** <br/> API処理時刻                                                             |
+| status               | いつも | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                              |
+| ticket               | いつも | **String** <br/> WebSocketに接続するためのticket                                                  |
+| websocket            | いつも | **Object** <br/> WebSocketへの接続情報                                                          |
+| websocket.id         | いつも | **Integer** <br/> WebSocketID                                                             |
+| websocket.url        | いつも | **String** <br/> WebSocketの接続先URLでticket付き                                                |
+| websocket.protocol   | いつも | **Array&lt;String&gt;** <br/> WebSocketのProtocolで配列の要素は `dmdata.v2` 一つで固定                 |
+| websocket.expiration | いつも | **Integer** <br/> キーの有効時間で単位は秒。値は 300 で固定                                                 |
+| classifications      | いつも | **Array&lt;String&gt;** <br/> WebSocketで受け取る配信区分                                          |
+| test                 | いつも | **String** <br/> including の時のみ、XML電文のテストをWebsocketで受け取る                                  |
+| types                | いつも | **Array&lt;String&gt;\|Null** <br/> WebSocketで受け取るデータ種類コードリスト。**Null** 時は受け取る配信区分の全部を受け取る |
+| formats              | いつも | **Array&lt;String&gt;** <br/> WebSocketで受け取る情報フォーマット                                      |
+| appName              | いつも | **String\|Null** <br/> リクエストで指定したアプリ名                                                     |
 
 ### status: error
 APIは各種エラーを次の通り返答します。

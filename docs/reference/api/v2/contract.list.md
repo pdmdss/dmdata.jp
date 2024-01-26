@@ -47,7 +47,7 @@ APIは常にJSONを返答します。
 | responseId                | いつも | **String** <br/> API処理ID                     |
 | responseTime              | いつも | **ISO8601Time** <br/> API処理時刻                |
 | status                    | いつも | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error` |
-| items                     | いつも | **Array<Object\>** <br/> アイテムリスト             |
+| items                     | いつも | **Array&lt;Object&gt;** <br/> アイテムリスト        |
 | items[\].id               | いつも | **Integer\|Null** <br/> 契約ID                 |
 | items[\].planId           | いつも | **Integer** <br/> プランID                      |
 | items[\].planName         | いつも | **String** <br/> プラン名                        |
