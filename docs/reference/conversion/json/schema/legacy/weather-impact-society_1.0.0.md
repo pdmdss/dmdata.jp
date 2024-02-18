@@ -1,6 +1,12 @@
 ---
-title: Schema weather-impact-society v1.0.1
+title: Schema weather-impact-society v1.0.0
 ---
+
+:::caution 注意
+このスキーマバージョンは現在運用されていません。
+
+新しいバージョンを参照してください。 [weather-impact-society v1.0.1](../weather-impact-society)
+:::
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
 
@@ -8,6 +14,7 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 
 * [全般気象情報 （社会的に影響の大きい天候に関する情報） (VPZI50)](/docs/telegrams/we02410.md)
 * [地方気象情報 （社会的に影響の大きい天候に関する情報） (VPCJ50)](/docs/telegrams/we02420.md)
+* [府県気象情報 （社会的に影響の大きい天候に関する情報） (VPFJ50)](/docs/telegrams/we02430.md)
 
 ## 共通ヘッダ
 
@@ -31,7 +38,8 @@ body フィールド内の定義となります。
 
 この電文が対象とする地域を記載します。
 
-"全国・地方予報区等" のコードを使用します。
+全般天候情報(VPZI50)または地方天候情報(VPCI50)の場合"全国・地方予報区等"、府県天候情報(VPFI50)の場合"
+気象情報／府県予報区・細分区域等"のコードを使用します。
 
 | 階層    | フィールド | 出現条件 | 説明                                   |
 |-------|-------|------|--------------------------------------|
@@ -56,12 +64,16 @@ body フィールド内の定義となります。
 
 情報の本文となる天候の状況及び地域を記載します。
 
-| 階層       | フィールド | 出現条件 | 説明                                      |
-|----------|-------|------|-----------------------------------------|
-| 4._1.    | text  |      | **String\|Null**<br/> 状況の解説をテキスト形式で記述する |
-| 4._2.    | zones |      | **String&lt;Object&gt;**<br/> 対象とする地域   |
-| 4._2._1. | code  |      | **String&lt;Integer&gt;**<br/> 地域コード    |
-| 4._2._2. | name  |      | **String**<br/> 地域名                     |
+| 階層       | フィールド       | 出現条件              | 説明                                      |
+|----------|-------------|-------------------|-----------------------------------------|
+| 4._1.    | text        |                   | **String\|Null**<br/> 状況の解説をテキスト形式で記述する |
+| 4._2.?   | zones       | VPZI50、VPCI50の時出現 | **String&lt;Object&gt;**<br/> 対象とする地域   |
+| 4._2._1. | code        |                   | **String&lt;Integer&gt;**<br/> 地域コード    |
+| 4._2._2. | name        |                   | **String**<br/> 地域名                     |
+|          |             |
+| 4._3.?   | prefectures | VPFI50の時出現        | **String&lt;Object&gt;**<br/> 対象とする地域   |
+| 4._3._1. | code        |                   | **String&lt;Integer&gt;**<br/> 地域コード    |
+| 4._3._2. | name        |                   | **String**<br/> 地域名                     |
 
 ### 5. season
 
@@ -119,10 +131,10 @@ body フィールド内の定義となります。
 | 6._4._4._3.  | value          |       | **String&lt;Float&gt;\|Null**<br/> 統計データの値を示す                                 |
 | 6._4._4._4.? | condition      | 情報による | **String**<br/> 統計に係わる観測値の状態を記載する<br/>取りうる値は、`準正常`、`資料不足`、`値なし`、又はそれ以外の文字列とする |
 
-
 ## この電文で取り扱うコード類
 
-コードは、気象庁防災情報XMLフォーマット コード表 20130621_AreaForecast 及び 20240118_PointAmedas 、20201026_WmoObservingStations に記載があります。
+コードは、気象庁防災情報XMLフォーマット コード表 20130621_AreaForecast 及び 20210310_PointAmedas 、20201026_WmoObservingStations
+に記載があります。
 
 ## サンプル
 
@@ -130,7 +142,4 @@ body フィールド内の定義となります。
 * [VPCI50 - 梅雨の時期に関する東北地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_jpsn_20080805110000.json)
 * [VPCI50 - 梅雨の時期に関する東北地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_jpsn_20090810105821.json)
 * [VPCI50 - 梅雨の時期に関する関東甲信地方気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpci50_rjtd_20080719110000.json)
-
-## 履歴
-
-* 2024/03/16 - VPFI50 の運用終了に伴うスキーマ変更 [weather-impact-society v1.0.0](./legacy/weather-impact-society_1.0.0)
+* [VPFI50 - 日照不足に関する岩手県気象情報](https://sample.dmdata.jp/conversion/json/schema/weather-impact-society/vpfi50_jpdc_20660903141000.json)

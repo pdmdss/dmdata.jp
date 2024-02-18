@@ -109,7 +109,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [府県気象情報](we02330)                                | 府県気象情報                    | VPFJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
 | [全般気象情報 （社会的に影響の大きい天候に関する情報）](we02410)           | 全般天候情報                    | VPZI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-impact-society.md) |                    |
 | [地方気象情報 （社会的に影響の大きい天候に関する情報）](we02420)           | 地方天候情報                    | VPCI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-impact-society.md) |                    |
-| &#x1f6ab; [府県気象情報 （社会的に影響の大きい天候に関する情報）](we02430) | 府県天候情報                    | VPFI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-impact-society.md) | 2024年3月中旬ごろ廃止予定    |
+| &#x1f6ab; [府県気象情報 （社会的に影響の大きい天候に関する情報）](we02430) | 府県天候情報                    | VPFI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-impact-society.md) | 2024年3月18日廃止       |
 | [早期天候情報](we02560)                                | 早期天候情報                    | VPAW51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-early.md)          |                    |
 | [竜巻注意情報](we02520)                                | 竜巻注意情報                    | VPHW50            | XML   |                                                                         |                    |
 | [竜巻注意情報（目撃情報付き）](we02521)                        | 竜巻注意情報（目撃情報付き）            | VPHW51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-tornado.md)        |                    |
@@ -123,7 +123,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | &#x1f6ab; [~~台風解析・予報情報電文（５日進路予報）~~](we02660)     | 台風解析・予報情報（５日予報）           | VPTWii (ii=50-55) | XML   |                                                                         | 廃止                 |
 | &#x1f6ab; [~~台風解析・予報情報電文~~](we02650)             | 台風解析・予報情報（３日予報）           | VPTWii (ii=40-45) | XML   |                                                                         | 廃止                 |
 | &#x1f6ab; [~~台風の暴風域に入る確率~~](we02690)             |                           | FXJPii (ii=51-56) | A/N   |                                                                         | 廃止                 |
-| &#x1f6ab; [台風の暴風域に入る確率（5 日）](we02695)            |                           | FXJPii (ii=61-72) | A/N   |                                                                         | 廃止                 | 
+| &#x1f6ab; [~~台風の暴風域に入る確率（5 日）~~](we02695)        |                           | FXJPii (ii=61-72) | A/N   |                                                                         | 廃止                 | 
 | [台風に関する情報（定時）](we02680)                          |                           | WTJPii (ii=21-26) | A/N   |                                                                         |                    |
 | [台風に関する情報（臨時）](we02680)                          |                           | WTJPii (ii=31-36) | A/N   |                                                                         |                    |
 | [台風の暴風域に入る確率（Ｒ２）（電文）](we02691)                   | 台風の暴風域に入る確率               | VPTAii (ii=50-55) | XML   |                                                                         |                    |

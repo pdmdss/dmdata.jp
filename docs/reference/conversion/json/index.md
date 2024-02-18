@@ -38,7 +38,7 @@ JSONスキーマの型定義については、[API v2 #型表現](/docs/referenc
 | 火山関連        | [volcano-information](schema/volcano-information)                   | VFVOii (ii = 50-56), VFSVii (ii = 50-61), VZVO40                                              | 1.0.0 | 
 | 気象警報・注意報関連  | [weather-warning](schema/weather-warning)                           | VPWW54, VPOA50                                                                                | 1.0.0 | 
 | 気象警報・注意報関連  | [weather-information](schema/weather-information)                   | VPZJ50, VPCJ50, VPFJ50, VPSG50, VPZS50, VPTIii (ii = 50-52),<br/> VPFT50, VMCJii (ii = 50-52) | 1.0.0 |
-| 気象警報・注意報関連  | [weather-impact-society](schema/weather-impact-society)             | VPZI50, VPCJ50, VPFJ50                                                                        | 1.0.0 |
+| 気象警報・注意報関連  | [weather-impact-society](schema/weather-impact-society)             | VPZI50, VPCI50                                                                                | 1.0.1 |
 | 気象警報・注意報関連  | [weather-early](schema/weather-early)                               | VPAW51                                                                                        | 1.0.0 |
 | 気象警報・注意報関連  | [weather-tornado](schema/weather-tornado)                           | VPHW51                                                                                        | 1.0.0 |
 | 気象警報・注意報関連  | [weather-typhoon](schema/weather-typhoon)                           | VPTWii (ii = 60-65)                                                                           | 1.0.0 |
