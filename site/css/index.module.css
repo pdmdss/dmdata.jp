@@ -72,6 +72,23 @@ body > p {
     color: #ffffff;
 }
 
+.eewclient-release {
+    margin: 10px auto;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #3b5385;
+    width: fit-content;
+    --ifm-link-hover-color: #f8f8f8;
+}
+
+.eewclient-release p {
+    color: #f8f8f8;
+}
+
+.eewclient-release p:first-child {
+    font-size: 20px;
+}
+
 .description {
     margin: 25px;
     text-align: center;
