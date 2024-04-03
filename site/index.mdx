@@ -4,8 +4,6 @@ hide_title: true
 hide_table_of_contents: true
 ---
 
-
-
 import styles from './css/index.module.css';
 
 <div className={styles.title}>
@@ -16,7 +14,11 @@ import styles from './css/index.module.css';
 </div>
 <div className={styles['eewclient-release']}>
     <a href="/eewclient">
-        <p>緊急地震速報表示ソフトを公開中</p>
+        <p>
+            <span>緊急地震速報表示ソフトを公開中</span>
+            <wbr/>
+            <span>（予報業務許可（地震動） 第237号）</span>
+        </p>
         <p>PLUM法、長周期地震動に対応（Windows/macOS）のパソコン用アプリケーション</p>
     </a>
 </div>
@@ -35,8 +37,7 @@ import styles from './css/index.module.css';
     <br/>
     <p>
         <strong>WebSocket</strong>を通じて、
-        気象庁（気象業務支援センター）の配信する"<strong>地震情報</strong>"や"<strong>津波情報</strong>"、
-        <br/>
+        気象庁（気象業務支援センター）の配信する"<strong>地震情報</strong>"や"<strong>津波情報</strong>"、<br/>
         "<strong>気象警報</strong>"等を気象庁防災情報XMLで提供されている形式で配信する API を提供しています。
     </p>
     <p>WebSocketを利用することで速報性のある緊急地震速報や、震度速報、津波警報、特別警報などを即座に配信できます。</p>
@@ -180,20 +181,14 @@ import styles from './css/index.module.css';
             </div>
         </div>
     </div>
+    <p>全ての金額は税込み価格です。</p>
     <p>法人・団体向けはの<a href="https://dmdata.jp/price-business.pdf">価格(PDF)はこちら</a>。</p>
     <p>リアルタイム震度（VXSE47）は、法人利用の場合ご利用いただけます。</p>
 </div>
 <div className={styles['plan-attention']}>
-    <p className={styles['plan-notice']}>
-        上記は情報の改廃により変更となる場合があります
-        <br/>
-        終了予定のある一部電文については配信しません
-        <br/>
-        配信電文の詳細は
-        <a href="/docs/telegrams/">こちら</a>
-    </p>
-    <div className={styles['plan-attention-space']}></div>
-    <p className={styles['plan-tax']}>全ての金額は税込み価格です。</p>
+    <p>上記は情報の改廃により変更となる場合があります。</p>
+    <p>終了予定のある一部電文については配信しません。</p>
+    <p>配信電文の詳細は<a href="/docs/telegrams/">こちら</a>。</p>
 </div>
 <div>
     <p><a href="https://eew-history.dmdata.ne.jp">eew-history.dmdata.ne.jp</a> にて、dmdata.jpで配信したEEWを参照できます。</p>

@@ -85,7 +85,11 @@ body > p {
     color: #f8f8f8;
 }
 
-.eewclient-release p:first-child {
+.eewclient-release p:first-child span {
+    white-space: nowrap;
+}
+
+.eewclient-release p:first-child span:first-child {
     font-size: 20px;
 }
 
@@ -189,13 +193,7 @@ body > p {
 }
 
 .plan-attention {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 10px;
-}
-
-.plan-attention-space {
-    flex: 1 1 auto;
 }
 
 .plan-notice {
