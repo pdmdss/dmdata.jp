@@ -4,6 +4,7 @@ hide_title: true
 hide_table_of_contents: true
 ---
 
+
 import styles from './css/index.module.css';
 
 <div className={styles.title}>
@@ -36,10 +37,11 @@ import styles from './css/index.module.css';
     <p>このサービスはもっと「手軽に生の情報を素早く得たい」、という運営者の思いによって2020年04月に正式誕生しました。</p>
     <br/>
     <p>
-        <strong>WebSocket</strong>を通じて、
-        気象庁（気象業務支援センター）の配信する"<strong>地震情報</strong>"や"<strong>津波情報</strong>"、<br/>
-        "<strong>気象警報</strong>"等を気象庁防災情報XMLで提供されている形式で配信する API を提供しています。
+        <span><strong>WebSocket</strong>を通じて、気象庁（気象業務支援センター）の配信する"<strong>地震情報</strong>"や"<strong>津波情報</strong>"、</span>
+        <br/>
+        <span> "<strong>気象警報</strong>"等を気象庁防災情報XMLで提供されている形式で配信する API を提供しています。</span>
     </p>
+    <br/>
     <p>WebSocketを利用することで速報性のある緊急地震速報や、震度速報、津波警報、特別警報などを即座に配信できます。</p>
     <p>このサービスを通して得た情報（気象庁発表の電文に限る）は無償・商用問わず二次利用が可能です（一部を除く。）。</p>
     <p>気象業務支援センター（気象庁構内）の東京・大阪から常時リアルタイム配信を受けており、地理冗長の常時二系統運用を行っています。</p>
