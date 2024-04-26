@@ -47,15 +47,26 @@ body > p {
     z-index: 1;
 }
 
-.sample-image img:nth-of-type(2) {
+.sample-image img:nth-of-type(n+2) {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     animation: sample-image-animation 20s infinite;
+    animation-delay: 5s;
     opacity: 0;
     z-index: 2;
+}
+
+.sample-image img:nth-of-type(3) {
+    animation-delay: 10s;
+    z-index: 3;
+}
+
+.sample-image img:nth-of-type(4) {
+    animation-delay: 15s;
+    z-index: 4;
 }
 
 .sample-attention {
@@ -273,16 +284,13 @@ div.twitter {
     0% {
         opacity: 0;
     }
+    1% {
+        opacity: 1;
+    }
     25% {
-        opacity: 0;
+        opacity: 1;
     }
     26% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    76% {
         opacity: 0;
     }
     100% {
