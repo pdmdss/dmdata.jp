@@ -98,42 +98,42 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 
 ### 気象警報・注意報関連
 
-| 資料名                                              | XML:/Report/Control/Title | データ種類コード          | データ形式 | JSON化                                                                   | 備考                 |
-|--------------------------------------------------|---------------------------|-------------------|-------|-------------------------------------------------------------------------|--------------------|
-| &#x1f6ab; [特別警報/警報/注意報](we02010)                 | 気象特別警報・警報・注意報             | VPWW53            | XML   |                                                                         | VPWW54の経過移行措置として配信 |
-| [特別警報/警報/注意報 （新しいステージに対応した防災気象情報）](we02050)      | 気象警報・注意報（Ｈ２７）             | VPWW54            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)        |                    |
-| [気象特別警報報知](we02020)                              | 気象特別警報報知                  | VPNO50            | XML   |                                                                         |                    |
-| [記録的短時間大雨情報](we02030)                            | 記録的短時間大雨情報                | VPOA50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)        |                    |
-| [全般気象情報](we02310)                                | 全般気象情報                    | VPZJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [地方気象情報](we02320)                                | 地方気象情報                    | VPCJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [府県気象情報](we02330)                                | 府県気象情報                    | VPFJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [全般気象情報 （社会的に影響の大きい天候に関する情報）](we02410)           | 全般天候情報                    | VPZI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-impact-society.md) |                    |
-| [地方気象情報 （社会的に影響の大きい天候に関する情報）](we02420)           | 地方天候情報                    | VPCI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-impact-society.md) |                    |
-| &#x1f6ab; [府県気象情報 （社会的に影響の大きい天候に関する情報）](we02430) | 府県天候情報                    | VPFI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-impact-society.md) | 2024年3月18日廃止       |
-| [早期天候情報](we02560)                                | 早期天候情報                    | VPAW51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-early.md)          |                    |
-| [竜巻注意情報](we02520)                                | 竜巻注意情報                    | VPHW50            | XML   |                                                                         |                    |
-| [竜巻注意情報（目撃情報付き）](we02521)                        | 竜巻注意情報（目撃情報付き）            | VPHW51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-tornado.md)        |                    |
-| [スモッグ気象情報](we02530)                              | スモッグ気象情報                  | VPSG50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [全般スモッグ気象情報](we02540)                            | 全般スモッグ気象情報                | VPZS50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [台風全般情報（総合情報、上陸等情報）](we02610)                    | 全般台風情報                    | VPTI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [台風全般情報（位置、発生情報）](we02620)                       | 全般台風情報（定型）                | VPTI51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [発達する熱帯低気圧に関する情報](we02620)                       | 全般台風情報（定型）                | VPTI51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [全般台風情報（位置詳細）](we02630)                          | 全般台風情報（詳細）                | VPTI52            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [台風解析・予報情報電文（５日進路・強度予報）](we02670)                | 台風解析・予報情報（５日予報）（Ｈ３０）      | VPTWii (ii=60-65) | XML   | [配信中](/docs/reference/conversion/json/schema/weather-typhoon.md)        |                    |
-| &#x1f6ab; [~~台風解析・予報情報電文（５日進路予報）~~](we02660)     | 台風解析・予報情報（５日予報）           | VPTWii (ii=50-55) | XML   |                                                                         | 廃止                 |
-| &#x1f6ab; [~~台風解析・予報情報電文~~](we02650)             | 台風解析・予報情報（３日予報）           | VPTWii (ii=40-45) | XML   |                                                                         | 廃止                 |
-| &#x1f6ab; [~~台風の暴風域に入る確率~~](we02690)             |                           | FXJPii (ii=51-56) | A/N   |                                                                         | 廃止                 |
-| &#x1f6ab; [~~台風の暴風域に入る確率（5 日）~~](we02695)        |                           | FXJPii (ii=61-72) | A/N   |                                                                         | 廃止                 | 
-| [台風に関する情報（定時）](we02680)                          |                           | WTJPii (ii=21-26) | A/N   |                                                                         |                    |
-| [台風に関する情報（臨時）](we02680)                          |                           | WTJPii (ii=31-36) | A/N   |                                                                         |                    |
-| [台風の暴風域に入る確率（Ｒ２）（電文）](we02691)                   | 台風の暴風域に入る確率               | VPTAii (ii=50-55) | XML   |                                                                         |                    |
-| [土砂災害警戒情報](we02710)                              | 土砂災害警戒情報                  | VXWW50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-landslide.md)      |                    |
-| [指定河川洪水予報](we02810)                              | 指定河川洪水予報                  | VXKOii (ii=50-89) | XML   | [配信中](/docs/reference/conversion/json/schema/weather-river-flood.md)    |                    |
-| &#x1f6ab; [~~地方高温注意情報~~](we02550)                | 地方高温注意情報                  | VPCT50            | XML   |                                                                         | 廃止                 |
-| [熱中症警戒アラート](we02551)                             | 熱中症警戒アラート                 | VPFT50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [全般潮位情報](we02210)                                | 全般潮位情報                    | VMCJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [地方潮位情報](we02220)                                | 地方潮位情報                    | VMCJ51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
-| [府県潮位情報](we02230)                                | 府県潮位情報                    | VMCJ52            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                    |
+| 資料名                                                  | XML:/Report/Control/Title | データ種類コード          | データ形式 | JSON化                                                                               | 備考                 |
+|------------------------------------------------------|---------------------------|-------------------|-------|-------------------------------------------------------------------------------------|--------------------|
+| &#x1f6ab; [特別警報/警報/注意報](we02010)                     | 気象特別警報・警報・注意報             | VPWW53            | XML   |                                                                                     | VPWW54の経過移行措置として配信 |
+| [特別警報/警報/注意報 （新しいステージに対応した防災気象情報）](we02050)          | 気象警報・注意報（Ｈ２７）             | VPWW54            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)                    |                    |
+| [気象特別警報報知](we02020)                                  | 気象特別警報報知                  | VPNO50            | XML   |                                                                                     |                    |
+| [記録的短時間大雨情報](we02030)                                | 記録的短時間大雨情報                | VPOA50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)                    |                    |
+| [全般気象情報](we02310)                                    | 全般気象情報                    | VPZJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [地方気象情報](we02320)                                    | 地方気象情報                    | VPCJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [府県気象情報](we02330)                                    | 府県気象情報                    | VPFJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [全般気象情報 （社会的に影響の大きい天候に関する情報）](we02410)               | 全般天候情報                    | VPZI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-impact-society.md)             |                    |
+| [地方気象情報 （社会的に影響の大きい天候に関する情報）](we02420)               | 地方天候情報                    | VPCI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-impact-society.md)             |                    |
+| &#x1f6ab; [~~府県気象情報 （社会的に影響の大きい天候に関する情報）~~](we02430) | 府県天候情報                    | VPFI50            | XML   | [アーカイブ](/docs/reference/conversion/json/schema/legacy/weather-impact-society_1.0.0) | 廃止                 |
+| [早期天候情報](we02560)                                    | 早期天候情報                    | VPAW51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-early.md)                      |                    |
+| [竜巻注意情報](we02520)                                    | 竜巻注意情報                    | VPHW50            | XML   |                                                                                     |                    |
+| [竜巻注意情報（目撃情報付き）](we02521)                            | 竜巻注意情報（目撃情報付き）            | VPHW51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-tornado.md)                    |                    |
+| [スモッグ気象情報](we02530)                                  | スモッグ気象情報                  | VPSG50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [全般スモッグ気象情報](we02540)                                | 全般スモッグ気象情報                | VPZS50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [台風全般情報（総合情報、上陸等情報）](we02610)                        | 全般台風情報                    | VPTI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [台風全般情報（位置、発生情報）](we02620)                           | 全般台風情報（定型）                | VPTI51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [発達する熱帯低気圧に関する情報](we02620)                           | 全般台風情報（定型）                | VPTI51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [全般台風情報（位置詳細）](we02630)                              | 全般台風情報（詳細）                | VPTI52            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [台風解析・予報情報電文（５日進路・強度予報）](we02670)                    | 台風解析・予報情報（５日予報）（Ｈ３０）      | VPTWii (ii=60-65) | XML   | [配信中](/docs/reference/conversion/json/schema/weather-typhoon.md)                    |                    |
+| &#x1f6ab; [~~台風解析・予報情報電文（５日進路予報）~~](we02660)         | 台風解析・予報情報（５日予報）           | VPTWii (ii=50-55) | XML   |                                                                                     | 廃止                 |
+| &#x1f6ab; [~~台風解析・予報情報電文~~](we02650)                 | 台風解析・予報情報（３日予報）           | VPTWii (ii=40-45) | XML   |                                                                                     | 廃止                 |
+| &#x1f6ab; [~~台風の暴風域に入る確率~~](we02690)                 |                           | FXJPii (ii=51-56) | A/N   |                                                                                     | 廃止                 |
+| &#x1f6ab; [~~台風の暴風域に入る確率（5 日）~~](we02695)            |                           | FXJPii (ii=61-72) | A/N   |                                                                                     | 廃止                 | 
+| [台風に関する情報（定時）](we02680)                              |                           | WTJPii (ii=21-26) | A/N   |                                                                                     |                    |
+| [台風に関する情報（臨時）](we02680)                              |                           | WTJPii (ii=31-36) | A/N   |                                                                                     |                    |
+| [台風の暴風域に入る確率（Ｒ２）（電文）](we02691)                       | 台風の暴風域に入る確率               | VPTAii (ii=50-55) | XML   |                                                                                     |                    |
+| [土砂災害警戒情報](we02710)                                  | 土砂災害警戒情報                  | VXWW50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-landslide.md)                  |                    |
+| [指定河川洪水予報](we02810)                                  | 指定河川洪水予報                  | VXKOii (ii=50-89) | XML   | [配信中](/docs/reference/conversion/json/schema/weather-river-flood.md)                |                    |
+| &#x1f6ab; [~~地方高温注意情報~~](we02550)                    | 地方高温注意情報                  | VPCT50            | XML   |                                                                                     | 廃止                 |
+| [熱中症警戒アラート](we02551)                                 | 熱中症警戒アラート                 | VPFT50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [全般潮位情報](we02210)                                    | 全般潮位情報                    | VMCJ50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [地方潮位情報](we02220)                                    | 地方潮位情報                    | VMCJ51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [府県潮位情報](we02230)                                    | 府県潮位情報                    | VMCJ52            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
 
 ### 定時報・その他関連
 
@@ -154,6 +154,7 @@ XML電文については、[気象庁防災情報XMLフォーマット 情報提
 
 ## 更新履歴
 
+- 2024/04/29 - 配信資料に関するお知らせなどを追加
 - 2024/03/13 - 配信資料に関する技術情報 第622号 の発行に伴う追記
 - 2024/01/05 - 配信資料に関する技術情報 第620号 の発行に伴う追記
 - 2023/02/16 - 推定噴煙流向報の配信開始に伴う追加
