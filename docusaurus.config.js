@@ -80,8 +80,12 @@ const themeConfig = {
                 title: 'Social',
                 items: [
                     {
-                        label: 'Twitter (@pdmdata)',
+                        label: '公式 Twitter (@pdmdata)',
                         href: 'https://twitter.com/pdmdata'
+                    },
+                    {
+                        label: '運営者 Twitter (@soshi1822)',
+                        href: 'https://twitter.com/soshi1822'
                     },
                     {
                         label: 'Discord',
