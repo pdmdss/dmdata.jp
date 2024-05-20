@@ -230,9 +230,6 @@ WebSocket>>>
 
 RRY, RRZ, CCY, CCZ, AAY, AAZ は、システム障害時等でのみ使用。
 
-#### 電文の検証
-電文の検証は body をencodingでデコードしたのち、SHA384でハッシュ化したものを id と比較検証し、一致すれば正常です。
-
 ### type: error
 APIは各種エラーを次の通り返答します。
 
