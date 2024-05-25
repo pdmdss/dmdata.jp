@@ -127,7 +127,7 @@ APIは常にJSONを返答します。
 | responseTime                        |       いつも       | **ISO8601Time** <br/> API処理時刻                                                                                              |
 | status                              |       いつも       | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                                                               |
 | event                               |       いつも       | **Object** <br/> 地震情報の要素と電文情報                                                                                              |
-| event.id                            |       いつも       | **Integer** <br/> ID                                                                                                       |
+| event.id                            |       いつも       | **Integer\|String&lt;Integer&gt;** <br/> ID                                                                                |
 | event.type                          |       いつも       | **String** <br/> 国内地震情報か、遠地地震情報かを区別する <br/> `normal` は 国内地震情報（震源・震度に関する情報など）、`distant` は 遠地地震情報                            |
 | event.eventId                       |       いつも       | **String** <br/> 地震情報のEventID                                                                                              |
 | event.originTime                    | 震度速報のみの場合は出現しない | **ISO8601Time** <br/> 地震発生時刻                                                                                               |
@@ -138,7 +138,7 @@ APIは常にJSONを返答します。
 | event.maxLgInt                      |      場合による      | **String** <br/> 観測した最大の長周期地震動階級                                                                                           |
 | event.lgCategory                    |      場合による      | **String** <br/> 長周期地震動に関する観測情報の種類                                                                                         |
 | event.telegrams                     |       いつも       | **Array&lt;Object&gt;** <br/> 地震情報の電文リスト                                                                                   |
-| event.telegrams[\].serial           |       いつも       | **Integer** <br/> 電文受信通番                                                                                                   |
+| event.telegrams[\].serial           |       いつも       | **Integer\|String&lt;Integer&gt;** <br/> 電文受信通番                                                                            |
 | event.telegrams[\].id               |       いつも       | **String** <br/> JSON化電文を区別するユニーク384bitハッシュ                                                                                |
 | event.telegrams[\].originalId       |       いつも       | **String** <br/> JSON化電文の基となったXML電文を区別するユニーク384bitハッシュ                                                                     |
 | event.telegrams[\].classification   |       いつも       | **String** <br/> 配信区分により変化。取りうる値は telegram.earthquake                                                                      |

@@ -94,7 +94,7 @@ APIは常にJSONを返答します。
 | status               | いつも | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                              |
 | ticket               | いつも | **String** <br/> WebSocketに接続するためのticket                                                  |
 | websocket            | いつも | **Object** <br/> WebSocketへの接続情報                                                          |
-| websocket.id         | いつも | **Integer** <br/> WebSocketID                                                             |
+| websocket.id         | いつも | **Integer\|String&lt;Integer&gt;** <br/> WebSocketID                                      |
 | websocket.url        | いつも | **String** <br/> WebSocketの接続先URLでticket付き                                                |
 | websocket.protocol   | いつも | **Array&lt;String&gt;** <br/> WebSocketのProtocolで配列の要素は `dmdata.v2` 一つで固定                 |
 | websocket.expiration | いつも | **Integer** <br/> キーの有効時間で単位は秒。値は 300 で固定                                                 |

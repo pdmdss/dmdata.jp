@@ -65,7 +65,7 @@ APIは常にJSONを返答します。
 | responseTime             | いつも | **ISO8601Time** <br/> API処理時刻                                                        |
 | status                   | いつも | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                         |
 | items                    | いつも | **Array&lt;Object&gt;** <br/> アイテムリスト                                                |
-| items[\].id              | いつも | **Integer** <br/> WebSocket ID                                                       |
+| items[\].id              | いつも | **Integer\|String&lt;Integer&gt;** <br/> WebSocket ID                                |
 | items[\].ticket          | いつも | **String** <br/> WebSocketに接続するためのticket                                             |
 | items[\].classifications | いつも | **Array&lt;String&gt;** <br/> WebSocketで受け取る配信区分                                     |
 | items[\].test            | いつも | **String** <br/> including の時のみ、XML電文のテストをWebsocketで受け取る                             |

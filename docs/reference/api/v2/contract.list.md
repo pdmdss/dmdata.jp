@@ -42,22 +42,22 @@ APIは常にJSONを返答します。
 }
 ```
 
-| フィールド                     | 出現  | 説明                                           |
-|:--------------------------|:---:|:---------------------------------------------|
-| responseId                | いつも | **String** <br/> API処理ID                     |
-| responseTime              | いつも | **ISO8601Time** <br/> API処理時刻                |
-| status                    | いつも | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error` |
-| items                     | いつも | **Array&lt;Object&gt;** <br/> アイテムリスト        |
-| items[\].id               | いつも | **Integer\|Null** <br/> 契約ID                 |
-| items[\].planId           | いつも | **Integer** <br/> プランID                      |
-| items[\].planName         | いつも | **String** <br/> プラン名                        |
-| items[\].classifications  | いつも | **String** <br/> 受け取れる配信区分                   |
-| items[\].price            | いつも | **Object** <br/> 価格                          |
-| items[\].price.day        | いつも | **Integer** <br/> 1日当たりの価格（円）                |
-| items[\].price.month      | いつも | **Integer** <br/> 月当たり最大の価格（円）               |
-| items[\].start            | いつも | **ISO8601Time\|Null** <br/> 契約開始日時           |
-| items[\].isValid          | いつも | **Boolean** <br/> 有効かどうか示す。**true** なら有効     |
-| items[\].connectionCounts | いつも | **Integer** <br/> この契約でWebSocketに接続できる数が増える量 |
+| フィールド                     | 出現  | 説明                                                  |
+|:--------------------------|:---:|:----------------------------------------------------|
+| responseId                | いつも | **String** <br/> API処理ID                            |
+| responseTime              | いつも | **ISO8601Time** <br/> API処理時刻                       |
+| status                    | いつも | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`        |
+| items                     | いつも | **Array&lt;Object&gt;** <br/> アイテムリスト               |
+| items[\].id               | いつも | **Integer\|String&lt;Integer&gt;\|Null** <br/> 契約ID |
+| items[\].planId           | いつも | **Integer** <br/> プランID                             |
+| items[\].planName         | いつも | **String** <br/> プラン名                               |
+| items[\].classifications  | いつも | **String** <br/> 受け取れる配信区分                          |
+| items[\].price            | いつも | **Object** <br/> 価格                                 |
+| items[\].price.day        | いつも | **Integer** <br/> 1日当たりの価格（円）                       |
+| items[\].price.month      | いつも | **Integer** <br/> 月当たり最大の価格（円）                      |
+| items[\].start            | いつも | **ISO8601Time\|Null** <br/> 契約開始日時                  |
+| items[\].isValid          | いつも | **Boolean** <br/> 有効かどうか示す。**true** なら有効            |
+| items[\].connectionCounts | いつも | **Integer** <br/> この契約でWebSocketに接続できる数が増える量        |
 
 ### status: error
 APIは各種エラーを次の通り返答します。
