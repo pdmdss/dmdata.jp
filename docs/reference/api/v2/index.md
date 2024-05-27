@@ -163,25 +163,30 @@ APIは標準的なエラーを次の通り返答します。
 
 ### Socket
 
-* [**Socket List**](socket.list)
-* [**Socket Start**](socket.start)
-* [**Socket Close**](socket.close)
+* [**Socket List**](/docs/reference/api/v2/socket.list)
+* [**Socket Start**](/docs/reference/api/v2/socket.start)
+* [**Socket Close**](/docs/reference/api/v2/socket.close)
 
 ### Telegram
 
-* [**Telegram List**](telegram.list)
-* [**Telegram Data**](/docs/reference/api/v1/telegram.data.md)
+* [**Telegram List**](/docs/reference/api/v2/telegram.list)
+* [**Telegram Data**](/docs/reference/api/v1/telegram.data)
+
+### JmaFile
+
+* [**JmaFile List**](/docs/reference/api/v2/jmafile.list)
+* [**JmaFile Data**](/docs/reference/api/v1/jmafile.data)
 
 ### WebSocket
 
-* [**WebSocket**](websocket)
+* [**WebSocket**](/docs/reference/api/v2/websocket)
 
 ### Parameter
 
-* [**Parameter Earthquake**](parameter.earthquake)
-* [**Parameter Tsunami**](parameter.tsunami)
+* [**Parameter Earthquake**](/docs/reference/api/v2/parameter.earthquake)
+* [**Parameter Tsunami**](/docs/reference/api/v2/parameter.tsunami)
 
 ### GD Earthquake
 
-* [**GD Earthquake List**](gd.earthquake.list)
-* [**GD Earthquake Event**](gd.earthquake.event)
+* [**GD Earthquake List**](/docs/reference/api/v2/gd.earthquake.list)
+* [**GD Earthquake Event**](/docs/reference/api/v2/gd.earthquake.event)

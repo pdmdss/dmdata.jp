@@ -56,6 +56,14 @@ const sidebar = {
                         },
                         {
                             type: 'category',
+                            label: 'JmaFile v2',
+                            items: [
+                                'reference/api/v2/jmafile.list',
+                                'reference/api/v1/jmafile.data'
+                            ]
+                        },
+                        {
+                            type: 'category',
                             label: 'WebSocket v2',
                             items: [
                                 'reference/api/v2/websocket'
