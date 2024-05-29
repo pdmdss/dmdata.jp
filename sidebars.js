@@ -109,7 +109,7 @@ const sidebar = {
         },
         {
             type: 'category',
-            label: '配信データ',
+            label: '電文データ',
             link: {
                 type: 'doc',
                 id: 'telegrams/index'
@@ -216,14 +216,115 @@ const sidebar = {
                 },
                 {
                     type: 'category',
+                    label: '天気予報 区分',
+                    items: [
+                        'telegrams/fo03010',
+                        'telegrams/fo03020',
+                        'telegrams/fo03050',
+                        'telegrams/fo03130',
+                        'telegrams/fo03150',
+                        'telegrams/fo03210',
+                        'telegrams/fo03220',
+                        'telegrams/fo03240',
+                        'telegrams/fo03510',
+                        'telegrams/fo03520',
+                        'telegrams/fo03530',
+                        'telegrams/fo03540',
+                        'telegrams/fo03550',
+                        'telegrams/fo03560'
+                    ]
+                },
+                {
+                    type: 'category',
+                    label: '気象観測 区分',
+                    items: [
+                        'telegrams/ob04010',
+                        'telegrams/ob04015',
+                        'telegrams/ob04020',
+                        'telegrams/ob04021',
+                        'telegrams/ob04022',
+                        'telegrams/ob04023',
+                        'telegrams/ob04025',
+                        'telegrams/ob04026',
+                        'telegrams/ob04110',
+                        'telegrams/ob04120',
+                        'telegrams/ob04125',
+                        'telegrams/ob04210',
+                        'telegrams/ob04310',
+                        'telegrams/ob04320',
+                        'telegrams/ob04330',
+                        'telegrams/ob04410',
+                        'telegrams/ob04510',
+                        'telegrams/ob04610',
+                        'telegrams/ob05010',
+                        'telegrams/ob05011',
+                        'telegrams/ob05110',
+                    ]
+                },
+                {
+                    type: 'category',
                     label: '定時・その他 区分',
                     items: [
                         'telegrams/sc02070',
                         'telegrams/sc02110',
                         'telegrams/sc02115',
-                        'telegrams/sc02120'
+                        'telegrams/sc02120',
+                        'telegrams/sc03310'
+                    ]
+                },
+                {
+                    type: 'category',
+                    label: '雷観測データ 区分',
+                    items: [
+                        'telegrams/li10010',
                     ]
                 }
+            ]
+        },
+        {
+            type: 'category',
+            label: 'ファイル形式データ',
+            link: {
+                type: 'doc',
+                id: 'jmafile/index'
+            },
+            items: [
+                'jmafile/jf02140',
+                'jmafile/jf02130',
+                'jmafile/jf03011',
+                'jmafile/jf03012',
+                'jmafile/jf03130',
+                'jmafile/jf03131',
+                'jmafile/jf03190',
+                'jmafile/jf03090',
+                'jmafile/jf03711',
+                'jmafile/jf03712',
+                'jmafile/jf03711',
+                'jmafile/jf03722',
+                'jmafile/jf03140',
+                'jmafile/jf03150',
+                'jmafile/jf03511',
+                'jmafile/jf03512',
+                'jmafile/jf03513',
+                'jmafile/jf03261',
+                'jmafile/jf03262',
+                'jmafile/jf03310',
+                'jmafile/jf04100',
+                'jmafile/jf06035',
+                'jmafile/jf06310',
+                'jmafile/jf06320',
+                'jmafile/jf06330',
+                'jmafile/jf06340',
+                'jmafile/jf06251',
+                'jmafile/jf06252',
+                'jmafile/jf06241',
+                'jmafile/jf06242',
+                'jmafile/jf06243',
+                'jmafile/jf06231',
+                'jmafile/jf06232',
+                'jmafile/jf06111',
+                'jmafile/jf06112',
+                'jmafile/jf07010'
             ]
         }
     ]

@@ -23,7 +23,12 @@ const themeConfig = {
             },
             {
                 to: 'docs/telegrams/',
-                label: '配信データ',
+                label: '電文データ',
+                position: 'left'
+            },
+            {
+                to: 'docs/jmafile/',
+                label: 'ファイル形式データ',
                 position: 'left'
             },
             {

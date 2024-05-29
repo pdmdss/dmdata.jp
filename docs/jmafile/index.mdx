@@ -1,0 +1,584 @@
+---
+slug: /jmafile/
+title: 配信データ（ファイル形式データ）
+---
+
+# 配信データの区分
+
+DMDATA.JP では以下の通り区分を分けて配信を行っています。
+
+* 北西太平洋高解像度日別海面水温解析格子点資料（jmafile.ocn-ssta）
+* ひまわりによる海面水温格子点資料（jmafile.ocn-ssto）
+* 5分毎全国降水レーダー（jmafile.rdr-nc5min）
+* 解析雨量・降水短時間予報・降水15時間予報（jmafile.srf-rrp）
+* 解析積雪深・解析降雪量・降雪短時間予想（jmafile.srf-sdf）
+* 竜巻発生確度ナウキャスト（jmafile.nowc-phw）
+* 雷ナウキャスト（jmafile.nowc-lts）
+* 推計気象分布（jmafile.obs-tms）
+* 黄砂解析予測モデル格子点値（jmafile.msg-ys）
+* 地域気象観測報（jmafile.obs-amds）
+* 天気図画像ファイル（jmafile.met-cht）
+* 大雨警報（土砂災害）の危険度分布（jmafile.met-dosha）
+* 警報危険度分布（jmafile.met-flood）
+* 土壌雨量指数（jmafile.srf-sw）
+* 流域雨量指数（jmafile.met-roi）
+* 表面雨量指数（jmafile.met-fpi）
+* 台風の暴風域に入る確率（Ｒ２）（jmafile.met-wsp）
+* 天気分布予報（jmafile.met-gwf）
+
+## 配信データのリスト
+
+
+<table>
+    <thead>
+    <tr>
+        <th colSpan={2}>区分名</th>
+        <th colSpan={2}>区分API名</th>
+        <th rowSpan={2}>備考</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>資料名</th>
+        <th>データ識別名(HEADRE_VALUES)</th>
+        <th>データ形式</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td colSpan={2}>北西太平洋高解像度日別海面水温解析格子点資料</td>
+        <td colSpan={2}>jmafile.ocn-ssta</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf02140">北西太平洋高解像度日別海面水温解析格子点資料</a></td>
+        <td>
+            <p>OCN_GPV_Rnwpa_Gll0p1deg_Pss_AyyyyMMddhh</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>ひまわりによる海面水温格子点資料</td>
+        <td colSpan={2}>jmafile.ocn-ssto</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf02130">ひまわりによる海面水温格子点資料</a></td>
+        <td>
+            <p>OCN_GPV_Rjp_Gll0p02deg_Pss_OyyyyMMddhh</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>5分毎全国合成レーダーGPV</td>
+        <td colSpan={2}>jmafile.rdr-nc5min</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03011">5分毎250mメッシュ全国合成レーダー降水強度GPV</a></td>
+        <td>
+            <p>RDR_GPV_Ggis0p25km_Pri60lv_Aper5min_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03012">5分毎1kmメッシュ全国合成レーダーエコー頂高度GPV</a></td>
+        <td>
+            <p>RDR_GPV_Ggis1km_Phhlv_Aper5min_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>解析雨量・降水短時間予報・降水15時間予報</td>
+        <td colSpan={2}>jmafile.srf-rrp</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03130">解析雨量</a></td>
+        <td>
+            <p>SRF_GPV_Ggis1km_Prr60lv_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03131">降水短時間予報</a></td>
+        <td>
+            <p>SRF_GPV_Ggis1km_Prr60lv_FH01-06</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03190">降水15時間予報</a></td>
+        <td>
+            <p>SRF_GPV_Gll5km_Prr60lv_FH07-15</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03090">線状降水帯の雨域</a></td>
+        <td>
+            <p>MET_INF_Pslmcs_Fper10min_FH0000-0030</p>
+        </td>
+        <td>シェープファイル</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>解析積雪深・解析降雪量・降雪短時間予報</td>
+        <td colSpan={2}>jmafile.srf-sdf</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03711">解析積雪深</a></td>
+        <td>
+            <p>SRF_GPV_Gll5km_Psdlv_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03712">解析降雪量</a></td>
+        <td>
+            <p>SRF_GPV_Gll5km_Psflv_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03721">降雪短時間予報（積雪の深さ）</a></td>
+        <td>
+            <p>SRF_GPV_Gll5km_Psdlv_FH01-06</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03722">降雪短時間予報（降雪量）</a></td>
+        <td>
+            <p>SRF_GPV_Gll5km_Psflv_FH01-06</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>竜巻発生確度ナウキャスト</td>
+        <td colSpan={2}>jmafile.nowc-phw</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03140">竜巻発生確度ナウキャスト</a></td>
+        <td>
+            <p>NOWC_GPV_Ggis10km_Pphw10_FH0000-0100</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>雷ナウキャスト</td>
+        <td colSpan={2}>jmafile.nowc-lts</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03150">雷ナウキャスト</a></td>
+        <td>
+            <p>NOWC_GPV_Ggis1km_Plts10_FH0000-0100</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>推計気象分布</td>
+        <td colSpan={2}>jmafile.obs-tms</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03511">推計気象分布（気温）</a></td>
+        <td>
+            <p>OBS_GPV_Rjp_Ggis1km_Ptt_AyyyyMMddhhmm</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03512">推計気象分布（天気）</a></td>
+        <td>
+            <p>OBS_GPV_Rjp_Ggis1km_Pwm_AyyyyMMddhhmm</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03513">推計気象分布（日照時間）</a></td>
+        <td>
+            <p>OBS_GPV_Rjp_Ggis1km_Pds60_AyyyyMMddhhmm</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>黄砂解析予測モデル格子点値</td>
+        <td colSpan={2}>jmafile.msg-ys</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03261">黄砂解析予測モデル格子点値（解析値）</a></td>
+        <td>
+            <p>MSG_GPV_Gll0p5deg_Pys_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03262">黄砂解析予測モデル格子点値（予測値）</a></td>
+        <td>
+            <p>MSG_GPV_Gll0p5deg_Pys_FCST_FyyyyMMddhh-yyyyMMddhh</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>新形式地域気象観測報</td>
+        <td colSpan={2}>jmafile.obs-amds</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td rowSpan={4}></td>
+        <td><a href="jf03310">新形式地域気象観測報（定時報）</a></td>
+        <td>
+            <p>OBS_AMDS_Rjp_N#</p>
+        </td>
+        <td rowSpan={4}>BUFR4</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>遅延報</td>
+        <td>
+            <p>OBS_AMDSRR_Rjp_N#</p>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>修正報</td>
+        <td>
+            <p>OBS_AMDSCC_Rjp_N#</p>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>修正報（気象業務支援センター集約データ）</td>
+        <td>
+            <p>OBS_AMDSCC</p>
+        </td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>天気図画像ファイル</td>
+        <td colSpan={2}>jmafile.met-cht</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf04100">天気図画像ファイル</a></td>
+        <td>配信の種別が多いため、別記</td>
+        <td>PNG / PDF</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>大雨警報（土砂災害）の危険度分布</td>
+        <td colSpan={2}>jmafile.met-dosha</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06035">大雨警報（土砂災害）の危険度分布</a></td>
+        <td>
+            <p>MET_INF_Jdosha_Ggis1km_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>警報危険度分布</td>
+        <td colSpan={2}>jmafile.met-flood</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06310">大雨警報（浸水害）の危険度分布</a></td>
+        <td>
+            <p>MET_GPV_Ggis1km_Plic_Aper10min_FH0000-0100</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06320">洪水警報の危険度分布</a></td>
+        <td>
+            <p>MET_GPV_Ggis1km_Plfc_Aper10min_FH0000-0300</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06330">洪水警報の危険度分布（流路）</a></td>
+        <td>
+            <p>MET_INF_Jfloodriskmap</p>
+        </td>
+        <td>シェープファイル</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06340">大雨警報（浸水害）・洪水警報の危険度分布（統合版）</a></td>
+        <td>
+            <p>MET_GPV_Ggis1km_Plfdc_Aper10min_FH0000-0300</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>土壌雨量指数</td>
+        <td colSpan={2}>jmafile.srf-sw</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06251">土壌雨量指数実況値</a></td>
+        <td>
+            <p>SRF_GPV_Ggis1km_Psw_Aper10min_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06252">土壌雨量指数6時間予想値</a></td>
+        <td>
+            <p>SRF_GPV_Ggis1km_Psw_Fper10min_FH01-06</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>流域雨量指数</td>
+        <td colSpan={2}>jmafile.met-roi</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06241">流域雨量指数実況値</a></td>
+        <td>
+            <p>MET_SEQ_Ggis1km_Proi_Aper10min_ANAL</p>
+            <p>MET_SEQ_Ggis1km_Proi_Aper10min_RJsuikei###_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06252">流域雨量指数1時間予想</a></td>
+        <td>
+            <p>MET_SEQ_Ggis1km_Proi_Fper10min_FH0010-0100</p>
+            <p>MET_SEQ_Ggis1km_Proi_Fper10min_RJsuikei###_FH0010-0100</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06253">流域雨量指数6時間予想</a></td>
+        <td>
+            <p>MET_SEQ_Ggis1km_Proi_Fper30min_FH01-06</p>
+            <p>MET_SEQ_Ggis1km_Proi_Fper30min_RJsuikei###_FH01-06</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>表面雨量指数</td>
+        <td colSpan={2}>jmafile.srf-fpi</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06231">表面雨量指数実況値</a></td>
+        <td>
+            <p>MET_GPV_Ggis1km_Pfpi_Aper10min_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06252">表面雨量指数1時間予想値</a></td>
+        <td>
+            <p>MET_GPV_Ggis1km_Pfpi_Fper10min_FH0010-0100</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06253">表面雨量指数6時間予想値</a></td>
+        <td>
+            <p>MET_GPV_Ggis1km_Pfpi_Fper30min_FH01-06</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>台風の暴風域に入る確率（Ｒ２）</td>
+        <td colSpan={2}>jmafile.met-wsp</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06111">風の暴風域に入る確率分布（Ｒ２）（格子点値）3時間ごとの確率</a></td>
+        <td>
+            <p>MET_GPV_Rjp_Jwsp50_FD0000-0500_NCccccnnn_NTYtttt</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf06112">風の暴風域に入る確率分布（Ｒ２）（格子点値）積算確率</a></td>
+        <td>
+            <p>MET_GPV_Rjp_Jwsp50_FD0000-0500_JRintgrt_NCccccnnn_NTYtttt</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>天気分布予報</td>
+        <td colSpan={2}>jmafile.met-gwf</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf07010">天気分布予報</a></td>
+        <td>
+            <p>MET_GPV_Gll5km_Jtenkibunpu_FHhh(-hh)_NJ000@@@</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+各データページにあるの概要及びその他は、気象庁の配信技術資料の文章を一部改変して掲載しています。
+
+
+### データ識別名
+データ識別名(HEADRE_VALUES)は、DMDATA.JPが受信したファイル名から生成し、以下の通りとなります。
+
+
+#### 例1
+
+ファイル名、
+`Z__C_RJTD_20240525083000_SRF_GPV_Ggis1km_Psw_Fper10min_FH01-06_grib2.bin`
+のデータ識別名は、
+`SRF_GPV_Ggis1km_Psw_Fper10min_FH01-06`
+となります。
+
+**ファイル名フォーマットの参考**
+
+`{product}_{productidentifier}_{oflag}_{author}_{yyyyMMddHHmmss}_{HEADRE_VALUES}_{formatType}.{extension}`
+
+* `product`: 作成プロダクトモード、`Z` のみが入る
+* `productidentifier`: データ属性を表すが、現在のところ使用していない
+* `oflag`: 発信元識別で、`author`のコード種別を示す、取りうる値は`C`、`J`となり、それぞれ「WMO 英字発信官署名」、「気象庁作成の英字発信官署名」
+* `author`: 英字発信官署名
+* `yyyyMMddHHmmss`: データの内容の代表的な時刻
+* `formatType`: データのフォーマット、`grib2`、`bufr3`、`bufr4`、`plain`、`image`、`shape`など
+* `extension`: データの拡張子、`bin`、`xml`、`png`、`pdf`、`tar`、`tar.gz`など
+
+
+#### 例2（気象業務支援センター集約データ）
+
+ファイル名、
+`Z__C_COMP_20240525083633_MET_SEQ_Ggis1km_Proi_Aper10min_ANAL_013.tar.gz`
+のデータ識別名は、
+`MET_SEQ_Ggis1km_Proi_Aper10min_ANAL`
+となります。
+
+**ファイル名フォーマットの参考**
+
+`{product}_{productidentifier}_{oflag}_{author}_{yyyyMMddHHmmss}_{HEADRE_VALUES}_{CompNum}.{extension}`
+
+* `product`: 作成プロダクトモード、`Z` のみが入る
+* `productidentifier`: データ属性を表すが、現在のところ使用していない
+* `oflag`: 発信元識別で、`author`のコード種別を示す、`C` で固定
+* `author`: 英字発信官署名、`COMP` で固定
+* `yyyyMMddHHmmss`: 集約時の時刻
+* `CompNum`: まとめられたファイル数
+* `extension`: データの拡張子、`tar`、`tar.gz`
+
+## サンプル
+
+気象業務支援センターの[実際に配信されたデータによるサンプル提供](http://www.jmbsc.or.jp/jp/online/c-onlineGsample.html)
+にて提供されていますのでそちらを参照してください。
+
+## 更新履歴
+
+- 2024/06/03 - 気象庁ファイル形式データの配信開始
