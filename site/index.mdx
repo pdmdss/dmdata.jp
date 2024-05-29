@@ -168,6 +168,30 @@ import styles from './css/index.module.css';
         </div>
         <div className={styles['plan-item']}>
             <div className={styles['plan-item-title']}>
+                天気予報関連
+                <span className={styles['plan-item-title-sub']}>区分</span>
+            </div>
+            <div className={styles['plan-item-amount']}>
+                <p>1100円/月(最大額)</p>
+                <p>(50円/日(日割り))</p>
+                <p>初期費用:0円</p>
+            </div>
+            <div className={styles['plan-item-description']}>
+                <p>府県天気予報／地域時系列予報</p>
+                <p>府県週間予報</p>
+                <p>天気概況</p>
+                <p>早期注意情報（警報級の可能性）</p>
+                <p>全般季節予報</p>
+                <p>地方季節予報</p>
+                <p>全般２週間気温予報</p>
+                <p>地方２週間気温予報</p>
+                <p>天気図(XML)</p>
+                <br/>
+                <p>WebSocket同時接続数 +1 追加</p>
+            </div>
+        </div>
+        <div className={styles['plan-item']}>
+            <div className={styles['plan-item-title']}>
                 定時報・その他関連
                 <span className={styles['plan-item-title-sub']}>区分</span>
             </div>
@@ -184,9 +208,13 @@ import styles from './css/index.module.css';
                 <p>WebSocket同時接続数 +1 追加</p>
             </div>
         </div>
+        <div className={styles['plan-item']} style={{ border: 'none', background: 'none' }}>
+        </div>
+        <div className={styles['plan-item']} style={{ border: 'none', background: 'none' }}>
+        </div>
     </div>
     <p>全ての金額は税込み価格です。</p>
-    <p>法人・団体向けはの<a href="https://dmdata.jp/price-business.pdf">価格(PDF)はこちら</a>。ご利用の場合は<a href="/contact">お問い合わせ</a>ください。</p>
+    <p>法人・団体向け、ファイル形式データの<a href="/price">価格はこちら</a>。ご利用の場合は<a href="/contact">お問い合わせ</a>ください。</p>
     <p>リアルタイム震度（VXSE47）は、法人利用の場合ご利用いただけます。</p>
 </div>
 <div className={styles['plan-attention']}>
