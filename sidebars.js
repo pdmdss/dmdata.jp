@@ -225,6 +225,7 @@ const sidebar = {
                         'telegrams/fo03150',
                         'telegrams/fo03210',
                         'telegrams/fo03220',
+                        'telegrams/fo03230',
                         'telegrams/fo03240',
                         'telegrams/fo03510',
                         'telegrams/fo03520',
