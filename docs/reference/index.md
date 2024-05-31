@@ -7,7 +7,7 @@ title: DMDATA.JP Reference
 
 防災情報に関するAPIを提供しているDMDATA.JPですが、以下の方法によって提供しています。
 
-* WebSocket
+* WebSocket （電文データのみ）
 * PuLL
 
 WebSocketの場合、同時接続の上限がかかりますが気象業務支援センターより配信された情報を即座に受け取ることができます。

@@ -35,6 +35,8 @@ title: Socket Start v2
 }
 ```
 
+ファイル形式データの利用はできません。
+
 ### APIに必要な権限
 * socket.start
 * eew.get.forecast (配信区分によっては必要)
