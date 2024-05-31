@@ -9,13 +9,13 @@ title: Socket Start v2
 [**WebSocket v2**](/docs/reference/api/v2/websocket.md) に接続する場合、このAPIを利用してアクセスするURLを取得します。
 
 ### リクエストボディ(JSON)
-| パラメータ名          | 必須  | デフォルト | 説明                                                                                                                                                                                                                                                                                        |
-|:----------------|:---:|:-----:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| classifications | はい  |       | **Array&lt;String&gt;** <br/> WebSocketで取得する配信区分を指定。<br/> 緊急地震（予報）区分:　eew.forecast<br/> 緊急地震（警報）関連区分:　eew.warning<br/> 緊急地震（リアルタイム）区分:　eew.realtime<br/> 地震・津波関連区分:　telegram.earthquake<br/> 火山関連区分: telegram.volcano<br/> 気象警報・注意報関連区分: telegram.weather<br/> 定時関連区分: telegram.scheduled |
-| types           | いいえ |       | **Array&lt;String&gt;** <br/> 取得したい[データ種類コード](/docs/telegrams#配信データのリスト)を指定。最大30個まで指定可能                                                                                                                                                                                                   |
-| test            | いいえ |  no   | **String** <br/> テスト電文を受け取るか指定。受け取る場合は including にする。<br/>**注意：XML電文以外のテスト配信は no 時も配信されます。本文中を参照するようにしてください。**                                                                                                                                                                            |
-| appName         | いいえ |       | **String** <br/> アプリケーション名を指定。最大24バイトまで                                                                                                                                                                                                                                                   |
-| formatMode      | いいえ |  raw  | **String** <br/> データフォーマットの指定。生電文: raw、JSON化データ: json                                                                                                                                                                                                                                     |
+| パラメータ名          | 必須  | デフォルト | 説明                                                                                                              |
+|:----------------|:---:|:-----:|:----------------------------------------------------------------------------------------------------------------|
+| classifications | はい  |       | **Array&lt;String&gt;** <br/> WebSocketで取得する配信区分を指定。<br/> [電文データ 区分(API名)](/docs/telegrams)を指定、ファイル形式データは指定できない |
+| types           | いいえ |       | **Array&lt;String&gt;** <br/> 取得したい[データ種類コード](/docs/telegrams#配信データのリスト)を指定。最大30個まで指定可能                         |
+| test            | いいえ |  no   | **String** <br/> テスト電文を受け取るか指定。受け取る場合は including にする。<br/>**注意：XML電文以外のテスト配信は no 時も配信されます。本文中を参照するようにしてください。**  |
+| appName         | いいえ |       | **String** <br/> アプリケーション名を指定。最大24バイトまで                                                                         |
+| formatMode      | いいえ |  raw  | **String** <br/> データフォーマットの指定。生電文: raw、JSON化データ: json                                                           |
 
 例：
 ```json
@@ -38,6 +38,7 @@ title: Socket Start v2
 ファイル形式データの利用はできません。
 
 ### APIに必要な権限
+
 * socket.start
 * eew.get.forecast (配信区分によっては必要)
 * eew.get.warning (配信区分によっては必要)
@@ -45,7 +46,10 @@ title: Socket Start v2
 * telegram.get.earthquake (配信区分によっては必要)
 * telegram.get.volcano (配信区分によっては必要)
 * telegram.get.weather (配信区分によっては必要)
+* telegram.get.forecast (配信区分によっては必要)
+* telegram.get.observation (配信区分によっては必要)
 * telegram.get.scheduled (配信区分によっては必要)
+* telegram.get.lightning (配信区分によっては必要)
 
 ---
 
