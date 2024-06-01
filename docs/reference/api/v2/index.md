@@ -56,7 +56,7 @@ APIはリソースを明確に指定する方法として、URLにIDなどを指
 ## カーソルトークン
 このAPIでは、1回のレスポンスで返しきれない情報があり、その場合レスポンス内に`nextToken`を含めます。この`nextToken`を同じエンドポイントにクエリパラメータ`cursorToken`に指定すると、続きの情報がレスポンスされます。
 
-また、Telegram List v2ではPuLLで取得する際の通信量、処理量削減のため、レスポンス内の`nextPooling`を、次回のクエリパラメータ`cursorToken`に指定してください。
+また、Telegram List v2 や、JmaFile List v2 ではPuLLで取得する際の通信量、処理量削減のため、レスポンス内の`nextPooling`を、次回のクエリパラメータ`cursorToken`に指定してください。
 
 これらの`nextToken`、`nextPooling`には次のリソース参照情報が含まれていますが、API検索クエリパラメータなどの情報は含まれないため、他のAPI検索クエリパラメータを指定していた場合、`cursorToken`を使用する際にも前回と同様にAPI検索クエリパラメータを指定してください。
 
@@ -159,34 +159,34 @@ APIは標準的なエラーを次の通り返答します。
 
 ### Contract
 
-* [**Contract List**](contract.list)
+* [**Contract List**](/docs/reference/api/v2/contract.list.md)
 
 ### Socket
 
-* [**Socket List**](/docs/reference/api/v2/socket.list)
-* [**Socket Start**](/docs/reference/api/v2/socket.start)
-* [**Socket Close**](/docs/reference/api/v2/socket.close)
+* [**Socket List**](/docs/reference/api/v2/socket.list.md)
+* [**Socket Start**](/docs/reference/api/v2/socket.start.md)
+* [**Socket Close**](/docs/reference/api/v2/socket.close.md)
 
 ### Telegram
 
-* [**Telegram List**](/docs/reference/api/v2/telegram.list)
-* [**Telegram Data**](/docs/reference/api/v1/telegram.data)
+* [**Telegram List**](/docs/reference/api/v2/telegram.list.md)
+* [**Telegram Data**](/docs/reference/api/v1/telegram.data.md)
 
 ### JmaFile
 
-* [**JmaFile List**](/docs/reference/api/v2/jmafile.list)
-* [**JmaFile Data**](/docs/reference/api/v1/jmafile.data)
+* [**JmaFile List**](/docs/reference/api/v2/jmafile.list.md)
+* [**JmaFile Data**](/docs/reference/api/v1/jmafile.data.md)
 
 ### WebSocket
 
-* [**WebSocket**](/docs/reference/api/v2/websocket)
+* [**WebSocket**](/docs/reference/api/v2/websocket.md)
 
 ### Parameter
 
-* [**Parameter Earthquake**](/docs/reference/api/v2/parameter.earthquake)
-* [**Parameter Tsunami**](/docs/reference/api/v2/parameter.tsunami)
+* [**Parameter Earthquake**](/docs/reference/api/v2/parameter.earthquake.md)
+* [**Parameter Tsunami**](/docs/reference/api/v2/parameter.tsunami.md)
 
 ### GD Earthquake
 
-* [**GD Earthquake List**](/docs/reference/api/v2/gd.earthquake.list)
-* [**GD Earthquake Event**](/docs/reference/api/v2/gd.earthquake.event)
+* [**GD Earthquake List**](/docs/reference/api/v2/gd.earthquake.list.md)
+* [**GD Earthquake Event**](/docs/reference/api/v2/gd.earthquake.event.md)
