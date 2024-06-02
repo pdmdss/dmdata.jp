@@ -20,6 +20,8 @@ DMDATA.JPでは気象庁の発表する、緊急地震速報の配信を行っ�
   * [VXSE47 リアルタイム震度](/docs/telegrams/ew09080.md)
 
 
+参考：[緊急地震速報（警報）及び（予報）について（気象庁）](https://www.data.jma.go.jp/eew/data/nc/shikumi/shousai.html)
+
 :::caution 注意
 [長周期地震動階級に基づく基準を追加した緊急地震速報の配信](https://dmdata.jp/doc/jma/technical/566.pdf)の開始に伴い、当サービスでも新しい配信資料「VXSE45 緊急地震速報（地震動予報）」の配信をしています。
 
