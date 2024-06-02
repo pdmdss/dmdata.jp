@@ -19,6 +19,8 @@ XMLをJSON化したデータのスキーマ情報を提供しています。
 * [全般潮位情報 (VMCJ50)](/docs/telegrams/we02210.md)
 * [地方潮位情報 (VMCJ51)](/docs/telegrams/we02220.md)
 * [府県潮位情報 (VMCJ52)](/docs/telegrams/we02230.md)
+* [天気概況 (VPFG50)](/docs/telegrams/fo03020.md)
+* [全般2週間気温予報 (VPZK70)](/docs/telegrams/fo03230.md)
 
 ## 共通ヘッダ
 
@@ -93,3 +95,13 @@ body フィールド内の定義となります。
 * [VMCJ51 - 九州北部地方（山口県を含む）の副振動に関する地方潮位情報　第２号](https://sample.dmdata.jp/conversion/json/schema/weather-information/vmcj51_jpfk_20130716100524.json)
 * [VMCJ52 - 副振動に関する山口県潮位情報　第１号](https://sample.dmdata.jp/conversion/json/schema/weather-information/vmcj52_jpfa_20090715194013.json)
 * [VMCJ52 - 副振動に関する山口県潮位情報　第２号](https://sample.dmdata.jp/conversion/json/schema/weather-information/vmcj52_jpfa_20090716102536.json)
+
+### 天気概況
+
+* [VPFG50 - 福岡県天気概況](https://sample.dmdata.jp/conversion/json/schema/weather-information/vpfg50_jpfk_20090724104112.json)
+* [VPFG50 - 福岡県天気概況](https://sample.dmdata.jp/conversion/json/schema/weather-information/vpfg50_jpfk_20090724172212.json)
+* [VPFG50 - 愛知県天気概況](https://sample.dmdata.jp/conversion/json/schema/weather-information/vpfg50_jpgy_20080903064005.json)
+* [VPFG50 - 渡島・檜山地方天気概況](https://sample.dmdata.jp/conversion/json/schema/weather-information/vpfg50_jpsf_20130613043217.json)
+
+### 全般2週間気温予報
+* [VPZK70 - ２週間気温予報（概況）](https://sample.dmdata.jp/conversion/json/schema/weather-information/vpzk70_rjtd_20180115141010.json)
