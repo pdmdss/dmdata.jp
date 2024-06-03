@@ -145,7 +145,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [府県天気予報／地域時系列予報](fo03010)           | 府県天気予報（Ｒ１）                            | VPFD51   | XML   | 配信中                                                                  |    |
 | [天気概況](fo03020)                     | 天気概況                                  | VPFG50   | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md) |    |
 | [早期注意情報（明日までの警報級の可能性）](fo03050)     | 警報級の可能性（明日まで）                         | VPFD60   | XML   | 配信中                                                                  |
-| [府県週間天気予報](fo03130)                 | 府県週間天気予報                              | VPFW50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md) |    |
+| [府県週間天気予報](fo03130)                 | 府県週間天気予報                              | VPFW50   | XML   | 配信中                                                                  |    |
 | [早期注意情報（明後日以降の警報級の可能性）](fo03150)    | 警報級の可能性（明後日以降）                        | VPFW60   | XML   | 配信中                                                                  |
 | [全般季節予報](fo03210)                   | 全般１か月予報 <br/> 全般３か月予報 <br/> 全般暖・寒候期予報 | VPZK50   | XML   | 配信中                                                                  |
 | [地方季節予報](fo03220)                   | 地方１か月予報 <br/> 地方３か月予報 <br/> 地方暖・寒候期予報 | VPCK50   | XML   | 配信中                                                                  |
