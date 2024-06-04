@@ -65,7 +65,7 @@ body フィールド内の定義となります。
 
 ## この電文で取り扱うコード類
 
-コードは、気象庁防災情報XMLフォーマット コード表 AreaInformationCity-AreaForecastLocalM+ に記載があります。
+コードは、気象庁防災情報XMLフォーマット コード表 AreaInformationCity-AreaForecastLocalM に記載があります。
 
 ## サンプル
 

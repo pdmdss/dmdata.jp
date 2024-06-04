@@ -203,7 +203,7 @@ body フィールド内の定義となります。
 
 ## この電文で取り扱うコード類
 
-コードは、気象庁防災情報XMLフォーマット コード表 20200713_AreaRiver 及び 20200713_AreaFloodForecast 、20140423_RiverOffice 、20201224_WaterLevelStation に記載があります。
+コードは、気象庁防災情報XMLフォーマット コード表 AreaRiver 及び AreaFloodForecast 、RiverOffice 、WaterLevelStation に記載があります。
 
 ## サンプル
 

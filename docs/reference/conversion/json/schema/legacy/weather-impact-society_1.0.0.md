@@ -133,7 +133,7 @@ body フィールド内の定義となります。
 
 ## この電文で取り扱うコード類
 
-コードは、気象庁防災情報XMLフォーマット コード表 20130621_AreaForecast 及び 20210310_PointAmedas 、20201026_WmoObservingStations
+コードは、気象庁防災情報XMLフォーマット コード表 AreaForecast 、 PointAmedas 、WmoObservingStations
 に記載があります。
 
 ## サンプル
