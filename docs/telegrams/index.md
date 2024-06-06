@@ -147,8 +147,8 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [早期注意情報（明日までの警報級の可能性）](fo03050)     | 警報級の可能性（明日まで）                         | VPFD60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-warning-possibility.md) |
 | [府県週間天気予報](fo03130)                 | 府県週間天気予報                              | VPFW50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md)          |    |
 | [早期注意情報（明後日以降の警報級の可能性）](fo03150)    | 警報級の可能性（明後日以降）                        | VPFW60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-warning-possibility.md) |
-| [全般季節予報](fo03210)                   | 全般１か月予報 <br/> 全般３か月予報 <br/> 全般暖・寒候期予報 | VPZK50   | XML   | 配信中                                                                           |
-| [地方季節予報](fo03220)                   | 地方１か月予報 <br/> 地方３か月予報 <br/> 地方暖・寒候期予報 | VPCK50   | XML   | 配信中                                                                           |
+| [全般季節予報](fo03210)                   | 全般１か月予報 <br/> 全般３か月予報 <br/> 全般暖・寒候期予報 | VPZK50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-season.md)              |
+| [地方季節予報](fo03220)                   | 地方１か月予報 <br/> 地方３か月予報 <br/> 地方暖・寒候期予報 | VPCK50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-season.md)              |
 | [全般2週間気温予報](fo03230)                | 全般季節予報（２週間気温予報）                       | VPZK70   | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)          |
 | [地方2週間気温予報](fo03240)                | 地方季節予報（２週間気温予報）                       | VPCK70   | XML   | 配信中                                                                           |
 | [地上実況図（天気図情報）](fo03510)             | 地上実況図                                 | VZSA50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
