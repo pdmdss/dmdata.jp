@@ -30,7 +30,7 @@ body フィールド内の定義となります。
 | 0._1._1.  | timeId   |       | **String&lt;Integer&gt;**<br/> 時刻ID                            |
 | 0._1._2.  | dateTime |       | **ISO8601Time**<br/> 予想する基準日時                                  |
 | 0._1._3.  | duration |       | **String**<br/> 基準日時からの予想時間の幅を、 ISO8601 の Time intervals 形式で表す |
-| 0._1._4.? | name     | 場合による | **String**<br/> 時刻定義の内容                                        |
+| 0._1._4.? | name     | 情報による | **String**<br/> 時刻定義の内容                                        |
 
 ### 1. zone
 
