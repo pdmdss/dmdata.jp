@@ -140,23 +140,23 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 
 ### 天気予報関連
 
-| 資料名                                 | XML:/Report/Control/Title             | データ種類コード | データ形式 | JSON化                                                                | 備考 |
-|-------------------------------------|---------------------------------------|----------|-------|----------------------------------------------------------------------|----|
-| [府県天気予報／地域時系列予報](fo03010)           | 府県天気予報（Ｒ１）                            | VPFD51   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md) |    |
-| [天気概況](fo03020)                     | 天気概況                                  | VPFG50   | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md) |    |
-| [早期注意情報（明日までの警報級の可能性）](fo03050)     | 警報級の可能性（明日まで）                         | VPFD60   | XML   | 配信中                                                                  |
-| [府県週間天気予報](fo03130)                 | 府県週間天気予報                              | VPFW50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md) |    |
-| [早期注意情報（明後日以降の警報級の可能性）](fo03150)    | 警報級の可能性（明後日以降）                        | VPFW60   | XML   | 配信中                                                                  |
-| [全般季節予報](fo03210)                   | 全般１か月予報 <br/> 全般３か月予報 <br/> 全般暖・寒候期予報 | VPZK50   | XML   | 配信中                                                                  |
-| [地方季節予報](fo03220)                   | 地方１か月予報 <br/> 地方３か月予報 <br/> 地方暖・寒候期予報 | VPCK50   | XML   | 配信中                                                                  |
-| [全般2週間気温予報](fo03230)                | 全般季節予報（２週間気温予報）                       | VPZK70   | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md) |
-| [地方2週間気温予報](fo03240)                | 地方季節予報（２週間気温予報）                       | VPCK70   | XML   | 配信中                                                                  |
-| [地上実況図（天気図情報）](fo03510)             | 地上実況図                                 | VZSA50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md) |
-| [地上24時間予想図（天気図情報）](fo03520)         | 地上２４時間予想図                             | VZSF50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md) |
-| [地上48時間予想図（天気図情報）](fo03530)         | 地上４８時間予想図                             | VZSF51   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md) |
-| [アジア太平洋地上天気図（天気図情報）](fo03540)       | アジア太平洋地上実況図                           | VZSA60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md) |
-| [アジア太平洋海上悪天24時間予想図（天気図情報）](fo03550) | アジア太平洋海上悪天２４時間予想図                     | VZSF60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md) |
-| [アジア太平洋海上悪天48時間予想図（天気図情報）](fo03560) | アジア太平洋海上悪天４８時間予想図                     | VZSF61   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md) |
+| 資料名                                 | XML:/Report/Control/Title             | データ種類コード | データ形式 | JSON化                                                                         | 備考 |
+|-------------------------------------|---------------------------------------|----------|-------|-------------------------------------------------------------------------------|----|
+| [府県天気予報／地域時系列予報](fo03010)           | 府県天気予報（Ｒ１）                            | VPFD51   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md)          |    |
+| [天気概況](fo03020)                     | 天気概況                                  | VPFG50   | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)          |    |
+| [早期注意情報（明日までの警報級の可能性）](fo03050)     | 警報級の可能性（明日まで）                         | VPFD60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-warning-possibility.md) |
+| [府県週間天気予報](fo03130)                 | 府県週間天気予報                              | VPFW50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md)          |    |
+| [早期注意情報（明後日以降の警報級の可能性）](fo03150)    | 警報級の可能性（明後日以降）                        | VPFW60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-warning-possibility.md) |
+| [全般季節予報](fo03210)                   | 全般１か月予報 <br/> 全般３か月予報 <br/> 全般暖・寒候期予報 | VPZK50   | XML   | 配信中                                                                           |
+| [地方季節予報](fo03220)                   | 地方１か月予報 <br/> 地方３か月予報 <br/> 地方暖・寒候期予報 | VPCK50   | XML   | 配信中                                                                           |
+| [全般2週間気温予報](fo03230)                | 全般季節予報（２週間気温予報）                       | VPZK70   | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)          |
+| [地方2週間気温予報](fo03240)                | 地方季節予報（２週間気温予報）                       | VPCK70   | XML   | 配信中                                                                           |
+| [地上実況図（天気図情報）](fo03510)             | 地上実況図                                 | VZSA50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
+| [地上24時間予想図（天気図情報）](fo03520)         | 地上２４時間予想図                             | VZSF50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
+| [地上48時間予想図（天気図情報）](fo03530)         | 地上４８時間予想図                             | VZSF51   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
+| [アジア太平洋地上天気図（天気図情報）](fo03540)       | アジア太平洋地上実況図                           | VZSA60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
+| [アジア太平洋海上悪天24時間予想図（天気図情報）](fo03550) | アジア太平洋海上悪天２４時間予想図                     | VZSF60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
+| [アジア太平洋海上悪天48時間予想図（天気図情報）](fo03560) | アジア太平洋海上悪天４８時間予想図                     | VZSF61   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
 
 ### 気象観測関連
 

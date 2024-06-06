@@ -44,7 +44,8 @@ JSONスキーマの型定義については、[API v2 #型表現](/docs/referenc
 | 気象警報・注意報関連  | [weather-typhoon](schema/weather-typhoon)                           | VPTWii (ii = 60-65)                                                                           | 1.0.0 |
 | 気象警報・注意報関連  | [weather-landslide](schema/weather-landslide)                       | VXWW50                                                                                        | 1.0.0 |
 | 気象警報・注意報関連  | [weather-river-flood](schema/weather-river-flood)                   | VXKOii (ii=50-89)                                                                             | 1.0.0 |
-| 天気予報関連      | [forecast-prefecture](schema/forecast-prefecture)                   | VPFD51, VPFW50                                                                                | 1.0.0 | 
+| 天気予報関連      | [forecast-prefecture](schema/forecast-prefecture)                   | VPFD51, VPFW50                                                                                | 1.0.0 |
+| 天気予報関連      | [forecast-prefecture](schema/forecast-warning-possibility)          | VPFD60, VPFW60                                                                                | 1.0.0 |
 | 天気予報関連      | [forecast-weathermap](schema/forecast-weathermap)                   | VZSA50, VZSA60, VZSF50, VZSF51, VZSF60, VZSF61                                                | 1.0.0 | 
 
 
