@@ -47,6 +47,7 @@ JSONスキーマの型定義については、[API v2 #型表現](/docs/referenc
 | 天気予報関連      | [forecast-prefecture](schema/forecast-prefecture)                   | VPFD51, VPFW50                                                                                | 1.0.0 |
 | 天気予報関連      | [forecast-warning-possibility](schema/forecast-warning-possibility) | VPFD60, VPFW60                                                                                | 1.0.0 |
 | 天気予報関連      | [forecast-season](schema/forecast-season)                           | VPZK50, VPCK50                                                                                | 1.0.0 |
+| 天気予報関連      | [forecast-2week-temperature](schema/forecast-2week-temperature)     | VPCK70                                                                                        | 1.0.0 |
 | 天気予報関連      | [forecast-weathermap](schema/forecast-weathermap)                   | VZSA50, VZSA60, VZSF50, VZSF51, VZSF60, VZSF61                                                | 1.0.0 | 
 
 
