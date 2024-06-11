@@ -300,7 +300,6 @@ const sidebar = {
                 'jmafile/jf03090',
                 'jmafile/jf03711',
                 'jmafile/jf03712',
-                'jmafile/jf03711',
                 'jmafile/jf03722',
                 'jmafile/jf03140',
                 'jmafile/jf03150',
