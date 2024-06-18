@@ -184,6 +184,7 @@ APIは標準的なエラーを次の通り返答します。
 ### Parameter
 
 * [**Parameter Earthquake**](/docs/reference/api/v2/parameter.earthquake.md)
+* [**Parameter Realtime**](/docs/reference/api/v2/parameter.realtime.md)
 * [**Parameter Tsunami**](/docs/reference/api/v2/parameter.tsunami.md)
 
 ### GD Earthquake

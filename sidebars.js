@@ -74,6 +74,7 @@ const sidebar = {
                             label: 'Parameter v2',
                             items: [
                                 'reference/api/v2/parameter.earthquake',
+                                'reference/api/v2/parameter.realtime',
                                 'reference/api/v2/parameter.tsunami'
                             ]
                         },
