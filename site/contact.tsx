@@ -105,7 +105,7 @@ export default class Contact extends React.Component {
                     <th>内容</th>
                     <td>
                       <label>
-                        <textarea className={styles['input-text']} placeholder="できるだけ詳しくお願いします。" required
+                        <textarea className={styles['input-text']} placeholder="できるだけ詳しくお願いします。なお、クレジットカード番号・CVC、パスワードなどは記載しないでください。" required
                                   maxLength={4096} onInput={event => this.inputCheck('text', event)}></textarea>
                       </label>
                       {this.state.errorMags.text &&
