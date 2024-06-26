@@ -3,6 +3,10 @@
  */
 
 
+const lastUpdate = new Date();
+
+lastUpdate.setMinutes(lastUpdate.getMinutes() - (lastUpdate.getTimezoneOffset() + 540));
+
 /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 const themeConfig = {
     navbar: {
@@ -35,6 +39,12 @@ const themeConfig = {
                 to: 'eewclient',
                 label: 'EEW Client',
                 position: 'left'
+            },
+            {
+                type: 'html',
+                value: '<span>lastUpdate: ' + `${lastUpdate.getFullYear()}/${lastUpdate.getMonth() + 1}/${lastUpdate.getDate()}` + '</span>',
+                position: 'right'
+
             },
             {
                 href: 'https://github.com/pdmdss/dmdata.jp',
