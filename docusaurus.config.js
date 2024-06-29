@@ -5,7 +5,7 @@
 
 const lastUpdate = new Date();
 
-lastUpdate.setMinutes(lastUpdate.getMinutes() - (lastUpdate.getTimezoneOffset() + 540));
+lastUpdate.setMinutes(lastUpdate.getMinutes() + (lastUpdate.getTimezoneOffset() + 540));
 
 /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 const themeConfig = {
