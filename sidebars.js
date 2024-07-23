@@ -102,9 +102,37 @@ const sidebar = {
                     id: 'reference/oauth2/v1/index'
                 },
                 {
-                    type: 'doc',
+                    type: 'category',
                     label: 'JSON化データ',
-                    id: 'reference/conversion/json/index'
+                    link: {
+                        type: 'doc',
+                        id: 'reference/conversion/json/index'
+                    },
+                    items: [
+                        'reference/conversion/json/schema/eew-information',
+                        'reference/conversion/json/schema/earthquake-information',
+                        'reference/conversion/json/schema/earthquake-explanation',
+                        'reference/conversion/json/schema/earthquake-counts',
+                        'reference/conversion/json/schema/earthquake-hypocenter-update',
+                        'reference/conversion/json/schema/earthquake-nankai',
+                        'reference/conversion/json/schema/tsunami-information',
+                        'reference/conversion/json/schema/volcano-information',
+                        'reference/conversion/json/schema/weather-warning',
+                        'reference/conversion/json/schema/weather-information',
+                        'reference/conversion/json/schema/weather-impact-society',
+                        'reference/conversion/json/schema/weather-early',
+                        'reference/conversion/json/schema/weather-tornado',
+                        'reference/conversion/json/schema/weather-typhoon',
+                        'reference/conversion/json/schema/weather-landslide',
+                        'reference/conversion/json/schema/weather-river-flood',
+                        'reference/conversion/json/schema/forecast-prefecture',
+                        'reference/conversion/json/schema/forecast-warning-possibility',
+                        'reference/conversion/json/schema/forecast-season',
+                        'reference/conversion/json/schema/forecast-2week-temperature',
+                        'reference/conversion/json/schema/forecast-weathermap',
+                        'reference/conversion/json/component',
+                        'reference/conversion/json/errors'
+                    ]
                 }
             ]
         },
