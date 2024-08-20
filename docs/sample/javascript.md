@@ -14,8 +14,6 @@ title: サンプル JavaScript
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>DMDATA.JP - Sample</title>
-
-<script src="https://rawgithub.com/imaya/zlib.js/develop/bin/gunzip.min.js"></script>
 <script>
 (() => {
     const socketStartUrl = 'https://api.dmdata.jp/v2/socket';
@@ -28,14 +26,14 @@ title: サンプル JavaScript
         .then(response  => response.json())
         .then(socket => {
             const websocket = new WebSocket(socket.websocket.url, ['dmdata.v2']);
-            websocket.addEventListener('message', ev => {
+            websocket.addEventListener('message', async ev => {
                 const msg = JSON.parse(ev.data);
                 
                 if(msg.type === 'ping'){
                     websocket.send(JSON.stringify({ type:'pong', pingId: msg.pingId} ));
                 }
                 if(msg.type === 'data' && msg.format === 'xml'){
-                    const xmlDoc = bodyToDocument(msg.body);
+                    const xmlDoc = await bodyToDocument(msg.body);
                     console.log(xmlDoc, msg);
                 }
             });
@@ -43,10 +41,19 @@ title: サンプル JavaScript
             websocket.addEventListener('close', () => console.log('WebSocket closed.'));
         });
     
-    function bodyToDocument(data) {
-        const buffer = new Uint8Array(atob(data).split('').map(c => c.charCodeAt(0)));
+    async function bodyToDocument(data) {
+        const decoder = new TextDecoder();
+        
+        const buffer = new Uint8Array(atob(data).split('').map(c => c.charCodeAt(0)))
+        const stream = new Blob([buffer])
+            .stream()
+            .pipeThrough(
+                new DecompressionStream('gzip')
+            );
+
+        const gunzippedBuffer = new Uint8Array(await new Response(stream).arrayBuffer());
              
-        return new DOMParser().parseFromString(new TextDecoder().decode(new Zlib.Gunzip(buffer).decompress()), 'application/xml');
+        return new DOMParser().parseFromString(decoder.decode(gunzippedBuffer), 'application/xml');
     }
 
 })();
