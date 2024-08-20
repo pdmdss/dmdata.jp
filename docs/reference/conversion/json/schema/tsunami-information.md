@@ -7,6 +7,8 @@ title: Schema tsunami-information v1.1.0
 （運用変更と同時に、スキーマバージョンの更新を実施します。）
 
 現在運用されているバージョンは、こちらを参照してください。 [tsunami-information v1.0.0](./legacy/tsunami-information_1.0.0.md)
+
+[commit #3d3c438](https://github.com/pdmdss/dmdata.jp/commit/3d3c438de82fbb138efb710dd7c644b1cfee30d2?diff=split&w=0)
 :::
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
