@@ -73,7 +73,7 @@ title: JSON化データ コンポーネントされた要素
 | 3._4.  | depth      |                           | **Object**<br/> 深さ情報 [#3. 4. depth](#3-4-depth)を参照                                     |
 | 3._5.? | detailed   | 情報による                     | **Object**<br/> 震源地の詳細 [#3. 5. detailed](#3-5-detailed)を参照                             |
 | 3._6.? | auxiliary  | 情報による                     | **Object**<br/> 震源位置の補足情報 [#3. 6. auxiliary](#3-6-auxiliary)を参照                        |
-| 3._7.? | source     | 遠地地震で、<br/>気象庁以外が震源決定した場合 | **String**<br/> 震源・規模のデータソース。取りうる値は`ＵＳＧＳ`、`ＰＴＷＣ`、`ＷＣＡＴＷＣ`                              |
+| 3._7.? | source     | 遠地地震で、<br/>気象庁以外が震源決定した場合 | **String**<br/> 震源・規模のデータソース。取りうる値は `ＵＳＧＳ`、`ＰＴＷＣ`、`ＳＣＳＴＡＣ`、`ＣＡＴＡＣ`、`ＷＣＡＴＷＣ`            |
 
 #### 3. 4. depth
 
@@ -143,22 +143,21 @@ title: JSON化データ コンポーネントされた要素
     "longitude": {
         "text": "142.9˚E",
         "value": "142.9000"
-    },
-    "geodeticSystem": "日本測地系"
+    }
 }
 ```
 
-| 階層    | フィールド           | 出現条件          | 説明                                                     |
-|-------|-----------------|---------------|--------------------------------------------------------|
-| 1.?   | latitude        | 不明時は出現しない     | **Object**<br/> 緯度を表現                                  |
-| 1._1. | latitude.text   |               | **String**<br/> 緯度をテキスト文で表現する                          |
-| 1._2. | latitude.value  |               | **String&lt;Float&gt;**<br/> 緯度を10進数法、単位度で表現する         |
-| 2.?   | longitude       | 不明時は出現しない     | **Object**<br/> 経度を表現                                  |
-| 2._1. | longitude.text  |               | **String**<br/> 経度をテキスト文で表現する                          | 
-| 2._2. | longitude.value |               | **String&lt;Float&gt;**<br/> 経度を10進数法、単位度で表現する         |
-| 3.?   | height          | 不明時・未定義は出現しない | **Object**<br/> 高さを表現                                  | 
-| 3._1. | height.type     |               | **String**<br/> `高さ` で固定                               | 
-| 3._2. | height.unit     |               | **String**<br/> 高さ情報の単位 `m` で固定                        | 
-| 3._3. | height.value    |               | **String&lt;Float&gt;**<br/> 高さの数値                     | 
-| 4.?   | geodeticSystem  | 情報による         | **String**<br/> `世界測地系` または `日本測地系` が入る                | 
-| 5.?   | condition       | 情報による         | **String**<br/> 緯度経度が不明な場合は`不明` が入る、その他電文定義により文字列が出現する |
+| 階層    | フィールド           | 出現条件          | 説明                                                               |
+|-------|-----------------|---------------|------------------------------------------------------------------|
+| 1.?   | latitude        | 不明時は出現しない     | **Object**<br/> 緯度を表現                                            |
+| 1._1. | latitude.text   |               | **String**<br/> 緯度をテキスト文で表現する                                    |
+| 1._2. | latitude.value  |               | **String&lt;Float&gt;**<br/> 緯度を10進数法、単位度で表現する                   |
+| 2.?   | longitude       | 不明時は出現しない     | **Object**<br/> 経度を表現                                            |
+| 2._1. | longitude.text  |               | **String**<br/> 経度をテキスト文で表現する                                    | 
+| 2._2. | longitude.value |               | **String&lt;Float&gt;**<br/> 経度を10進数法、単位度で表現する                   |
+| 3.?   | height          | 不明時・未定義は出現しない | **Object**<br/> 高さを表現                                            | 
+| 3._1. | height.type     |               | **String**<br/> `高さ` で固定                                         | 
+| 3._2. | height.unit     |               | **String**<br/> 高さ情報の単位 `m` で固定                                  | 
+| 3._3. | height.value    |               | **String&lt;Float&gt;**<br/> 高さの数値                               | 
+| 4.?   | geodeticSystem  | 情報による         | **String**<br/> `世界測地系` または `日本測地系` が入る<br/>2025年6月または7月以降は使用しない | 
+| 5.?   | condition       | 情報による         | **String**<br/> 緯度経度が不明な場合は`不明` が入る、その他電文定義により文字列が出現する           |
