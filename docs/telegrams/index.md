@@ -65,24 +65,25 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 
 ### 地震・津波関連
 
-| 資料名                                | XML:/Report/Control/Title | データ種類コード | データ形式  | JSON化                                                                         | 備考  |
-|------------------------------------|---------------------------|----------|--------|-------------------------------------------------------------------------------|-----|
-| [震度速報](et01310)                    | 震度速報                      | VXSE51   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |     |
-| [地震情報（震源に関する情報）](et01320)          | 震源に関する情報                  | VXSE52   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |     |
-| [地震情報（震源・震度に関する情報）](et01330)       | 震源・震度に関する情報               | VXSE53   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |     |
-| [地震情報（地震の活動状況等に関する情報）](et01340)    | 地震の活動状況等に関する情報            | VXSE56   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-explanation.md)       |     |
-| [地震情報（地震回数に関する情報）](et01350)        | 地震回数に関する情報                | VXSE60   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-counts.md)            |     |
-| [地震情報（顕著な地震の震源要素更新のお知らせ）](et01360) | 顕著な地震の震源要素更新のお知らせ         | VXSE61   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-hypocenter-update.md) |     |
-| [長周期地震動に関する観測情報](et01370)          | 長周期地震動に関する観測情報            | VXSE62   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |     |
-| [推計震度分布図作図用データ](et01380)           |                           | IXAC41   | Binary |                                                                               |     |
-| [南海トラフ地震臨時情報](et01410)             | 南海トラフ地震臨時情報               | VYSE50   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |     |
-| [南海トラフ地震関連解説情報（定例外）](et01420)      | 南海トラフ地震関連解説情報             | VYSE51   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |     |
-| [南海トラフ地震関連解説情報（定例）](et01421)       | 南海トラフ地震関連解説情報             | VYSE52   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |     |
-| [津波警報・注意報・予報](et01110)             | 津波警報・注意報・予報a              | VTSE41   | XML    | [配信中](/docs/reference/conversion/json/schema/tsunami-information.md)          |     |
-| [津波情報](et01120)                    | 津波情報a                     | VTSE51   | XML    | [配信中](/docs/reference/conversion/json/schema/tsunami-information.md)          |     |
-| [津波情報（沖合の津波観測に関する情報）](et01121)     | 沖合の津波観測に関する情報             | VTSE52   | XML    | [配信中](/docs/reference/conversion/json/schema/tsunami-information.md)          |     |
-| [国際津波関連情報（国内向け）](et01130)          |                           | WEPA60   | A/N    |                                                                               |     |
-| [地震・津波に関するお知らせ](et01010)           | 地震・津波に関するお知らせ             | VZSE40   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |     |
+| 資料名                                | XML:/Report/Control/Title | データ種類コード | データ形式  | JSON化                                                                         | 備考            |
+|------------------------------------|---------------------------|----------|--------|-------------------------------------------------------------------------------|---------------|
+| [震度速報](et01310)                    | 震度速報                      | VXSE51   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |               |
+| [地震情報（震源に関する情報）](et01320)          | 震源に関する情報                  | VXSE52   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |               |
+| [地震情報（震源・震度に関する情報）](et01330)       | 震源・震度に関する情報               | VXSE53   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |               |
+| [地震情報（地震の活動状況等に関する情報）](et01340)    | 地震の活動状況等に関する情報            | VXSE56   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-explanation.md)       |               |
+| [地震情報（地震回数に関する情報）](et01350)        | 地震回数に関する情報                | VXSE60   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-counts.md)            |               |
+| [地震情報（顕著な地震の震源要素更新のお知らせ）](et01360) | 顕著な地震の震源要素更新のお知らせ         | VXSE61   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-hypocenter-update.md) |               |
+| [長周期地震動に関する観測情報](et01370)          | 長周期地震動に関する観測情報            | VXSE62   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |               |
+| [推計震度分布図作図用データ](et01380)           |                           | IXAC41   | Binary |                                                                               |               |
+| [南海トラフ地震臨時情報](et01410)             | 南海トラフ地震臨時情報               | VYSE50   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |               |
+| [南海トラフ地震関連解説情報（定例外）](et01420)      | 南海トラフ地震関連解説情報             | VYSE51   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |               |
+| [南海トラフ地震関連解説情報（定例）](et01421)       | 南海トラフ地震関連解説情報             | VYSE52   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |               |
+| [北海道・三陸沖後発地震注意情報](et01430)         | 北海道・三陸沖後発地震注意情報           | VYSE60   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            | 2025年3月から配信開始 |
+| [津波警報・注意報・予報](et01110)             | 津波警報・注意報・予報a              | VTSE41   | XML    | [配信中](/docs/reference/conversion/json/schema/tsunami-information.md)          |               |
+| [津波情報](et01120)                    | 津波情報a                     | VTSE51   | XML    | [配信中](/docs/reference/conversion/json/schema/tsunami-information.md)          |               |
+| [津波情報（沖合の津波観測に関する情報）](et01121)     | 沖合の津波観測に関する情報             | VTSE52   | XML    | [配信中](/docs/reference/conversion/json/schema/tsunami-information.md)          |               |
+| [国際津波関連情報（国内向け）](et01130)          |                           | WEPA60   | A/N    |                                                                               |               |
+| [地震・津波に関するお知らせ](et01010)           | 地震・津波に関するお知らせ             | VZSE40   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-information.md)       |               |
 
 ### 火山関連
 
@@ -224,6 +225,7 @@ XML電文については、[気象庁防災情報XMLフォーマット 情報提
 
 ## 更新履歴
 
+- 2024/08/21 - 配信資料に関する技術情報 第628号 の発行に伴う追記
 - 2024/07/17 - 配信資料に関する技術情報 第626号、第627号 の発行に伴う追記
 - 2024/06/03 - 予報・気象観測・雷データの区分を新しく追加
 - 2024/05/28 - 配信資料に関する技術情報 第625号 の発行に伴う追記
