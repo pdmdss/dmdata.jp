@@ -8,7 +8,7 @@ title: Schema tsunami-information v1.1.0
 
 現在運用されているバージョンは、こちらを参照してください。 [tsunami-information v1.0.0](./legacy/tsunami-information_1.0.0.md)
 
-[commit #3d3c438](https://github.com/pdmdss/dmdata.jp/commit/3d3c438de82fbb138efb710dd7c644b1cfee30d2?diff=split&w=0)
+[commit #3d3c438](https://github.com/pdmdss/dmdata.jp/commit/3d3c438de82fbb138efb710dd7c644b1cfee30d2?diff=split&w=0#diff-b43677f2c1bed195b2afef95aa4e8e1969beda73cc30b071f9bb2940a3b71c13)
 :::
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
@@ -131,7 +131,7 @@ VTSE51や、VTSE52に出現します。
 |----------|----------|------|----------------------------------------------------------------------------------------------------------------------------|
 | 1._2._1. | code     |      | **String&lt;Integer&gt;\|Null**<br/> 津波予報区コード <br/> VTSE52の場合は**Null**とします <br/> コードは、気象庁防災情報XMLフォーマット コード表 地震火山関連コード表 による |
 | 1._2._2. | name     |      | **String\|Null**<br/> 津波予報区名 <br/> VTSE52の場合は**Null**とします                                                                  |
-| 1._2._3. | stations |      | **Array&lt;Object&gt;**<br/> 潮位観測点の満潮時刻と津波の到達予想時刻 [#1. 2. 3. station](#1-2-3-station)                                      |
+| 1._2._3. | stations |      | **Array&lt;Object&gt;**<br/> 潮位観測点毎の津波の観測情報 [#1. 2. 3. station](#1-2-3-station)                                            |
 
 ##### 1. 2. 3. station
 
