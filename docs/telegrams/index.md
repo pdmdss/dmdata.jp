@@ -117,8 +117,8 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [早期天候情報](we02560)                                    | 早期天候情報                    | VPAW51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-early.md)                      |                    |
 | [竜巻注意情報](we02520)                                    | 竜巻注意情報                    | VPHW50            | XML   |                                                                                     |                    |
 | [竜巻注意情報（目撃情報付き）](we02521)                            | 竜巻注意情報（目撃情報付き）            | VPHW51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-tornado.md)                    |                    |
-| [スモッグ気象情報](we02530)                                  | スモッグ気象情報                  | VPSG50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
-| [全般スモッグ気象情報](we02540)                                | 全般スモッグ気象情報                | VPZS50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
+| [スモッグ気象情報](we02530)                                  | スモッグ気象情報                  | VPSG50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                | 2025年01月31日で配信終了   |
+| [全般スモッグ気象情報](we02540)                                | 全般スモッグ気象情報                | VPZS50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                | 2025年01月31日で配信終了   |
 | [台風全般情報（総合情報、上陸等情報）](we02610)                        | 全般台風情報                    | VPTI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
 | [台風全般情報（位置、発生情報）](we02620)                           | 全般台風情報（定型）                | VPTI51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
 | [発達する熱帯低気圧に関する情報](we02620)                           | 全般台風情報（定型）                | VPTI51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)                |                    |
@@ -225,6 +225,7 @@ XML電文については、[気象庁防災情報XMLフォーマット 情報提
 
 ## 更新履歴
 
+- 2024/09/30 - スモッグ気象情報の配信終了について追記
 - 2024/09/30 - 配信資料に関する技術情報 第630号 の発行に伴う追記
 - 2024/08/21 - 配信資料に関する技術情報 第628号 の発行に伴う追記
 - 2024/07/17 - 配信資料に関する技術情報 第626号、第627号 の発行に伴う追記
