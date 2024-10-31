@@ -212,6 +212,15 @@ const sidebar = {
                     items: [
                         'telegrams/we02010',
                         'telegrams/we02050',
+                        'telegrams/we02061',
+                        'telegrams/we02062',
+                        'telegrams/we02063',
+                        'telegrams/we02064',
+                        'telegrams/we02065',
+                        'telegrams/we02066',
+                        'telegrams/we02067',
+                        'telegrams/we02080',
+                        'telegrams/we02069',
                         'telegrams/we02020',
                         'telegrams/we02030',
                         'telegrams/we02210',
@@ -220,6 +229,14 @@ const sidebar = {
                         'telegrams/we02310',
                         'telegrams/we02320',
                         'telegrams/we02330',
+                        'telegrams/we02341',
+                        'telegrams/we02342',
+                        'telegrams/we02311',
+                        'telegrams/we02321',
+                        'telegrams/we02331',
+                        'telegrams/we02312',
+                        'telegrams/we02322',
+                        'telegrams/we02332',
                         'telegrams/we02410',
                         'telegrams/we02420',
                         'telegrams/we02430',
@@ -228,20 +245,16 @@ const sidebar = {
                         'telegrams/we02521',
                         'telegrams/we02530',
                         'telegrams/we02540',
-                        'telegrams/we02550',
                         'telegrams/we02551',
                         'telegrams/we02610',
                         'telegrams/we02620',
                         'telegrams/we02630',
-                        'telegrams/we02650',
-                        'telegrams/we02660',
                         'telegrams/we02670',
-                        'telegrams/we02690',
-                        'telegrams/we02695',
                         'telegrams/we02691',
                         'telegrams/we02680',
                         'telegrams/we02710',
-                        'telegrams/we02810'
+                        'telegrams/we02810',
+                        'telegrams/we02821'
                     ]
                 },
                 {
@@ -251,6 +264,7 @@ const sidebar = {
                         'telegrams/fo03010',
                         'telegrams/fo03020',
                         'telegrams/fo03050',
+                        'telegrams/fo03051',
                         'telegrams/fo03130',
                         'telegrams/fo03150',
                         'telegrams/fo03210',
@@ -308,6 +322,17 @@ const sidebar = {
                     label: '雷観測データ 区分',
                     items: [
                         'telegrams/li10010',
+                    ]
+                },
+                {
+                    type: 'category',
+                    label: '廃止された電文',
+                    items: [
+                        'telegrams/we02550',
+                        'telegrams/we02650',
+                        'telegrams/we02660',
+                        'telegrams/we02690',
+                        'telegrams/we02695'
                     ]
                 }
             ]
