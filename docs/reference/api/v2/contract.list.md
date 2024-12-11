@@ -51,7 +51,7 @@ APIは常にJSONを返答します。
 | items[\].id               | いつも | **Integer\|String&lt;Integer&gt;\|Null** <br/> 契約ID |
 | items[\].planId           | いつも | **Integer** <br/> プランID                             |
 | items[\].planName         | いつも | **String** <br/> プラン名                               |
-| items[\].classifications  | いつも | **String** <br/> 受け取れる配信区分                          |
+| items[\].classification   | いつも | **String** <br/> 受け取れる配信区分                          |
 | items[\].price            | いつも | **Object** <br/> 価格                                 |
 | items[\].price.day        | いつも | **Integer** <br/> 1日当たりの価格（円）                       |
 | items[\].price.month      | いつも | **Integer** <br/> 月当たり最大の価格（円）                      |
