@@ -5,15 +5,12 @@ title: OAuth2 v1
 
 ## 概要
 
-DMDATA.JPでは、認可にOAuth2.0を使用します。 認可コードフロー/リフレッシュトークンフロー、インプリシットフロー、クライアント・クレデンシャルズフローをサポートしています。
+DMDATA.JPでは、認可にOAuth2.0を使用します。 認可コードフロー/リフレッシュトークンフロー、クライアント・クレデンシャルズフローをサポートしています。
 
 RFC6749、RFC7009、RFC7636、[RFC 9449 - DPoP](https://www.rfc-editor.org/rfc/rfc9449.html)
 にて定義されている仕様に沿って認可サーバーは実装(一部コアな実装を除く)されています。
 
 **アカウント連携などの認証 (OpenID Connect) はサポートしていません。**
-
-DPoP を使用しないリクエストに対して今後(時期未定)、
-リフレッシュトークンの有効期限延長を行わないことを予定しています。
 
 ### OAuth クライアント
 
@@ -450,7 +447,7 @@ Content-Type: application/x-www-form-urlencoded
 
 client_id=CId.CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 &client_secret=CSt.SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-&tokne=ATn.TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+&token=ATn.TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
 ```
 
 Form パラメータ
