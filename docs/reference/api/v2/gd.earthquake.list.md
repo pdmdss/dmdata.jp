@@ -101,8 +101,8 @@ APIは常にJSONを返答します。
 | items[\].maxInt      |       いつも       | **String\|Null** <br/> 最大震度、観測した震度がない場合は**Null**とする                                                                        |
 | items[\].maxLgInt    |      場合による      | **String** <br/> 観測した最大の長周期地震動階級                                                                                           |
 | items[\].lgCategory  |      場合による      | **String** <br/> 長周期地震動に関する観測情報の種類                                                                                         |
-| nextToken            |      場合による      | **String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/docs/reference/api/v2#カーソルトークン)                                                 |
-| nextPooling          |       いつも       | **String** <br/> PuLL時に使用する。詳しくは[こちら](/docs/reference/api/v2#カーソルトークン)                                                     |
+| nextToken            |      場合による      | **String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/docs/reference/api/v2/index.md#カーソルトークン)                                        |
+| nextPooling          |       いつも       | **String** <br/> PuLL時に使用する。詳しくは[こちら](/docs/reference/api/v2/index.md#カーソルトークン)                                            |
 | nextPoolingInterval  |       いつも       | **Integer** <br/> PuLL時、次にリクエストするまでの待機すべき最小時間（ミリ秒）                                                                         |
 
 ### status: error
