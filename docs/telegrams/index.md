@@ -139,8 +139,6 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | &#x1f6a9; [府県潮位情報](we02230)                           | 府県潮位情報                    | VMCJ52            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    | 2028年以降終了予定                        |
 | &#x1f6a9; [竜巻注意情報](we02520)                           | 竜巻注意情報                    | VPHW50            | XML   |                                                                         |                                    |
 | &#x1f6a9; [竜巻注意情報（目撃情報付き）](we02521)                   | 竜巻注意情報（目撃情報付き）            | VPHW51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-tornado.md)        |                                    |
-| &#x1f6ab; [~~スモッグ気象情報~~](we02530)                     | スモッグ気象情報                  | VPSG50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    | 2025年01月31日で配信終了                   |
-| &#x1f6ab; [~~全般スモッグ気象情報~~](we02540)                   | 全般スモッグ気象情報                | VPZS50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    | 2025年01月31日で配信終了                   |
 | &#x1f6a9; [台風全般情報（総合情報、上陸等情報）](we02610)               | 全般台風情報                    | VPTI50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    | 2026年出水期を目途に終了予定                   |
 | &#x1f6a9; [台風全般情報（位置、発生情報）](we02620)                  | 全般台風情報（定型）                | VPTI51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    | 2026年出水期を目途に終了予定                   |
 | &#x1f6a9; [発達する熱帯低気圧に関する情報](we02620)                  | 全般台風情報（定型）                | VPTI51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    | 2026年出水期を目途に終了予定                   |
@@ -160,13 +158,13 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 防災気象情報の体系整理を踏まえた電文の改変が2026年出水期を目途に行われる予定です。
 （&#x1f6a9;：運用・一部電文内容の変更、または廃止予定あり、&#x1f195;：新しく運用開始される電文）
 
-| 資料名                                        | XML:/Report/Control/Title             | データ種類コード | データ形式 | JSON化                                                                         | 備考              |
-|--------------------------------------------|---------------------------------------|----------|-------|-------------------------------------------------------------------------------|-----------------|
-| [府県天気予報／地域時系列予報](fo03010)                  | 府県天気予報（Ｒ１）                            | VPFD51   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md)          |                 |
-| [天気概況](fo03020)                            | 天気概況                                  | VPFG50   | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)          |                 |
-| &#x1f6a9; [早期注意情報（明日までの警報級の可能性）](fo03050)  | 警報級の可能性（明日まで）                         | VPFD60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-warning-possibility.md) | 2028年以降終了予定     |
+| 資料名                                        | XML:/Report/Control/Title             | データ種類コード | データ形式 | JSON化                                                                         | 備考               |
+|--------------------------------------------|---------------------------------------|----------|-------|-------------------------------------------------------------------------------|------------------|
+| [府県天気予報／地域時系列予報](fo03010)                  | 府県天気予報（Ｒ１）                            | VPFD51   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md)          |                  |
+| [天気概況](fo03020)                            | 天気概況                                  | VPFG50   | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)          |                  |
+| &#x1f6a9; [早期注意情報（明日までの警報級の可能性）](fo03050)  | 警報級の可能性（明日まで）                         | VPFD60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-warning-possibility.md) | 2028年以降終了予定      |
 | &#x1f195; [早期注意情報（明日までの警報級の可能性）](fo03051)  | 早期注意情報（明日まで）（Ｒ０６）                     | VPFD61   | XML   | 準備中                                                                           | 2026年出水期を目途に配信開始 |
-| [府県週間天気予報](fo03130)                        | 府県週間天気予報                              | VPFW50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md)          |                 |
+| [府県週間天気予報](fo03130)                        | 府県週間天気予報                              | VPFW50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-prefecture.md)          |                  |
 | &#x1f6a9; [早期注意情報（明後日以降の警報級の可能性）](fo03150) | 警報級の可能性（明後日以降）                        | VPFW60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-warning-possibility.md) |
 | [全般季節予報](fo03210)                          | 全般１か月予報 <br/> 全般３か月予報 <br/> 全般暖・寒候期予報 | VPZK50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-season.md)              |
 | [地方季節予報](fo03220)                          | 地方１か月予報 <br/> 地方３か月予報 <br/> 地方暖・寒候期予報 | VPCK50   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-season.md)              |
@@ -215,7 +213,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [地上月気候統計値 コード形式](ob05010)             |                           | CSJPii (ii=01~07) <br/> CSAA01                                                                                                                                                                    | A/N    |       | CLIMAT報                            |
 | [地上月気候統計値 バイナリ形式](ob05011)            |                           | IS#&01 (#&=CC,CL)                                                                                                                                                                                 | Binary |       | CLIMAT報                            |
 | [地上月気候統計値 バイナリ形式](ob05011)            |                           | ISC#ii (#=A\~L,N,S,T,X, ii=01\~45)                                                                                                                                                                | Binary |       | 海外編集(CLIMAT報)                      |
-| [気象衛星資料解析気象報](ob05110)                |                           | IUCC10                                                                                                                                                                                            | Binary |       | SAREP報                             |
+| [気象衛星資料解析気象報](ob05110.md)             |                           | IUCC10                                                                                                                                                                                            | Binary |       | SAREP報                             |
 
 ※海外編集は、伝統的文字通報式（A/N）からBUFR報に編集したデータ。
 

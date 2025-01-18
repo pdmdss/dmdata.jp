@@ -243,8 +243,6 @@ const sidebar = {
                         'telegrams/we02560',
                         'telegrams/we02520',
                         'telegrams/we02521',
-                        'telegrams/we02530',
-                        'telegrams/we02540',
                         'telegrams/we02551',
                         'telegrams/we02610',
                         'telegrams/we02620',
@@ -328,6 +326,8 @@ const sidebar = {
                     type: 'category',
                     label: '廃止された電文',
                     items: [
+                        'telegrams/we02530',
+                        'telegrams/we02540',
                         'telegrams/we02550',
                         'telegrams/we02650',
                         'telegrams/we02660',
