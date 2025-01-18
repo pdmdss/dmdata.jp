@@ -5,10 +5,10 @@ title: API v2
 
 ## APIの呼び出し
 
-WebSocketAPI以外の全てのAPIは、承認情報（APIキー又は、[OAuth2](/docs/reference/oauth2/v1)のアクセストークン）を指定する必要があります。
+WebSocketAPI以外の全てのAPIは、承認情報（APIキー又は、[OAuth2](/docs/reference/oauth2/v1/index.md)のアクセストークン）を指定する必要があります。
 決済情報の取得や、アカウント情報、契約情報の更新等にはOAuth2のアクセストークンが必要です。
 
-APIキーは[コントロールパネル](https://manager.dmdata.jp/control/credentials)から、発行ができます。
+APIキーは[コントロールパネル](https://manager.dmdata.jp/control/dev/credentials)から、発行ができます。
 
 各種APIにはそれぞれ権限（スコープ）が必要となります。
 APIキー、及びOAuth2にそれぞれ紐づけられた権限が不足している場合、APIはエラーを返します。
@@ -24,7 +24,7 @@ APIキーの権限等の変更は最大5分間反映されません。
 
 BasicBase64には、UserにAPIキーを、Passwordは無しとして使用します。
 
-BasicはUserとPasswordをコロンで結合しBase64でエンコードしたもです。
+BasicはUserとPasswordをコロンで結合しBase64でエンコードしたものです。
 
 #### クエリパラメータ
 または、URLにクエリパラメータとして渡します。**※非推奨**
