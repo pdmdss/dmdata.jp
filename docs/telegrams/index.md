@@ -78,7 +78,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [南海トラフ地震臨時情報](et01410)             | 南海トラフ地震臨時情報               | VYSE50   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |                                      |
 | [南海トラフ地震関連解説情報（定例外）](et01420)      | 南海トラフ地震関連解説情報             | VYSE51   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |                                      |
 | [南海トラフ地震関連解説情報（定例）](et01421)       | 南海トラフ地震関連解説情報             | VYSE52   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            |                                      |
-| [北海道・三陸沖後発地震注意情報](et01430)         | 北海道・三陸沖後発地震注意情報           | VYSE60   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            | 2025年3月から配信開始                        |
+| [北海道・三陸沖後発地震注意情報](et01430)         | 北海道・三陸沖後発地震注意情報           | VYSE60   | XML    | [配信中](/docs/reference/conversion/json/schema/earthquake-nankai.md)            | 2025年3月06日から配信開始                     |
 | [津波警報・注意報・予報](et01110)             | 津波警報・注意報・予報a              | VTSE41   | XML    | [配信中](/docs/reference/conversion/json/schema/tsunami-information.md)          |                                      |
 | [津波情報](et01120)                    | 津波情報a                     | VTSE51   | XML    | [配信中](/docs/reference/conversion/json/schema/tsunami-information.md)          |                                      |
 | [津波情報（沖合の津波観測に関する情報）](et01121)     | 沖合の津波観測に関する情報             | VTSE52   | XML    | [配信中](/docs/reference/conversion/json/schema/tsunami-information.md)          |                                      |
