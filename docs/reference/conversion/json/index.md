@@ -52,6 +52,17 @@ JSONスキーマの型定義については、[API v2 #型表現](/docs/referenc
 | 天気予報関連      | [forecast-weathermap](schema/forecast-weathermap)                   | VZSA50, VZSA60, VZSF50, VZSF51, VZSF60, VZSF61                                                | 1.0.0 | 
 
 
+### 非現行版のバージョン
+
+非現行版のバージョンも、電文によっては現在も配信中の場合があります。
+各電文・スキーマごとの説明をご参照ください。
+
+| 配信区分        | スキーマ名                                                                                                   | 対象とするデータ種類コード                                                                                 | バージョン |
+|-------------|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-------|
+| 地震・津波関連     | [tsunami-information](/docs/reference/conversion/json/schema/legacy/tsunami-information_1.0.0.md)       | VTSE41, VTSE51, VTSE52                                                                        | 1.0.0 | 
+| 気象警報・注意報関連  | [weather-impact-society](/docs/reference/conversion/json/schema/legacy/weather-impact-society_1.0.0.md) | VPZI50, VPCI50                                                                                | 1.0.0 |
+
+---
 
 ### スキーマバージョンの取り扱い
 

@@ -131,7 +131,15 @@ const sidebar = {
                         'reference/conversion/json/schema/forecast-2week-temperature',
                         'reference/conversion/json/schema/forecast-weathermap',
                         'reference/conversion/json/component',
-                        'reference/conversion/json/errors'
+                        'reference/conversion/json/errors',
+                        {
+                            type: 'category',
+                            label: '非現行バージョン',
+                            items: [
+                                'reference/conversion/json/schema/legacy/tsunami-information_1.0.0',
+                                'reference/conversion/json/schema/legacy/weather-impact-society_1.0.0'
+                            ]
+                        }
                     ]
                 }
             ]
