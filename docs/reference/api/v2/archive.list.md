@@ -61,9 +61,9 @@ APIは常にJSONを返答します。
 | responseId             |  いつも  | **String** <br/> API処理ID                                                            |
 | responseTime           |  いつも  | **String** <br/> API処理時刻（ISO8601拡張形式）                                               |
 | status                 |  いつも  | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                        |
-| items                  |  いつも  | **Array&lt;Object&gt;** <br/> 電文情報リスト                                               |
-| items[].serial         |  いつも  | **Integer\|String&lt;Integer&gt;** <br/> 電文受信通番                                     |
-| items[].id             |  いつも  | **String** <br/> 配信データを区別するユニークID                                                   |
+| items                  |  いつも  | **Array&lt;Object&gt;** <br/> アーカイブファイルリスト                                          |
+| items[].serial         |  いつも  | **Integer\|String&lt;Integer&gt;** <br/> アーカイブファイル生成通番                              |
+| items[].id             |  いつも  | **String** <br/> アーカイブファイルを区別するユニークID                                               |
 | items[].classification |  いつも  | **String** <br/> アーカイブ対象の配信区分                                                       |
 | items[].date           |  いつも  | **String** <br/> アーカイブ対象の日付                                                         |
 | items[].dataCount      |  いつも  | **String** <br/> アーカイブ対象となった電文数                                                     |
