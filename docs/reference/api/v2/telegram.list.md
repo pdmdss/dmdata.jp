@@ -29,6 +29,11 @@ title: Telegram List v2
 
 ファイル形式データ、緊急地震速報関連の電文は表示されません。
 
+:::info お知らせ
+2025年07月01日以降は、直近約180日分の電文データが利用できます（ただし、気象観測データ\[telegram.observation]は直近約30日分）。
+
+2020年11月19日以降に配信された電文・緊急地震速報関連データは、[ArchiveAPI](archive.list.md)で取得できます。
+:::
 ---
 
 ## レスポンス
@@ -84,32 +89,32 @@ APIは常にJSONを返答します。
 }
 ```
 
-| フィールド                    |                   出現                   | 説明                                                                                                            |
-|:-------------------------|:--------------------------------------:|:--------------------------------------------------------------------------------------------------------------|
-| responseId               |                  いつも                   | **String** <br/> API処理ID                                                                                      |
-| responseTime             |                  いつも                   | **String** <br/> API処理時刻（ISO8601拡張形式）                                                                         |
-| status                   |                  いつも                   | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                                                  |
-| items                    |                  いつも                   | **Array&lt;Object&gt;** <br/> 電文情報リスト                                                                         |
-| items[].serial           |                  いつも                   | **Integer\|String&lt;Integer&gt;** <br/> 電文受信通番                                                               |
-| items[].id               |                  いつも                   | **String** <br/> 配信データを区別するユニーク384bitハッシュ                                                                     |
-| items[].classification   |                  いつも                   | **String** <br/> 配信区分により変化。取りうる値は telegram.earthquake, telegram.volcano, telegram.weather, telegram.scheduled |
-| items[].head             |                  いつも                   | **Object** <br/> ヘッダ情報                                                                                        |
-| items[].head.type        |                  いつも                   | **String** <br/> データ種類コード                                                                                     |
-| items[].head.author      |                  いつも                   | **String** <br/> 発表英字官署名                                                                                      |
-| items[].head.target      |                内容による※1                 | **String** <br/> 対象観測地点コード                                                                                    |
-| items[].head.time        |                  いつも                   | **ISO8601Time** <br/> 基点時刻                                                                                    |
-| items[].head.designation |                  いつも                   | **String\|Null** <br/> 指定コード<br/>WMO全球通信システム(GTS)で定義されている符号で、遅延報・訂正報に付加する。通常は **Null** とする                    |
-| items[].head.test        |                  いつも                   | **Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す <br/> 注意：XML電文以外のテスト配信は常に **false** になります。本文中を参照するようにしてください。           |
-| items[].receivedTime     |                  いつも                   | **ISO8601Time** <br/> 受信時刻                                                                                    |
-| items[].xmlReport        | format=xml、<br/>クリパラメータxmlReport=true時 | **Object** <br/> XML電文Control,Head情報                                                                          |
-| items[].schema           |              format=json               | **Object** <br/> 加工データのスキーマ情報                                                                                 |
-| items[].schema.type      |                  いつも                   | **String** <br/> スキーマ名                                                                                        |
-| items[].schema.version   |                  いつも                   | **String** <br/> スキーマのバージョン                                                                                   |
-| items[].format           |                  いつも                   | **String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、 `json` は本サービスが独自に定めたフォーマット      |
-| items[].url              |                  いつも                   | **String** <br/> [電文本文URL](/docs/reference/api/v1/telegram.data.md)                                           |
-| nextToken                |                 場合による                  | **String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/docs/reference/api/v2/index.md#カーソルトークン)                           |
-| nextPooling              |                  いつも                   | **String** <br/> PuLL時に使用する。詳しくは[こちら](/docs/reference/api/v2/index.md#カーソルトークン)                               |
-| nextPoolingInterval      |                  いつも                   | **Integer** <br/> PuLL時、次にリクエストするまでの待機すべき最小時間（ミリ秒）                                                            |
+| フィールド                    |                   出現                   | 説明                                                                                                       |
+|:-------------------------|:--------------------------------------:|:---------------------------------------------------------------------------------------------------------|
+| responseId               |                  いつも                   | **String** <br/> API処理ID                                                                                 |
+| responseTime             |                  いつも                   | **String** <br/> API処理時刻（ISO8601拡張形式）                                                                    |
+| status                   |                  いつも                   | **String** <br/> 成功時は `ok`、失敗時（エラー）は `error`                                                             |
+| items                    |                  いつも                   | **Array&lt;Object&gt;** <br/> 電文情報リスト                                                                    |
+| items[].serial           |                  いつも                   | **Integer\|String&lt;Integer&gt;** <br/> 電文受信通番                                                          |
+| items[].id               |                  いつも                   | **String** <br/> 配信データを区別するユニーク384bitハッシュ                                                                |
+| items[].classification   |                  いつも                   | **String** <br/> 配信区分により変化。                                                                              |
+| items[].head             |                  いつも                   | **Object** <br/> ヘッダ情報                                                                                   |
+| items[].head.type        |                  いつも                   | **String** <br/> データ種類コード                                                                                |
+| items[].head.author      |                  いつも                   | **String** <br/> 発表英字官署名                                                                                 |
+| items[].head.target      |                内容による※1                 | **String** <br/> 対象観測地点コード                                                                               |
+| items[].head.time        |                  いつも                   | **ISO8601Time** <br/> 基点時刻                                                                               |
+| items[].head.designation |                  いつも                   | **String\|Null** <br/> 指定コード<br/>WMO全球通信システム(GTS)で定義されている符号で、遅延報・訂正報に付加する。通常は **Null** とする               |
+| items[].head.test        |                  いつも                   | **Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す <br/> 注意：XML電文以外のテスト配信は常に **false** になります。本文中を参照するようにしてください。      |
+| items[].receivedTime     |                  いつも                   | **ISO8601Time** <br/> 受信時刻                                                                               |
+| items[].xmlReport        | format=xml、<br/>クリパラメータxmlReport=true時 | **Object** <br/> XML電文Control,Head情報                                                                     |
+| items[].schema           |              format=json               | **Object** <br/> 加工データのスキーマ情報                                                                            |
+| items[].schema.type      |                  いつも                   | **String** <br/> スキーマ名                                                                                   |
+| items[].schema.version   |                  いつも                   | **String** <br/> スキーマのバージョン                                                                              |
+| items[].format           |                  いつも                   | **String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、 `json` は本サービスが独自に定めたフォーマット |
+| items[].url              |                  いつも                   | **String** <br/> [電文本文URL](/docs/reference/api/v1/telegram.data.md)                                      |
+| nextToken                |                 場合による                  | **String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/docs/reference/api/v2/index.md#カーソルトークン)                      |
+| nextPooling              |                  いつも                   | **String** <br/> PuLL時に使用する。詳しくは[こちら](/docs/reference/api/v2/index.md#カーソルトークン)                          |
+| nextPoolingInterval      |                  いつも                   | **Integer** <br/> PuLL時、次にリクエストするまでの待機すべき最小時間（ミリ秒）                                                       |
 
 ### status: error
 APIは各種エラーを次の通り返答します。

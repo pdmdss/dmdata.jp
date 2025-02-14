@@ -64,6 +64,14 @@ const sidebar = {
                         },
                         {
                             type: 'category',
+                            label: 'Archive v2',
+                            items: [
+                                'reference/api/v2/archive.list',
+                                'reference/api/v1/archive.data'
+                            ]
+                        },
+                        {
+                            type: 'category',
                             label: 'WebSocket v2',
                             items: [
                                 'reference/api/v2/websocket'
