@@ -43,7 +43,7 @@ title: Socket Start v2
 * socket.start
 * eew.get.forecast (配信区分によっては必要)
 * eew.get.warning (配信区分によっては必要)
-* eew.get.realtime (取得情報によっては必要)
+* eew.get.realtime (配信区分によっては必要)
 * telegram.get.earthquake (配信区分によっては必要)
 * telegram.get.volcano (配信区分によっては必要)
 * telegram.get.weather (配信区分によっては必要)

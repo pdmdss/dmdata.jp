@@ -17,11 +17,14 @@ title: Telegram Data v1
 * telegram.data
 * eew.get.forecast (取得情報によっては必要)
 * eew.get.warning (取得情報によっては必要)
-* eew.get.intensity (取得情報によっては必要)
+* eew.get.realtime (取得情報によっては必要)
 * telegram.get.earthquake (取得情報によっては必要)
 * telegram.get.volcano (取得情報によっては必要)
 * telegram.get.weather (取得情報によっては必要)
+* telegram.get.forecast (取得情報によっては必要)
+* telegram.get.observation (取得情報によっては必要)
 * telegram.get.scheduled (取得情報によっては必要)
+* telegram.get.lightning (取得情報によっては必要)
 
 ### 注意
 WebSocketで受け取った通知をもとにこのAPIを参照することはお控えください。WebSocketデータを参照くださいますようお願いします。
