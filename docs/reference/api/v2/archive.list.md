@@ -23,6 +23,7 @@ title: Archive List v2
 ### その他
 
 緊急地震速報関連、電文形式データを1日毎（前日分を00時30分頃までに処理を目途）に集計し、配信区分ごと（JSON化データもまとめて1つのファイル） `.tar.gz` でアーカイブ化したファイルを配布しています。
+1日の間に1つもデータが配信されてない配信区分は、アーカイブファイルの生成がされません。
 
 不定期のメンテナンスやシステム不具合等により、アーカイブ処理が遅延する場合があります。
 
@@ -68,7 +69,7 @@ APIは常にJSONを返答します。
 | items[].date           |  いつも  | **String** <br/> アーカイブ対象の日付                                                         |
 | items[].dataCount      |  いつも  | **String** <br/> アーカイブ対象となった電文数                                                     |
 | items[].fileSize       |  いつも  | **String** <br/> アーカイブ圧縮後のファイルサイズ                                                   |
-| items[].url            |  いつも  | **String** <br/> [アーカイブファイルダウンロードURL](/docs/reference/api/v1/archive.data.md)       |]()
+| items[].url            |  いつも  | **String** <br/> [アーカイブファイルダウンロードURL](/docs/reference/api/v1/archive.data.md)       |
 | nextToken              | 場合による | **String** <br/> 次のリソースがある場合に出現。詳しくは[こちら](/docs/reference/api/v2/index.md#カーソルトークン) |
 
 ### status: error
