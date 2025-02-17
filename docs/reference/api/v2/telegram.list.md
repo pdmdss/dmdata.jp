@@ -32,7 +32,7 @@ title: Telegram List v2
 :::info お知らせ
 2025年07月01日以降は、直近約180日分の電文データが利用できます（ただし、気象観測データ\[telegram.observation]は直近約30日分）。
 
-2020年11月19日以降に配信された電文・緊急地震速報関連データは、[ArchiveAPI](archive.list.md)で取得できます。
+2020年11月18日以降に配信された電文・緊急地震速報関連データは、[ArchiveAPI](archive.list.md)で取得できます。
 :::
 ---
 
