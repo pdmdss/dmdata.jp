@@ -6,6 +6,9 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap');
+
 :root {
     --ifm-color-primary: #25c2a0;
     --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -21,6 +24,9 @@
 
     /* Original definition */
     --group-background: #f6f6f6;
+
+    --ifm-font-weight-semibold: 700;
+    --ifm-font-family-base: "BIZ UDPGothic", sans-serif;
 }
 
 html[data-theme='dark'] {
