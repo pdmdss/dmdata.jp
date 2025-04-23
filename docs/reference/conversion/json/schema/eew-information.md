@@ -402,7 +402,6 @@ VXSE47においてリアルタイム震度観測点ごとの工学的基盤面�
 * [VXSE45 - 緊急地震速報（地震動予報）](https://sample.dmdata.jp/conversion/json/schema/eew-information/vxse45_rjtd_20110311144810.json)
 * [VXSE45 - 緊急地震速報（地震動予報）](https://sample.dmdata.jp/conversion/json/schema/eew-information/vxse45_rjtd_20110311144811.json)
 
-
 ### 実際に配信したイベントデータ
 
 * [VXSE43 - 2023/05/05 21:57 の例（PLUM法のみでの警報）](https://sample.dmdata.jp/eew/20230505215718/vxse43/json/)
@@ -418,7 +417,7 @@ VXSE47においてリアルタイム震度観測点ごとの工学的基盤面�
 * [VXSE47 - 2023/09/06 06:36 の例（1点のPLUM法による予報、その後キャンセル）](https://sample.dmdata.jp/eew/20230906063640/vxse47/json/)
 * [VXSE47 - 2024/01/01 16:10 の例（能登半島地震・本震）](https://sample.dmdata.jp/eew/20240101161010/vxse47/json/)
 * [VXSE47 - 2024/01/01 16:11 の例（キャンセル事例）](https://sample.dmdata.jp/eew/20240101161133/vxse47/json/)
-* 
+
 ## 更新履歴
 
 - 2022/01/30 - ver.1.0.0 初版公開
