@@ -30,13 +30,17 @@ title: 電文データ（法人・団体）・ファイル形式データ価格�
 | 北西太平洋高解像度日別海面水温解析格子点資料 | jmafile.ocn-ssta   | 2,200 円 |    |
 | ひまわりによる海面水温格子点資料       | jmafile.ocn-ssto   | 3,300 円 |    |
 | 5分毎全国降水レーダー            | jmafile.rdr-nc5min | 5,500 円 |    | 
+| 速報版解析雨量・速報版降水短時間予報	    | jmafile.srf-p10    | 5,500 円 |    |
 | 解析雨量・降水短時間予報・降水15時間予報  | jmafile.srf-rrp    | 4,400 円 |    |
 | 解析積雪深・解析降雪量・降雪短時間予想    | jmafile.srf-sdf    | 2,750 円 |    |
+| 大気解析GPV	               | jmafile.fla-ajp    | 9,900 円 |    |
 | 竜巻発生確度ナウキャスト           | jmafile.nowc-phw   | 2,750 円 |    |
 | 雷ナウキャスト                | jmafile.nowc-lts   | 4,400 円 |    |
 | 推計気象分布                 | jmafile.obs-tms    | 3,850 円 |    |
 | 黄砂解析予測モデル格子点値          | jmafile.msg-ys     | 2,750 円 |    |
 | 地域気象観測報                | jmafile.obs-amds   | 4,400 円 |    |
+| 地上気象観測1分データ		          | jmafile.obs-1min   | 4,400 円 |    |
+| ウィンドプロファイラ		           | jmafile.wpr-aww    | 2,200 円 |    |
 | 天気図画像ファイル              | jmafile.met-cht    | 4,400 円 |    |
 | 大雨警報（土砂災害）の危険度分布       | jmafile.met-dosha  | 3,300 円 |    |
 | 警報危険度分布                | jmafile.met-flood  | 4,400 円 |    |

@@ -10,13 +10,17 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 * 北西太平洋高解像度日別海面水温解析格子点資料（jmafile.ocn-ssta）
 * ひまわりによる海面水温格子点資料（jmafile.ocn-ssto）
 * 5分毎全国降水レーダー（jmafile.rdr-nc5min）
+* 速報版解析雨量・速報版降水短時間予想（jmafile.srf-p10）
 * 解析雨量・降水短時間予報・降水15時間予報（jmafile.srf-rrp）
 * 解析積雪深・解析降雪量・降雪短時間予想（jmafile.srf-sdf）
+* 大気解析GPV（jmafile.fla-ajp）
 * 竜巻発生確度ナウキャスト（jmafile.nowc-phw）
 * 雷ナウキャスト（jmafile.nowc-lts）
 * 推計気象分布（jmafile.obs-tms）
 * 黄砂解析予測モデル格子点値（jmafile.msg-ys）
 * 地域気象観測報（jmafile.obs-amds）
+* 地上気象観測1分データ（jmafile.obs-1min）
+* ウィンドプロファイラ（jmafile.wpr-aww）
 * 天気図画像ファイル（jmafile.met-cht）
 * 大雨警報（土砂災害）の危険度分布（jmafile.met-dosha）
 * 警報危険度分布（jmafile.met-flood）
@@ -104,6 +108,31 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
     </tbody>
     <tbody>
     <tr>
+        <td colSpan={2}>速報版解析雨量・速報版降水短時間予報</td>
+        <td colSpan={2}>jmafile.srf-p10</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03120">速報版解析雨量</a></td>
+        <td>
+            <p>SRF_GPV_Ggis1km_Prr60lv_Aper10min_ANAL</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03121">速報版降水短時間予報</a></td>
+        <td>
+            <p>SRF_GPV_Ggis1km_Prr60lv_Fper10min_FH01-06</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
         <td colSpan={2}>解析雨量・降水短時間予報・降水15時間予報</td>
         <td colSpan={2}>jmafile.srf-rrp</td>
         <td></td>
@@ -183,6 +212,22 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
         <td><a href="jf03722">降雪短時間予報（降雪量）</a></td>
         <td>
             <p>SRF_GPV_Gll5km_Psflv_FH01-06</p>
+        </td>
+        <td>GRIB2</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>大気解析GPV</td>
+        <td colSpan={2}>jmafile.srf-p10</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03210">三十分大気解析GPV</a></td>
+        <td>
+            <p>FLA_GPV_Rjp_ANAL</p>
         </td>
         <td>GRIB2</td>
         <td></td>
@@ -320,6 +365,38 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
         <td>
             <p>OBS_AMDSCC</p>
         </td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>地上気象観測1分値データ</td>
+        <td colSpan={2}>jmafile.obs-1min</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03320">地上気象観測1分値データ</a></td>
+        <td>
+            <p>OBS_SURF_Rjp_Opermin</p>
+        </td>
+        <td>JMASF</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td colSpan={2}>ウインドプロファイラ</td>
+        <td colSpan={2}>jmafile.wpr-aww</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="jf03410">ウィンドプロファイラデータ 10分毎観測データ</a></td>
+        <td>
+            <p>WPR_SEQ_RS-all_Pww</p>
+        </td>
+        <td>BUFR4</td>
         <td></td>
     </tr>
     </tbody>
