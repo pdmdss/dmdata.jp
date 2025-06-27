@@ -150,7 +150,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | &#x1f6a9; [土砂災害警戒情報](we02710)                         | 土砂災害警戒情報                  | VXWW50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-landslide.md)      | 2028年以降終了予定                        |
 | [指定河川洪水予報](we02810)                                   | 指定河川洪水予報                  | VXKOii (ii=50-89) | XML   | [配信中](/docs/reference/conversion/json/schema/weather-river-flood.md)    |                                    |
 | &#x1f195; （新）指定河川洪水予報（未定）                             |                           |                   | XML   |                                                                         | 配信開始時期未定                           |
-| &#x1f195; [水位周知河川に関する情報](we02821)                     | 水位周知河川に関する情報              | VXSUii (ii=50-59) | XML   | 準備中                                                                     | 2026年出水期を目途に配信開始                   |
+| &#x1f195; [水位周知河川に関する情報](we02821)                     | 水位周知河川に関する情報              | VXSUii (ii=50-59) | XML   | 準備中                                                                     | 配信開始時期未定                           |
 | [熱中症警戒アラート](we02551)                                  | 熱中症警戒アラート                 | VPFT50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                                    |
 
 ### 天気予報関連
