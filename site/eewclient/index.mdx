@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 import styles from '../css/index.module.css';
-import { version } from '../../eewclient-version';
+import { version, stableVersion } from '../../eewclient-version';
 
 
 <div className={styles.title}>
@@ -106,6 +106,32 @@ import { version } from '../../eewclient-version';
 
 <div className={styles.download}>
     <h2>ダウンロード</h2>
+    <p>version. {stableVersion}</p>
+    <hr/>
+    <div>
+        <a href={`https://cdn.dmdata.ne.jp/eewclient/release/dmdata-eewclient-v1.1.4-win-x64.exe`}>
+            <div>
+                <span>Windows 10/11 64bit<br/>インストーラー版</span>
+            </div>
+        </a>
+        <a href={`https://cdn.dmdata.ne.jp/eewclient/release/dmdata-eewclient-v${stableVersion}-win-arm64.exe`}>
+            <div>
+                <span>Windows 10/11 arm64<br/>インストーラー版</span>
+            </div>
+        </a>
+        <a href={`https://cdn.dmdata.ne.jp/eewclient/release/dmdata-eewclient-v${stableVersion}-mac-x64.dmg`}>
+            <div>
+                <span>macOS x64<br/>DMG版</span>
+            </div>
+        </a>
+        <a href={`https://cdn.dmdata.ne.jp/eewclient/release/dmdata-eewclient-v${stableVersion}-mac-arm64.dmg`}>
+            <div>
+                <span>macOS arm64<br/>DMG版</span>
+            </div>
+        </a>
+    </div>
+    <hr/>
+    <h3>ダウンロード (RC版)</h3>
     <p>version. {version}</p>
     <hr/>
     <div>
@@ -141,7 +167,7 @@ import { version } from '../../eewclient-version';
     <h3>更新履歴</h3>
     <ul>
         <li>
-            <h4>2024/07/09 - v1.2.0-rc.0 (試験版)</h4>
+            <h4>2025/07/09 - v1.2.0-rc.0 (試験版)</h4>
             <ul>
                 <li>地震情報パネルを追加しました（地震情報パネル単体では利用できません。アプリケーション用の契約以外の場合は、緊急地震（予報）区分のほかに、地震津波関連区分の契約が必要です）。</li>
                 <li>最新のバージョンがある場合は、そのことを表示するようにしました。</li>
