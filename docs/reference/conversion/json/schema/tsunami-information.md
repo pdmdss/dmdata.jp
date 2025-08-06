@@ -234,17 +234,21 @@ VTSE52に出現します。
 
 ### 欠測の例
 
-* [VTSE51 - 津波情報a 津波観測](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_rjtd_20240604162814.json)
+* [VTSE51 - 津波情報a 2026年01月以降運用変更内容](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_rjtd_20250702193000.json)
+* [VTSE51 - 津波情報a 2025年07月24日運用変更内容](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_rjtd_20250702203000.json)
 
 ### 東日本大震災の例
 
 * [VTSE41 - 津波警報・注意報・予報a 定性的表現](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_jpos_20110311144959.json)
 * [VTSE51 - 津波情報a 満潮時刻・到達予想時刻](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_jpos_20110311145046.json)
 * [VTSE41 - 津波警報・注意報・予報a 沖合の津波観測による切り替え](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_jpos_20110311145300.json)
+* [VTSE52 - 沖合の津波観測に関する情報](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse52_jpos_20110311145350.json)
+* [VTSE52 - 沖合の津波観測に関する情報](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse52_jpos_20110311145500.json)
 * [VTSE51 - 津波情報a 津波観測](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_jpos_20110311145927.json)
 * [VTSE41 - 津波警報・注意報・予報a 数値表現に切り替え](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_jpos_20110311150000.json)
-* [VTSE51 - 津波情報a 津波観測](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_jpos_20110311145927.json)
+* [VTSE51 - 津波情報a 津波観測](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_jpos_20110311150155.json)
 * [VTSE41 - 津波警報・注意報・予報a 沖合の津波観測による切り替え](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_jpos_20110311151200.json)
+* [VTSE52 - 沖合の津波観測に関する情報](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse52_jpos_20110311151400.json)
 * [VTSE41 - 津波警報・注意報・予報a 津波注意報解除](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_jpos_20110313175818.json)
 
 
@@ -262,11 +266,13 @@ VTSE52に出現します。
 * [VTSE41 - 津波警報・注意報・予報a 津波注意報解除](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_rjtd_20160901095500.json)
 * [VTSE51 - 津波情報a 津波観測](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_rjtd_20160901095500.json)
 
-### 2021/03/20 18:09 宮城県沖
+### 2015/11/14 05:51 薩摩半島西方沖
 
-* [VTSE41 - 津波警報・注意報・予報a 津波注意報](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_rjtd_20210320181112.json)
-* [VTSE51 - 津波情報a 満潮時刻・到達予想時刻](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_rjtd_20210320181144.json)
-* [VTSE41 - 津波警報・注意報・予報a 津波注意報解除](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_rjtd_20210320193018.json)
+* [VTSE41 - 津波警報・注意報・予報a 津波注意報](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_jpos_20151114055628.json)
+* [VTSE51 - 津波情報a 満潮時刻・到達予想時刻](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_jpos_20151114055804.json)
+* [VTSE51 - 津波情報a 津波観測](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_jpos_20151114065529.json)
+* [VTSE41 - 津波警報・注意報・予報a 津波注意報解除](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse41_jpos_20151114072001.json)
+* [VTSE51 - 津波情報a 津波観測](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_jpos_20151114072410.json)
 
 ## 更新履歴
 
