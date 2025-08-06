@@ -3,12 +3,7 @@ title: Schema tsunami-information v1.1.0
 ---
 
 :::caution
-2025年07月24日に津波情報等の運用変更に伴い、要素が一部変更となりますので v1.1.0 へスキーマバージョンの更新を行います。
-（運用変更と同時に、スキーマバージョンの更新を実施します。）
-
-現在運用されているバージョンは、こちらを参照してください。 [tsunami-information v1.0.0](./legacy/tsunami-information_1.0.0.md)
-
-[commit #3d3c438](https://github.com/pdmdss/dmdata.jp/commit/3d3c438de82fbb138efb710dd7c644b1cfee30d2?diff=split&w=0#diff-b43677f2c1bed195b2afef95aa4e8e1969beda73cc30b071f9bb2940a3b71c13)
+2025年07月24日の津波情報等運用変更に伴い、要素が一部変更となりますので v1.1.0 へスキーマバージョンの更新を行いました。
 :::
 
 XMLをJSON化したデータのスキーマ情報を提供しています。
@@ -275,4 +270,4 @@ VTSE52に出現します。
 
 ## 更新履歴
 
-- 2024/08/20 - 津波情報等の運用変更に伴うスキーマバージョンの更新
+- 2024/08/20 - 津波情報等の運用変更に伴うスキーマバージョンの更新（過去バージョン：[tsunami-information v1.0.0](./legacy/tsunami-information_1.0.0.md)）
