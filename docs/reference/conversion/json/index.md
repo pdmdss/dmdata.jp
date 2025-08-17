@@ -122,7 +122,7 @@ TypeScriptによる型定義が、 [@dmdata/telegram-json-types](https://github.
 | 8.    | publishingOffice      |       | **Array&lt;String&gt;**<br/> 情報の発表官署名又は組織名、複数入る場合がある                        |
 | 9.    | pressDateTime         |       | **ISO8601Time**<br/> 情報作成時刻                                                 |
 | 10.   | reportDateTime        |       | **ISO8601Time**<br/> 情報の発表時刻                                                |
-| 11.   | targetDateTime        |       | **ISO8601Time\|Null**<br/> 情報の基となった時刻、無い場合は**Null**とする                      |
+| 11.   | targetDateTime        |       | **ISO8601Time\|Null**<br/> 情報の基となった時刻、無い場合は**Null**とする（※）                   |
 | 12.?  | targetDateTimeDubious | 情報による | **String**<br/> 情報の基となった時刻のあいまいさ                                            |
 | 13.?  | targetDuration        | 情報による | **String**<br/> 情報の予報期間                                                     |
 | 14.?  | validDateTime         | 情報による | **ISO8601Time**<br/> 情報の失効時刻                                                |
@@ -131,3 +131,6 @@ TypeScriptによる型定義が、 [@dmdata/telegram-json-types](https://github.
 | 17.   | infoKind              |       | **String**<br/> XMLデータのスキーマ名                                                |
 | 18.   | infoKindVersion       |       | **String**<br/> XMLデータのスキーマバージョン                                            |
 | 19.   | headline              |       | **String\|Null**<br/> 情報の見出し、無い場合は**Null**とする                               |
+
+※ `targetDateTime` の **Null** は実際には運用されていません。
+（[気象庁防災情報XMLフォーマットに係る資料の一部更新について 2025/06/24](https://xml.kishou.go.jp/20250624_jmaxml_info.pdf)）
