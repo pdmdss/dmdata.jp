@@ -68,9 +68,10 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <Layout title="お問い合わせ"> <Helmet>
-        <script src="https://www.google.com/recaptcha/api.js?render=6Lc_fc0UAAAAAH_V_BLn7qugwThlhaqeJTK0Vt-k"></script>
-      </Helmet>
+      <Layout title="お問い合わせ">
+        <Helmet>
+          <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lf3LrErAAAAABBfYPIeCTkfaCvXZaJwkr65JkP8" async defer></script>
+        </Helmet>
         <div className={styles.contact}>
           <h1>お問い合わせ</h1>
           <p>このページを利用するか、「support#dmdata.jp」(#を@に変更してください)宛にメールを送信してください。</p>
@@ -79,39 +80,40 @@ export default class Contact extends React.Component {
             <form action="/contact-post" method="post" id="forms" autoComplete="off">
               <table className={styles['form-table']}>
                 <tbody>
-                  <tr>
-                    <th>お名前</th>
-                    <td>
-                      <label>
-                        <input type="text" className={styles.long} required maxLength={64}
-                               onInput={event => this.inputCheck('name', event)}/>
-                      </label>
-                      {this.state.errorMags.name &&
-                          <span className={styles.error}>{this.state.errorMags.name}</span>}
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>返信先</th>
-                    <td>
-                      <label>
-                        <input type="email" className={styles.long} placeholder="メールアドレス" required maxLength={256}
-                               onInput={event => this.inputCheck('email', event)}/>
-                      </label>
-                      {this.state.errorMags.email &&
-                          <span className={styles.error}>{this.state.errorMags.email}</span>}
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>内容</th>
-                    <td>
-                      <label>
-                        <textarea className={styles['input-text']} placeholder="できるだけ詳しくお願いします。なお、クレジットカード番号・CVC、パスワードなどは記載しないでください。" required
+                <tr>
+                  <th>お名前</th>
+                  <td>
+                    <label>
+                      <input type="text" className={styles.long} required maxLength={64}
+                             onInput={event => this.inputCheck('name', event)}/>
+                    </label>
+                    {this.state.errorMags.name &&
+                        <span className={styles.error}>{this.state.errorMags.name}</span>}
+                  </td>
+                </tr>
+                <tr>
+                  <th>返信先</th>
+                  <td>
+                    <label>
+                      <input type="email" className={styles.long} placeholder="メールアドレス" required maxLength={256}
+                             onInput={event => this.inputCheck('email', event)}/>
+                    </label>
+                    {this.state.errorMags.email &&
+                        <span className={styles.error}>{this.state.errorMags.email}</span>}
+                  </td>
+                </tr>
+                <tr>
+                  <th>内容</th>
+                  <td>
+                    <label>
+                        <textarea className={styles['input-text']}
+                                  placeholder="できるだけ詳しくお願いします。なお、クレジットカード番号・CVC、パスワードなどは記載しないでください。" required
                                   maxLength={4096} onInput={event => this.inputCheck('text', event)}></textarea>
-                      </label>
-                      {this.state.errorMags.text &&
-                          <span className={styles.error}>{this.state.errorMags.text}</span>}
-                    </td>
-                  </tr>
+                    </label>
+                    {this.state.errorMags.text &&
+                        <span className={styles.error}>{this.state.errorMags.text}</span>}
+                  </td>
+                </tr>
                 </tbody>
               </table>
               {this.state.errorMags.all &&
@@ -131,6 +133,7 @@ export default class Contact extends React.Component {
                   {this.state.isLoading && !this.state.isSuccess && (
                     <p>送信中です</p>)} {this.state.isLoading && this.state.isSuccess && (<p>送信しました</p>)}
                 </div>}
+
           </div>
         </div>
       </Layout>
@@ -140,9 +143,9 @@ export default class Contact extends React.Component {
 
 function gReCaptcha() {
   return new Promise<string>(resolve =>
-    globalThis.grecaptcha.ready(() => {
-      globalThis.grecaptcha
-        .execute('6Lc_fc0UAAAAAH_V_BLn7qugwThlhaqeJTK0Vt-k', {
+    globalThis.grecaptcha.enterprise.ready(() => {
+      globalThis.grecaptcha.enterprise
+        .execute('6Lf3LrErAAAAABBfYPIeCTkfaCvXZaJwkr65JkP8', {
           action: 'contact'
         })
         .then((token: string) => resolve(token));
