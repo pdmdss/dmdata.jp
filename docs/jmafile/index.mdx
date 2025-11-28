@@ -527,8 +527,8 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
         <td></td>
     </tr>
     <tr>
-        <td></td>
-        <td><a href="jf06243">流域雨量指数6時間予想</a></td>
+        <td rowSpan={2}></td>
+        <td rowSpan={2}><a href="jf06243">流域雨量指数6時間予想</a></td>
         <td>
             <p>MET_SEQ_Ggis1km_Proi_Fper30min_FH01-06</p>
             <p>MET_SEQ_Ggis1km_Proi_Fper30min_RJsuikei###_FH01-06</p>
@@ -536,6 +536,14 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
         </td>
         <td>BUFR4</td>
         <td></td>
+    </tr>
+    <tr>
+        <td>
+            <p>MET_SEQ_Ggis1km_Proi_Fper10min_RJsuikei###_FH01-06</p>
+            <p>データ識別名の変数は資料を参照</p>
+        </td>
+        <td>BUFR4</td>
+        <td>2026/02~</td>
     </tr>
     </tbody>
     <tbody>
@@ -563,13 +571,20 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
         <td></td>
     </tr>
     <tr>
-        <td></td>
-        <td><a href="jf06233">表面雨量指数6時間予想値</a></td>
+        <td rowSpan={2}></td>
+        <td rowSpan={2}><a href="jf06233">表面雨量指数6時間予想値</a></td>
         <td>
             <p>MET_GPV_Ggis1km_Pfpi_Fper30min_FH01-06</p>
         </td>
         <td>GRIB2</td>
         <td></td>
+    </tr>
+    <tr>
+        <td>
+            <p>MET_GPV_Ggis1km_Pfpi_Fper10min_FH01-06</p>
+        </td>
+        <td>GRIB2</td>
+        <td>2026/02~</td>
     </tr>
     </tbody>
     <tbody>
@@ -718,11 +733,11 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 
 ## サンプル
 
-気象業務支援センターの[実際に配信されたデータによるサンプル提供](http://www.jmbsc.or.jp/jp/online/c-onlineGsample.html)
-にて提供されていますのでそちらを参照してください。
+気象業務支援センターの[実際に配信されたデータによるサンプル提供](http://www.jmbsc.or.jp/jp/online/c-onlineGsample.html)にて提供されていますのでそちらを参照してください。
 
 ## 更新履歴
 
+- 2025/11/28 - 配信資料に関する技術情報 第663号、第664号 の発行に伴う追記
 - 2025/10/31 - 配信資料に関する技術情報 第661号 の発行に伴う追記
 - 2025/08/27 - 配信資料に関する技術情報 第657号 の発行に伴う追記
 - 2025/07/15 - 配信資料に関する技術情報 第654号 の発行に伴う追記
