@@ -43,24 +43,11 @@ body フィールド内の定義となります。
 
 ## 取り扱い上の注意
 
-南海トラフ地震に関連する情報(VYSE50, VYSE51, VYSE52)と同じ情報が2022年ごろまで発表されます。
 
+南海トラフ地震に関連する情報は、2025年12月15日14時00分で配信終了となりました。
+今後は、[earthquake-nankai](./earthquake-nankai.md)を使用してください。
 
 ## サンプル
-
-### 南海トラフ地震に関連する情報（臨時）
-
-* [VXSE56 - 地震の活動状況等に関する情報](https://sample.dmdata.jp/conversion/json/schema/earthquake-explanation/vxse56_rjtd_20200512162033.json)
-* [VXSE56 - 地震の活動状況等に関する情報](https://sample.dmdata.jp/conversion/json/schema/earthquake-explanation/vxse56_rjtd_20200512162433.json)
-* [VXSE56 - 地震の活動状況等に関する情報](https://sample.dmdata.jp/conversion/json/schema/earthquake-explanation/vxse56_rjtd_20200512162632.json)
-* [VXSE56 - 地震の活動状況等に関する情報](https://sample.dmdata.jp/conversion/json/schema/earthquake-explanation/vxse56_rjtd_20200512162834.json)
-* [VXSE56 - 地震の活動状況等に関する情報](https://sample.dmdata.jp/conversion/json/schema/earthquake-explanation/vxse56_rjtd_20200512163826.json)
-* [VXSE56 - 地震の活動状況等に関する情報](https://sample.dmdata.jp/conversion/json/schema/earthquake-explanation/vxse56_rjtd_20200512164025.json)
-* [VXSE56 - 地震の活動状況等に関する情報](https://sample.dmdata.jp/conversion/json/schema/earthquake-explanation/vxse56_rjtd_20200512164228.json)
-
-### 南海トラフ地震に関連する情報（定時）
-
-* [VXSE56 - 地震の活動状況等に関する情報](https://sample.dmdata.jp/conversion/json/schema/earthquake-explanation/vxse56_rjtd_20200512164452.json)
 
 ### 伊豆東部の地震活動の見通しに関する情報
 
