@@ -2,7 +2,7 @@
 title: 2026年防災気象情報の体系整理のまとめ
 ---
 
-「防災気象情報に関する検討会」の最終取りまとめに基づき、2026年出水期（大雨災害の発生時期）頃を目途に予定されている防災気象情報の体系整理について、まとめるものです。
+「防災気象情報に関する検討会」の最終取りまとめに基づき、2026年5月下旬頃に予定されている防災気象情報の体系整理について、まとめるものです。
 
 ---
 
@@ -118,6 +118,8 @@ title: 2026年防災気象情報の体系整理のまとめ
 
 記録的短時間の大雨や線状降水帯、大雪などの具体的な極端現象が発生または発生しつつある場合にその旨を伝える「極端な現象を速報的に伝える情報」と、
 現在及び今後の気象状況等を網羅的に伝える「網羅的に解説する情報」に分類されます。
+
+体系整理と同時に線状降水帯の発生する3時間程度前に通知する「気象防災速報（線状降水帯直前予測）」という情報が新設されます。
 
 ![](https://cdn.dmdata.ne.jp/d-image/20251202/weather-information.svg) <br/>
 表は防災気象情報に関する検討会報告を参考に作成
@@ -362,6 +364,8 @@ Head/Titleを「竜巻注意情報」から「気象防災速報（竜巻注意�
 
 * [防災気象情報に関する検討会](https://www.jma.go.jp/jma/kishou/shingikai/kentoukai/bousaikishoujouhou/bousaikishoujouhou_kentoukai.html)
 * [配信資料に関する技術情報 第634号 - 体系整理を踏まえた気象警報・解説情報XML電文の改善について](https://dmdata.jp/docs/jma/technical/634.pdf)
-* [気象庁防災情報XMLフォーマット　情報提供ページ](https://xml.kishou.go.jp/index.html)
+* [気象庁防災情報XMLフォーマット　情報提供ページ　- 気象庁HP](https://xml.kishou.go.jp/index.html)
+* [新たな防災気象情報について(令和８年～) - 気象庁HP](https://www.jma.go.jp/jma/kishou/know/bosai/keiho-update2026/index.html)
+* [電文関係、技術資料等について　- 気象庁HP](https://www.jma.go.jp/jma/kishou/know/bosai/keiho-update2026/tech-info/index.html)
 
 2025年12月02日現在の情報に基づき作成しています。
