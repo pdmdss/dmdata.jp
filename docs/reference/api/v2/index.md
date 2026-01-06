@@ -143,15 +143,51 @@ APIは標準的なエラーを次の通り返答します。
 
 このAPIでは AWS WAF によるレートリミットが設定されており、制限を超えるリクエストがされた場合、APIはHTTPステータスコード `429` を返答します。
 
-各ドメイン（api.dmdata.jp, data.api.dmdata.jpなど）とIPの組み合わせごとに10分間で2000リクエストを超えた場合に制限が発生します。
+各ドメイン（api.dmdata.jp, data.api.dmdata.jpなど）とIPの組み合わせごとに10分間で2000リクエストを超えた場合、または以下の表に達した場合に制限が発生します。
+
+<table>
+<thead>
+<tr>
+    <th>API URL</th>
+    <th>レートリミット</th>
+    <th>概要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>https://api.dmdata.jp/v2/parameter/earthquake/station</td>
+    <td rowspan="3">20req/2min</td>
+    <td rowspan="3">ソフトウエアの起動時、または数日おきになどのみリクエストをお願いします。<br/> リクエストが多い場合制限を実施する場合があります。</td>
+</tr>
+<tr>
+    <td>https://api.dmdata.jp/v2/parameter/tsunami/station</td>
+</tr>
+<tr>
+    <td>https://api.dmdata.jp/v2/parameter/realtime/station</td>
+</tr>
+<tr>
+    <td>https://data.api.dmdata.jp/v1/:id</td>
+    <td rowspan="3">50req/5min</td>
+    <td rowspan="3">同じ`id`に対して短期間にリクエストを繰り返さないように実装してください。<br/> 定常的にリクエストが多い場合制限を実施する場合があります。</td>
+</tr>
+<tr>
+    <td>https://jmafiledata.api.dmdata.jp/v1/:id</td>
+</tr>
+<tr>
+    <td>https://data.api.dmdata.jp/v1/archive/:id</td>
+</tr>
+</tbody>
+</table>
+
+なお、この制限は一時的なアクセス上限でありこの範囲内でもシステムに負荷がかかるような利用の場合は、APIの利用を予告なく制限させていただく場合があります。
 
 `429` エラーが発生した場合、「指数関数バックオフ」による再リクエスト処理の実施をお願いします。
+
+定常的に 2req/s 以上のアクセスはお控えいただき、電文データの場合はWebSocketによる受信を優先してお願いします。
 
 :::note
 AWS WAFのレートリミットにより発生したエラーは、コントロールパネルのリクエスト状況には反映されません。
 :::
-
-なお、定常的に 2req/s 以上のアクセスはお控えいただき、電文データの場合はWebSocketによる受信を優先してお願いします。
 
 ## リソース
 
