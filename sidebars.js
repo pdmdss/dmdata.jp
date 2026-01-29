@@ -326,6 +326,7 @@ const sidebar = {
                         'telegrams/sc02110',
                         'telegrams/sc02115',
                         'telegrams/sc02120',
+                        'telegrams/sc02130',
                         'telegrams/sc03310'
                     ]
                 },
