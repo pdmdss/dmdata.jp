@@ -109,7 +109,7 @@ import { version, stableVersion } from '../../eewclient-version';
     <p>version. {stableVersion}</p>
     <hr/>
     <div>
-        <a href={`https://cdn.dmdata.ne.jp/eewclient/release/dmdata-eewclient-v1.1.4-win-x64.exe`}>
+        <a href={`https://cdn.dmdata.ne.jp/eewclient/release/dmdata-eewclient-v${stableVersion}-win-x64.exe`}>
             <div>
                 <span>Windows 10/11 64bit<br/>インストーラー版</span>
             </div>
@@ -130,6 +130,7 @@ import { version, stableVersion } from '../../eewclient-version';
             </div>
         </a>
     </div>
+    <!--
     <hr/>
     <h3>ダウンロード (RC版)</h3>
     <p>version. {version}</p>
@@ -156,6 +157,7 @@ import { version, stableVersion } from '../../eewclient-version';
             </div>
         </a>
     </div>
+    -->
     <p>インストールに管理者権限は必須ではありません。</p>
     <p>macOS で、「ファイルが壊れている」等と通知が出る場合は、システム設定からセキュリティの「すべてのアプリを許可」にしてください。</p>
     <p>
@@ -166,6 +168,17 @@ import { version, stableVersion } from '../../eewclient-version';
     <hr/>
     <h3>更新履歴</h3>
     <ul>
+        <li>
+            <h4>2026/02/06 - v1.2.0</h4>
+            <p>**v1.1.4以前からアップデートを行い、地震情報パネルを利用する場合は一度アカウント連携を解除ののち、再度アカウント連携を行っていください。**</p>
+            <ul>
+                <li>時間補正の手法を改良しました。</li>
+                <li>プレートのマップ表示順序を変更しました。</li>
+                <li>地震情報パネルのタイトル表示を変更しました。</li>
+                <li>内部パッケージのバージョンを更新しました。</li>
+                <li>その他、細かい修正を行いました。</li>
+            </ul>
+        </li>
         <li>
             <h4>2025/11/14 - v1.2.0-rc.1 (試験版)</h4>
             <ul>
