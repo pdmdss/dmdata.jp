@@ -4,8 +4,6 @@ hide_title: true
 hide_table_of_contents: true
 ---
 
-
-
 import styles from './css/index.module.css';
 
 <div className={styles.title}>
@@ -29,7 +27,7 @@ import styles from './css/index.module.css';
         <img src="/img/quake_sample.png" alt="開発例画像"/>
         <div className={styles['sample-attention']}>
             <p>サンプル画像（開発例）</p>
-            <p>https://apps.dmdata.ne.jp/etcm/</p>
+            <p>https://control.dmdata.jp/tools/earthquake</p>
         </div>
     </div>
     <p>デフォルト機能として、電文ビューア（XML表示機能付き）を用意しています。</p>
@@ -44,7 +42,7 @@ import styles from './css/index.module.css';
     </p>
     <br/>
     <p>WebSocketを利用することで速報性のある緊急地震速報や、震度速報、津波警報、特別警報などを即座に配信できます。</p>
-    <p>このサービスを通して得た情報（気象庁発表の電文に限る）は無償・商用問わず二次利用が可能です（一部を除く。）。</p>
+    <p>このサービスを通して得た情報（気象庁発表の電文に限る）は無償・商用問わず二次利用が可能です（緊急地震速報を除く。）。</p>
     <p>気象業務支援センター（気象庁構内）の東京・大阪から常時リアルタイム配信を受けており、地理冗長の常時二系統運用を行っています。</p>
 </div>
 <div className={styles.plan}>
@@ -66,9 +64,8 @@ import styles from './css/index.module.css';
                 <br/>
                 <p>WebSocket同時接続数 +1 追加</p>
                 <br/>
-                <p>
-                    <a href="/docs/eew">緊急地震速報(予報)の利用について</a>
-                </p>
+                <p><a href="/docs/eew">緊急地震速報(予報)の利用について</a></p>
+                <p>※二次配信について制限があります。</p>
             </div>
         </div>
         <div className={styles['plan-item']}>

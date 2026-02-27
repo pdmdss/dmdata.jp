@@ -71,9 +71,12 @@ body > p {
 
 .sample-attention {
     position: absolute;
-    top: 20px;
-    right: 0;
+    bottom: 20px;
+    right: 20px;
     max-width: 75%;
+    background-color: #555555cc;
+    border-radius: 5px;
+    padding: 0 5px;
 }
 
 .sample-attention p {
