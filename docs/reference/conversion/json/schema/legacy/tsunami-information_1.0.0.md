@@ -8,7 +8,7 @@ title: Schema tsunami-information v1.0.0
 新しいバージョンを参照してください。 [tsunami-information v1.1.0](../tsunami-information)
 :::
 
-XMLをJSON化したデータのスキーマ情報を提供しています。
+XMLをJSONに変換したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 

@@ -8,7 +8,7 @@ title: Schema weather-impact-society v1.0.0
 新しいバージョンを参照してください。 [weather-impact-society v1.0.1](../weather-impact-society)
 :::
 
-XMLをJSON化したデータのスキーマ情報を提供しています。
+XMLをJSONに変換したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 

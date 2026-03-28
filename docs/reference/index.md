@@ -26,7 +26,7 @@ DMDATA.JPでは、OAuth2.0に対応しています。詳細は[こちら](/docs/
 
 ## JSON Schema
 
-気象庁防災情報XMLフォーマット電文について、本サービスでJSON化したデータを同様に配信しています。
+気象庁防災情報XMLフォーマット電文について、本サービスでJSONに変換したデータを同様に配信しています。
 
 [詳細はこちら](/docs/reference/conversion/json/index.md)。
 

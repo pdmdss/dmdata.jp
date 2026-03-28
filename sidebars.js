@@ -111,7 +111,7 @@ const sidebar = {
                 },
                 {
                     type: 'category',
-                    label: 'JSON化データ',
+                    label: 'JSONデータ',
                     link: {
                         type: 'doc',
                         id: 'reference/conversion/json/index'

@@ -2,25 +2,28 @@
 title: Schema weather-information v1.0.0
 ---
 
-XMLをJSON化したデータのスキーマ情報を提供しています。
+XMLをJSONに変換したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
-* [全般気象情報 (VPZJ50)](/docs/telegrams/we02310.md)
-* [地方気象情報 (VPCJ50)](/docs/telegrams/we02320.md)
-* [府県気象情報 (VPFJ50)](/docs/telegrams/we02330.md)
-* [スモッグ気象情報 (VPSG50)](/docs/telegrams/we02530.md)
-* [全般スモッグ気象情報 (VPZS50)](/docs/telegrams/we02540.md)
-* [台風全般情報（総合情報、上陸等情報） (VPTI50)](/docs/telegrams/we02610.md)
-* [台風全般情報（位置、発生情報） (VPTI51)](/docs/telegrams/we02620.md)
-* [発達する熱帯低気圧に関する情報 (VPTI51)](/docs/telegrams/we02620.md)
-* [全般台風情報（位置詳細） (VPTI52)](/docs/telegrams/we02620.md)
+* ~~[全般気象情報 (VPZJ50)](/docs/telegrams/we02310.md)~~
+* ~~[地方気象情報 (VPCJ50)](/docs/telegrams/we02320.md)~~
+* ~~[府県気象情報 (VPFJ50)](/docs/telegrams/we02330.md)~~
+* ~~[台風全般情報（総合情報、上陸等情報） (VPTI50)](/docs/telegrams/we02610.md)~~
+* ~~[台風全般情報（位置、発生情報） (VPTI51)](/docs/telegrams/we02620.md)~~
+* ~~[発達する熱帯低気圧に関する情報 (VPTI51)](/docs/telegrams/we02620.md)~~
+* ~~[全般台風情報（位置詳細） (VPTI52)](/docs/telegrams/we02620.md)~~
 * [熱中症警戒アラート (VPFT50)](/docs/telegrams/we02630.md)
-* [全般潮位情報 (VMCJ50)](/docs/telegrams/we02210.md)
-* [地方潮位情報 (VMCJ51)](/docs/telegrams/we02220.md)
-* [府県潮位情報 (VMCJ52)](/docs/telegrams/we02230.md)
+* ~~[全般潮位情報 (VMCJ50)](/docs/telegrams/we02210.md)~~
+* ~~[地方潮位情報 (VMCJ51)](/docs/telegrams/we02220.md)~~
+* ~~[府県潮位情報 (VMCJ52)](/docs/telegrams/we02230.md)~~
 * [天気概況 (VPFG50)](/docs/telegrams/fo03020.md)
 * [全般2週間気温予報 (VPZK70)](/docs/telegrams/fo03230.md)
+
+### 運用を終了した電文
+
+* [スモッグ気象情報 (VPSG50)](/docs/telegrams/we02530.md)
+* [全般スモッグ気象情報 (VPZS50)](/docs/telegrams/we02540.md)
 
 ## 共通ヘッダ
 

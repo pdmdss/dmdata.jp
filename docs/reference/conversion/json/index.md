@@ -1,17 +1,17 @@
 ---
 slug: /reference/conversion/json/
-title: JSON化データについて
+title: JSONに変換したデータについて
 ---
 
 ## 概要
 
-Project DM-D.S.Sでは[気象庁防災情報XMLフォーマット](http://xml.kishou.go.jp/)について、取り扱いの容易化を目的としたJSON化を行っています。
+Project DM-D.S.Sでは[気象庁防災情報XMLフォーマット](http://xml.kishou.go.jp/)について、取り扱いの容易化を目的としたJSONに変換を行っています。
 
-XMLデータをJSON化するデータは利用頻度の高いデータとし、独自のスキーマ定義に沿った変換を行うもとしています。
+XMLデータをJSONに変換するデータは利用頻度の高いデータとし、独自のスキーマ定義に沿った変換を行うもとしています。
 
 ## 変換に伴うリスク
 
-XMLデータをJSON化する際、変換する時間が最大1秒程度（基となるXMLデータの配信遅延はありません）かかります。
+XMLデータをJSONに変換する際、変換する時間が最大1秒程度（基となるXMLデータの配信遅延はありません）かかります。
 また、変換に失敗する恐れや、想定していないデータの配信が発生することがあります。
 
 配信したJSONデータは、スキーマチェックを常時行い、スキーマ通りに変換が行われていることを確認しています。
@@ -19,9 +19,9 @@ XMLデータをJSON化する際、変換する時間が最大1秒程度（基と
 
 ## APIの取り扱い
 
-[Telegram List v2](/docs/reference/api/v2/telegram.list.md) と [WebSocket v2](/docs/reference/api/v2/websocket.md)でJSON化データを取得することができます。
+[Telegram List v2](/docs/reference/api/v2/telegram.list.md) と [WebSocket v2](/docs/reference/api/v2/websocket.md)でJSONに変換データを取得することができます。
 
-JSON化データを取得する方法はAPIのリファレンスを参照してください。
+JSONに変換したデータを取得する方法はAPIのリファレンスを参照してください。
 
 ## JSON スキーマ
 
@@ -114,7 +114,7 @@ TypeScriptによる型定義が、 [@dmdata/telegram-json-types](https://github.
 
 | 階層    | フィールド                 | 出現条件  | 説明                                                                          |
 |-------|-----------------------|-------|-----------------------------------------------------------------------------|
-| 1.    | _originalId           |       | **String**<br/> JSON化電文を区別するユニーク384bitハッシュ                                  |
+| 1.    | _originalId           |       | **String**<br/> JSONに変換したする前のXML電文を区別するユニーク384bitハッシュ                       |
 | 2.    | _schema               |       | **Object**<br/> JSONスキーマ情報（内部利用）                                            |
 | 2._1. | _schema.type          |       | **String**<br/> JSONスキーマ名                                                   |
 | 2._2. | _schema.version       |       | **String**<br/> JSONスキーマバージョン                                               |

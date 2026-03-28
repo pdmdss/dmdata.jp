@@ -22,7 +22,7 @@ title: GD Earthquake Event
 
 テスト電文はこのAPIでは扱いません。
 
-また、対象となるEventIDの地震情報の電文一覧では、JSON化データの情報を返答します。
+また、対象となるEventIDの地震情報の電文一覧では、JSONに変換したデータの情報を返答します。
 
 ---
 
@@ -139,8 +139,8 @@ APIは常にJSONを返答します。
 | event.lgCategory                    |      場合による      | **String** <br/> 長周期地震動に関する観測情報の種類                                                                                         |
 | event.telegrams                     |       いつも       | **Array&lt;Object&gt;** <br/> 地震情報の電文リスト                                                                                   |
 | event.telegrams[\].serial           |       いつも       | **Integer\|String&lt;Integer&gt;** <br/> 電文受信通番                                                                            |
-| event.telegrams[\].id               |       いつも       | **String** <br/> JSON化電文を区別するユニーク384bitハッシュ                                                                                |
-| event.telegrams[\].originalId       |       いつも       | **String** <br/> JSON化電文の基となったXML電文を区別するユニーク384bitハッシュ                                                                     |
+| event.telegrams[\].id               |       いつも       | **String** <br/> JSONに変換した電文を区別するユニーク384bitハッシュ                                                                                |
+| event.telegrams[\].originalId       |       いつも       | **String** <br/> JSONに変換した電文の基となったXML電文を区別するユニーク384bitハッシュ                                                                     |
 | event.telegrams[\].classification   |       いつも       | **String** <br/> 配信区分により変化。取りうる値は telegram.earthquake                                                                      |
 | event.telegrams[\].head             |       いつも       | **Object** <br/> ヘッダ情報                                                                                                     |
 | event.telegrams[\].head.type        |       いつも       | **String** <br/> データ種類コード                                                                                                  |

@@ -2,7 +2,7 @@
 title: Schema forecast-season v1.0.0
 ---
 
-XMLをJSON化したデータのスキーマ情報を提供しています。
+XMLをJSONに変換したデータのスキーマ情報を提供しています。
 
 ## 対象とするXML電文
 
