@@ -152,6 +152,23 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | &#x1f195; （新）指定河川洪水予報（未定）                             |                           |                   | XML   |                                                                         | 配信開始時期未定                           |
 | &#x1f195; [水位周知河川に関する情報](we02821)                     | 水位周知河川に関する情報              | VXSUii (ii=50-59) | XML   |                                                                         | 配信開始時期未定                           |
 | [熱中症警戒アラート](we02551)                                  | 熱中症警戒アラート                 | VPFT50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-information.md)    |                                    |
+| &#x1f195; [大雨に関する警戒レベル情報](we02061)                    | 気象警報・注意報（Ｒ０６）（大雨）         | VPWW55            | XML   | [配信中](/docs/reference/conversion/json/schema/legacy/weather-warning_1.0.0.md) | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [土砂災害に関する警戒レベル情報](we02062)                  | 気象警報・注意報（Ｒ０６）（土砂）         | VPWW56            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)              | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [高潮に関する警戒レベル情報](we02063)                    | 気象警報・注意報（Ｒ０６）（高潮）         | VPWW57            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)              | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [暴風・暴風雪に関する警報・注意報](we02064)                 | 気象警報・注意報（Ｒ０６）（暴風）         | VPWW58            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)              | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [波浪に関する警報・注意報](we02065)                     | 気象警報・注意報（Ｒ０６）（波浪）         | VPWW59            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)              | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [大雪に関する警報・注意報](we02066)                     | 気象警報・注意報（Ｒ０６）（大雪）         | VPWW60            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)              | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [その他の気象注意報](we02067)                        | 気象警報・注意報（Ｒ０６）（その他の注意報）    | VPWW61            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)              | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [警戒・注意事項と各気象要素の時系列予想](we02080)              | 気象警報・注意報時系列情報（Ｒ０６）        | VPWP50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning-timeseries.md)   | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [警戒・注意事項を全要素した全国集約通報](we02069)              | 気象警報・注意報（Ｒ０６）（集約通報）       | VPWS50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-warning.md)              | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [気象防災速報](we02341)                           | 府県気象防災速報                  | VPBS50            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-commentary.md)           | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [気象防災速報（潮位）](we02342)                       | 府県気象防災速報（潮位）              | VPBS51            | XML   |                                                                               | 配信開始時期未定                           |
+| &#x1f195; [全般気象解説情報](we02311)                         | 全般気象解説情報                  | VPZJ51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-commentary.md)           | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [地方気象解説情報](we02321)                         | 地方気象解説情報                  | VPCJ51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-commentary.md)           | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [府県気象解説情報](we02331)                         | 府県気象解説情報                  | VPFJ51            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-commentary.md)           | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [全般気象解説情報（潮位）](we02312)                     | 全般気象防災速報（潮位）              | VMCJ53            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-commentary.md)           | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [地方気象解説情報（潮位）](we02322)                     | 地方気象防災速報（潮位）              | VMCJ54            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-commentary.md)           | 2026年5月下旬頃に配信開始                    |
+| &#x1f195; [府県気象解説情報（潮位）](we02332)                     | 府県気象防災速報（潮位）              | VMCJ55            | XML   | [配信中](/docs/reference/conversion/json/schema/weather-commentary.md)           | 2026年5月下旬頃に配信開始                    |
 
 ### 天気予報関連
 
@@ -176,6 +193,7 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 | [アジア太平洋地上天気図（天気図情報）](fo03540)              | アジア太平洋地上実況図                           | VZSA60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
 | [アジア太平洋海上悪天24時間予想図（天気図情報）](fo03550)        | アジア太平洋海上悪天２４時間予想図                     | VZSF60   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
 | [アジア太平洋海上悪天48時間予想図（天気図情報）](fo03560)        | アジア太平洋海上悪天４８時間予想図                     | VZSF61   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-weathermap.md)          |
+| &#x1f195; [早期注意情報（明日までの警報級の可能性）](fo03051)  | 早期注意情報（明日まで）（Ｒ０６）                     | VPFD61   | XML   | [配信中](/docs/reference/conversion/json/schema/forecast-warning-possibility.md)              | 2026年5月下旬頃に配信開始 |
 
 ### 気象観測関連
 

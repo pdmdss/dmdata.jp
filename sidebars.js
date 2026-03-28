@@ -126,7 +126,9 @@ const sidebar = {
                         'reference/conversion/json/schema/tsunami-information',
                         'reference/conversion/json/schema/volcano-information',
                         'reference/conversion/json/schema/weather-warning',
+                        'reference/conversion/json/schema/weather-warning-timeseries',
                         'reference/conversion/json/schema/weather-information',
+                        'reference/conversion/json/schema/weather-commentary',
                         'reference/conversion/json/schema/weather-impact-society',
                         'reference/conversion/json/schema/weather-early',
                         'reference/conversion/json/schema/weather-tornado',
@@ -145,7 +147,9 @@ const sidebar = {
                             label: '非現行バージョン',
                             items: [
                                 'reference/conversion/json/schema/legacy/tsunami-information_1.0.0',
-                                'reference/conversion/json/schema/legacy/weather-impact-society_1.0.0'
+                                'reference/conversion/json/schema/legacy/weather-impact-society_1.0.0',
+                                'reference/conversion/json/schema/legacy/weather-warning_1.0.0',
+                                'reference/conversion/json/schema/legacy/forecast-warning-possibility_1.0.0'
                             ]
                         }
                     ]

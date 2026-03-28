@@ -27,6 +27,7 @@
 
     --ifm-font-family-base: MFW-UDShinGoNTPr6N-Light, sans-serif;
     --ifm-heading-font-family: MFW-UDShinGoPr6-Regular, sans-serif;
+    --ifm-code-background: #e1ffe7;
 }
 
 h1 {
@@ -49,9 +50,10 @@ strong {
 html[data-theme='dark'] {
     /* Original definition */
     --group-background: #262626;
+    --ifm-code-background: #156156;
 }
 
-table td {
+table td, table th {
     font-size: 14px;
 }
 
