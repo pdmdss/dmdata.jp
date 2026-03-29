@@ -38,8 +38,8 @@ body フィールド内の定義となります。
 |-----|------------------------|------------------------|------------------------------------------------------------------------------------------------------------| 
 | 1.  | informationTags        |                        | **Array&lt;Object&gt;**<br/> 本情報が対象とする気象現象等について記載する<br/>配列の中は1個で固定 [#1. informationTag](#1-informationtag) |
 | 2.? | weatherSummary         | 状況による                  | **Object**<br/> 気象概況について、文章情報を記載する [#2. weatherSummary](#2-weathersummary)                                 |
-| 3.? | observation            | 状況による<br/>気象防災速報の場合は必須 | **Object**<br/> 気象の観測データなどを記載しま [#3. observation](#3-observation)                                          |
-| 4.? | forecast               | 状況による                  | **Object**<br/> 気象の予想を記載しま [#4. forecast](#4-forecast)                                                     |
+| 3.? | observation            | 状況による<br/>気象防災速報の場合は必須 | **Object**<br/> 気象の観測データなどを記載する [#3. observation](#3-observation)                                          |
+| 4.? | forecast               | 状況による                  | **Object**<br/> 気象の予想を記載する [#4. forecast](#4-forecast)                                                     |
 | 5.? | disasterPreventionInfo | 状況による                  | **Object**<br/> 防災事項について、文章情報を記載する [#5. disasterPreventionInfo](#5-disasterpreventioninfo)                 |
 | 6.? | additionalInfo         | 状況による                  | **Object**<br/> 付加情報（次回発表予定、その他のお知らせなどの補足事項）について、文章情報を記載する [#6. additionalInfo](#6-additionalinfo)         |
 
