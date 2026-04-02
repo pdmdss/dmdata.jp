@@ -40,11 +40,17 @@ title: サンプル JavaScript
             
             websocket.addEventListener('close', () => console.log('WebSocket closed.'));
         });
-    
+
+    const decoder = new TextDecoder();
     async function bodyToDocument(data) {
-        const decoder = new TextDecoder();
+      /**
+       * ECMAScript 2026. Chrome v140~, Firefox v133~, Safari v18.2~
+       * 
+       * 古いバージョン
+       * const buffer = new Uint8Array(atob(data).split('').map(c => c.charCodeAt(0)));
+       */
+        const buffer = Uint8Array.fromBase64(data);
         
-        const buffer = new Uint8Array(atob(data).split('').map(c => c.charCodeAt(0)))
         const stream = new Blob([buffer])
             .stream()
             .pipeThrough(
