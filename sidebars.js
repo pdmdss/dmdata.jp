@@ -314,7 +314,6 @@ const sidebar = {
                         'telegrams/ob04310',
                         'telegrams/ob04320',
                         'telegrams/ob04330',
-                        'telegrams/ob04410',
                         'telegrams/ob04510',
                         'telegrams/ob04610',
                         'telegrams/ob05010',
@@ -353,7 +352,8 @@ const sidebar = {
                         'telegrams/we02660',
                         'telegrams/we02690',
                         'telegrams/we02695',
-                        'telegrams/ob04120'
+                        'telegrams/ob04120',
+                        'telegrams/ob04410'
                     ]
                 }
             ]
