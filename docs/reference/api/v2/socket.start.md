@@ -10,13 +10,14 @@ title: Socket Start v2
 
 ### リクエストボディ(JSON)
 
-| パラメータ名          | 必須  | デフォルト | 説明                                                                                                                                                                       |
-|:----------------|:---:|:-----:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| classifications | はい  |       | **Array&lt;String&gt;** <br/> WebSocketで取得する配信区分を指定。<br/> [電文データ 区分(API名)](/docs/telegrams/index.md)を指定、ファイル形式データは指定できない                                                 |
-| types           | いいえ |       | **Array&lt;String&gt;** <br/> [データ種類コード](/docs/telegrams/index.md#配信データのリスト)を指定。<br/>データ種類コードの前に「!」を付記することによって、配信しないように設定することができる 例：`"!VXSE44"`<br/>最大30個まで指定可能          |
-| test            | いいえ |  no   | **String** <br/> テスト電文を受け取るか指定。受け取る場合は including にする。<br/>**注意：XML電文以外のテスト配信は no 時も配信されます。本文中を参照するようにしてください。**                                                           |
-| appName         | いいえ |       | **String** <br/> アプリケーション名を指定。最大24バイトまで                                                                                                                                  |
-| formatMode      | いいえ |  raw  | **String** <br/> データフォーマットの指定。生電文: raw、JSONに変換したデータ: json                                                                                                                    |
+| パラメータ名          | 必須  | デフォルト | 説明                                                                                                                                                              |
+|:----------------|:---:|:-----:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| classifications | はい  |       | **Array&lt;String&gt;** <br/> WebSocketで取得する配信区分を指定。<br/> [電文データ 区分(API名)](/docs/telegrams/index.md)を指定、ファイル形式データは指定できない                                        |
+| types           | いいえ |       | **Array&lt;String&gt;** <br/> [データ種類コード](/docs/telegrams/index.md#配信データのリスト)を指定。<br/>データ種類コードの前に「!」を付記することによって、配信しないように設定することができる 例：`"!VXSE44"`<br/>最大30個まで指定可能 |
+| test            | いいえ |  no   | **String** <br/> テスト電文を受け取るか指定。受け取る場合は including にする。<br/>**注意：XML電文以外のテスト配信は no 時も配信されます。本文中を参照するようにしてください。**                                                  |
+| appName         | いいえ |       | **String** <br/> アプリケーション名を指定。最大24バイトまで                                                                                                                         |
+| formatMode      | いいえ |  raw  | **String** <br/> データフォーマットの指定。気象庁が配信する電文: `raw`、JSONに変換したデータ: `json` <br/> formats と同時利用はできない                                                                   |
+| formats         | いいえ |       | **Array&lt;String&gt;** <br/> **【実験】** データフォーマットの指定。 <br/>`xml`、`json`、`a/n`、`binary` が利用でき、`xml` と `json` は同時に指定できない <br/> formatMode と同時利用はできない               |
 
 例：
 ```json
@@ -134,12 +135,15 @@ APIは各種エラーを次の通り返答します。
 
 標準エラー以外に以下のエラーを出力します。
 
-| ステータスコード | エラーメッセージ                                                         | 説明                                  |
-|:--------:|:-----------------------------------------------------------------|:------------------------------------|
-|   400    | The body of the request is not json.                             | リクエストボディにJSON形式のデータがない              |
-|   400    | At least one element of \`classifications\` is required.         | 配信区分が指定されていない                       |
-|   400    | The \`types\` is not a string or has more than 30 elements.      | データ種類コードに不正な文字列があるか、30個以上指定されている    |
-|   400    | The \`appName\` is up to 24 bytes.                               | appNameに文字列でないか、24バイト以上の文字列が入力されている |
-|   400    | You have entered a string that is not defined in \`formatMode\`. | formatModeにrawかjson以外が指定されている       |
-|   402    | No contract.                                                     | 有効な契約がない                            |
-|   409    | The maximum number of simultaneous connections is full.          | アカウントの有効な接続数に達して新たにWebSocketに接続できない |
+| ステータスコード | エラーメッセージ                                                           | 説明                                  |
+|:--------:|:-------------------------------------------------------------------|:------------------------------------|
+|   400    | The body of the request is not json.                               | リクエストボディにJSON形式のデータがない              |
+|   400    | At least one element of \`classifications\` is required.           | 配信区分が指定されていない                       |
+|   400    | The \`types\` is not a string or has more than 30 elements.        | データ種類コードに不正な文字列があるか、30個以上指定されている    |
+|   400    | The \`appName\` is up to 24 bytes.                                 | appNameに文字列でないか、24バイト以上の文字列が入力されている |
+|   400    | You have entered a string that is not defined in \`formatMode\`.   | formatModeにrawかjson以外が指定されている       |
+|   400    | The \`formats\` must be an array and contain at least one element. | formatsが配列になっていない                   |
+|   400    | The \`formats\` cannot contain both xml and json.                  | formatsにxmlとjson両方が指定されている          |
+|   400    | The \`formats\` are incorrect.                                     | formatsに有効なフォーマット形式が指定されていない        |
+|   402    | No contract.                                                       | 有効な契約がない                            |
+|   409    | The maximum number of simultaneous connections is full.            | アカウントの有効な接続数に達して新たにWebSocketに接続できない |
