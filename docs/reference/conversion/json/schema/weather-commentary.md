@@ -1087,7 +1087,7 @@ AreaInformationCity-AreaForecastLocalM.xls に記載があります。
 
 国際地点番号は、気象庁防災情報XMLフォーマット コード表 WmoObservingStations.xls に記載があります。
 
-アメダス地点番号は、気象庁防災情報XMLフォーマット コード表 PointAmedas.xlsx に記載があります。
+アメダス地点番号は、気象庁防災情報XMLフォーマット コード表 PointAmedas.xlsx に記載があります（ame_masterのみ使用、snow_masterは使用しない）。
 
 潮位観測地点番号は、気象庁防災情報XMLフォーマット コード表 PointTidalLevel.xls に記載があります。
 
