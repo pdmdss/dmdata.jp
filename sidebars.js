@@ -405,6 +405,7 @@ const sidebar = {
                 'jmafile/jf06231',
                 'jmafile/jf06232',
                 'jmafile/jf06233',
+                'jmafile/jf06610',
                 'jmafile/jf06111',
                 'jmafile/jf06112',
                 'jmafile/jf07010'
