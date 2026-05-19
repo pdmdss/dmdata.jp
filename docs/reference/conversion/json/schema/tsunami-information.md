@@ -234,7 +234,7 @@ VTSE52に出現します。
 
 ### 欠測の例
 
-* [VTSE51 - 津波情報a 2026年01月以降運用変更内容](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_rjtd_20250702193000.json)
+* [VTSE51 - 津波情報a 2026年07月23日12時以降運用変更内容](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_rjtd_20250702193000.json)
 * [VTSE51 - 津波情報a 2025年07月24日運用変更内容](https://sample.dmdata.jp/conversion/json/schema/tsunami-information/vtse51_rjtd_20250702203000.json)
 
 ### 東日本大震災の例
