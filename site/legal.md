@@ -9,7 +9,7 @@ hide_title: true
   Project DM(Disaster Mitigation)-Data Send Service <br/>
   略: Project DM-D.S.S
 
-* **運営責任者** <br/>
+* **販売事業者・代表者名** <br/>
   會田 壮志
 
 * **サービス提供方法** <br/>
