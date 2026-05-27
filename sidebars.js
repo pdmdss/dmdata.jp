@@ -263,9 +263,6 @@ const sidebar = {
                         'telegrams/we02520',
                         'telegrams/we02521',
                         'telegrams/we02551',
-                        'telegrams/we02610',
-                        'telegrams/we02620',
-                        'telegrams/we02630',
                         'telegrams/we02670',
                         'telegrams/we02691',
                         'telegrams/we02680',
@@ -325,7 +322,6 @@ const sidebar = {
                     type: 'category',
                     label: '定時・その他 区分',
                     items: [
-                        'telegrams/sc02070',
                         'telegrams/sc02110',
                         'telegrams/sc02115',
                         'telegrams/sc02120',
@@ -349,9 +345,13 @@ const sidebar = {
                         'telegrams/we02540',
                         'telegrams/we02550',
                         'telegrams/we02650',
+                        'telegrams/we02610',
+                        'telegrams/we02620',
+                        'telegrams/we02630',
                         'telegrams/we02660',
                         'telegrams/we02690',
                         'telegrams/we02695',
+                        'telegrams/sc02070',
                         'telegrams/ob04120',
                         'telegrams/ob04410'
                     ]
