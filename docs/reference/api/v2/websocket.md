@@ -235,20 +235,16 @@ WebSocket>>>
 | head.type        |                いつも                 | **String** <br/> データ種類コード                                                                                                                                 |
 | head.author      |                いつも                 | **String** <br/> 発表英字官署名                                                                                                                                   |
 | head.time        |                いつも                 | **String** <br/> 基点時刻（ISO8601拡張形式）                                                                                                                      |
-| head.designation |                いつも                 | **String\|Null** <br/> 指定コード<br/>WMO全球通信システム(GTS)で定義されている符号で、遅延報・訂正報に付加する。通常は **Null** とする ※4                         |
+| head.designation |                いつも                 | **String\|Null** <br/> 指定コード<br/>WMO全球通信システム(GTS)で定義されている符号で、遅延報・訂正報に付加する。通常は **Null** とする ※1                         |
 | head.test        |                いつも                 | **Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す。 <br/> 注意：XML電文以外のテスト配信は常に **false** になります。本文中を参照するようにしてください。 |
 | head.xml         |             内容による※2              | **Boolean** <br/> XML電文かどうかを示す                                                                                                                           |
 | xmlReport        | format=xml または <br/> format=json時 | **Object** <br/> XML電文Control,Head情報                                                                                                                          |
 | format           |                いつも                 | **String\|Null** <br/> bodyフィールドの表現形式を示す。`xml`、`a/n`、`binary` は気象庁が定めたフォーマット、`json` は本サービスが独自に定めたフォーマット         |
 | compression      |                いつも                 | **String\|Null** <br/> bodyフィールドの圧縮形式を示す。`gzip`または`zip`、非圧縮時はnullを格納する                                                                |
-| encoding         |                いつも                 | **String\|Null** <br/> bodyフィールドのエンコーディング形式を示す。`base64`または、`utf-8`を格納する                                                              |
+| encoding         |                いつも                 | **String\|Null** <br/> bodyフィールドのエンコーディング形式を示す。`base64`または、`utf-8`を格納する※3                                                            |
 | body             |                いつも                 | **String** <br/> 本文                                                                                                                                             |
 
-※1 将来の予約拡張。 <br/>
-※2 形式は format を参照すること。 <br/>
-※3 compression が、gzip, zip時には常に `base64` とする。
-
-※4 指定コードは、3桁の英大文字を使い、下の通りとする
+※1 指定コードは、3桁の英大文字を使い、下の通りとする
 
 |  内容  | 指定コード             |
 |:------:|:-----------------------|
@@ -258,7 +254,10 @@ WebSocket>>>
 
 RRY, RRZ, CCY, CCZ, AAY, AAZ は、システム障害時等でのみ使用。
 
-遅延報では、1つの電文が分割された場合にも使用されます。
+遅延報では、1つの電文が分割された場合にも使用する。
+
+※2 XML電文でも付与されない場合がある。形式は format を参照すること。 <br/>
+※3 compression が、gzip, zip時には常に `base64` とする。
 
 ### type: error
 
