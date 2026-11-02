@@ -101,7 +101,6 @@ APIは常にJSONを返答します。
 | items[].head             |                  いつも                   | **Object** <br/> ヘッダ情報                                                                                   |
 | items[].head.type        |                  いつも                   | **String** <br/> データ種類コード                                                                                |
 | items[].head.author      |                  いつも                   | **String** <br/> 発表英字官署名                                                                                 |
-| items[].head.target      |                内容による※1                 | **String** <br/> 対象観測地点コード                                                                               |
 | items[].head.time        |                  いつも                   | **ISO8601Time** <br/> 基点時刻                                                                               |
 | items[].head.designation |                  いつも                   | **String\|Null** <br/> 指定コード<br/>WMO全球通信システム(GTS)で定義されている符号で、遅延報・訂正報に付加する。通常は **Null** とする               |
 | items[].head.test        |                  いつも                   | **Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す <br/> 注意：XML電文以外のテスト配信は常に **false** になります。本文中を参照するようにしてください。      |

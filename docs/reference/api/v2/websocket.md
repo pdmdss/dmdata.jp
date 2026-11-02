@@ -213,7 +213,6 @@ WebSocket>>>
 | head             |                いつも                | **Object** <br/> ヘッダ情報                                                                                  |
 | head.type        |                いつも                | **String** <br/> データ種類コード                                                                               |
 | head.author      |                いつも                | **String** <br/> 発表英字官署名                                                                                |
-| head.target      |              内容による※1              | **String** <br/> 対象観測地点コード                                                                              |
 | head.time        |                いつも                | **String** <br/> 基点時刻（ISO8601拡張形式）                                                                      |
 | head.designation |                いつも                | **String\|Null** <br/> 指定コード<br/>WMO全球通信システム(GTS)で定義されている符号で、遅延報・訂正報に付加する。通常は **Null** とする ※4           |
 | head.test        |                いつも                | **Boolean** <br/> 訓練、試験等のテスト等電文かどうかを示す。 <br/> 注意：XML電文以外のテスト配信は常に **false** になります。本文中を参照するようにしてください。    |
