@@ -87,18 +87,19 @@ DMDATA.JP では以下の通り区分を分けて配信を行っています。
 
 ### 火山関連
 
-| 資料名                                    | XML:/Report/Control/Title      | データ種類コード    | データ形式 | JSONデータ                                                              | 備考 |
-|-------------------------------------------|--------------------------------|---------------------|------------|-------------------------------------------------------------------------|------|
-| [噴火警報・予報](vo01710)                 | 噴火警報・予報                 | VFVO50              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |      |
-| [火山の状況に関する解説情報](vo01720)     | 火山の状況に関する解説情報     | VFVO51              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |      |
-| [噴火に関する火山観測報](vo01730)         | 噴火に関する火山観測報         | VFVO52              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |      |
-| [火山現象に関する海上警報・予報](vo01740) | 火山現象に関する海上警報・予報 | VFSVii (ii = 50-61) | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |      |
-| [降灰予報（定時）](vo01810)               | 降灰予報（定時）               | VFVO53              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |      |
-| [降灰予報（速報）](vo01820)               | 降灰予報（速報）               | VFVO54              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |      |
-| [降灰予報（詳細）](vo01830)               | 降灰予報（詳細）               | VFVO55              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |      |
-| [噴火速報](vo01750)                       | 噴火速報                       | VFVO56              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |      |
-| [推定噴煙流向報](vo01760)                 | 推定噴煙流向報                 | VFVO60              | XML        |                                                                         |      |
-| [火山に関するお知らせ](vo01020)           | 火山に関するお知らせ           | VZVO40              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |      |
+| 資料名                                    | XML:/Report/Control/Title      | データ種類コード    | データ形式 | JSONデータ                                                              | 備考         |
+|-------------------------------------------|--------------------------------|---------------------|------------|-------------------------------------------------------------------------|--------------|
+| [噴火警報・予報](vo01710)                 | 噴火警報・予報                 | VFVO50              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |              |
+| [火山の状況に関する解説情報](vo01720)     | 火山の状況に関する解説情報     | VFVO51              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |              |
+| [噴火に関する火山観測報](vo01730)         | 噴火に関する火山観測報         | VFVO52              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |              |
+| [火山現象に関する海上警報・予報](vo01740) | 火山現象に関する海上警報・予報 | VFSVii (ii = 50-61) | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |              |
+| [降灰予報（定時）](vo01810)               | 降灰予報（定時）               | VFVO53              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |              |
+| [降灰予報（速報）](vo01820)               | 降灰予報（速報）               | VFVO54              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |              |
+| [降灰予報（詳細）](vo01830)               | 降灰予報（詳細）               | VFVO55              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |              |
+| [噴火速報](vo01750)                       | 噴火速報                       | VFVO56              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |              |
+| [推定噴煙流向報](vo01760)                 | 推定噴煙流向報                 | VFVO60              | XML        |                                                                         |              |
+| [火山灰警報・注意報](vo01770)             | 火山灰警報・注意報             | VFVO70              | XML        | 準備中                                                                  | 2027年度以降 |
+| [火山に関するお知らせ](vo01020)           | 火山に関するお知らせ           | VZVO40              | XML        | [配信中](/docs/reference/conversion/json/schema/volcano-information.md) |              |
 
 ### 気象警報・注意報関連
 
@@ -254,6 +255,7 @@ XML電文については、[気象庁防災情報XMLフォーマット 情報提
 
 ## 更新履歴
 
+- 2026/11/09 - 配信資料に関する技術情報 第684号、第685号 の発行に伴う追加・更新
 - 2026/10/01 - 配信資料に関するお知らせを追加
 - 2026/08/25 - 初霜、初氷、初冠雪を報ずる特殊気象報の終了に伴う更新
 - 2026/06/05 - 全般海上警報(VPZU54)の配信開始日時決定、配信資料に関するお知らせを追加
