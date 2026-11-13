@@ -193,8 +193,10 @@ const sidebar = {
                     items: [
                         'telegrams/et01010',
                         'telegrams/et01110',
+                        'telegrams/et01111',
                         'telegrams/et01120',
                         'telegrams/et01121',
+                        'telegrams/et01122',
                         'telegrams/et01130',
                         'telegrams/et01310',
                         'telegrams/et01320',
